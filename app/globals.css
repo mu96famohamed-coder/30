@@ -1,0 +1,503 @@
+/* ─────────────────────────────────────────────────────────────────────────────
+   POA in 30 — Global Stylesheet
+   Warm cream background · deep ink primary · coral accent · pill CTAs
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply text-ink-800 bg-cream overflow-x-hidden;
+    font-feature-settings: 'kern' 1, 'liga' 1, 'ss01' 1;
+  }
+
+  /* Arabic body auto-uses IBM Plex Sans Arabic */
+  [dir="rtl"] body {
+    @apply font-arab;
+  }
+
+  /* Headings — Plus Jakarta Sans in LTR, IBM Plex Sans Arabic in RTL */
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans tracking-tight text-ink-800;
+  }
+  [dir="rtl"] h1,
+  [dir="rtl"] h2,
+  [dir="rtl"] h3,
+  [dir="rtl"] h4,
+  [dir="rtl"] h5,
+  [dir="rtl"] h6 {
+    @apply font-arab;
+  }
+
+  /* Focus rings — warm coral */
+  :focus-visible {
+    outline: 2px solid theme('colors.coral.500');
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* Selection — coral on cream */
+  ::selection {
+    background-color: theme('colors.coral.200');
+    color: theme('colors.ink.800');
+  }
+
+  /* RTL logical-property helpers — mirror where needed */
+  [dir="rtl"] .flip { transform: scaleX(-1); }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Component layer — reusable POA in 30 patterns
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@layer components {
+
+  /* ── Container ─────────────────────────────────────────────────────────── */
+  .wrap {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  /* ── Pill buttons (brand signature) ────────────────────────────────────── */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill
+           bg-coral-500 text-white font-medium text-sm
+           hover:bg-coral-600 active:bg-coral-700
+           transition-colors duration-150
+           shadow-soft;
+  }
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill
+           bg-ink-700 text-white font-medium text-sm
+           hover:bg-ink-800 active:bg-ink-900
+           transition-colors duration-150;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill
+           bg-transparent text-ink-700 font-medium text-sm
+           border border-ink-700
+           hover:bg-ink-700 hover:text-white
+           transition-colors duration-150;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-pill
+           bg-cream-300 text-ink-700 font-medium text-sm
+           hover:bg-cream-400
+           transition-colors duration-150;
+  }
+
+  /* ── Trust pill (top of hero) ─────────────────────────────────────────── */
+  .pill-trust {
+    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-pill
+           bg-cream-300 text-ink-700 text-xs font-medium;
+  }
+
+  /* ── Service tile card (hero grid & service listings) ─────────────────── */
+  .tile {
+    @apply bg-white rounded-tile p-6 flex flex-col gap-4
+           border border-ink-100
+           shadow-soft
+           hover:shadow-tile hover:-translate-y-0.5
+           transition-all duration-200;
+  }
+  .tile-icon {
+    @apply w-12 h-12 rounded-2xl flex items-center justify-center
+           bg-coral-50 text-coral-600;
+  }
+  .tile-title {
+    @apply text-base font-semibold text-ink-800 leading-snug;
+  }
+  .tile-desc {
+    @apply text-sm text-ink-500 leading-relaxed;
+  }
+  .tile-arrow {
+    @apply inline-flex items-center gap-1 text-sm font-medium text-coral-600 mt-auto;
+  }
+
+  /* ── Section headings ──────────────────────────────────────────────────── */
+  .h-display {
+    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink-800 leading-[1.05];
+  }
+  .h-section {
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink-800 leading-tight;
+  }
+  .h-card {
+    @apply text-lg sm:text-xl font-semibold text-ink-800 leading-snug;
+  }
+  .sub-display {
+    @apply text-base sm:text-lg text-ink-500 leading-relaxed max-w-2xl;
+  }
+
+  /* ── Step indicators (numbered how-it-works) ──────────────────────────── */
+  .step-num {
+    @apply w-10 h-10 rounded-full bg-ink-700 text-cream
+           flex items-center justify-center font-bold text-sm
+           flex-shrink-0;
+  }
+
+  /* ── Info boxes for rich content (warn/info/success/law) ──────────────── */
+  .box-info {
+    @apply rounded-2xl p-5 bg-ink-50 border border-ink-100 text-ink-800;
+    border-inline-start: 3px solid theme('colors.ink.700');
+  }
+  .box-warn {
+    @apply rounded-2xl p-5 bg-coral-50 border border-coral-100 text-ink-800;
+    border-inline-start: 3px solid theme('colors.coral.500');
+  }
+  .box-success {
+    @apply rounded-2xl p-5 bg-sand-50 border border-sand-200 text-ink-800;
+    border-inline-start: 3px solid theme('colors.ink.600');
+  }
+  .box-law {
+    @apply rounded-2xl p-5 bg-cream-300 border border-sand-200 text-ink-800 text-sm;
+    border-inline-start: 3px solid theme('colors.ink.800');
+  }
+
+  /* ── Divider line ──────────────────────────────────────────────────────── */
+  .hr-soft {
+    @apply border-t border-ink-100;
+  }
+
+  /* ── Prose: article body copy (blog, service pages) ────────────────────── */
+  .prose-poa {
+    @apply text-ink-700 leading-relaxed;
+  }
+  .prose-poa h2 {
+    @apply h-section mt-10 mb-4;
+  }
+  .prose-poa h3 {
+    @apply h-card mt-8 mb-3;
+  }
+  .prose-poa p {
+    @apply mb-4 text-base leading-[1.75];
+  }
+  .prose-poa ul {
+    @apply mb-4 ps-5 list-disc space-y-2;
+  }
+  .prose-poa ol {
+    @apply mb-4 ps-5 list-decimal space-y-2;
+  }
+  .prose-poa a {
+    @apply text-coral-600 underline underline-offset-2 hover:text-coral-700;
+  }
+  .prose-poa strong {
+    @apply font-semibold text-ink-800;
+  }
+
+  /* ── Arabic prose tweaks (line-height needs more room) ─────────────────── */
+  [dir="rtl"] .prose-poa {
+    @apply font-arab;
+  }
+  [dir="rtl"] .prose-poa p {
+    line-height: 2;
+  }
+  [dir="rtl"] .prose-poa h2 {
+    line-height: 1.4;
+  }
+
+  /* ── FAQ accordion ─────────────────────────────────────────────────────── */
+  .faq-item {
+    @apply bg-white rounded-tile border border-ink-100 overflow-hidden;
+  }
+  .faq-question {
+    @apply w-full flex items-center justify-between gap-4 px-5 py-4
+           text-start font-medium text-ink-800 text-sm sm:text-base
+           hover:bg-cream-300 transition-colors;
+  }
+  .faq-answer {
+    @apply px-5 pb-4 text-ink-600 text-sm leading-relaxed;
+  }
+
+  /* CSS-grid based accordion animation — used by editorial FAQSection.
+     Collapsed by default; expands smoothly when the .open modifier is set. */
+  .faq-body {
+    display: grid;
+    grid-template-rows: 0fr;
+    transition: grid-template-rows 0.28s ease;
+  }
+  .faq-body > div {
+    overflow: hidden;
+  }
+  .faq-body.open {
+    grid-template-rows: 1fr;
+  }
+
+  /* ── Navbar ─────────────────────────────────────────────────────────────── */
+  .nav-link {
+    @apply text-sm font-medium text-ink-700 hover:text-coral-600 transition-colors;
+  }
+
+  /* ── Footer ─────────────────────────────────────────────────────────────── */
+  .footer-heading {
+    @apply text-xs uppercase tracking-wider text-cream-400 font-semibold mb-3;
+  }
+  .footer-link {
+    @apply text-sm text-cream-200 hover:text-white transition-colors;
+  }
+
+  /* ── WhatsApp floating button ──────────────────────────────────────────── */
+  .wa-float {
+    @apply fixed bottom-5 end-5 z-50
+           w-14 h-14 rounded-full bg-[#25D366] text-white
+           flex items-center justify-center
+           shadow-tile hover:scale-105 transition-transform;
+  }
+
+  /* ═══════════════════════════════════════════════════════════════════════
+     EDITORIAL SERIF SYSTEM (Concept 1)
+     Used on homepage hero + section headings.
+     EN uses Instrument Serif · AR uses Amiri for equivalent editorial feel.
+     ═══════════════════════════════════════════════════════════════════════ */
+
+  /* Serif display headline — hero + section titles */
+  .h-serif {
+    font-family: theme('fontFamily.serif');
+    @apply text-ink-700 font-normal tracking-tight leading-[1.05];
+  }
+  [dir="rtl"] .h-serif {
+    font-family: theme('fontFamily.arab-serif');
+    @apply leading-[1.15];
+  }
+
+  /* Hero-scale serif */
+  .h-serif-hero {
+    font-family: theme('fontFamily.serif');
+    @apply text-ink-700 font-normal tracking-tight leading-[1.05]
+           text-5xl sm:text-6xl lg:text-7xl;
+  }
+  [dir="rtl"] .h-serif-hero {
+    font-family: theme('fontFamily.arab-serif');
+    @apply leading-[1.15] text-4xl sm:text-5xl lg:text-6xl;
+  }
+
+  /* Section-scale serif */
+  .h-serif-section {
+    font-family: theme('fontFamily.serif');
+    @apply text-ink-700 font-normal tracking-tight leading-[1.1]
+           text-3xl sm:text-4xl lg:text-5xl;
+  }
+  [dir="rtl"] .h-serif-section {
+    font-family: theme('fontFamily.arab-serif');
+    @apply leading-[1.2] text-2xl sm:text-3xl lg:text-4xl;
+  }
+
+  /* Italic accent — for emphasized phrase in hero */
+  .h-serif-em {
+    @apply italic text-coral-600;
+  }
+
+  /* Pre-title kicker — small coral caps above the headline */
+  .kicker {
+    @apply inline-block text-xs font-medium text-coral-600 tracking-[0.14em] uppercase mb-5;
+  }
+  [dir="rtl"] .kicker {
+    letter-spacing: 0.05em;
+    text-transform: none;
+  }
+
+  /* Editorial section kicker with em-dash prefix */
+  .kicker-dash::before {
+    content: "— ";
+    opacity: 0.7;
+  }
+  [dir="rtl"] .kicker-dash::before {
+    content: "— ";
+  }
+
+  /* Large serif numeral for step indicators (01. 02. 03.) */
+  .step-serif {
+    font-family: theme('fontFamily.serif');
+    @apply text-5xl sm:text-6xl text-coral-600 font-normal leading-none;
+  }
+  [dir="rtl"] .step-serif {
+    font-family: theme('fontFamily.arab-serif');
+  }
+
+  /* Thin divider between steps */
+  .step-divider {
+    @apply hidden md:block w-px bg-ink-100;
+  }
+
+  /* Editorial FAQ row — borders instead of bubbles */
+  .faq-row {
+    @apply w-full flex items-center justify-between gap-4 py-5
+           border-t border-ink-100 last:border-b
+           text-start font-medium text-ink-700 text-sm sm:text-base
+           hover:text-coral-600 transition-colors;
+  }
+  .faq-row[open] {
+    @apply text-coral-600;
+  }
+
+  /* Support tile — more editorial than the old card */
+  .support-tile {
+    @apply rounded-tile p-7 sm:p-8 flex flex-col gap-3
+           transition-all duration-200;
+  }
+  .support-tile-dark {
+    @apply rounded-tile p-7 sm:p-8 flex flex-col gap-3
+           bg-ink-700 text-cream transition-all duration-200;
+  }
+  .support-tile-light {
+    @apply rounded-tile p-7 sm:p-8 flex flex-col gap-3
+           bg-cream-300 text-ink-700 transition-all duration-200;
+  }
+
+  /* Service tile — editorial variant (used on new homepage) */
+  .tile-editorial {
+    @apply bg-cream-300 rounded-tile p-6 flex flex-col gap-2
+           hover:bg-sand-100 hover:-translate-y-0.5
+           transition-all duration-200;
+  }
+  .tile-editorial-title {
+    font-family: theme('fontFamily.serif');
+    @apply text-xl sm:text-2xl text-ink-700 font-normal leading-tight;
+  }
+  [dir="rtl"] .tile-editorial-title {
+    font-family: theme('fontFamily.arab-serif');
+  }
+  .tile-editorial-sub {
+    @apply text-xs font-medium text-coral-600 tracking-[0.1em] uppercase mt-1;
+  }
+  [dir="rtl"] .tile-editorial-sub {
+    @apply tracking-[0.04em];
+    text-transform: none;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Utility layer — small, composable one-offs
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@layer utilities {
+
+  /* Logical margin helpers for bidi */
+  .ms-auto { margin-inline-start: auto; }
+  .me-auto { margin-inline-end: auto; }
+
+  /* Soft cream section background (alternating sections) */
+  .bg-warm {
+    background-color: theme('colors.cream.DEFAULT');
+  }
+  .bg-soft-sand {
+    background-color: theme('colors.cream.300');
+  }
+
+  /* Subtle grid background for hero decoration (optional) */
+  .bg-dots-soft {
+    background-image: radial-gradient(theme('colors.sand.200') 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+
+  /* Editorial hero gradient — cream at top, warm sand at bottom */
+  .bg-hero-warm {
+    background: linear-gradient(
+      to bottom,
+      theme('colors.cream.DEFAULT') 0%,
+      theme('colors.cream.300') 100%
+    );
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Anti-copy / Anti-scrape protection
+   These are deterrents — they discourage casual content theft. A determined
+   attacker can still get the source via curl or view-source: prefix; the real
+   protection is the Edge middleware (rate limit, bot filter, honeypot).
+   ───────────────────────────────────────────────────────────────────────────── */
+
+@layer base {
+  /* Default: nothing is selectable except elements explicitly marked .selectable */
+  body {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Form fields stay interactive — typing requires text editing */
+  input, textarea, select {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+
+  /* Things users genuinely need to copy (phone, email, address, WhatsApp #) */
+  .selectable,
+  a[href^="tel:"],
+  a[href^="mailto:"],
+  a[href*="wa.me"],
+  .copy-allowed,
+  .copy-allowed * {
+    -webkit-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+  }
+
+  /* Block image dragging (prevents drag-to-save and drag-to-tab) */
+  img, svg, picture, video {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+    pointer-events: auto;
+  }
+
+  /* Tap-highlight off on touch devices (cleaner look + harder to inspect) */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Print protection
+   Blanks the main content when the user tries Ctrl+P / Save as PDF.
+   Header/footer/branding stay so the print isn't completely blank — but
+   the actual article body is replaced with a notice.
+   ───────────────────────────────────────────────────────────────────────────── */
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+  body::before {
+    content: "© POA in 30 — Content protected. Visit https://www.poain30.ae to view.";
+    visibility: visible !important;
+    display: block !important;
+    position: fixed !important;
+    inset: 50% 0 auto 0 !important;
+    transform: translateY(-50%) !important;
+    text-align: center !important;
+    font-family: serif !important;
+    font-size: 18pt !important;
+    color: #1E3A52 !important;
+    padding: 2rem !important;
+  }
+  /* Hide all navigation/footer/floating elements during print */
+  header, footer, nav, aside, [aria-label="Floating WhatsApp"], button {
+    display: none !important;
+  }
+}
+
+/* Honeypot link — visually hidden but in the DOM. Crawlers follow it; humans don't see it. */
+.honeypot-trap {
+  position: absolute !important;
+  left: -10000px !important;
+  top: -10000px !important;
+  width: 1px !important;
+  height: 1px !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

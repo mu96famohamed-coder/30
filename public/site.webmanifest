@@ -1,0 +1,26 @@
+{
+  "name": "POA in 30",
+  "short_name": "POA in 30",
+  "description": "Your Power of Attorney, ready in 30 minutes. 100% online notary facilitation in the UAE.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FDF8F1",
+  "theme_color": "#1E3A52",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
