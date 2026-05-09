@@ -96,7 +96,7 @@ export default async function LangLayout({ children, params }: Props) {
             Edge middleware bans any IP that touches /honeypot/ for 1 hour. */}
         <a
           href="/honeypot/"
-          rel="nofollow noindex"
+          rel="nofollow"
           aria-hidden="true"
           tabIndex={-1}
           className="honeypot-trap"
