@@ -17,12 +17,12 @@ import { buildWebsiteSchema } from '@/lib/seo/schema-builder'
 export async function generateMetadata({ params }: { params: Promise<{ lang: Lang }> }): Promise<Metadata> {
   const { lang } = await params
   const titles: Record<string, string> = {
-    en: 'POA in 30 — Power of Attorney Drafted & Notarized in 30 Minutes | Dubai',
-    ar: 'POA in 30 — وكالتك جاهزة ومصدّقة في 30 دقيقة | دبي',
+    en: 'Power of Attorney Dubai | Online in 30 Min | POA in 30',
+    ar: 'وكالة قانونية دبي أونلاين | توثيق في 30 دقيقة | POA in 30',
   }
   const descs: Record<string, string> = {
-    en: 'Skip the notary office. POA in 30 drafts, reviews and notarizes your Power of Attorney in 30 minutes — 100% online through Dubai Courts or the UAE Ministry of Justice via video call.',
-    ar: 'لا داعي لزيارة كاتب العدل. POA in 30 تقوم بصياغة ومراجعة وتصديق وكالتك في 30 دقيقة — 100% أونلاين عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو.',
+    en: 'Draft and notarize your Dubai Power of Attorney online in 30 minutes via Dubai Courts video call. No office visit. WhatsApp us to start.',
+    ar: 'صياغة وتوثيق وكالتك القانونية في دبي أونلاين خلال 30 دقيقة عبر مكالمة فيديو مع محاكم دبي. بدون زيارة مكتب.',
   }
   return {
     title: titles[lang] || titles.en,
@@ -255,11 +255,9 @@ export default async function HomePage({ params }: Props) {
           <div className="max-w-3xl">
             <span className="kicker">{t(S.hero_kicker, lang)}</span>
 
-            <h1 className="h-serif-hero mb-2">
-              {t(S.h1_lead, lang)}
-            </h1>
-            <h1 className="h-serif-hero h-serif-em mb-7">
-              {t(S.h1_em, lang)}
+            <h1 className="h-serif-hero mb-7">
+              <span className="block mb-2">{t(S.h1_lead, lang)}</span>
+              <span className="block h-serif-em">{t(S.h1_em, lang)}</span>
             </h1>
 
             <p className="text-base sm:text-lg text-ink-600 leading-relaxed max-w-xl mb-9">
@@ -377,6 +375,7 @@ export default async function HomePage({ params }: Props) {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="btn-primary self-start"
+                aria-label={lang === 'ar' ? 'ابدأ عبر واتساب — اسألنا الآن' : 'Start on WhatsApp — ask us now'}
               >
                 {t(S.cta_primary, lang)}
               </a>
@@ -438,6 +437,7 @@ export default async function HomePage({ params }: Props) {
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"
+              aria-label={lang === 'ar' ? 'ابدأ عبر واتساب — ابدأ الآن مجاناً' : 'Start on WhatsApp — get started now'}
             >
               {t(S.cta_primary, lang)}
             </a>
