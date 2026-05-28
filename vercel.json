@@ -2,7 +2,7 @@
   "framework": "nextjs",
   "buildCommand": "next build",
   "outputDirectory": ".next",
-  "regions": ["dxb1", "fra1"],
+  "regions": ["fra1"],
   "headers": [
     {
       "source": "/(.*)",
