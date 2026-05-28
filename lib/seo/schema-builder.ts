@@ -82,8 +82,8 @@ export function buildProfessionalServiceSchema(lang: Lang) {
 
   const description =
     lang === 'ar'
-      ? 'خدمة تسهيل الصياغة والتوثيق القانوني في دبي. وكالات رسمية، تصديق وزارة الخارجية، إنذارات عدلية، وثائق شركات — أونلاين خلال 30 دقيقة عبر مكالمة فيديو من محاكم دبي أو وزارة العدل.'
-      : 'Legal document drafting and notarization facilitation in Dubai. Power of Attorney, MOFA attestation, legal notices, corporate documents — online in 30 minutes via Dubai Courts or UAE Ministry of Justice video call.'
+      ? 'خدمة صياغة وتنسيق التوثيق القانوني في دبي. وكالات رسمية، تصديق وزارة الخارجية، إنذارات عدلية، وثائق شركات — أونلاين خلال 30 دقيقة عبر مكالمة فيديو من محاكم دبي أو وزارة العدل.'
+      : 'Legal document drafting and notarization facilitation in Dubai. Power of Attorney drafting and notarization — online in 30 minutes via Dubai Courts or UAE Ministry of Justice video call.'
 
   return {
     '@context': 'https://schema.org',
@@ -119,15 +119,14 @@ export function buildProfessionalServiceSchema(lang: Lang) {
     knowsAbout: [
       'Power of Attorney Drafting',
       'Online Notarization through Dubai Courts',
-      'MOFA Attestation',
-      'Embassy Attestation',
-      'Legal Translation Arabic English',
+      'Online Notarization through UAE Ministry of Justice',
       'Eviction Notices and Tableegh Service',
-      'Rental Dispute Center (RDC) Filings',
-      'Dubai Land Department (DLD) Procedures',
-      'Last Will and Testament for Expats',
-      'Corporate Documentation (MOA, Board Resolutions)',
-      'Affidavits and Sworn Statements',
+      'Rental Dispute Center (RDC) Document Preparation',
+      'Dubai Land Department (DLD) POA Requirements',
+      'Last Will and Testament Registration in Dubai',
+      'Legal Notices and POA Cancellation',
+      'E-Notary Video Call Process',
+      'Document Rejection and Correction',
     ],
     contactPoint: {
       '@type': 'ContactPoint',
@@ -188,8 +187,8 @@ export function buildServiceSchema(lang: Lang, path: string) {
       '@type': 'Audience',
       audienceType:
         lang === 'ar'
-          ? 'الأفراد، المغتربون، الشركات، والمستثمرون في الإمارات'
-          : 'Individuals, expats, businesses, and investors in the UAE',
+          ? 'الأفراد والشركات الذين يحتاجون مستندات قانونية موثقة في الإمارات'
+          : 'Individuals and businesses requiring notarized legal documents in the UAE',
     },
   }
 }
@@ -228,10 +227,10 @@ const BREADCRUMB_LABELS: Record<string, Record<Lang, string>> = {
     ar: 'وكالة العقارات',
   },
   '/power-of-attorney/vehicle': { en: 'Vehicle POA', ar: 'وكالة المركبات' },
-  '/corporate': { en: 'Corporate', ar: 'الشركات' },
-  '/attestation': { en: 'Attestation', ar: 'التصديق' },
+  '/poa-cancellation': { en: 'POA Cancellation', ar: 'إلغاء الوكالة' },
   '/legal-notice': { en: 'Legal Notice', ar: 'الإنذارات العدلية' },
-  '/legal-translation': { en: 'Legal Translation', ar: 'الترجمة القانونية' },
+  '/e-notary': { en: 'E-Notary', ar: 'الكاتب العدل الإلكتروني' },
+  '/poa-cancellation': { en: 'POA Cancellation', ar: 'إلغاء الوكالة' },
 }
 
 function breadcrumbLabel(segment: string, lang: Lang): string {

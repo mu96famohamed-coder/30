@@ -113,8 +113,8 @@ const S = {
   },
   specialist_title: { en: 'Talk to a bilingual specialist', ar: 'تحدّث مع مختص ثنائي اللغة' },
   specialist_sub: {
-    en: 'Complex POA or corporate matter? Get direct guidance in English or Arabic within minutes.',
-    ar: 'معاملة وكالة معقدة أو شأن شركات؟ احصل على إرشاد مباشر بالعربية أو الإنجليزية في دقائق.',
+    en: 'Complex or multi-party POA? Get direct guidance in English or Arabic within minutes.',
+    ar: 'وكالة معقدة أو متعددة الأطراف؟ احصل على إرشاد مباشر بالعربية أو الإنجليزية في دقائق.',
   },
 
   // FAQ
@@ -163,19 +163,19 @@ const TILES: Array<{
     },
   },
   {
-    href: '/e-notary',
-    title: { en: 'E-Notary', ar: 'الكاتب العدل الإلكتروني' },
+    href: '/power-of-attorney/real-estate',
+    title: { en: 'Real Estate POA', ar: 'وكالة عقارية' },
     sub: {
-      en: 'Online · Mobile · Same-day urgent',
-      ar: 'أونلاين · متنقل · توثيق عاجل',
+      en: 'Sale · Purchase · Management · Gifting',
+      ar: 'بيع · شراء · إدارة · هبة',
     },
   },
   {
-    href: '/attestation/mofa',
-    title: { en: 'MOFA Attestation', ar: 'تصديق وزارة الخارجية' },
+    href: '/power-of-attorney/vehicle',
+    title: { en: 'Vehicle POA', ar: 'وكالة مركبة' },
     sub: {
-      en: 'Embassy · Degree · Marriage',
-      ar: 'سفارات · شهادات · عقود زواج',
+      en: 'Sale · Export · Management',
+      ar: 'بيع · تصدير · إدارة',
     },
   },
   {
@@ -187,19 +187,19 @@ const TILES: Array<{
     },
   },
   {
-    href: '/corporate/moa',
-    title: { en: 'Corporate', ar: 'الشركات' },
+    href: '/e-notary',
+    title: { en: 'E-Notary', ar: 'التوثيق الإلكتروني' },
     sub: {
-      en: 'MOA · Resolutions · Share transfer',
-      ar: 'عقد تأسيس · قرارات · نقل أسهم',
+      en: 'Video call · Mobile · Same-day urgent',
+      ar: 'مكالمة فيديو · متنقل · توثيق عاجل',
     },
   },
   {
-    href: '/legal-translation',
-    title: { en: 'Legal Translation', ar: 'الترجمة القانونية' },
+    href: '/poa-cancellation',
+    title: { en: 'POA Cancellation', ar: 'إلغاء الوكالة' },
     sub: {
-      en: 'Court-certified · Arabic ↔ English',
-      ar: 'معتمدة من المحاكم · عربي وإنجليزي',
+      en: 'Revoke · Notify · Same-day',
+      ar: 'سند الإلغاء · تبليغ الوكيل · نفس اليوم',
     },
   },
 ]

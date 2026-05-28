@@ -29,7 +29,9 @@ const CLOSE = (
 )
 
 // ─────────────────────────────────────────────────────────────────────────────
-// Nav model — kept lean for POA in 30: 5 top-level groups
+// Nav model — POA in 30: POA-only focus
+// 4 top-level groups: Power of Attorney | Notarization | Tenancy & Legal | About
+// Attestation, Corporate, Legal Translation removed — site is POA-only
 // ─────────────────────────────────────────────────────────────────────────────
 
 function buildNav(lang: Lang) {
@@ -44,102 +46,75 @@ function buildNav(lang: Lang) {
           items: [
             { href: `/${l}/power-of-attorney/general`,      label: { en: 'General POA',      ar: 'وكالة عامة' } },
             { href: `/${l}/power-of-attorney/special`,      label: { en: 'Special POA',      ar: 'وكالة خاصة' } },
+            { href: `/${l}/power-of-attorney/court`,        label: { en: 'Court POA',         ar: 'وكالة قضائية' } },
+            { href: `/${l}/power-of-attorney/inheritance`,  label: { en: 'Inheritance POA',  ar: 'وكالة ميراث' } },
             { href: `/${l}/power-of-attorney/child-travel`, label: { en: 'Child Travel',     ar: 'إذن سفر طفل' } },
-            { href: `/${l}/power-of-attorney/inheritance`,  label: { en: 'Inheritance POA', ar: 'وكالة ميراث' } },
-            { href: `/${l}/power-of-attorney/court`,        label: { en: 'Court Case POA',   ar: 'وكالة قضائية' } },
+            { href: `/${l}/power-of-attorney/bank`,         label: { en: 'Bank POA',          ar: 'وكالة بنكية' } },
           ],
         },
         {
-          heading: { en: 'Property & Finance', ar: 'العقارات والمال' },
+          heading: { en: 'Property', ar: 'العقارات' },
           items: [
-            { href: `/${l}/power-of-attorney/real-estate`,          label: { en: 'Real Estate POA',      ar: 'وكالة عقارية' } },
-            { href: `/${l}/power-of-attorney/real-estate/sale`,     label: { en: '↳ Sale',                ar: '↳ بيع عقار' } },
-            { href: `/${l}/power-of-attorney/real-estate/purchase`, label: { en: '↳ Purchase',            ar: '↳ شراء عقار' } },
-            { href: `/${l}/power-of-attorney/real-estate/management`, label: { en: '↳ Management',        ar: '↳ إدارة عقار' } },
-            { href: `/${l}/power-of-attorney/bank`,                 label: { en: 'Bank POA',              ar: 'وكالة بنكية' } },
-            { href: `/${l}/power-of-attorney/property-gifting`,     label: { en: 'Property Gifting',      ar: 'هبة عقار' } },
-            { href: `/${l}/power-of-attorney/mohre`,                label: { en: 'MOHRE / Labour',        ar: 'وكالة MOHRE' } },
-            { href: `/${l}/power-of-attorney/company-formation`,    label: { en: 'Company Formation',     ar: 'تأسيس شركة' } },
+            { href: `/${l}/power-of-attorney/real-estate`,            label: { en: 'Real Estate POA',  ar: 'وكالة عقارية' } },
+            { href: `/${l}/power-of-attorney/real-estate/sale`,       label: { en: '↳ Sale',            ar: '↳ بيع عقار' } },
+            { href: `/${l}/power-of-attorney/real-estate/purchase`,   label: { en: '↳ Purchase',        ar: '↳ شراء عقار' } },
+            { href: `/${l}/power-of-attorney/real-estate/management`, label: { en: '↳ Management',      ar: '↳ إدارة عقار' } },
+            { href: `/${l}/power-of-attorney/property-gifting`,       label: { en: 'Property Gifting',  ar: 'هبة عقار' } },
           ],
         },
         {
-          heading: { en: 'Vehicle', ar: 'المركبات' },
+          heading: { en: 'Vehicle & Business', ar: 'المركبات والأعمال' },
           items: [
-            { href: `/${l}/power-of-attorney/vehicle`,          label: { en: 'Vehicle POA',  ar: 'وكالة مركبة' } },
-            { href: `/${l}/power-of-attorney/vehicle/sale`,     label: { en: '↳ Sale',        ar: '↳ بيع مركبة' } },
-            { href: `/${l}/power-of-attorney/vehicle/export`,   label: { en: '↳ Export',      ar: '↳ تصدير مركبة' } },
-            { href: `/${l}/power-of-attorney/vehicle/management`, label: { en: '↳ Management', ar: '↳ إدارة مركبة' } },
-            { href: `/${l}/poa-cancellation`,                   label: { en: 'Cancel a POA',  ar: 'إلغاء وكالة' } },
-          ],
-        },
-      ],
-    },
-    {
-      key: 'attestation',
-      label: { en: 'Attestation', ar: 'التصديقات' },
-      cols: [
-        {
-          heading: { en: 'UAE attestation', ar: 'تصديق الإمارات' },
-          items: [
-            { href: `/${l}/attestation/mofa`,    label: { en: 'MOFA attestation',       ar: 'تصديق الخارجية' } },
-            { href: `/${l}/attestation/embassy`, label: { en: 'Embassy attestation',    ar: 'تصديق السفارات' } },
-          ],
-        },
-        {
-          heading: { en: 'International', ar: 'دولي' },
-          items: [
-            { href: `/${l}/legal-translation`,     label: { en: 'Legal translation',  ar: 'ترجمة قانونية' } },
-            { href: `/${l}/legal-translation/court`, label: { en: '↳ Court-certified', ar: '↳ ترجمة محكمة' } },
+            { href: `/${l}/power-of-attorney/vehicle`,             label: { en: 'Vehicle POA',       ar: 'وكالة مركبة' } },
+            { href: `/${l}/power-of-attorney/vehicle/sale`,        label: { en: '↳ Sale',             ar: '↳ بيع مركبة' } },
+            { href: `/${l}/power-of-attorney/vehicle/export`,      label: { en: '↳ Export',           ar: '↳ تصدير مركبة' } },
+            { href: `/${l}/power-of-attorney/vehicle/management`,  label: { en: '↳ Management',       ar: '↳ إدارة مركبة' } },
+            { href: `/${l}/power-of-attorney/mohre`,               label: { en: 'MOHRE / Labour',     ar: 'وكالة MOHRE' } },
+            { href: `/${l}/power-of-attorney/company-formation`,   label: { en: 'Company Formation',  ar: 'تأسيس شركة' } },
+            { href: `/${l}/poa-cancellation`,                      label: { en: 'Cancel a POA',       ar: 'إلغاء وكالة' } },
           ],
         },
       ],
     },
     {
-      key: 'corporate',
-      label: { en: 'Corporate', ar: 'الشركات' },
+      key: 'notarization',
+      label: { en: 'Notarization', ar: 'التوثيق' },
       cols: [
         {
-          heading: { en: 'Resolutions & documents', ar: 'قرارات ووثائق' },
+          heading: { en: 'How we notarize', ar: 'كيف نوثّق' },
           items: [
-            { href: `/${l}/corporate/board-resolution`,     label: { en: 'Board resolution',       ar: 'قرار مجلس إدارة' } },
-            { href: `/${l}/corporate/shareholder-agreement`, label: { en: 'Shareholder agreement', ar: 'اتفاقية شركاء' } },
-            { href: `/${l}/corporate/moa`,                  label: { en: 'MOA drafting',           ar: 'عقد تأسيس' } },
-            { href: `/${l}/corporate/moa-amendment`,        label: { en: 'MOA amendment',          ar: 'تعديل عقد تأسيس' } },
+            { href: `/${l}/e-notary`,         label: { en: 'E-Notary (video call)',  ar: 'التوثيق الإلكتروني' } },
+            { href: `/${l}/mobile-notary`,    label: { en: 'Mobile notary',          ar: 'كاتب عدل متنقل' } },
+            { href: `/${l}/emergency-notary`, label: { en: 'Same-day urgent',        ar: 'توثيق عاجل نفس اليوم' } },
           ],
         },
         {
-          heading: { en: 'Transactions', ar: 'المعاملات' },
+          heading: { en: 'Rejections & corrections', ar: 'الرفض والتصحيح' },
           items: [
-            { href: `/${l}/corporate/share-transfer`, label: { en: 'Share transfer', ar: 'نقل أسهم' } },
-            { href: `/${l}/corporate/contract`,       label: { en: 'Contract drafting', ar: 'صياغة عقود' } },
-            { href: `/${l}/corporate/liquidation`,    label: { en: 'Liquidation',    ar: 'تصفية شركة' } },
+            { href: `/${l}/why-poa-rejected-dubai`, label: { en: 'Why POA gets rejected', ar: 'لماذا تُرفض الوكالة' } },
+            { href: `/${l}/document-rejection`,     label: { en: 'Document returned?',    ar: 'وثيقة مُعادة؟' } },
           ],
         },
       ],
     },
     {
-      key: 'other',
-      label: { en: 'Other services', ar: 'خدمات أخرى' },
+      key: 'tenancy',
+      label: { en: 'Tenancy & Legal', ar: 'الإيجار والقانون' },
       cols: [
         {
-          heading: { en: 'Notary & legal', ar: 'توثيق وقانوني' },
+          heading: { en: 'Legal notices', ar: 'الإنذارات' },
           items: [
-            { href: `/${l}/e-notary`,                  label: { en: 'E-Notary (remote)',    ar: 'الكاتب الإلكتروني' } },
-            { href: `/${l}/mobile-notary`,             label: { en: 'Mobile notary',         ar: 'كاتب عدل متنقل' } },
-            { href: `/${l}/emergency-notary`,          label: { en: 'Emergency notary',      ar: 'كاتب عدل عاجل' } },
-            { href: `/${l}/affidavit`,                 label: { en: 'Affidavit',             ar: 'إقرار مشفوع بيمين' } },
-            { href: `/${l}/certified-true-copy`,       label: { en: 'Certified true copy',   ar: 'نسخة طبق الأصل' } },
-            { href: `/${l}/last-will-testament-dubai`, label: { en: 'Last will & testament', ar: 'وصية' } },
+            { href: `/${l}/legal-notice`,                  label: { en: 'Legal notice',             ar: 'إنذار قانوني' } },
+            { href: `/${l}/legal-notice/eviction`,         label: { en: '↳ Eviction notice',         ar: '↳ إنذار إخلاء' } },
+            { href: `/${l}/legal-notice/poa-cancellation`, label: { en: '↳ POA cancellation notice', ar: '↳ إنذار إلغاء وكالة' } },
           ],
         },
         {
-          heading: { en: 'Notices & disputes', ar: 'إنذارات ونزاعات' },
+          heading: { en: 'Disputes & other', ar: 'النزاعات وأخرى' },
           items: [
-            { href: `/${l}/legal-notice`,                 label: { en: 'Legal notice',             ar: 'إنذار قانوني' } },
-            { href: `/${l}/legal-notice/eviction`,        label: { en: '↳ Eviction notice',         ar: '↳ إنذار إخلاء' } },
-            { href: `/${l}/legal-notice/poa-cancellation`,label: { en: '↳ POA cancellation notice', ar: '↳ إنذار إلغاء وكالة' } },
-            { href: `/${l}/rdc-support`,                  label: { en: 'RDC filing support',       ar: 'دعم مركز الإيجارات' } },
-            { href: `/${l}/what-is-tableegh`,             label: { en: 'What is Tableegh?',        ar: 'ما هو التبليغ؟' } },
+            { href: `/${l}/rdc-support`,              label: { en: 'RDC support',          ar: 'دعم مركز الإيجارات' } },
+            { href: `/${l}/what-is-tableegh`,         label: { en: 'What is Tableegh?',    ar: 'ما هو التبليغ؟' } },
+            { href: `/${l}/last-will-testament-dubai`,label: { en: 'Last will & testament',ar: 'الوصية الأخيرة' } },
           ],
         },
       ],
@@ -151,9 +126,9 @@ function buildNav(lang: Lang) {
         {
           heading: { en: 'POA in 30', ar: 'POA in 30' },
           items: [
-            { href: `/${l}/about`,  label: { en: 'About us',     ar: 'من نحن' } },
-            { href: `/${l}/faq`,    label: { en: 'FAQ',          ar: 'الأسئلة الشائعة' } },
-            { href: `/${l}/contact`, label: { en: 'Contact',     ar: 'تواصل معنا' } },
+            { href: `/${l}/about`,   label: { en: 'About us',  ar: 'من نحن' } },
+            { href: `/${l}/faq`,     label: { en: 'FAQ',       ar: 'الأسئلة الشائعة' } },
+            { href: `/${l}/contact`, label: { en: 'Contact',   ar: 'تواصل معنا' } },
           ],
         },
       ],

@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
     en: 'POA in 30 — Power of Attorney Drafted & Notarized in 30 Minutes | UAE',
     ar: 'POA in 30 — وكالتك جاهزة ومصدّقة في 30 دقيقة | الإمارات' }
   const descs: Record<string, string> = {
-    en: 'Skip the notary office. POA in 30 drafts, reviews and notarizes your Power of Attorney in 30 minutes — 100% online. POA, MOFA attestation, corporate resolutions & more across the UAE.',
-    ar: 'لا داعي لزيارة كاتب العدل. POA in 30 تقوم بصياغة ومراجعة وتصديق وكالتك في 30 دقيقة — 100% أونلاين. وكالات، تصديق الخارجية، قرارات الشركات وأكثر في جميع أنحاء الإمارات.' }
+    en: 'Skip the notary office. POA in 30 drafts, reviews and notarizes your Power of Attorney in 30 minutes — 100% online. All POA types, legal notices, and eviction notices across the UAE.',
+    ar: 'لا داعي لزيارة كاتب العدل. POA in 30 تصيغ وتوثق وكالتك في 30 دقيقة — 100% أونلاين. جميع أنواع الوكالات والإنذارات القانونية وإشعارات الإخلاء في الإمارات.' }
 
   return {
     title: titles[lang] || titles.en,

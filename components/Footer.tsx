@@ -4,50 +4,56 @@ import { type Lang, t, footer, site, cta } from '@/lib/i18n'
 
 interface Props { lang: Lang }
 
+// ─────────────────────────────────────────────────────────────────────────────
+// Footer — POA in 30
+// Attestation, Corporate, Legal Translation removed — POA-only site
+// 4 columns: POA | Notarization | Tenancy & Legal | Resources
+// ─────────────────────────────────────────────────────────────────────────────
+
 const FOOTER_LINKS = {
   poa: [
-    { href: '/power-of-attorney/general',           en: 'General POA',          ar: 'وكالة عامة' },
-    { href: '/power-of-attorney/real-estate',        en: 'Real Estate POA',      ar: 'وكالة عقارية' },
-    { href: '/power-of-attorney/vehicle',            en: 'Vehicle POA',          ar: 'وكالة مركبة' },
-    { href: '/power-of-attorney/bank',               en: 'Bank POA',             ar: 'وكالة بنكية' },
-    { href: '/power-of-attorney/company-formation',  en: 'Company Formation POA',ar: 'وكالة تأسيس شركة' },
-    { href: '/power-of-attorney/child-travel',       en: 'Child Travel Auth.',   ar: 'إذن سفر طفل' },
-    { href: '/poa-cancellation',                     en: 'POA Cancellation',     ar: 'إلغاء الوكالة' },
+    { href: '/power-of-attorney/general',           en: 'General POA',           ar: 'وكالة عامة' },
+    { href: '/power-of-attorney/special',           en: 'Special POA',           ar: 'وكالة خاصة' },
+    { href: '/power-of-attorney/real-estate',       en: 'Real Estate POA',       ar: 'وكالة عقارية' },
+    { href: '/power-of-attorney/vehicle',           en: 'Vehicle POA',           ar: 'وكالة مركبة' },
+    { href: '/power-of-attorney/bank',              en: 'Bank POA',              ar: 'وكالة بنكية' },
+    { href: '/power-of-attorney/court',             en: 'Court POA',             ar: 'وكالة قضائية' },
+    { href: '/power-of-attorney/company-formation', en: 'Company Formation POA', ar: 'وكالة تأسيس شركة' },
+    { href: '/power-of-attorney/child-travel',      en: 'Child Travel Auth.',    ar: 'إذن سفر طفل' },
+    { href: '/poa-cancellation',                    en: 'POA Cancellation',      ar: 'إلغاء الوكالة' },
   ],
-  notary: [
-    { href: '/attestation/mofa',      en: 'MOFA Attestation',      ar: 'تصديق الخارجية' },
-    { href: '/attestation/embassy',   en: 'Embassy Attestation',   ar: 'تصديق السفارة' },
-    { href: '/attestation/degree',    en: 'Degree Attestation',    ar: 'تصديق الشهادات' },
-    { href: '/attestation/marriage',  en: 'Marriage Certificate',  ar: 'تصديق عقد الزواج' },
-    { href: '/e-notary',              en: 'E-Notary (Remote)',      ar: 'الكاتب الإلكتروني' },
-    { href: '/mobile-notary',         en: 'Mobile Notary',         ar: 'كاتب عدل متنقل' },
-    { href: '/emergency-notary',      en: 'Same-Day Urgent',       ar: 'توثيق عاجل نفس اليوم' },
-    { href: '/legal-translation',     en: 'Legal Translation',     ar: 'ترجمة قانونية' },
+  notarization: [
+    { href: '/e-notary',              en: 'E-Notary (Video Call)',   ar: 'التوثيق الإلكتروني' },
+    { href: '/mobile-notary',         en: 'Mobile Notary',          ar: 'كاتب عدل متنقل' },
+    { href: '/emergency-notary',      en: 'Same-Day Urgent',        ar: 'توثيق عاجل نفس اليوم' },
+    { href: '/why-poa-rejected-dubai',en: 'Why POA Gets Rejected',  ar: 'لماذا تُرفض الوكالة؟' },
+    { href: '/document-rejection',    en: 'Document Returned?',     ar: 'وثيقة مُعادة؟' },
   ],
   tenancy: [
     { href: '/legal-notice/eviction',         en: 'Eviction Notice',         ar: 'إشعار الإخلاء' },
     { href: '/legal-notice',                  en: 'Legal Notice',            ar: 'إنذار قانوني' },
     { href: '/legal-notice/poa-cancellation', en: 'POA Cancellation Notice', ar: 'إنذار إلغاء وكالة' },
     { href: '/rdc-support',                   en: 'RDC Support',             ar: 'دعم مركز النزاعات' },
+    { href: '/what-is-tableegh',              en: 'What is Tableegh?',       ar: 'ما هو التبليغ؟' },
     { href: '/last-will-testament-dubai',     en: 'Last Will & Testament',   ar: 'الوصية الأخيرة' },
-    { href: '/affidavit',                     en: 'Affidavit',               ar: 'إقرارات' },
-    { href: '/certified-true-copy',           en: 'Certified Copy',          ar: 'نسخة مصدقة' },
   ],
   resources: [
-    { href: '/faq',                      en: 'FAQ',                   ar: 'الأسئلة الشائعة' },
-    { href: '/document-rejection',       en: 'Document Rejected?',    ar: 'وثيقة مرفوضة؟' },
-    { href: '/why-poa-rejected-dubai',   en: 'Why POA Rejected?',     ar: 'لماذا رُفضت الوكالة؟' },
-    { href: '/what-is-tableegh',         en: 'What is Tableegh?',     ar: 'ما هو التبليغ؟' },
-    { href: '/about',                    en: 'About',                 ar: 'عن الشركة' },
-    { href: '/contact',                  en: 'Contact',               ar: 'تواصل معنا' },
-  ] }
+    { href: '/faq',                    en: 'FAQ',                 ar: 'الأسئلة الشائعة' },
+    { href: '/document-rejection',     en: 'Document Rejected?', ar: 'وثيقة مرفوضة؟' },
+    { href: '/why-poa-rejected-dubai', en: 'Why POA Rejected?',  ar: 'لماذا رُفضت الوكالة؟' },
+    { href: '/what-is-tableegh',       en: 'What is Tableegh?',  ar: 'ما هو التبليغ؟' },
+    { href: '/about',                  en: 'About',              ar: 'عن الشركة' },
+    { href: '/contact',                en: 'Contact',            ar: 'تواصل معنا' },
+  ],
+}
 
 const HEADERS = {
-  poa:       { en: 'Power of Attorney',    ar: 'الوكالات الرسمية' },
-  notary:    { en: 'Notarization & Attestation', ar: 'التوثيق والتصديق' },
-  tenancy:   { en: 'Tenancy & Legal',      ar: 'الإيجار والقانون' },
-  resources: { en: 'Resources',            ar: 'الموارد' },
-  contact:   { en: 'Contact',              ar: 'تواصل معنا' } }
+  poa:          { en: 'Power of Attorney',  ar: 'الوكالات الرسمية' },
+  notarization: { en: 'Notarization',       ar: 'التوثيق' },
+  tenancy:      { en: 'Tenancy & Legal',    ar: 'الإيجار والقانون' },
+  resources:    { en: 'Resources',          ar: 'الموارد' },
+  contact:      { en: 'Contact',            ar: 'تواصل معنا' },
+}
 
 export default function Footer({ lang }: Props) {
   return (
@@ -97,11 +103,11 @@ export default function Footer({ lang }: Props) {
             </ul>
           </div>
 
-          {/* Notary column */}
+          {/* Notarization column */}
           <div>
-            <h3 className="text-xs font-bold text-ink-400 uppercase tracking-wide mb-4">{t(HEADERS.notary, lang)}</h3>
+            <h3 className="text-xs font-bold text-ink-400 uppercase tracking-wide mb-4">{t(HEADERS.notarization, lang)}</h3>
             <ul className="space-y-2">
-              {FOOTER_LINKS.notary.map((link) => (
+              {FOOTER_LINKS.notarization.map((link) => (
                 <li key={link.href}>
                   <Link href={`/${lang}${link.href}`} className="text-sm text-ink-300 hover:text-coral-400 transition-colors">
                     {t(link, lang)}

@@ -61,10 +61,7 @@
 export const HOMEPAGE_PILLARS: ReadonlyArray<string> = [
   '/power-of-attorney',
   '/e-notary',
-  '/attestation/mofa',
   '/legal-notice',
-  '/corporate/moa',
-  '/legal-translation',
 ] as const
 
 export const PILLAR_CHILDREN: Readonly<Record<string, string[]>> = {
@@ -92,11 +89,6 @@ export const PILLAR_CHILDREN: Readonly<Record<string, string[]>> = {
     '/power-of-attorney/vehicle/management',
   ],
   '/e-notary': ['/mobile-notary', '/emergency-notary'],
-  '/attestation/mofa': [
-    '/attestation/embassy',
-    '/attestation/degree',
-    '/attestation/marriage',
-  ],
   '/legal-notice': [
     '/legal-notice/eviction',
     '/legal-notice/poa-cancellation',
@@ -104,15 +96,7 @@ export const PILLAR_CHILDREN: Readonly<Record<string, string[]>> = {
     '/what-is-tableegh',
     '/rdc-support',
   ],
-  '/corporate/moa': [
-    '/corporate/moa-amendment',
-    '/corporate/board-resolution',
-    '/corporate/share-transfer',
-    '/corporate/shareholder-agreement',
-    '/corporate/contract',
-    '/corporate/liquidation',
-  ],
-  '/legal-translation': ['/legal-translation/court'],
+  
 } as const
 
 /** Reverse lookup: which pillar (if any) a given path belongs under. */

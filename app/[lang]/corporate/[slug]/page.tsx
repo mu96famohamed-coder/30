@@ -9,6 +9,7 @@ export default async function Page({ params }: { params: Promise<{ lang: string;
 }
 export async function generateStaticParams() {
   return ['en','ar'].flatMap(lang =>
-    ['mofa','embassy','degree','marriage'].map(slug => ({ lang, slug }))
+    ['moa','moa-amendment','share-transfer','contract','board-resolution','liquidation','shareholder-agreement']
+    .map(slug => ({ lang, slug }))
   )
 }

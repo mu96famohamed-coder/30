@@ -121,18 +121,18 @@ const nextConfig = {
       // Apostille service removed → redirect to MOFA attestation hub
       {
         source: '/:lang(en|ar)/attestation/apostille',
-        destination: '/:lang/attestation/mofa/',
+        destination: '/:lang/',
         permanent: true,
       },
       {
         source: '/:lang(en|ar)/attestation/apostille/',
-        destination: '/:lang/attestation/mofa/',
+        destination: '/:lang/',
         permanent: true,
       },
       // Blog removed entirely → redirect any /blog/* path to MOFA attestation page
       {
         source: '/:lang(en|ar)/blog/:slug*',
-        destination: '/:lang/attestation/mofa/',
+        destination: '/:lang/',
         permanent: true,
       },
       {
@@ -140,6 +140,16 @@ const nextConfig = {
         destination: '/:lang/',
         permanent: true,
       },
+
+      // Removed services → redirect to homepage
+      { source: '/:lang(en|ar)/attestation/:slug*', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/corporate/:slug*', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/legal-translation/:slug*', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/legal-translation', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/certified-true-copy', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/certified-true-copy/', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/affidavit', destination: '/:lang/', permanent: true },
+      { source: '/:lang(en|ar)/affidavit/', destination: '/:lang/', permanent: true },
       // /eviction-notice legacy → /legal-notice/eviction
       {
         source: '/:lang(en|ar)/eviction-notice',

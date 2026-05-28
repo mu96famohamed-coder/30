@@ -42,7 +42,7 @@ export default async function Page({ params }: Props) {
         ]}
         relatedServices={[
           { label: { en: 'Eviction Notice', ar: 'إنذار إخلاء' }, href: '/legal-notice/eviction' },
-          { label: { en: 'Court-Certified', ar: 'معتمد قضائياً' }, href: '/legal-translation/court' },
+          { label: { en: 'Court-Certified', ar: 'التوثيق الإلكتروني' }, href: '/e-notary' },
           { label: { en: 'What is Tableegh?', ar: 'ما هو التبليغ؟' }, href: '/what-is-tableegh' }
         ]}
         faqItems={getPageFaq('/legal-notice/poa-cancellation')}

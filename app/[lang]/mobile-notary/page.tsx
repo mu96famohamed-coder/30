@@ -42,8 +42,8 @@ export default async function Page({ params }: Props) {
         relatedServices={[
           { label: { en: 'E-Notary', ar: 'كاتب عدل إلكتروني' }, href: '/e-notary' },
           { label: { en: 'Same-Day Urgent', ar: 'توثيق عاجل' }, href: '/emergency-notary' },
-          { label: { en: 'Affidavit', ar: 'إقرار رسمي' }, href: '/affidavit' },
-          { label: { en: 'Certified True Copy', ar: 'نسخة طبق الأصل' }, href: '/certified-true-copy' }
+          { label: { en: 'Why POA Gets Rejected', ar: 'لماذا تُرفض الوكالة؟' }, href: '/why-poa-rejected-dubai' },
+          { label: { en: 'POA Cancellation', ar: 'إلغاء الوكالة' }, href: '/poa-cancellation' }
         ]}
         faqItems={getPageFaq('/mobile-notary')}
         richBlocks={getPageBlocks('/mobile-notary')}

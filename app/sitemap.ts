@@ -18,7 +18,6 @@ const MAIN_HUBS = new Set<string>([
   '/power-of-attorney/real-estate',
   '/power-of-attorney/vehicle',
   '/legal-notice',
-  '/corporate/moa',
 ])
 
 /** Informational / boilerplate pages. Priority 0.5. */
