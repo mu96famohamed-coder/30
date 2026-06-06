@@ -5,7 +5,7 @@
     <text x="82" y="44" font-size="26" fill="#FFFFFF" font-weight="400" font-style="italic" letter-spacing="-0.01em">in</text>
   </g>
   <g transform="translate(126 8)">
-    <circle cx="24" cy="24" r="24" fill="#E85A3C"/>
+    <circle cx="24" cy="24" r="24" fill="#C9A84C"/>
     <text x="24" y="33" text-anchor="middle" font-family="'Plus Jakarta Sans','Inter',system-ui,sans-serif" font-size="20" font-weight="800" fill="#FFFFFF" letter-spacing="-0.02em">30</text>
   </g>
   <g transform="translate(184 26)" stroke="#FFFFFF" stroke-width="1.4" fill="none" stroke-linecap="round">

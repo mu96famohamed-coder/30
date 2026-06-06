@@ -38,7 +38,7 @@ const SECTIONS = [
 export default async function FAQPage({ params }: Props) {
   const { lang } = await params
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Instrument Serif, serif'
+  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
 
   return (
     <>

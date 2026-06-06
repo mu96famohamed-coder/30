@@ -33,7 +33,7 @@ export default function NotFound() {
           style={{
             fontSize: '6rem',
             fontWeight: 800,
-            color: '#E85A3C',
+            color: '#C9A84C',
             marginBottom: '1rem',
             lineHeight: 1,
             letterSpacing: '-0.04em' }}
@@ -46,7 +46,7 @@ export default function NotFound() {
           href={homeHref}
           style={{
             display: 'inline-block',
-            background: '#E85A3C',
+            background: '#C9A84C',
             color: '#ffffff',
             padding: '0.85rem 2rem',
             borderRadius: '9999px',

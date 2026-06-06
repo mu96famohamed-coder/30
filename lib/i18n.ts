@@ -119,7 +119,7 @@ interface PageContent {
 }
 
 export function getPageContent(url: string): PageContent | null {
-  const pc = content.page_content as Record<string, PageContent>
+  const pc = content.page_content as unknown as Record<string, PageContent>
   return pc[url] ?? pc[url + '/'] ?? null
 }
 
@@ -129,7 +129,7 @@ export function getPageFaq(url: string): FaqItem[] {
 }
 
 export function getServiceFaq(key: string): FaqItem[] {
-  const map = content.faq_services as Record<
+  const map = content.faq_services as unknown as Record<
     string,
     Array<{ q: Record<string, string>; a: Record<string, string> }>
   >
@@ -175,7 +175,7 @@ export const ui_buttons = content.ui_buttons as Record<string, Record<string, st
 // NOTE: POA in 30 does NOT display prices anywhere — pricing is quote-based.
 // The pricing export is kept for backwards compatibility but intentionally
 // unused on any rendered page. Do not surface this in UI.
-export const pricing = content.pricing as Record<
+export const pricing = content.pricing as unknown as Record<
   string,
   Array<{ service: Record<string, string>; href: string }>
 >

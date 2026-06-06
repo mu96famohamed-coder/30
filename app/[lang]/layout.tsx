@@ -62,14 +62,14 @@ export default async function LangLayout({ children, params }: Props) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="theme-color" content="#1E3A52" />
+        <meta name="theme-color" content="#0F2137" />
         <meta name="geo.region" content="AE-DU" />
         <meta name="geo.placename" content="Dubai, UAE" />
         <meta name="geo.position" content="25.2048;55.2708" />
         <meta name="ICBM" content="25.2048, 55.2708" />
         <LocalBusinessSchema />
       </head>
-      <body className={`${fontClass} antialiased bg-cream text-ink-800`}>
+      <body className={`${fontClass} antialiased`} style={{ backgroundColor: 'var(--bg-base)', color: 'var(--text-primary)' }}>
         {/* Google Analytics — only loaded when a GA4 ID is configured */}
         {site.ga && (
           <>

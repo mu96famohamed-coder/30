@@ -48,7 +48,7 @@ const L = {
 export default async function Page({ params }: Props) {
   const { lang } = await params
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Instrument Serif, serif'
+  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
   const waUrl = getWaUrl(t({ en: 'Hi POA in 30, I have a question about a Dubai POA / notarization.', ar: 'مرحباً POA in 30، عندي سؤال عن وكالة/توثيق في دبي.' }, lang))
 
   return (

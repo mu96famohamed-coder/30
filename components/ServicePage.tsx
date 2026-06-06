@@ -89,7 +89,7 @@ export default function ServicePage({
 }: ServicePageProps) {
   const waUrl = getWaUrl(waMessage)
   const isRTL = lang === 'ar'
-  const serifFont = isRTL ? 'Amiri, serif' : 'Instrument Serif, serif'
+  const serifFont = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
 
   // ───────────────────────────────────────────────────────────────────────
   // Auto-derive sibling links from the path when caller didn't pass any.
@@ -183,7 +183,7 @@ export default function ServicePage({
       }
 
       {/* ═══ MASTHEAD ROW (magazine-style date/section) ═══ */}
-      <div className="bg-cream border-b border-ink-100/60">
+      <div className="border-b" style={{ backgroundColor: 'var(--bg-base)', borderColor: 'var(--border-default)' }}>
         <div className="mx-auto max-w-6xl px-4 lg:px-8 py-3 flex items-center justify-between">
           <span className="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium">
             {subtitle ? t(subtitle, lang) : 'POA in 30 · Dubai'}
@@ -196,8 +196,8 @@ export default function ServicePage({
 
       {/* ═══ BREADCRUMB ═══ */}
       {breadcrumb && breadcrumb.length > 0 && (
-        <div className="bg-cream">
-          <nav className="mx-auto max-w-6xl px-4 lg:px-8 py-4 flex flex-wrap items-center gap-1.5 text-xs text-ink-500">
+        <div style={{ backgroundColor: 'var(--bg-base)' }}>
+          <nav className="mx-auto max-w-6xl px-4 lg:px-8 py-4 flex flex-wrap items-center gap-1.5 text-xs" style={{ color: 'var(--text-muted)' }}>
             <Link href={`/${lang}`} className="hover:text-coral-600 transition-colors">{t(L.home, lang)}</Link>
             {breadcrumb.map((crumb, i) => (
               <span key={i} className="flex items-center gap-1.5">
@@ -213,14 +213,14 @@ export default function ServicePage({
       )}
 
       {/* ═══ HERO — centered editorial headline ═══ */}
-      <section className="bg-cream pt-12 pb-10 lg:pt-20 lg:pb-16">
+      <section className="pt-12 pb-10 lg:pt-20 lg:pb-16" style={{ backgroundColor: 'var(--bg-base)' }}>
         <div className="mx-auto max-w-3xl px-4 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 mb-6">
-            <span className="block w-8 h-px bg-coral-500/60" />
-            <span className="text-[11px] tracking-[0.2em] uppercase text-coral-600 font-medium">
+            <span className="block w-8 h-px" style={{ backgroundColor: 'var(--brand-gold)', opacity: 0.5 }} />
+            <span className="text-[11px] tracking-[0.18em] uppercase font-medium" style={{ color: 'var(--brand-gold)', fontFamily: 'DM Sans, system-ui, sans-serif' }}>
               {subtitle ? t(subtitle, lang) : (lang === 'ar' ? 'خدمة قانونية' : 'Legal service')}
             </span>
-            <span className="block w-8 h-px bg-coral-500/60" />
+            <span className="block w-8 h-px" style={{ backgroundColor: 'var(--brand-gold)', opacity: 0.5 }} />
           </div>
 
           <h1
@@ -234,7 +234,7 @@ export default function ServicePage({
             {titleEm && (
               <>
                 <br />
-                <em className="text-coral-600 not-italic" style={{ fontStyle: 'italic' }}>
+                <em className="not-italic" style={{ fontStyle: 'italic', color: 'var(--brand-gold)' }}>
                   {titleEm}
                 </em>
               </>
@@ -258,7 +258,7 @@ export default function ServicePage({
               href={waUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-ink-900 text-cream font-medium text-sm rounded-full px-6 py-3 hover:bg-ink-800 transition-colors"
+              className="btn-primary"
             >
               {WA_ICON} {t(L.start_wa, lang)}
             </a>
@@ -266,7 +266,7 @@ export default function ServicePage({
               <Link
                 key={btn.href}
                 href={btn.href}
-                className="inline-flex items-center text-sm font-medium text-ink-700 rounded-full px-6 py-3 border border-ink-200 hover:border-ink-400 hover:text-ink-900 transition-colors"
+                className="btn-outline"
               >
                 {t(btn.label, lang)}
               </Link>
@@ -289,7 +289,7 @@ export default function ServicePage({
       )}
 
       {/* ═══ MAIN BODY — magazine asymmetric grid ═══ */}
-      <section className="bg-cream py-14 lg:py-20 border-t border-ink-100/40">
+      <section className="py-14 lg:py-20 border-t" style={{ backgroundColor: 'var(--bg-base)', borderColor: 'var(--border-default)' }}>
         <div className="mx-auto max-w-6xl px-4 lg:px-8">
 
           {/* Body in a 2-col grid: lead + pull-quote sidebar */}
@@ -462,7 +462,7 @@ export default function ServicePage({
               <div className="sticky top-20 space-y-8">
 
                 {/* Pull quote */}
-                <div className="border-s-2 border-coral-500 ps-6">
+                <div className="ps-6" style={{ borderInlineStart: '2px solid var(--brand-gold)' }}>
                   <p
                     className="text-ink-700 leading-relaxed mb-3"
                     style={{
@@ -507,27 +507,29 @@ export default function ServicePage({
         </div>
       </section>
 
-      {/* ═══ FINAL CTA — dark navy band, editorial ═══ */}
-      <section className="bg-ink-900 py-16 lg:py-20">
+      {/* ═══ FINAL CTA — midnight background, gold button ═══ */}
+      <section className="bg-texture-dark py-16 lg:py-24" style={{ backgroundColor: 'var(--brand-midnight)' }}>
         <div className="mx-auto max-w-2xl px-4 lg:px-8 text-center">
           <h2
-            className="text-cream font-normal mb-4 leading-tight"
+            className="font-light mb-4 leading-tight"
             style={{
               fontFamily: serifFont,
               fontSize: 'clamp(28px, 4vw, 40px)',
-              letterSpacing: '-0.01em' }}
+              color: 'var(--text-inverse)',
+              fontWeight: 300,
+            }}
           >
             {t(L.ready, lang)}
           </h2>
-          <p className="text-ink-200 leading-relaxed mb-8 mx-auto max-w-md text-base"
-             style={{ fontFamily: serifFont, fontStyle: 'italic' }}>
+          <p className="leading-relaxed mb-10 mx-auto max-w-md text-base"
+             style={{ fontFamily: serifFont, fontStyle: 'italic', color: '#9CA3AF' }}>
             {t(L.ready_sub, lang)}
           </p>
           <a
             href={waUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 bg-coral-500 hover:bg-coral-600 text-cream font-medium text-sm rounded-full px-7 py-3.5 transition-colors"
+            className="btn-gold inline-flex items-center gap-2"
           >
             {WA_ICON} {t(L.start_wa, lang)}
           </a>

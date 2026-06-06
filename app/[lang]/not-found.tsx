@@ -11,7 +11,7 @@ export default function LangNotFound() {
   const tx = T[lang] || T.en
   const homeHref = `/${lang in T ? lang : 'en'}`
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Instrument Serif, serif'
+  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
 
   return (
     <div
@@ -32,7 +32,7 @@ export default function LangNotFound() {
           gap: '8px',
           marginBottom: '24px' }}>
           <span style={{ display: 'block', width: '32px', height: '1px', background: 'rgba(232, 90, 60, 0.6)' }} />
-          <span style={{ fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#E85A3C', fontWeight: 500 }}>
+          <span style={{ fontSize: '11px', letterSpacing: '0.2em', textTransform: 'uppercase', color: '#C9A84C', fontWeight: 500 }}>
             404 · {tx.kicker}
           </span>
           <span style={{ display: 'block', width: '32px', height: '1px', background: 'rgba(232, 90, 60, 0.6)' }} />
@@ -48,7 +48,7 @@ export default function LangNotFound() {
           letterSpacing: '-0.015em' }}>
           {tx.lead}
           <br/>
-          <em style={{ color: '#E85A3C', fontStyle: 'italic' }}>
+          <em style={{ color: '#C9A84C', fontStyle: 'italic' }}>
             {tx.em}
           </em>
         </h1>

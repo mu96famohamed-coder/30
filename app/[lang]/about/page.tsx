@@ -55,20 +55,20 @@ const WHY_POINTS = [
 
 const SERVICES = [
   { en: 'Power of Attorney (all types)', ar: 'الوكالات الرسمية (جميع الأنواع)', href: 'power-of-attorney' },
-  { en: 'Affidavits and Sworn Statements',  ar: 'الإقرارات والتصريحات', href: 'affidavit' },
-  { en: 'Certified True Copies',            ar: 'النسخ المصدّقة طبق الأصل', href: 'certified-true-copy' },
+  { en: 'Real Estate POA (DLD)',           ar: 'الوكالة العقارية (دائرة الأراضي)', href: 'power-of-attorney/real-estate' },
+  { en: 'Vehicle POA (RTA)',               ar: 'وكالة المركبات (هيئة الطرق)', href: 'power-of-attorney/vehicle' },
+  { en: 'Company Formation POA',           ar: 'وكالة تأسيس الشركات', href: 'power-of-attorney/company-formation' },
   { en: 'Last Will & Testament (DIFC)',     ar: 'الوصية الأخيرة (DIFC)', href: 'last-will-testament-dubai' },
-  { en: 'MOFA & Embassy Attestation',       ar: 'تصديق الخارجية والسفارات', href: 'attestation/mofa' },
-  { en: 'Legal Translation',                ar: 'الترجمة القانونية', href: 'legal-translation' },
+  { en: 'E-Notary (Video Call)',           ar: 'التوثيق الإلكتروني (مكالمة فيديو)', href: 'e-notary' },
   { en: 'Eviction Notices (Article 25)',    ar: 'إشعارات الإخلاء (المادة 25)', href: 'legal-notice/eviction' },
   { en: 'RDC Support',                      ar: 'دعم مركز فض النزاعات', href: 'rdc-support' },
-  { en: 'Corporate Documents (MOA, BR, SHA)', ar: 'وثائق الشركات (عقد التأسيس، قرارات، اتفاقيات)', href: 'corporate/moa' },
+  { en: 'POA Cancellation',                 ar: 'إلغاء الوكالة', href: 'poa-cancellation' },
 ]
 
 export default async function Page({ params }: Props) {
   const { lang } = await params
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Instrument Serif, serif'
+  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
   const waUrl = getWaUrl(t({ en: 'Hello POA in 30, I would like to know more.', ar: 'مرحبًا POA in 30، أريد معرفة المزيد.' }, lang))
 
   return (

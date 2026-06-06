@@ -1,13 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+
 /* ─────────────────────────────────────────────────────────────────────────────
    POA in 30 — Global Stylesheet
-   Warm cream background · deep ink primary · coral accent · pill CTAs
+   "Editorial Authority" design system
+   Warm off-white base · deep midnight primary · premium gold accent
+   Cormorant Garamond display · DM Sans body
    ───────────────────────────────────────────────────────────────────────────── */
 
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&family=Amiri:ital,wght@0,400;0,700;1,400;1,700&family=JetBrains+Mono:wght@400;500&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* ─── CSS Custom Properties ──────────────────────────────────────────────── */
+:root {
+  --bg-base:    #F9F7F4;
+  --bg-subtle:  #F2EFE9;
+  --bg-ink:     #0F2137;
+
+  --brand-midnight:   #0F2137;
+  --brand-slate:      #1E3A52;
+  --brand-gold:       #C9A84C;
+  --brand-gold-light: #E8D5A0;
+
+  --text-primary:   #111827;
+  --text-secondary: #374151;
+  --text-muted:     #6B7280;
+  --text-inverse:   #F9F7F4;
+
+  --border-default: #E5E0D8;
+  --border-strong:  #C5BFB5;
+  --success:        #059669;
+
+  --radius-btn:  6px;
+  --radius-card: 12px;
+
+  --transition-base: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+[lang="ar"], [dir="rtl"] {
+  --ar-scale:       1.08;
+  --ar-line-height: 1.85;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   Base layer
+   ───────────────────────────────────────────────────────────────────────────── */
 
 @layer base {
   html {
@@ -17,18 +55,22 @@
   }
 
   body {
-    @apply text-ink-800 bg-cream overflow-x-hidden;
-    font-feature-settings: 'kern' 1, 'liga' 1, 'ss01' 1;
+    @apply overflow-x-hidden;
+    background-color: var(--bg-base);
+    color: var(--text-primary);
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-feature-settings: 'kern' 1, 'liga' 1;
   }
 
-  /* Arabic body auto-uses IBM Plex Sans Arabic */
   [dir="rtl"] body {
     @apply font-arab;
   }
 
-  /* Headings — Plus Jakarta Sans in LTR, IBM Plex Sans Arabic in RTL */
+  /* Headings — Cormorant Garamond in LTR, Amiri in RTL */
   h1, h2, h3, h4, h5, h6 {
-    @apply font-sans tracking-tight text-ink-800;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    @apply tracking-tight;
+    color: var(--text-primary);
   }
   [dir="rtl"] h1,
   [dir="rtl"] h2,
@@ -39,21 +81,22 @@
     @apply font-arab;
   }
 
-  /* Focus rings — warm coral */
+  /* Focus rings — gold */
   :focus-visible {
-    outline: 2px solid theme('colors.coral.500');
+    outline: 2px solid var(--brand-gold);
     outline-offset: 3px;
     border-radius: 6px;
   }
 
-  /* Selection — coral on cream */
+  /* Selection */
   ::selection {
-    background-color: theme('colors.coral.200');
-    color: theme('colors.ink.800');
+    background-color: #E8D5A0;
+    color: #0F2137;
   }
 
-  /* RTL logical-property helpers — mirror where needed */
-  [dir="rtl"] .flip { transform: scaleX(-1); }
+  /* RTL helpers */
+  [dir="rtl"] .flip       { transform: scaleX(-1); }
+  [dir="rtl"] .arrow-icon { transform: scaleX(-1); }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -64,359 +107,517 @@
 
   /* ── Container ─────────────────────────────────────────────────────────── */
   .wrap {
-    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply mx-auto px-4 sm:px-6 lg:px-8;
+    max-width: 1280px;
   }
 
-  /* ── Pill buttons (brand signature) ────────────────────────────────────── */
+  /* ── Buttons — 6px radius, professional (not pill) ──────────────────────── */
+
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill
-           bg-coral-500 text-white font-medium text-sm
-           hover:bg-coral-600 active:bg-coral-700
-           transition-colors duration-150
-           shadow-soft;
+    @apply inline-flex items-center justify-center gap-2 font-medium;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15px;
+    padding: 0.875rem 2rem;
+    background: var(--brand-midnight);
+    color: var(--text-inverse);
+    border-radius: var(--radius-btn);
+    letter-spacing: 0.02em;
+    transition: var(--transition-base);
   }
+  .btn-primary:hover {
+    background: #1a3850;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(15, 33, 55, 0.2);
+  }
+  .btn-primary:active { transform: scale(0.98); }
+
   .btn-secondary {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill
-           bg-ink-700 text-white font-medium text-sm
-           hover:bg-ink-800 active:bg-ink-900
-           transition-colors duration-150;
+    @apply inline-flex items-center justify-center gap-2 font-medium;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15px;
+    padding: 0.875rem 2rem;
+    background: var(--brand-slate);
+    color: var(--text-inverse);
+    border-radius: var(--radius-btn);
+    letter-spacing: 0.02em;
+    transition: var(--transition-base);
   }
+  .btn-secondary:hover {
+    background: #2a4758;
+    transform: translateY(-1px);
+  }
+
   .btn-outline {
-    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-pill
-           bg-transparent text-ink-700 font-medium text-sm
-           border border-ink-700
-           hover:bg-ink-700 hover:text-white
-           transition-colors duration-150;
+    @apply inline-flex items-center justify-center gap-2 font-medium;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15px;
+    padding: 0.875rem 2rem;
+    background: transparent;
+    color: var(--brand-midnight);
+    border: 1.5px solid var(--brand-midnight);
+    border-radius: var(--radius-btn);
+    letter-spacing: 0.02em;
+    transition: var(--transition-base);
   }
+  .btn-outline:hover {
+    background: var(--brand-midnight);
+    color: var(--text-inverse);
+  }
+
+  /* Gold accent — use max one per page (hero gold variant) */
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 font-medium;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15px;
+    padding: 0.875rem 2rem;
+    background: var(--brand-gold);
+    color: var(--brand-midnight);
+    border-radius: var(--radius-btn);
+    letter-spacing: 0.02em;
+    transition: var(--transition-base);
+  }
+  .btn-gold:hover {
+    background: #b8943c;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 16px rgba(201, 168, 76, 0.3);
+  }
+  .btn-gold:active { transform: scale(0.98); }
+
   .btn-ghost {
-    @apply inline-flex items-center justify-center gap-2 px-4 py-2 rounded-pill
-           bg-cream-300 text-ink-700 font-medium text-sm
-           hover:bg-cream-400
-           transition-colors duration-150;
+    @apply inline-flex items-center justify-center gap-2 font-medium;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 14px;
+    padding: 0.625rem 1rem;
+    background: var(--bg-subtle);
+    color: var(--brand-midnight);
+    border-radius: var(--radius-btn);
+    transition: var(--transition-base);
   }
+  .btn-ghost:hover { background: var(--border-default); }
 
-  /* ── Trust pill (top of hero) ─────────────────────────────────────────── */
+  /* ── Trust pill (hero kicker) ─────────────────────────────────────────── */
   .pill-trust {
-    @apply inline-flex items-center gap-2 px-4 py-1.5 rounded-pill
-           bg-cream-300 text-ink-700 text-xs font-medium;
+    @apply inline-flex items-center gap-2 px-4 py-1.5;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    background: var(--bg-subtle);
+    color: var(--brand-midnight);
+    border-radius: 999px;
   }
 
-  /* ── Service tile card (hero grid & service listings) ─────────────────── */
+  /* ── Service tile cards — white, gold hover border ─────────────────────── */
   .tile {
-    @apply bg-white rounded-tile p-6 flex flex-col gap-4
-           border border-ink-100
-           shadow-soft
-           hover:shadow-tile hover:-translate-y-0.5
-           transition-all duration-200;
+    background: white;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-card);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: var(--transition-base);
+  }
+  .tile:hover {
+    border-color: var(--brand-gold);
+    box-shadow: 0 4px 24px rgba(15, 33, 55, 0.08);
+    transform: translateY(-2px);
   }
   .tile-icon {
-    @apply w-12 h-12 rounded-2xl flex items-center justify-center
-           bg-coral-50 text-coral-600;
+    @apply w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0;
+    background: #FAF5E4;
+    color: var(--brand-gold);
   }
   .tile-title {
-    @apply text-base font-semibold text-ink-800 leading-snug;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.35;
   }
   .tile-desc {
-    @apply text-sm text-ink-500 leading-relaxed;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.6;
   }
   .tile-arrow {
-    @apply inline-flex items-center gap-1 text-sm font-medium text-coral-600 mt-auto;
+    @apply inline-flex items-center gap-1 text-sm font-medium mt-auto;
+    color: var(--brand-gold);
   }
 
   /* ── Section headings ──────────────────────────────────────────────────── */
   .h-display {
-    @apply text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-ink-800 leading-[1.05];
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    color: var(--text-primary);
+    line-height: 1.05;
+    font-size: clamp(2.5rem, 5vw, 4rem);
   }
   .h-section {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight text-ink-800 leading-tight;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    color: var(--text-primary);
+    line-height: 1.1;
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
   }
   .h-card {
-    @apply text-lg sm:text-xl font-semibold text-ink-800 leading-snug;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.35;
   }
   .sub-display {
-    @apply text-base sm:text-lg text-ink-500 leading-relaxed max-w-2xl;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    @apply text-base sm:text-lg leading-relaxed max-w-2xl;
+    color: var(--text-muted);
   }
 
-  /* ── Step indicators (numbered how-it-works) ──────────────────────────── */
+  /* ── Step indicators (numbered circles) ──────────────────────────────── */
   .step-num {
-    @apply w-10 h-10 rounded-full bg-ink-700 text-cream
-           flex items-center justify-center font-bold text-sm
-           flex-shrink-0;
+    @apply w-10 h-10 rounded-full flex items-center justify-center text-sm flex-shrink-0;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 700;
+    background: var(--brand-midnight);
+    color: var(--text-inverse);
   }
 
-  /* ── Info boxes for rich content (warn/info/success/law) ──────────────── */
+  /* ── Info boxes (law / warn / info / success) ──────────────────────────── */
   .box-info {
-    @apply rounded-2xl p-5 bg-ink-50 border border-ink-100 text-ink-800;
-    border-inline-start: 3px solid theme('colors.ink.700');
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-base);
+    border: 1px solid var(--border-default);
+    border-inline-start: 3px solid var(--brand-gold);
+    border-radius: var(--radius-card);
+    color: var(--text-primary);
   }
   .box-warn {
-    @apply rounded-2xl p-5 bg-coral-50 border border-coral-100 text-ink-800;
-    border-inline-start: 3px solid theme('colors.coral.500');
+    padding: 1.25rem 1.5rem;
+    background: #FEF2F2;
+    border: 1px solid #FECACA;
+    border-inline-start: 3px solid #DC2626;
+    border-radius: var(--radius-card);
+    color: var(--text-primary);
   }
   .box-success {
-    @apply rounded-2xl p-5 bg-sand-50 border border-sand-200 text-ink-800;
-    border-inline-start: 3px solid theme('colors.ink.600');
+    padding: 1.25rem 1.5rem;
+    background: #F0FDF4;
+    border: 1px solid #BBF7D0;
+    border-inline-start: 3px solid var(--success);
+    border-radius: var(--radius-card);
+    color: var(--text-primary);
   }
   .box-law {
-    @apply rounded-2xl p-5 bg-cream-300 border border-sand-200 text-ink-800 text-sm;
-    border-inline-start: 3px solid theme('colors.ink.800');
+    padding: 1.25rem 1.5rem;
+    background: var(--bg-base);
+    border: 1px solid var(--border-default);
+    border-inline-start: 3px solid var(--brand-gold);
+    border-radius: var(--radius-card);
+    color: var(--text-primary);
+    font-size: 0.875rem;
+  }
+  .box-law-label {
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--brand-gold);
+    margin-bottom: 0.5rem;
   }
 
-  /* ── Divider line ──────────────────────────────────────────────────────── */
+  /* ── Divider ───────────────────────────────────────────────────────────── */
   .hr-soft {
-    @apply border-t border-ink-100;
+    border-top: 1px solid var(--border-default);
   }
 
-  /* ── Prose: article body copy (blog, service pages) ────────────────────── */
+  /* ── Prose: service page body copy ─────────────────────────────────────── */
   .prose-poa {
-    @apply text-ink-700 leading-relaxed;
+    @apply leading-relaxed;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    color: var(--text-secondary);
   }
   .prose-poa h2 {
-    @apply h-section mt-10 mb-4;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    @apply text-2xl sm:text-3xl font-normal mt-10 mb-4;
+    color: var(--text-primary);
+    line-height: 1.2;
   }
   .prose-poa h3 {
-    @apply h-card mt-8 mb-3;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    @apply text-lg font-semibold mt-8 mb-3;
+    color: var(--text-primary);
   }
-  .prose-poa p {
-    @apply mb-4 text-base leading-[1.75];
+  .prose-poa p  { @apply mb-4 text-base leading-[1.75]; }
+  .prose-poa ul { @apply mb-4 ps-5 list-disc space-y-2; }
+  .prose-poa ol { @apply mb-4 ps-5 list-decimal space-y-2; }
+  .prose-poa a  {
+    @apply underline underline-offset-2 transition-colors;
+    color: var(--brand-midnight);
   }
-  .prose-poa ul {
-    @apply mb-4 ps-5 list-disc space-y-2;
-  }
-  .prose-poa ol {
-    @apply mb-4 ps-5 list-decimal space-y-2;
-  }
-  .prose-poa a {
-    @apply text-coral-600 underline underline-offset-2 hover:text-coral-700;
-  }
-  .prose-poa strong {
-    @apply font-semibold text-ink-800;
-  }
+  .prose-poa a:hover { color: var(--brand-gold); }
+  .prose-poa strong  { @apply font-semibold; color: var(--text-primary); }
 
-  /* ── Arabic prose tweaks (line-height needs more room) ─────────────────── */
-  [dir="rtl"] .prose-poa {
-    @apply font-arab;
-  }
-  [dir="rtl"] .prose-poa p {
-    line-height: 2;
-  }
-  [dir="rtl"] .prose-poa h2 {
-    line-height: 1.4;
-  }
+  [dir="rtl"] .prose-poa { @apply font-arab; line-height: var(--ar-line-height); }
+  [dir="rtl"] .prose-poa p  { line-height: 2; }
+  [dir="rtl"] .prose-poa h2 { line-height: 1.4; }
 
-  /* ── FAQ accordion ─────────────────────────────────────────────────────── */
+  /* ── FAQ accordion — editorial borders, no card backgrounds ────────────── */
   .faq-item {
-    @apply bg-white rounded-tile border border-ink-100 overflow-hidden;
+    border-top: 1px solid var(--border-default);
+  }
+  .faq-item:last-child {
+    border-bottom: 1px solid var(--border-default);
   }
   .faq-question {
-    @apply w-full flex items-center justify-between gap-4 px-5 py-4
-           text-start font-medium text-ink-800 text-sm sm:text-base
-           hover:bg-cream-300 transition-colors;
+    @apply w-full flex items-center justify-between gap-4 py-5 text-start;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-primary);
+    transition: color 0.18s ease;
+    background: transparent;
   }
+  .faq-question:hover { color: var(--brand-gold); }
   .faq-answer {
-    @apply px-5 pb-4 text-ink-600 text-sm leading-relaxed;
+    @apply pb-5;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--text-secondary);
   }
 
-  /* CSS-grid based accordion animation — used by editorial FAQSection.
-     Collapsed by default; expands smoothly when the .open modifier is set. */
   .faq-body {
     display: grid;
     grid-template-rows: 0fr;
-    transition: grid-template-rows 0.28s ease;
+    transition: grid-template-rows 0.3s ease;
   }
-  .faq-body > div {
-    overflow: hidden;
-  }
-  .faq-body.open {
-    grid-template-rows: 1fr;
-  }
+  .faq-body > div { overflow: hidden; }
+  .faq-body.open  { grid-template-rows: 1fr; }
 
   /* ── Navbar ─────────────────────────────────────────────────────────────── */
   .nav-link {
-    @apply text-sm font-medium text-ink-700 hover:text-coral-600 transition-colors;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    @apply text-sm font-medium transition-colors;
+    color: var(--text-secondary);
   }
+  .nav-link:hover { color: var(--brand-gold); }
 
   /* ── Footer ─────────────────────────────────────────────────────────────── */
   .footer-heading {
-    @apply text-xs uppercase tracking-wider text-cream-400 font-semibold mb-3;
+    @apply text-xs uppercase tracking-wider font-semibold mb-3;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    color: #9CA3AF;
   }
   .footer-link {
-    @apply text-sm text-cream-200 hover:text-white transition-colors;
+    @apply text-sm transition-colors;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    color: #374151;
   }
+  .footer-link:hover { color: #C9A84C; }
 
   /* ── WhatsApp floating button ──────────────────────────────────────────── */
   .wa-float {
     @apply fixed bottom-5 end-5 z-50
            w-14 h-14 rounded-full bg-[#25D366] text-white
-           flex items-center justify-center
-           shadow-tile hover:scale-105 transition-transform;
+           flex items-center justify-center hover:scale-105;
+    box-shadow: 0 4px 24px rgba(15, 33, 55, 0.08);
+    transition: var(--transition-base);
   }
 
-  /* ═══════════════════════════════════════════════════════════════════════
-     EDITORIAL SERIF SYSTEM (Concept 1)
-     Used on homepage hero + section headings.
-     EN uses Instrument Serif · AR uses Amiri for equivalent editorial feel.
-     ═══════════════════════════════════════════════════════════════════════ */
+  /* ══════════════════════════════════════════════════════════════════════════
+     EDITORIAL SERIF SYSTEM
+     Cormorant Garamond (EN) · Amiri (AR)
+     ══════════════════════════════════════════════════════════════════════════ */
 
-  /* Serif display headline — hero + section titles */
   .h-serif {
-    font-family: theme('fontFamily.serif');
-    @apply text-ink-700 font-normal tracking-tight leading-[1.05];
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.05;
+    color: var(--text-primary);
   }
-  [dir="rtl"] .h-serif {
-    font-family: theme('fontFamily.arab-serif');
-    @apply leading-[1.15];
-  }
+  [dir="rtl"] .h-serif { font-family: 'Amiri', serif; line-height: 1.15; }
 
-  /* Hero-scale serif */
   .h-serif-hero {
-    font-family: theme('fontFamily.serif');
-    @apply text-ink-700 font-normal tracking-tight leading-[1.05]
-           text-5xl sm:text-6xl lg:text-7xl;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    line-height: 1.05;
+    color: var(--text-primary);
+    font-size: clamp(2.5rem, 5vw, 4rem);
   }
   [dir="rtl"] .h-serif-hero {
-    font-family: theme('fontFamily.arab-serif');
-    @apply leading-[1.15] text-4xl sm:text-5xl lg:text-6xl;
+    font-family: 'Amiri', serif;
+    line-height: 1.15;
+    font-size: clamp(2rem, 4.5vw, 3.5rem);
   }
 
-  /* Section-scale serif */
   .h-serif-section {
-    font-family: theme('fontFamily.serif');
-    @apply text-ink-700 font-normal tracking-tight leading-[1.1]
-           text-3xl sm:text-4xl lg:text-5xl;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 400;
+    line-height: 1.1;
+    color: var(--text-primary);
+    font-size: clamp(1.5rem, 3vw, 2.25rem);
   }
   [dir="rtl"] .h-serif-section {
-    font-family: theme('fontFamily.arab-serif');
-    @apply leading-[1.2] text-2xl sm:text-3xl lg:text-4xl;
+    font-family: 'Amiri', serif;
+    line-height: 1.2;
+    font-size: clamp(1.25rem, 2.75vw, 2rem);
   }
 
-  /* Italic accent — for emphasized phrase in hero */
+  /* Gold italic accent — replaces coral on hero */
   .h-serif-em {
-    @apply italic text-coral-600;
+    color: var(--brand-gold);
+    font-style: italic;
+    font-weight: 600;
   }
 
-  /* Pre-title kicker — small coral caps above the headline */
+  /* Pre-title kicker — gold uppercase */
   .kicker {
-    @apply inline-block text-xs font-medium text-coral-600 tracking-[0.14em] uppercase mb-5;
+    display: inline-block;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--brand-gold);
+    margin-bottom: 1.25rem;
   }
-  [dir="rtl"] .kicker {
-    letter-spacing: 0.05em;
-    text-transform: none;
-  }
+  [dir="rtl"] .kicker { letter-spacing: 0.04em; text-transform: none; }
 
-  /* Editorial section kicker with em-dash prefix */
-  .kicker-dash::before {
-    content: "— ";
-    opacity: 0.7;
-  }
-  [dir="rtl"] .kicker-dash::before {
-    content: "— ";
-  }
+  .kicker-dash::before { content: "— "; opacity: 0.7; }
 
-  /* Large serif numeral for step indicators (01. 02. 03.) */
+  /* Large serif numerals for step indicators — light gold */
   .step-serif {
-    font-family: theme('fontFamily.serif');
-    @apply text-5xl sm:text-6xl text-coral-600 font-normal leading-none;
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-weight: 300;
+    line-height: 1;
+    color: var(--brand-gold-light);
+    font-size: clamp(3rem, 5vw, 5rem);
   }
-  [dir="rtl"] .step-serif {
-    font-family: theme('fontFamily.arab-serif');
-  }
+  [dir="rtl"] .step-serif { font-family: 'Amiri', serif; }
 
-  /* Thin divider between steps */
+  /* Connector between steps */
   .step-divider {
-    @apply hidden md:block w-px bg-ink-100;
+    @apply hidden md:block w-px;
+    background: var(--border-default);
   }
 
-  /* Editorial FAQ row — borders instead of bubbles */
+  /* ── Editorial FAQ row (borders only, no box backgrounds) ─────────────── */
   .faq-row {
     @apply w-full flex items-center justify-between gap-4 py-5
-           border-t border-ink-100 last:border-b
-           text-start font-medium text-ink-700 text-sm sm:text-base
-           hover:text-coral-600 transition-colors;
+           border-t last:border-b text-start font-medium text-sm sm:text-base;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-weight: 500;
+    border-color: var(--border-default);
+    color: var(--text-primary);
+    transition: color 0.18s ease;
   }
-  .faq-row[open] {
-    @apply text-coral-600;
-  }
+  .faq-row:hover { color: var(--brand-gold); }
 
-  /* Support tile — more editorial than the old card */
-  .support-tile {
-    @apply rounded-tile p-7 sm:p-8 flex flex-col gap-3
-           transition-all duration-200;
-  }
-  .support-tile-dark {
-    @apply rounded-tile p-7 sm:p-8 flex flex-col gap-3
-           bg-ink-700 text-cream transition-all duration-200;
+  /* ── Support tiles ─────────────────────────────────────────────────────── */
+  .support-tile       { @apply rounded-[12px] p-7 sm:p-8 flex flex-col gap-3 transition-all duration-200; }
+  .support-tile-dark  {
+    @apply rounded-[12px] p-7 sm:p-8 flex flex-col gap-3 transition-all duration-200;
+    background: var(--brand-midnight);
+    color: var(--text-inverse);
   }
   .support-tile-light {
-    @apply rounded-tile p-7 sm:p-8 flex flex-col gap-3
-           bg-cream-300 text-ink-700 transition-all duration-200;
+    @apply rounded-[12px] p-7 sm:p-8 flex flex-col gap-3 transition-all duration-200;
+    background: var(--bg-subtle);
+    color: var(--text-primary);
   }
 
-  /* Service tile — editorial variant (used on new homepage) */
+  /* ── Service tile — new white card with gold hover ────────────────────── */
   .tile-editorial {
-    @apply bg-cream-300 rounded-tile p-6 flex flex-col gap-2
-           hover:bg-sand-100 hover:-translate-y-0.5
-           transition-all duration-200;
+    background: white;
+    border: 1px solid var(--border-default);
+    border-radius: var(--radius-card);
+    padding: 1.75rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: var(--transition-base);
+  }
+  .tile-editorial:hover {
+    border-color: var(--brand-gold);
+    box-shadow: 0 4px 24px rgba(15, 33, 55, 0.08);
+    transform: translateY(-2px);
   }
   .tile-editorial-title {
-    font-family: theme('fontFamily.serif');
-    @apply text-xl sm:text-2xl text-ink-700 font-normal leading-tight;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--text-primary);
+    line-height: 1.35;
   }
-  [dir="rtl"] .tile-editorial-title {
-    font-family: theme('fontFamily.arab-serif');
-  }
+  [dir="rtl"] .tile-editorial-title { font-family: 'IBM Plex Sans Arabic', sans-serif; }
   .tile-editorial-sub {
-    @apply text-xs font-medium text-coral-600 tracking-[0.1em] uppercase mt-1;
+    font-family: 'DM Sans', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--brand-gold);
+    margin-top: 0.125rem;
   }
-  [dir="rtl"] .tile-editorial-sub {
-    @apply tracking-[0.04em];
-    text-transform: none;
+  [dir="rtl"] .tile-editorial-sub { letter-spacing: 0.02em; text-transform: none; }
+
+  /* ── Trust logos strip ─────────────────────────────────────────────────── */
+  .trust-strip {
+    background: var(--bg-subtle);
+    padding: 1.5rem 0;
   }
+  .trust-logo {
+    height: 2rem;
+    width: auto;
+    object-fit: contain;
+    filter: grayscale(100%) opacity(0.45);
+    transition: var(--transition-base);
+  }
+  .trust-logo:hover { filter: grayscale(0%) opacity(1); }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   Utility layer — small, composable one-offs
+   Utility layer
    ───────────────────────────────────────────────────────────────────────────── */
 
 @layer utilities {
 
-  /* Logical margin helpers for bidi */
   .ms-auto { margin-inline-start: auto; }
   .me-auto { margin-inline-end: auto; }
 
-  /* Soft cream section background (alternating sections) */
-  .bg-warm {
-    background-color: theme('colors.cream.DEFAULT');
-  }
-  .bg-soft-sand {
-    background-color: theme('colors.cream.300');
-  }
+  .bg-warm      { background-color: var(--bg-base); }
+  .bg-soft-sand { background-color: var(--bg-subtle); }
 
-  /* Subtle grid background for hero decoration (optional) */
   .bg-dots-soft {
-    background-image: radial-gradient(theme('colors.sand.200') 1px, transparent 1px);
+    background-image: radial-gradient(var(--border-default) 1px, transparent 1px);
     background-size: 24px 24px;
   }
 
-  /* Editorial hero gradient — cream at top, warm sand at bottom */
-  .bg-hero-warm {
-    background: linear-gradient(
-      to bottom,
-      theme('colors.cream.DEFAULT') 0%,
-      theme('colors.cream.300') 100%
+  /* Hero — flat warm base (gradient removed per spec) */
+  .bg-hero-warm { background-color: var(--bg-base); }
+
+  /* Subtle diagonal texture for dark CTA sections */
+  .bg-texture-dark {
+    background-image: repeating-linear-gradient(
+      45deg, transparent, transparent 40px,
+      rgba(255,255,255,0.015) 40px, rgba(255,255,255,0.015) 41px
     );
+  }
+
+  /* Page entry animation */
+  .fade-in { animation: fadeUp 0.4s ease forwards; }
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
   }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Anti-copy / Anti-scrape protection
-   These are deterrents — they discourage casual content theft. A determined
-   attacker can still get the source via curl or view-source: prefix; the real
-   protection is the Edge middleware (rate limit, bot filter, honeypot).
    ───────────────────────────────────────────────────────────────────────────── */
 
 @layer base {
-  /* Default: nothing is selectable except elements explicitly marked .selectable */
   body {
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -424,7 +625,6 @@
     user-select: none;
   }
 
-  /* Form fields stay interactive — typing requires text editing */
   input, textarea, select {
     -webkit-user-select: text;
     -moz-user-select: text;
@@ -432,7 +632,6 @@
     user-select: text;
   }
 
-  /* Things users genuinely need to copy (phone, email, address, WhatsApp #) */
   .selectable,
   a[href^="tel:"],
   a[href^="mailto:"],
@@ -445,7 +644,6 @@
     user-select: text;
   }
 
-  /* Block image dragging (prevents drag-to-save and drag-to-tab) */
   img, svg, picture, video {
     -webkit-user-drag: none;
     -khtml-user-drag: none;
@@ -455,22 +653,14 @@
     pointer-events: auto;
   }
 
-  /* Tap-highlight off on touch devices (cleaner look + harder to inspect) */
-  * {
-    -webkit-tap-highlight-color: transparent;
-  }
+  * { -webkit-tap-highlight-color: transparent; }
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
    Print protection
-   Blanks the main content when the user tries Ctrl+P / Save as PDF.
-   Header/footer/branding stay so the print isn't completely blank — but
-   the actual article body is replaced with a notice.
    ───────────────────────────────────────────────────────────────────────────── */
 @media print {
-  body * {
-    visibility: hidden !important;
-  }
+  body * { visibility: hidden !important; }
   body::before {
     content: "© POA in 30 — Content protected. Visit https://www.poain30.ae to view.";
     visibility: visible !important;
@@ -481,16 +671,15 @@
     text-align: center !important;
     font-family: serif !important;
     font-size: 18pt !important;
-    color: #1E3A52 !important;
+    color: #0F2137 !important;
     padding: 2rem !important;
   }
-  /* Hide all navigation/footer/floating elements during print */
   header, footer, nav, aside, [aria-label="Floating WhatsApp"], button {
     display: none !important;
   }
 }
 
-/* Honeypot link — visually hidden but in the DOM. Crawlers follow it; humans don't see it. */
+/* Honeypot link — visually hidden, irresistible to crawlers */
 .honeypot-trap {
   position: absolute !important;
   left: -10000px !important;

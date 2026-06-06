@@ -230,7 +230,6 @@ const BREADCRUMB_LABELS: Record<string, Record<Lang, string>> = {
   '/poa-cancellation': { en: 'POA Cancellation', ar: 'إلغاء الوكالة' },
   '/legal-notice': { en: 'Legal Notice', ar: 'الإنذارات العدلية' },
   '/e-notary': { en: 'E-Notary', ar: 'الكاتب العدل الإلكتروني' },
-  '/poa-cancellation': { en: 'POA Cancellation', ar: 'إلغاء الوكالة' },
 }
 
 function breadcrumbLabel(segment: string, lang: Lang): string {

@@ -170,7 +170,7 @@ export default function Navbar({ lang }: Props) {
   const waHref = `https://wa.me/${site.phone.replace(/\D/g, '')}`
 
   return (
-    <header className="sticky top-0 z-50 bg-cream/95 backdrop-blur border-b border-ink-100">
+    <header className="sticky top-0 z-50 backdrop-blur border-b" style={{ backgroundColor: 'rgba(249,247,244,0.97)', borderColor: 'var(--border-default)' }}>
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="flex h-18 py-3 items-center justify-between gap-4">
 
@@ -209,7 +209,7 @@ export default function Navbar({ lang }: Props) {
                         : 'text-ink-700 hover:text-coral-600'
                     }`}
                     style={{
-                      fontFamily: lang === 'ar' ? 'Amiri, serif' : 'Instrument Serif, serif',
+                      fontFamily: lang === 'ar' ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif',
                       fontStyle: isActive ? 'italic' : 'normal',
                       fontSize: '15px',
                       letterSpacing: '0.01em' }}
@@ -227,7 +227,7 @@ export default function Navbar({ lang }: Props) {
                         onMouseEnter={() => openDropdown(item.key)}
                       />
                       <div
-                        className="absolute top-full mt-2 bg-cream rounded-2xl shadow-tile border border-ink-100/80 z-50 p-6"
+                        className="absolute top-full mt-2 rounded-xl shadow-tile z-50 p-6"
                         style={{
                           width: item.cols.length >= 3
                             ? 'min(820px, calc(100vw - 2rem))'
@@ -236,6 +236,8 @@ export default function Navbar({ lang }: Props) {
                               : 'min(280px, calc(100vw - 2rem))',
                           left: '50%',
                           transform: 'translateX(-50%)',
+                          backgroundColor: '#FFFFFF',
+                          border: '1px solid #E5E0D8',
                         }}
                         onMouseEnter={() => openDropdown(item.key)}
                         onMouseLeave={scheduleClose}
@@ -256,7 +258,7 @@ export default function Navbar({ lang }: Props) {
                                     href={sub.href}
                                     className="flex items-baseline gap-2 px-2 py-1.5 text-ink-700 hover:text-coral-600 transition-colors"
                                     style={{
-                                      fontFamily: lang === 'ar' ? 'Amiri, serif' : 'Instrument Serif, serif',
+                                      fontFamily: lang === 'ar' ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif',
                                       fontSize: '15px' }}
                                     onClick={() => setActiveKey(null)}
                                   >
@@ -321,7 +323,7 @@ export default function Navbar({ lang }: Props) {
 
         {/* ── Mobile menu ── */}
         {mobileOpen && (
-          <div className="lg:hidden border-t border-ink-100 py-3 max-h-[75vh] overflow-y-auto">
+          <div className="lg:hidden border-t border-ink-100 py-3 max-h-[75vh] overflow-y-auto" style={{ backgroundColor: '#F9F7F4' }}>
             {/* Language row */}
             <div className="flex items-center gap-2 px-3 pb-3 mb-2 border-b border-ink-100">
               {languages.map((l, i) => (
@@ -359,7 +361,7 @@ export default function Navbar({ lang }: Props) {
                   </span>
                 </button>
                 {mobileExpanded === item.key && (
-                  <div className="bg-cream-300 rounded-xl mx-3 mb-2 p-3 space-y-3">
+                  <div className="rounded-xl mx-3 mb-2 p-3 space-y-3" style={{ backgroundColor: 'var(--bg-subtle)' }}>
                     {item.cols.map((col, ci) => (
                       <div key={ci}>
                         <p className="text-[10px] font-bold uppercase tracking-[0.12em] text-ink-400 px-2 mb-1.5">

@@ -233,7 +233,7 @@ export default async function HomePage({ params }: Props) {
   const { lang } = await params
   const faqItems = getPageFaq('/')
   const isRTL = lang === 'ar'
-  const serifFontStack = isRTL ? 'Amiri, serif' : 'Instrument Serif, serif'
+  const serifFontStack = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
 
   return (
     <>
@@ -248,10 +248,10 @@ export default async function HomePage({ params }: Props) {
 
       {/* ══════════════════════════════════════════════════════════════════
           HERO — Single column, editorial serif, left-aligned
-          No right column. No trust row underneath. Just the idea itself.
+          Typography-first. No imagery. Gold kicker. Midnight CTA.
           ══════════════════════════════════════════════════════════════════ */}
       <section className="bg-hero-warm">
-        <div className="wrap py-20 sm:py-28 lg:py-32">
+        <div className="wrap py-20 sm:py-28 lg:py-36">
           <div className="max-w-3xl">
             <span className="kicker">{t(S.hero_kicker, lang)}</span>
 
@@ -260,7 +260,7 @@ export default async function HomePage({ params }: Props) {
               <span className="block h-serif-em">{t(S.h1_em, lang)}</span>
             </h1>
 
-            <p className="text-base sm:text-lg text-ink-600 leading-relaxed max-w-xl mb-9">
+            <p className="text-base sm:text-lg leading-relaxed max-w-xl mb-10" style={{ color: 'var(--text-muted)' }}>
               {t(S.sub, lang)}
             </p>
 
@@ -271,10 +271,14 @@ export default async function HomePage({ params }: Props) {
                 rel="noopener noreferrer"
                 className="btn-primary"
               >
+                {/* WhatsApp icon */}
+                <svg className="w-4.5 h-4.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+                </svg>
                 {t(S.cta_primary, lang)}
               </a>
               <Link href={`/${lang}#how-it-works`} className="btn-outline">
-                {t(S.cta_secondary, lang)}
+                {t(S.cta_secondary, lang)} ↓
               </Link>
             </div>
           </div>
@@ -282,14 +286,47 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          SERVICE GRID — editorial 6-tile, serif names + coral subs, no icons
+          TRUST STRIP — "Accepted by" authority logos
           ══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-cream py-16 sm:py-24">
+      <div className="trust-strip border-y" style={{ borderColor: 'var(--border-default)' }}>
         <div className="wrap">
-          <div className="text-center mb-12">
+          <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
+            <span
+              className="text-xs font-medium shrink-0"
+              style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}
+            >
+              {lang === 'ar' ? 'مقبولة لدى:' : 'Accepted by:'}
+            </span>
+            <div className="flex flex-wrap items-center gap-x-7 gap-y-3">
+              {['Dubai Courts', 'DLD', 'RTA', 'MOFA', 'MOHRE', 'MOJ', 'RDC'].map((name) => (
+                <span
+                  key={name}
+                  className="text-xs font-semibold tracking-wide transition-colors"
+                  style={{
+                    fontFamily: 'DM Sans, system-ui, sans-serif',
+                    color: 'var(--text-muted)',
+                    opacity: 0.6,
+                    letterSpacing: '0.08em',
+                    textTransform: 'uppercase',
+                  }}
+                >
+                  {name}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ══════════════════════════════════════════════════════════════════
+          SERVICE GRID — white cards, gold hover border, DM Sans titles
+          ══════════════════════════════════════════════════════════════════ */}
+      <section style={{ backgroundColor: 'var(--bg-base)' }} className="py-20 sm:py-28">
+        <div className="wrap">
+          <div className="text-center mb-14">
             <span className="kicker kicker-dash">{t(S.services_kicker, lang)}</span>
             <h2 className="h-serif-section mb-4">{t(S.services_heading, lang)}</h2>
-            <p className="text-base sm:text-lg text-ink-500 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: 'var(--text-muted)' }}>
               {t(S.services_sub, lang)}
             </p>
           </div>
@@ -303,6 +340,7 @@ export default async function HomePage({ params }: Props) {
               >
                 <h3 className="tile-editorial-title">{t(tile.title, lang)}</h3>
                 <div className="tile-editorial-sub">{t(tile.sub, lang)}</div>
+                <span className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: 'var(--brand-gold)' }}>→</span>
               </Link>
             ))}
           </div>
@@ -310,35 +348,36 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          HOW IT WORKS — 3 steps with large serif numerals (01. 02. 03.)
+          HOW IT WORKS — 3 steps, large light-gold numerals (01 · 02 · 03)
           ══════════════════════════════════════════════════════════════════ */}
-      <section id="how-it-works" className="bg-soft-sand py-16 sm:py-24">
+      <section id="how-it-works" className="bg-soft-sand py-20 sm:py-28">
         <div className="wrap">
-          <div className="text-center mb-12">
+          <div className="text-center mb-14">
             <span className="kicker kicker-dash">{t(S.process_kicker, lang)}</span>
             <h2 className="h-serif-section">{t(S.steps_heading, lang)}</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-10 md:gap-6 max-w-5xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0 max-w-5xl mx-auto">
             {STEPS.map((step, i) => (
               <div
                 key={i}
-                className={`flex flex-col items-start gap-3 ${
+                className={`flex flex-col items-start gap-4 ${
                   i > 0
                     ? isRTL
-                      ? 'md:pr-6 md:border-r md:border-ink-100'
-                      : 'md:pl-6 md:border-l md:border-ink-100'
+                      ? 'md:pr-8 md:border-r'
+                      : 'md:pl-8 md:border-l'
                     : ''
                 }`}
+                style={i > 0 ? { borderColor: 'var(--border-default)' } : {}}
               >
-                <div className="step-serif">{String(i + 1).padStart(2, '0')}.</div>
+                <div className="step-serif">{String(i + 1).padStart(2, '0')}</div>
                 <h3
-                  className="text-xl sm:text-2xl font-normal text-ink-700 mt-2 leading-tight"
-                  style={{ fontFamily: serifFontStack }}
+                  className="text-xl sm:text-2xl font-semibold leading-tight"
+                  style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-primary)' }}
                 >
                   {t(step.title, lang)}
                 </h3>
-                <p className="text-sm sm:text-base text-ink-500 leading-relaxed">
+                <p className="text-sm sm:text-[15px] leading-relaxed" style={{ color: 'var(--text-muted)' }}>
                   {t(step.body, lang)}
                 </p>
               </div>
@@ -348,13 +387,13 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          SUPPORT OPTIONS — 2-card layout, editorial styling
+          SUPPORT OPTIONS — 2-card layout
           ══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-cream py-16 sm:py-24">
+      <section style={{ backgroundColor: 'var(--bg-base)' }} className="py-20 sm:py-28">
         <div className="wrap">
-          <div className="text-center mb-12">
+          <div className="text-center mb-14">
             <h2 className="h-serif-section mb-4">{t(S.support_heading, lang)}</h2>
-            <p className="text-base sm:text-lg text-ink-500 leading-relaxed max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: 'var(--text-muted)' }}>
               {t(S.support_sub, lang)}
             </p>
           </div>
@@ -362,12 +401,12 @@ export default async function HomePage({ params }: Props) {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
             <div className="support-tile-light">
               <h3
-                className="text-xl sm:text-2xl font-normal text-ink-700 mb-2 leading-tight"
-                style={{ fontFamily: serifFontStack }}
+                className="text-xl sm:text-2xl font-semibold mb-2 leading-tight"
+                style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-primary)' }}
               >
                 {t(S.guided_title, lang)}
               </h3>
-              <p className="text-sm sm:text-base text-ink-600 leading-relaxed mb-5">
+              <p className="text-sm sm:text-[15px] leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
                 {t(S.guided_sub, lang)}
               </p>
               <a
@@ -383,17 +422,17 @@ export default async function HomePage({ params }: Props) {
 
             <div className="support-tile-dark">
               <h3
-                className="text-xl sm:text-2xl font-normal text-white mb-2 leading-tight"
-                style={{ fontFamily: serifFontStack }}
+                className="text-xl sm:text-2xl font-semibold mb-2 leading-tight"
+                style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-inverse)' }}
               >
                 {t(S.specialist_title, lang)}
               </h3>
-              <p className="text-sm sm:text-base text-ink-100 leading-relaxed mb-5">
+              <p className="text-sm sm:text-[15px] leading-relaxed mb-6" style={{ color: '#CBD5E1' }}>
                 {t(S.specialist_sub, lang)}
               </p>
               <Link
                 href={`/${lang}/contact`}
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-pill bg-coral-500 hover:bg-coral-600 text-white text-sm font-medium transition-colors self-start"
+                className="btn-gold self-start"
               >
                 {t(S.specialist_cta, lang)}
               </Link>
@@ -403,12 +442,12 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          FAQ — editorial section, keeping existing FAQSection component
+          FAQ — editorial accordion, borders only (no card backgrounds)
           ══════════════════════════════════════════════════════════════════ */}
       {faqItems.length > 0 && (
-        <section className="bg-soft-sand py-16 sm:py-24">
+        <section className="bg-soft-sand py-20 sm:py-28">
           <div className="wrap max-w-3xl">
-            <div className="text-center mb-10">
+            <div className="text-center mb-12">
               <span className="kicker kicker-dash">{t(S.faq_kicker, lang)}</span>
               <h2 className="h-serif-section">{t(S.faq_heading, lang)}</h2>
             </div>
@@ -418,36 +457,57 @@ export default async function HomePage({ params }: Props) {
       )}
 
       {/* ══════════════════════════════════════════════════════════════════
-          FINAL CTA — dark navy, serif headline
+          FINAL CTA — midnight background, gold button, Cormorant headline
           ══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-ink-800 py-20 sm:py-24">
+      <section className="bg-texture-dark py-24 sm:py-32" style={{ backgroundColor: 'var(--brand-midnight)' }}>
         <div className="wrap text-center">
           <h2
-            className="text-3xl sm:text-4xl lg:text-5xl font-normal text-white mb-4 leading-tight"
-            style={{ fontFamily: serifFontStack }}
+            className="font-light leading-tight mb-5"
+            style={{
+              fontFamily: serifFontStack,
+              fontSize: 'clamp(2rem, 4vw, 3rem)',
+              color: 'var(--text-inverse)',
+              fontWeight: 300,
+            }}
           >
             {t(S.final_heading, lang)}
           </h2>
-          <p className="text-base sm:text-lg text-ink-200 max-w-xl mx-auto mb-9 leading-relaxed">
+          <p
+            className="max-w-xl mx-auto mb-10 leading-relaxed text-base sm:text-lg"
+            style={{ color: '#9CA3AF' }}
+          >
             {t(S.final_sub, lang)}
           </p>
-          <div className="flex flex-col sm:flex-row gap-3 items-center justify-center">
+          <div className="flex flex-col sm:flex-row gap-4 items-center justify-center mb-6">
             <a
               href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary"
-              aria-label={lang === 'ar' ? 'ابدأ عبر واتساب — ابدأ الآن مجاناً' : 'Start on WhatsApp — get started now'}
+              className="btn-gold"
+              aria-label={lang === 'ar' ? 'ابدأ عبر واتساب — ابدأ الآن' : 'Start on WhatsApp — get started now'}
             >
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+              </svg>
               {t(S.cta_primary, lang)}
             </a>
             <Link
               href={`/${lang}/contact`}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-pill border border-cream-400/40 text-cream-100 font-medium text-sm hover:bg-cream-50/10 transition-colors"
+              className="inline-flex items-center gap-2 font-medium text-[15px] transition-colors"
+              style={{
+                padding: '0.875rem 2rem',
+                border: '1.5px solid rgba(201,168,76,0.35)',
+                borderRadius: '6px',
+                color: '#D1D5DB',
+                fontFamily: 'DM Sans, system-ui, sans-serif',
+              }}
             >
               {t(S.specialist_cta, lang)}
             </Link>
           </div>
+          <p className="text-sm" style={{ color: '#6B7280', fontFamily: 'DM Sans, system-ui, sans-serif' }}>
+            {site.phone_display}
+          </p>
         </div>
       </section>
     </>
