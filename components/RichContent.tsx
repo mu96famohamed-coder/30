@@ -56,7 +56,7 @@ function HeadingBlock({ block, lang }: { block: Extract<RichBlock, {type:'headin
   return (
     <h2 className="text-2xl font-semibold mt-10 mb-4 pb-3 block"
       style={{
-        fontFamily: 'DM Sans, system-ui, sans-serif',
+        fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
         color: 'var(--text-primary)',
         borderBottom: '2px solid',
         borderImage: 'linear-gradient(90deg,#C9A84C 0%,rgba(201,168,76,.15) 60%,transparent 100%) 1',
@@ -83,8 +83,8 @@ function WarningBlock({ block, lang }: { block: Extract<RichBlock, {type:'warnin
       <div className={`flex gap-3 px-4 py-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
         <span className="shrink-0 mt-0.5" style={{color:'#DC2626'}}><AlertIcon /></span>
         <div className="min-w-0">
-          {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1.5" style={{color:'#991B1B', fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.title, lang)}</p>}
-          <p className="text-sm leading-relaxed" style={{color:'#7F1D1D', fontWeight:400, fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.text, lang)}</p>
+          {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1.5" style={{color:'#991B1B', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>}
+          <p className="text-sm leading-relaxed" style={{color:'#7F1D1D', fontWeight:400, fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.text, lang)}</p>
         </div>
       </div>
     </div>
@@ -104,8 +104,8 @@ function InfoBlock({ block, lang }: { block: Extract<RichBlock, {type:'info'}>, 
     >
       <span className="mt-0.5 shrink-0" style={{color:'var(--brand-gold)'}}><InfoIcon /></span>
       <div className="min-w-0">
-        {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1" style={{color:'var(--brand-gold)', fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.title, lang)}</p>}
-        <p className="text-sm leading-relaxed" style={{color:'var(--text-secondary)', fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.text, lang)}</p>
+        {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>}
+        <p className="text-sm leading-relaxed" style={{color:'var(--text-secondary)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.text, lang)}</p>
       </div>
     </div>
   )
@@ -132,14 +132,14 @@ function LawBlock({ block, lang }: { block: Extract<RichBlock, {type:'law'}>, la
       <div className="px-5 py-2.5 flex items-center gap-2"
         style={{background:'rgba(201,168,76,0.08)', borderBottom:'1px solid var(--border-default)'}}>
         <span style={{color:'var(--brand-gold)', flexShrink:0}}><LawIcon /></span>
-        <span className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'var(--brand-gold)', fontFamily:'DM Sans, system-ui, sans-serif'}}>{block.ref}</span>
+        <span className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{block.ref}</span>
       </div>
       <div className={`px-5 py-4 ${isRTL ? 'text-right' : ''}`}
         style={{
           borderInlineStart: isRTL ? 'none' : '3px solid var(--brand-gold)',
           borderInlineEnd: isRTL ? '3px solid var(--brand-gold)' : 'none',
         }}>
-        <p className="text-sm leading-[1.8]" style={{color:'var(--text-secondary)', fontStyle:'italic', fontWeight:400, fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.text, lang)}</p>
+        <p className="text-sm leading-[1.8]" style={{color:'var(--text-secondary)', fontStyle:'italic', fontWeight:400, fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.text, lang)}</p>
       </div>
     </div>
   )
@@ -156,7 +156,7 @@ function StepsBlock({ block, lang }: { block: Extract<RichBlock, {type:'steps'}>
             <div className={`absolute top-8 ${isRTL ? 'right-[19px]' : 'left-[19px]'} w-px h-[calc(100%-1.5rem)]`} style={{background:'rgba(201,168,76,0.25)'}} />
           )}
           <div className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center z-10" style={{background:'var(--brand-midnight)', border:'2px solid var(--brand-gold)'}}>
-            <span className="font-bold text-sm" style={{color:'var(--brand-gold)', fontFamily:'DM Sans, system-ui, sans-serif'}}>{i + 1}</span>
+            <span className="font-bold text-sm" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{i + 1}</span>
           </div>
           <div className={`pb-6 min-w-0 ${isRTL ? 'text-right' : ''}`}>
             <p className="font-semibold text-ink-900 text-sm mb-1">{t(item.title, lang)}</p>
@@ -176,7 +176,7 @@ function ChecklistBlock({ block, lang }: { block: Extract<RichBlock, {type:'chec
         <div className={`px-5 py-3 flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
           style={{background:'var(--brand-midnight)', borderBottom:'1px solid rgba(201,168,76,0.15)'}}>
           <div style={{width:3, height:14, background:'var(--brand-gold)', borderRadius:2, flexShrink:0}} />
-          <p className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'var(--brand-gold)', fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.title, lang)}</p>
+          <p className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>
         </div>
       )}
       <ul dir={isRTL ? 'rtl' : 'ltr'} style={{background:'var(--bg-base)'}}>
@@ -203,7 +203,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
       {/* Left column */}
       <div className="rounded-2xl border border-ink-200 overflow-hidden">
         <div className="bg-ink-900 px-5 py-3">
-          <p className="text-coral-400 text-xs font-bold uppercase tracking-wider">{t(block.left.title, lang)}</p>
+          <p className="text-gold-400 text-xs font-bold uppercase tracking-wider">{t(block.left.title, lang)}</p>
         </div>
         <ul className="divide-y divide-ink-100">
           {block.left.items.map((item, i) => (
@@ -217,7 +217,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
       {/* Right column */}
       <div className="rounded-2xl overflow-hidden" style={{border:'1px solid var(--border-default)'}}>
         <div className="px-5 py-3" style={{background:'var(--bg-subtle)'}}>
-          <p className="text-xs font-bold uppercase tracking-wider" style={{color:'var(--text-secondary)', fontFamily:'DM Sans, system-ui, sans-serif'}}>{t(block.right.title, lang)}</p>
+          <p className="text-xs font-bold uppercase tracking-wider" style={{color:'var(--text-secondary)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.right.title, lang)}</p>
         </div>
         <ul className="divide-y" style={{background:'white', borderColor:'var(--border-default)'}}>
           {block.right.items.map((item, i) => (
@@ -243,7 +243,7 @@ function TableBlock({ block, lang }: { block: Extract<RichBlock, {type:'table'}>
         <thead>
           <tr style={{background:'var(--brand-midnight)'}}>
             {block.headers.map((h, i) => (
-              <th key={i} className="text-left px-4 py-3 text-xs font-bold uppercase tracking-wider" style={{color:'var(--brand-gold)', fontFamily:'DM Sans, system-ui, sans-serif'}}>
+              <th key={i} className="text-left px-4 py-3 text-xs font-bold uppercase tracking-wider" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>
                 {t(h, lang)}
               </th>
             ))}
@@ -286,7 +286,7 @@ function StatsBlock({ block, lang }: { block: Extract<RichBlock, {type:'stats'}>
       {block.items.map((item, i) => (
         <div key={i} className="rounded-xl p-5 text-center"
           style={{background:'#f7f9ff',border:'1px solid #e8ecf5'}}>
-          <div className="font-bold mb-1" style={{fontSize:38, lineHeight:1, color:'var(--brand-gold)', fontFamily:'Cormorant Garamond, Georgia, serif', fontWeight:300}}>{item.value}</div>
+          <div className="font-bold mb-1" style={{fontSize:38, lineHeight:1, color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', sans-serif", fontWeight:800}}>{item.value}</div>
           <div className="text-ink-900 text-xs font-semibold mb-0.5">{t(item.label, lang)}</div>
           {item.sub && <div className="text-ink-400 text-xs font-light">{t(item.sub, lang)}</div>}
         </div>

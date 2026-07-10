@@ -4,6 +4,11 @@ import content from '@/data/content.json'
 
 const BASE = 'https://www.poain30.ae'
 
+/** Date of the last sitewide content update. Set manually when content
+ *  genuinely changes — NEVER new Date(): build-time dates reset lastModified
+ *  on every deploy and burn crawl budget (the documented E-Notary mistake). */
+const LAST_CONTENT_UPDATE = new Date('2026-07-07')
+
 // ─────────────────────────────────────────────────────────────────────────────
 // Path classification for SEO priority
 // Single source of truth: every key under `page_content` in data/content.json
@@ -91,11 +96,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const lang of LANGS) {
       entries.push({
         url: `${BASE}/${lang}${cleanPath}/`,
-        lastModified: new Date(),
+        lastModified: LAST_CONTENT_UPDATE,
         changeFrequency,
         priority,
         alternates: {
           languages: hreflangAlternates(cleanPath) } })
+    }
+  }
+
+  // 3. Blog posts — real per-article dates from blog_content.updated.
+  const posts = ((content as Record<string, unknown>).blog_content ?? []) as Array<{
+    slug: string
+    updated: string
+  }>
+  // Blog index (only once there is at least one post)
+  if (posts.length > 0) {
+    const newest = posts
+      .map((p) => new Date(p.updated))
+      .reduce((a, b) => (a > b ? a : b))
+    for (const lang of LANGS) {
+      entries.push({
+        url: `${BASE}/${lang}/blog/`,
+        lastModified: newest,
+        changeFrequency: 'weekly',
+        priority: 0.6,
+        alternates: { languages: hreflangAlternates('/blog') },
+      })
+    }
+  }
+  for (const post of posts) {
+    const cleanPath = `/blog/${post.slug}`
+    for (const lang of LANGS) {
+      entries.push({
+        url: `${BASE}/${lang}${cleanPath}/`,
+        lastModified: new Date(post.updated),
+        changeFrequency: 'monthly',
+        priority: 0.6,
+        alternates: { languages: hreflangAlternates(cleanPath) },
+      })
     }
   }
 

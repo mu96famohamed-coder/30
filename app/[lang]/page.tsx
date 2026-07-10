@@ -7,7 +7,7 @@ import { buildWebsiteSchema } from '@/lib/seo/schema-builder'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Homepage — POA in 30 (Editorial Serif · Concept 1)
-// Single-column hero with Instrument Serif headline + coral italic accent.
+// Single-column hero with Plus Jakarta Sans headline + gold accent.
 // No right-column graphic, no trust-logos row beneath the hero.
 // Below the fold: editorial 6-tile service grid, 3-step process with serif
 // numerals, 2 support cards, FAQ accordion, final dark CTA.
@@ -53,16 +53,38 @@ const S = {
     ar: 'وكالة رسمية · دبي',
   },
   h1_lead: {
-    en: 'Your power of attorney,',
-    ar: 'وكالتك الرسمية،',
+    en: 'Your power of attorney, drafted and notarized remotely —',
+    ar: 'إصدار وتوثيق وكالتك القانونية عن بُعد —',
   },
   h1_em: {
-    en: 'notarized in 30 minutes.',
-    ar: 'مصدّقة في 30 دقيقة.',
+    en: 'in 30 minutes.',
+    ar: 'في 30 دقيقة.',
   },
   sub: {
-    en: 'Drafted by legal experts. Notarized through Dubai Courts or the UAE Ministry of Justice via video call. No office visits.',
-    ar: 'صياغة بواسطة خبراء قانونيين. التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. بدون زيارات مكتبية.',
+    en: 'Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. Bilingual drafting, delivered to your email — no office visits.',
+    ar: 'يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. صياغة ثنائية اللغة وتسليم عبر البريد الإلكتروني — دون زيارات مكتبية.',
+  },
+  abroad: {
+    en: 'Available from anywhere in the world — travelling or living abroad',
+    ar: 'متاحة من أي مكان في العالم — مسافراً كنت أو مقيماً بالخارج',
+  },
+  trust_qr: {
+    en: 'Verifiable by QR code',
+    ar: 'قابلة للتحقق برمز QR',
+  },
+  dial_lbl: {
+    en: 'minutes — from your message to the notarized document',
+    ar: 'دقيقة — من رسالتك إلى الوثيقة الموثَّقة',
+  },
+  chip_wa_t: { en: 'WhatsApp · minute 0', ar: 'واتساب · الدقيقة 0' },
+  chip_wa_b: {
+    en: '“I need a property sale POA — I’m currently in London”',
+    ar: '«محتاج وكالة بيع عقار — أنا حالياً في لندن»',
+  },
+  chip_doc_t: { en: 'Notarized POA · minute 30', ar: 'وكالة موثَّقة · الدقيقة 30' },
+  chip_doc_b: {
+    en: 'Notary seal + QR verification code',
+    ar: 'ختم كاتب العدل + رمز تحقق QR',
   },
   cta_primary: {
     en: 'Start on WhatsApp',
@@ -95,6 +117,24 @@ const S = {
   steps_heading: {
     en: 'Three steps. Thirty minutes.',
     ar: 'ثلاث خطوات. ثلاثون دقيقة.',
+  },
+
+  // Warning block
+  warn_title: {
+    en: 'One important thing to know about UAE POAs',
+    ar: 'شيء واحد مهم تعرفه عن الوكالات الإماراتية',
+  },
+  warn_lead: {
+    en: 'A power of attorney is only as useful as it is specific. Vague drafting leads to rejected POAs — at the DLD, the RTA, the banks, and before the courts. Every POA we draft',
+    ar: 'الوكالة القانونية لا تكون مفيدة إلا بقدر ما تكون محددة. الصياغة المبهمة تُفضي لرفض الوكالات — في دائرة الأراضي وفي الهيئة وفي البنوك وأمام المحاكم. كل وكالة نصيغها',
+  },
+  warn_bold: {
+    en: 'names the exact authority, the specific asset, and the precise scope',
+    ar: 'تُسمِّي الصلاحية بالضبط والأصل المحدد والنطاق الدقيق',
+  },
+  warn_tail: {
+    en: ' — no more, no less. That specificity is what meets the acceptance requirements of the receiving authority.',
+    ar: ' — لا أكثر ولا أقل. هذا التحديد هو ما يستوفي اشتراطات القبول لدى الجهة المستلمة.',
   },
 
   // Support section
@@ -145,7 +185,7 @@ const S = {
 }
 
 // ─── service tiles (6) — editorial style ──────────────────────────────────
-// Each tile has a serif title and a coral small-caps subtitle. No icons.
+// Each tile has a serif title and a gold small-caps subtitle. No icons.
 // 6 pillars from docs/INTERNAL_LINKING_MAP.md.
 // These match the pillar map used by lib/seo/internal-linking.ts so the
 // homepage acts as the canonical entry-point for every service cluster.
@@ -205,8 +245,9 @@ const TILES: Array<{
 ]
 
 // ─── how-it-works steps ────────────────────────────────────────────────────
-const STEPS: Array<{ title: { en: string; ar: string }; body: { en: string; ar: string } }> = [
+const STEPS: Array<{ min: { en: string; ar: string }; title: { en: string; ar: string }; body: { en: string; ar: string } }> = [
   {
+    min: { en: 'Minute 0–5', ar: 'الدقيقة 0–5' },
     title: { en: 'You send the details', ar: 'ترسل لنا التفاصيل' },
     body: {
       en: 'A WhatsApp message describing what the POA should authorize and which authority will receive it.',
@@ -214,6 +255,7 @@ const STEPS: Array<{ title: { en: string; ar: string }; body: { en: string; ar: 
     },
   },
   {
+    min: { en: 'Minute 5–15', ar: 'الدقيقة 5–15' },
     title: { en: 'We draft in English and Arabic', ar: 'نصيغ بالإنجليزية والعربية' },
     body: {
       en: "Drafted to the receiving authority's requirements. You review and approve before notarization.",
@@ -221,6 +263,7 @@ const STEPS: Array<{ title: { en: string; ar: string }; body: { en: string; ar: 
     },
   },
   {
+    min: { en: 'Minute 15–30', ar: 'الدقيقة 15–30' },
     title: { en: 'Video call to notarize', ar: 'مكالمة فيديو للتوثيق' },
     body: {
       en: 'Dubai Courts or the UAE Ministry of Justice — both available by video call.',
@@ -233,7 +276,7 @@ export default async function HomePage({ params }: Props) {
   const { lang } = await params
   const faqItems = getPageFaq('/')
   const isRTL = lang === 'ar'
-  const serifFontStack = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
+  const headingFont = isRTL ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
 
   return (
     <>
@@ -247,39 +290,92 @@ export default async function HomePage({ params }: Props) {
       {faqItems.length > 0 && <FAQSchema items={faqItems} lang={lang} />}
 
       {/* ══════════════════════════════════════════════════════════════════
-          HERO — Single column, editorial serif, left-aligned
-          Typography-first. No imagery. Gold kicker. Midnight CTA.
+          HERO — Brand navy gradient, two columns: copy + 30-minute dial
+          (binding reference: mockup-v2-brand-navy-gold)
           ══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-hero-warm">
-        <div className="wrap py-20 sm:py-28 lg:py-36">
-          <div className="max-w-3xl">
-            <span className="kicker">{t(S.hero_kicker, lang)}</span>
+      <section className="hero-navy">
+        <div className="wrap py-20 sm:py-24 relative">
+          <div className="grid lg:grid-cols-[1.05fr_.95fr] gap-11 lg:gap-14 items-center">
+            {/* Copy column */}
+            <div>
+              <p className="hero-kick mb-4">{t(S.hero_kicker, lang)}</p>
 
-            <h1 className="h-serif-hero mb-7">
-              <span className="block mb-2">{t(S.h1_lead, lang)}</span>
-              <span className="block h-serif-em">{t(S.h1_em, lang)}</span>
-            </h1>
+              <h1 className="hero-h1 mb-5" style={{ maxWidth: '18ch' }}>
+                {t(S.h1_lead, lang)} <em>{t(S.h1_em, lang)}</em>
+              </h1>
 
-            <p className="text-base sm:text-lg leading-relaxed max-w-xl mb-10" style={{ color: 'var(--text-muted)' }}>
-              {t(S.sub, lang)}
-            </p>
+              {/* Sub — contains the canonical notarization phrase verbatim (rule 0.1-1) */}
+              <p className="hero-sub mb-4" style={{ maxWidth: '52ch' }}>
+                {t(S.sub, lang)}
+              </p>
 
-            <div className="flex flex-col sm:flex-row gap-3">
-              <a
-                href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary"
-              >
-                {/* WhatsApp icon */}
-                <svg className="w-4.5 h-4.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+              <span className="abroad-pill mb-8">
+                <svg viewBox="0 0 24 24" fill="none" strokeWidth="1.8" strokeLinecap="round" aria-hidden="true">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M3.5 12h17M12 3c2.7 2.6 4 5.6 4 9s-1.3 6.4-4 9c-2.7-2.6-4-5.6-4-9s1.3-6.4 4-9z" />
                 </svg>
-                {t(S.cta_primary, lang)}
-              </a>
-              <Link href={`/${lang}#how-it-works`} className="btn-outline">
-                {t(S.cta_secondary, lang)} ↓
-              </Link>
+                {t(S.abroad, lang)}
+              </span>
+
+              <div className="flex flex-col sm:flex-row gap-3.5 mb-8">
+                <a
+                  href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn-wa"
+                >
+                  <svg className="w-4.5 h-4.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
+                  </svg>
+                  {t(S.cta_primary, lang)}
+                </a>
+                <Link href={`/${lang}#how-it-works`} className="btn-ghost-inv">
+                  {t(S.cta_secondary, lang)}
+                </Link>
+              </div>
+
+              <div className="hero-trust">
+                {[
+                  lang === 'ar' ? 'محاكم دبي' : 'Dubai Courts',
+                  lang === 'ar' ? 'وزارة العدل الإماراتية' : 'UAE Ministry of Justice',
+                  t(S.trust_qr, lang),
+                ].map((label) => (
+                  <span key={label}>
+                    <svg className="w-4 h-4 shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                      <circle cx="10" cy="10" r="9" stroke="#C9A84C" strokeWidth="1.5" />
+                      <path d="M6 10.2l2.6 2.6L14 7.5" stroke="#C9A84C" strokeWidth="1.8" strokeLinecap="round" />
+                    </svg>
+                    {label}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            {/* Dial column — 30-minute conic-gradient dial + journey chips */}
+            <div className="dial-zone">
+              <div
+                className="dial"
+                role="img"
+                aria-label={lang === 'ar' ? '30 دقيقة من الطلب إلى التسليم' : '30 minutes from request to delivery'}
+              >
+                <div className="dial-core">
+                  <div>
+                    <div className="dial-big">30</div>
+                    <div className="dial-lbl">{t(S.dial_lbl, lang)}</div>
+                  </div>
+                </div>
+              </div>
+              <div className="chip-card chip-wa">
+                <b>{t(S.chip_wa_t, lang)}</b>
+                {t(S.chip_wa_b, lang)}
+              </div>
+              <div className="chip-card chip-doc">
+                <span className="chip-qr" aria-hidden="true" />
+                <span>
+                  <b>{t(S.chip_doc_t, lang)}</b>
+                  <small>{t(S.chip_doc_b, lang)}</small>
+                </span>
+              </div>
             </div>
           </div>
         </div>
@@ -293,7 +389,7 @@ export default async function HomePage({ params }: Props) {
           <div className="flex flex-wrap items-center gap-x-8 gap-y-4">
             <span
               className="text-xs font-medium shrink-0"
-              style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}
+              style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif", color: 'var(--text-muted)', letterSpacing: '0.06em', textTransform: 'uppercase' }}
             >
               {lang === 'ar' ? 'مقبولة لدى:' : 'Accepted by:'}
             </span>
@@ -303,7 +399,7 @@ export default async function HomePage({ params }: Props) {
                   key={name}
                   className="text-xs font-semibold tracking-wide transition-colors"
                   style={{
-                    fontFamily: 'DM Sans, system-ui, sans-serif',
+                    fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
                     color: 'var(--text-muted)',
                     opacity: 0.6,
                     letterSpacing: '0.08em',
@@ -319,7 +415,40 @@ export default async function HomePage({ params }: Props) {
       </div>
 
       {/* ══════════════════════════════════════════════════════════════════
-          SERVICE GRID — white cards, gold hover border, DM Sans titles
+          HOW IT WORKS — 3 steps, large light-gold numerals (01 · 02 · 03)
+          ══════════════════════════════════════════════════════════════════ */}
+      <section id="how-it-works" className="bg-soft-sand py-20 sm:py-28">
+        <div className="wrap">
+          <div className="text-center mb-14">
+            <span className="kicker kicker-dash">{t(S.process_kicker, lang)}</span>
+            <h2 className="h-serif-section">{t(S.steps_heading, lang)}</h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-5 max-w-5xl mx-auto">
+            {STEPS.map((step, i) => (
+              <div
+                key={i}
+                className="rounded-card border p-6"
+                style={{ backgroundColor: 'var(--bg-raised)', borderColor: 'var(--border-default)' }}
+              >
+                <span className="min-badge mb-3.5">{t(step.min, lang)}</span>
+                <h3
+                  className="text-[16.5px] font-bold leading-snug mb-2"
+                  style={{ fontFamily: headingFont, color: 'var(--navy-ink)' }}
+                >
+                  {t(step.title, lang)}
+                </h3>
+                <p className="text-sm leading-relaxed" style={{ color: 'var(--text-secondary)' }}>
+                  {t(step.body, lang)}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ══════════════════════════════════════════════════════════════════
+          SERVICE GRID — white cards, gold hover border, Jakarta titles
           ══════════════════════════════════════════════════════════════════ */}
       <section style={{ backgroundColor: 'var(--bg-base)' }} className="py-20 sm:py-28">
         <div className="wrap">
@@ -348,95 +477,17 @@ export default async function HomePage({ params }: Props) {
       </section>
 
       {/* ══════════════════════════════════════════════════════════════════
-          HOW IT WORKS — 3 steps, large light-gold numerals (01 · 02 · 03)
+          WARNING BLOCK — why POAs get rejected (mockup .warn)
           ══════════════════════════════════════════════════════════════════ */}
-      <section id="how-it-works" className="bg-soft-sand py-20 sm:py-28">
+      <section style={{ backgroundColor: 'var(--bg-base)' }} className="pb-20">
         <div className="wrap">
-          <div className="text-center mb-14">
-            <span className="kicker kicker-dash">{t(S.process_kicker, lang)}</span>
-            <h2 className="h-serif-section">{t(S.steps_heading, lang)}</h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-0 max-w-5xl mx-auto">
-            {STEPS.map((step, i) => (
-              <div
-                key={i}
-                className={`flex flex-col items-start gap-4 ${
-                  i > 0
-                    ? isRTL
-                      ? 'md:pr-8 md:border-r'
-                      : 'md:pl-8 md:border-l'
-                    : ''
-                }`}
-                style={i > 0 ? { borderColor: 'var(--border-default)' } : {}}
-              >
-                <div className="step-serif">{String(i + 1).padStart(2, '0')}</div>
-                <h3
-                  className="text-xl sm:text-2xl font-semibold leading-tight"
-                  style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-primary)' }}
-                >
-                  {t(step.title, lang)}
-                </h3>
-                <p className="text-sm sm:text-[15px] leading-relaxed" style={{ color: 'var(--text-muted)' }}>
-                  {t(step.body, lang)}
-                </p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* ══════════════════════════════════════════════════════════════════
-          SUPPORT OPTIONS — 2-card layout
-          ══════════════════════════════════════════════════════════════════ */}
-      <section style={{ backgroundColor: 'var(--bg-base)' }} className="py-20 sm:py-28">
-        <div className="wrap">
-          <div className="text-center mb-14">
-            <h2 className="h-serif-section mb-4">{t(S.support_heading, lang)}</h2>
-            <p className="text-base sm:text-lg leading-relaxed max-w-2xl mx-auto" style={{ color: 'var(--text-muted)' }}>
-              {t(S.support_sub, lang)}
+          <div className="warn-block mx-auto">
+            <h3 className="mb-2.5">{t(S.warn_title, lang)}</h3>
+            <p>
+              {t(S.warn_lead, lang)}{' '}
+              <b>{t(S.warn_bold, lang)}</b>
+              {t(S.warn_tail, lang)}
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 max-w-4xl mx-auto">
-            <div className="support-tile-light">
-              <h3
-                className="text-xl sm:text-2xl font-semibold mb-2 leading-tight"
-                style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-primary)' }}
-              >
-                {t(S.guided_title, lang)}
-              </h3>
-              <p className="text-sm sm:text-[15px] leading-relaxed mb-6" style={{ color: 'var(--text-secondary)' }}>
-                {t(S.guided_sub, lang)}
-              </p>
-              <a
-                href={`https://wa.me/${site.phone.replace(/\D/g, '')}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="btn-primary self-start"
-                aria-label={lang === 'ar' ? 'ابدأ عبر واتساب — اسألنا الآن' : 'Start on WhatsApp — ask us now'}
-              >
-                {t(S.cta_primary, lang)}
-              </a>
-            </div>
-
-            <div className="support-tile-dark">
-              <h3
-                className="text-xl sm:text-2xl font-semibold mb-2 leading-tight"
-                style={{ fontFamily: 'DM Sans, system-ui, sans-serif', color: 'var(--text-inverse)' }}
-              >
-                {t(S.specialist_title, lang)}
-              </h3>
-              <p className="text-sm sm:text-[15px] leading-relaxed mb-6" style={{ color: '#CBD5E1' }}>
-                {t(S.specialist_sub, lang)}
-              </p>
-              <Link
-                href={`/${lang}/contact`}
-                className="btn-gold self-start"
-              >
-                {t(S.specialist_cta, lang)}
-              </Link>
-            </div>
           </div>
         </div>
       </section>
@@ -457,17 +508,17 @@ export default async function HomePage({ params }: Props) {
       )}
 
       {/* ══════════════════════════════════════════════════════════════════
-          FINAL CTA — midnight background, gold button, Cormorant headline
+          FINAL CTA — navy-ink background, gold accent, WA button
           ══════════════════════════════════════════════════════════════════ */}
-      <section className="bg-texture-dark py-24 sm:py-32" style={{ backgroundColor: 'var(--brand-midnight)' }}>
-        <div className="wrap text-center">
+      <section className="cta-navy py-20 sm:py-24">
+        <div className="wrap text-center relative">
           <h2
-            className="font-light leading-tight mb-5"
+            className="leading-tight mb-3"
             style={{
-              fontFamily: serifFontStack,
-              fontSize: 'clamp(2rem, 4vw, 3rem)',
-              color: 'var(--text-inverse)',
-              fontWeight: 300,
+              fontFamily: headingFont,
+              fontSize: 'clamp(24px, 3.4vw, 36px)',
+              color: '#fff',
+              fontWeight: 700,
             }}
           >
             {t(S.final_heading, lang)}
@@ -499,13 +550,13 @@ export default async function HomePage({ params }: Props) {
                 border: '1.5px solid rgba(201,168,76,0.35)',
                 borderRadius: '6px',
                 color: '#D1D5DB',
-                fontFamily: 'DM Sans, system-ui, sans-serif',
+                fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif",
               }}
             >
               {t(S.specialist_cta, lang)}
             </Link>
           </div>
-          <p className="text-sm" style={{ color: '#6B7280', fontFamily: 'DM Sans, system-ui, sans-serif' }}>
+          <p className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}>
             {site.phone_display}
           </p>
         </div>

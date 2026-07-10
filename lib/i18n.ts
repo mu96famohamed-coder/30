@@ -179,3 +179,33 @@ export const pricing = content.pricing as unknown as Record<
   string,
   Array<{ service: Record<string, string>; href: string }>
 >
+
+// ─────────────────────────────────────────────────────────────────────────────
+// Blog — blog_content in data/content.json (structure mirrors E-Notary Dubai)
+// ─────────────────────────────────────────────────────────────────────────────
+
+export interface BlogSection {
+  h2: Record<string, string>
+  paras: Array<Record<string, string>>
+  list?: { ordered?: boolean; items: Array<Record<string, string>> }
+}
+
+export interface BlogPost {
+  slug: string
+  title: Record<string, string>
+  meta: Record<string, string>
+  date: string      // first published — ISO yyyy-mm-dd
+  updated: string   // last content update — ISO yyyy-mm-dd (real date, never build time)
+  related: Array<{ href: string; label: Record<string, string> }>
+  sections: BlogSection[]
+  faq?: Array<{ q: Record<string, string>; a: Record<string, string> }>
+}
+
+export function getBlogPosts(): BlogPost[] {
+  const posts = (content as Record<string, unknown>).blog_content as BlogPost[] | undefined
+  return Array.isArray(posts) ? posts : []
+}
+
+export function getBlogPost(slug: string): BlogPost | null {
+  return getBlogPosts().find((p) => p.slug === slug) ?? null
+}

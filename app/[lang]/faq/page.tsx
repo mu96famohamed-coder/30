@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     title: titles[lang] || titles.en,
     description: ({
       en: 'Answers to everything about POA, attestation, eviction notices, and notarization in Dubai.',
-      ar: 'إجابات على الوكالات والتصديق وإشعارات الإخلاء والتوثيق في دبي.' } as Record<string,string>)[lang] || 'FAQ about notary support in Dubai.',
+      ar: 'إجابات عملية عن الوكالات الرسمية والإنذارات العدلية وإشعارات الإخلاء والتوثيق عن بُعد في دبي — الصلاحية والمتطلبات والإجراءات خطوة بخطوة.' } as Record<string,string>)[lang] || 'FAQ about notary support in Dubai.',
     alternates: { canonical: `https://www.poain30.ae/${lang}/faq/`,
       languages: {
         ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.poain30.ae/${l}/faq/`])),
@@ -38,7 +38,7 @@ const SECTIONS = [
 export default async function FAQPage({ params }: Props) {
   const { lang } = await params
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
+  const headingFont = isRTL ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
 
   return (
     <>
@@ -58,27 +58,40 @@ export default async function FAQPage({ params }: Props) {
       <section className="bg-cream pt-12 pb-10 lg:pt-20 lg:pb-12">
         <div className="mx-auto max-w-3xl px-4 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 mb-6">
-            <span className="block w-8 h-px bg-coral-500/60" />
-            <span className="text-[11px] tracking-[0.2em] uppercase text-coral-600 font-medium">
+            <span className="block w-8 h-px bg-gold-500/60" />
+            <span className="text-[11px] tracking-[0.2em] uppercase text-gold-600 font-medium">
               {isRTL ? 'الأسئلة الشائعة' : 'Asked often'}
             </span>
-            <span className="block w-8 h-px bg-coral-500/60" />
+            <span className="block w-8 h-px bg-gold-500/60" />
           </div>
           <h1 id="faq-heading"
               className="text-ink-900 leading-[1.05] tracking-tight font-normal"
-              style={{ fontFamily: serif, fontSize: 'clamp(32px, 5vw, 52px)', letterSpacing: '-0.015em' }}>
+              style={{ fontFamily: headingFont, fontSize: 'clamp(32px, 5vw, 52px)', letterSpacing: '-0.015em' }}>
             {t({ en: 'Questions,', ar: 'أسئلة،' }, lang)}
             <br/>
-            <em className="text-coral-600 not-italic" style={{ fontStyle: 'italic' }}>
+            <em className="text-gold-600 not-italic" style={{ fontStyle: 'italic' }}>
               {t({ en: 'answered plainly.', ar: 'بإجابات واضحة.' }, lang)}
             </em>
           </h1>
           <p className="text-ink-600 mt-6 mx-auto leading-relaxed"
-             style={{ fontFamily: serif, fontStyle: 'italic', fontSize: 'clamp(15px, 1.6vw, 18px)', maxWidth: '560px' }}>
+             style={{ fontFamily: headingFont, fontStyle: 'italic', fontSize: 'clamp(15px, 1.6vw, 18px)', maxWidth: '560px' }}>
             {t({
               en: 'Everything about Power of Attorney, attestation, eviction notices, and notarization in Dubai.',
               ar: 'كل شيء عن الوكالات الرسمية والتصديق وإشعارات الإخلاء والتوثيق في دبي.' }, lang)}
           </p>
+          {/* Notarization path — compliance rule 0.1-1, verbatim */}
+          <p className="mt-4 mx-auto flex items-start justify-center gap-2 text-sm text-ink-600" style={{ maxWidth: '620px' }}>
+            <svg className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="9" stroke="#C9A84C" strokeWidth="1.5" />
+              <path d="M6 10.2l2.6 2.6L14 7.5" stroke="#C9A84C" strokeWidth="1.8" strokeLinecap="round" />
+            </svg>
+            <span>
+              {lang === 'ar'
+                ? 'يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو.'
+                : 'Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.'}
+            </span>
+          </p>
+
         </div>
       </section>
 
@@ -90,7 +103,7 @@ export default async function FAQPage({ params }: Props) {
             if (!items.length) return null
             return (
               <div key={key}>
-                <p className="text-[11px] tracking-[0.18em] uppercase text-coral-600 font-medium mb-3">
+                <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-3">
                   — {t(label, lang)}
                 </p>
                 <FAQSection items={items} lang={lang} />

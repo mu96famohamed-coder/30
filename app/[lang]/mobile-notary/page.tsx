@@ -30,6 +30,7 @@ export default async function Page({ params }: Props) {
   return (
     <>
       <ServicePage
+        notarizationVariant="mobile"
         path={'/mobile-notary'}
         lang={lang}
         title={seo?.h1}

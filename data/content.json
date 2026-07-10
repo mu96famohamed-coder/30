@@ -53,8 +53,8 @@
   },
   "footer": {
     "tagline": {
-      "en": "Professional notary support services in Dubai, UAE",
-      "ar": "خدمات دعم التوثيق الاحترافية في دبي، الإمارات"
+      "en": "A facilitation service for the drafting and notarization of legal documents. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+      "ar": "خدمة تيسير لإصدار وتوثيق المستندات القانونية. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
     },
     "disclaimer": {
       "en": "Not a law firm — a professional support service.",
@@ -453,8 +453,8 @@
           "ar": "هل يجب أن يكون خطاب الإذن باللغة العربية؟"
         },
         "a": {
-          "en": "Yes — for UAE departures, the law requires the consent letter to be in Arabic or accompanied by a certified Arabic translation. We draft all consent letters bilingual Arabic/English as standard at no extra cost. This ensures acceptance at UAE immigration (GDRFA), Emirates, Etihad, and flydubai.",
-          "ar": "نعم — لمغادرة الإمارات، يشترط القانون أن يكون خطاب الموافقة باللغة العربية أو مرفقاً بترجمة عربية معتمدة. نُعد جميع خطابات الموافقة ثنائية اللغة عربي/إنجليزي كمعيار أساسي بدون تكلفة إضافية. هذا يضمن قبوله من هيئة الهوية والجنسية والإمارات والاتحاد وفلاي دبي."
+          "en": "Yes — for UAE departures, the law requires the consent letter to be in Arabic or accompanied by a certified Arabic translation. We draft all consent letters bilingual Arabic/English as standard at no extra cost. This meets the acceptance requirements of UAE immigration (GDRFA), Emirates, Etihad, and flydubai.",
+          "ar": "نعم — لمغادرة الإمارات، يشترط القانون أن يكون خطاب الموافقة باللغة العربية أو مرفقاً بترجمة عربية معتمدة. نُعد جميع خطابات الموافقة ثنائية اللغة عربي/إنجليزي كمعيار أساسي بدون تكلفة إضافية. بما يستوفي متطلبات القبول لدى هيئة الهوية والجنسية والإمارات والاتحاد وفلاي دبي."
         }
       },
       {
@@ -464,7 +464,7 @@
         },
         "a": {
           "en": "The consenting parent (the one granting permission) must sign before the Notary Public in person, or via our video call e-notary service. The traveling parent or guardian does not need to be present at notarization. If the consenting parent is outside the UAE, they can notarize via video call with our licensed notary — no travel required.",
-          "ar": "الوالد الموافق (الذي يمنح الإذن) يجب أن يوقّع أمام كاتب العدل شخصياً، أو عبر خدمة التوثيق الإلكتروني بمكالمة الفيديو لدينا. لا يحتاج الوالد المسافر أو الوصي للحضور عند التوثيق. إذا كان الوالد الموافق خارج الإمارات، يمكنه التوثيق عبر مكالمة فيديو مع كاتب عدلنا المرخص — دون سفر."
+          "ar": "الوالد الموافق (الذي يمنح الإذن) يجب أن يوقّع أمام كاتب العدل شخصياً، أو عن بُعد بمكالمة الفيديو. لا يحتاج الوالد المسافر أو الوصي للحضور عند التوثيق. إذا كان الوالد الموافق خارج الإمارات، يمكنه التوثيق عبر مكالمة فيديو مع كاتب عدلنا المرخص — دون سفر."
         }
       },
       {
@@ -992,7 +992,7 @@
         },
         "a": {
           "en": "MOFA rejections typically occur because the originating notarization is not in the correct sequence (Ministry of Justice attestation must precede MOFA for some documents), the document has an error in official names or passport numbers, or it is a type that requires additional steps before MOFA can attest it.",
-          "ar": "تشترط دائرة الأراضي صيغة ثنائية اللغة محددة مقبولة من DLD. محاكم دبي تستخدم صيغة مختلفة عن وزارة العدل الاتحادية. غالباً ما تشترط البنوك صيغتها الداخلية الخاصة. الوكالة المُعدّ بصيغة خاطئة يُرفَض فوراً — حتى لو كان المحتوى صحيحاً."
+          "ar": "تشترط دائرة الأراضي صيغة ثنائية اللغة محددة مقبولة من DLD. محاكم دبي تستخدم صيغة مختلفة عن وزارة العدل الإماراتية. غالباً ما تشترط البنوك صيغتها الداخلية الخاصة. الوكالة المُعدّ بصيغة خاطئة يُرفَض فوراً — حتى لو كان المحتوى صحيحاً."
         }
       },
       {
@@ -1099,7 +1099,7 @@
           "ar": "ما الفرق بين الوكالة الرسمية والمستند الموثق؟"
         },
         "a": {
-          "en": "A Power of Attorney (POA) is a document granting someone legal authority to act on your behalf. A notarized document is any document that has been officially witnessed and stamped by a licensed UAE Notary Public (Dubai Courts or Federal Ministry of Justice). A POA must be notarized to be legally valid in the UAE.",
+          "en": "A Power of Attorney (POA) is a document granting someone legal authority to act on your behalf. A notarized document is any document that has been officially witnessed and stamped by a licensed UAE Notary Public (Dubai Courts or UAE Ministry of Justice). A POA must be notarized to be legally valid in the UAE.",
           "ar": "الوكالة الرسمية (وكالة) هو وثيقة تمنح شخصاً صلاحية التصرف نيابةً عنك في شؤون قانونية أو مالية أو إدارية محددة. المستند الموثق هو أي وثيقة يُوثِّقها كاتب عدل مرخص لإثبات صحة التوقيعات أو صحة النسخة. الوكالة الرسمية نوع خاص من المستندات الموثقة."
         }
       },
@@ -1130,7 +1130,7 @@
         },
         "a": {
           "en": "Yes. POA in 30 offers fully remote notarization via video call through Dubai Courts or the UAE Ministry of Justice. For documents that require physical signing, we guide you through the video call with the Notary Public — fully online, no travel required.",
-          "ar": "نعم. يقدم POA in 30 توثيقاً إلكترونياً عن بُعد عبر مكالمة الفيديو الآمنة، معتمدة رسمياً من محاكم دبي. يمكنك توثيق مستنداتك الإماراتية من أي مكان في العالم."
+          "ar": "نعم. تتم العملية عن بُعد بالكامل — يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. يمكنك توثيق مستنداتك الإماراتية من أي مكان في العالم."
         }
       },
       {
@@ -1182,7 +1182,7 @@
         },
         "a": {
           "en": "Yes. A properly drafted General POA is accepted by all UAE government entities — DLD, MOHRE, RTA, Dubai Courts — and most banks. However, some banks prefer their own POA format. We check with your specific bank before drafting to ensure acceptance.",
-          "ar": "نعم. تُقبل الوكالة العامة المصاغة بشكل صحيح من جميع الجهات الحكومية الإماراتية — DLD وMOHRE وRTA ومحاكم دبي — ومعظم البنوك. غير أن بعض البنوك تفضل صيغتها الخاصة. نتحقق من بنكك قبل الصياغة لضمان القبول."
+          "ar": "نعم. تُقبل الوكالة العامة المصاغة بشكل صحيح من جميع الجهات الحكومية الإماراتية — DLD وMOHRE وRTA ومحاكم دبي — ومعظم البنوك. غير أن بعض البنوك تفضل صيغتها الخاصة. نتحقق من بنكك قبل الصياغة استيفاءً لمتطلبات القبول."
         }
       },
       {
@@ -1204,7 +1204,7 @@
         },
         "a": {
           "en": "All major UAE banks accept notarized Bank POAs — Emirates NBD, ADCB, FAB, Mashreq, ENBD, DIB, and others. Each bank has specific format requirements. We tailor the POA to your specific bank's format to ensure first-time acceptance.",
-          "ar": "تقبل جميع البنوك الإماراتية الكبرى الوكالات البنكية الموثقة — إمارات NBD وADCB وFAB وماشريق وغيرها. لكل بنك متطلبات صيغة خاصة. نُخصص الوكالة لصيغة بنكك المحدد لضمان القبول من المرة الأولى."
+          "ar": "تقبل جميع البنوك الإماراتية الكبرى الوكالات البنكية الموثقة — إمارات NBD وADCB وFAB وماشريق وغيرها. لكل بنك متطلبات صيغة خاصة. نُخصص الوكالة لصيغة بنكك المحدد بما يستوفي متطلبات القبول من المرة الأولى."
         }
       },
       {
@@ -1364,7 +1364,7 @@
         },
         "a": {
           "en": "",
-          "ar": "نعم. يمكنك منح وكالة رسمية إماراتي من الخارج بطريقتين: (1) التوثيق الإلكتروني عن بُعد عبر مكالمة الفيديو — معتمد من محاكم دبي لحاملي جوازات السفر الإماراتية أو الهوية الإماراتية، أو (2) توثيق الوكالة في سفارة الإمارات أو كاتب عدل محلي في بلدك ثم الحصول على /تصديق لاستخدامه في الإمارات."
+          "ar": "نعم. يمكنك منح وكالة رسمية إماراتي من الخارج بطريقتين: (1) التوثيق عن بُعد عبر مكالمة الفيديو — عبر محاكم دبي لحاملي جوازات السفر الإماراتية أو الهوية الإماراتية، أو (2) توثيق الوكالة في سفارة الإمارات أو كاتب عدل محلي في بلدك ثم الحصول على /تصديق لاستخدامه في الإمارات."
         }
       },
       {
@@ -1468,7 +1468,7 @@
       "h1_en": "Draft and Notarize Your Dubai Power of Attorney Online",
       "h1_ar": "إصدار وتوثيق وكالتك القانونية في دبي أونلاين",
       "title_en": "Power of Attorney Dubai Online | Fast & Secure | POA in 30",
-      "meta_en": "Need a Power of Attorney in Dubai? We draft and notarize your legal documents online via Dubai Courts and the Ministry of Justice. Fast and secure.",
+      "meta_en": "Power of Attorney in Dubai, drafted and notarized online via Dubai Courts and the Ministry of Justice. Delivered to your inbox the same day.",
       "sections": [
         {
           "en": "Power of Attorney",
@@ -1540,31 +1540,31 @@
       "content": [
         {
           "en": "Traveling abroad or managing a tight schedule? You no longer need to fly back or wait in government lines to secure your legal representation. We process your Power of Attorney entirely online.",
-          "ar": "هل أنت خارج الدولة أو لا تملك الوقت لزيارة الجهات الحكومية؟ لم يعد هناك حاجة لتأجيل التزاماتك. يمكنك الآن إصدار وتوثيق وكالتك القانونية بالكامل عبر الإنترنت دون إهدار وقتك."
+          "ar": "إذا كنت خارج الدولة أو لا يتسع وقتك لمراجعة الجهات الحكومية، يمكنك إصدار وتوثيق وكالتك القانونية بالكامل عبر الإنترنت دون إهدار وقتك."
         },
         {
           "en": "We manage the entire notarization process remotely. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call — from precise legal drafting tailored to your exact needs to the final official session, everything is completed securely from your device.",
-          "ar": "نتولى إدارة كافة إجراءات التوثيق عن بُعد. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو — بدءاً من الصياغة القانونية الدقيقة، وصولاً إلى الجلسة الرسمية النهائية، ليتم اعتماد مستنداتك وأنت في مكانك."
+          "ar": "نتولى إدارة كافة إجراءات التوثيق عن بُعد. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو — بدءاً من الصياغة القانونية الدقيقة، وصولاً إلى الجلسة الرسمية النهائية، ليتم اعتماد مستنداتك دون أي حضور شخصي."
         },
         {
           "en": "Your security is our priority. Our POAs are drafted to limit powers appropriately, ensuring that any financial transactions, cheques, or property funds are always issued directly in your name, keeping you fully protected.",
-          "ar": "حماية حقوقك المالية هي الأساس. نقوم بصياغة الوكالة بشكل مقيد يضمن عدم إساءة استخدامها، مع النص صراحة على أن يتم إصدار أي شيكات أو استلام أموال باسمك أنت شخصياً، لضمان أعلى درجات الأمان."
+          "ar": "حماية حقوقك المالية هي الأساس. نقوم بصياغة الوكالة بشكل مقيد يحول دون إساءة استخدامها، مع النص صراحة على أن يتم إصدار أي شيكات أو استلام أموال باسمك أنت شخصياً، توخياً لأعلى درجات الأمان."
         },
         {
-          "en": "Need your UAE documents legally recognized abroad? We handle the full attestation process, including the Ministry of Foreign Affairs (MOFA) and relevant embassies, making your documents valid globally.",
-          "ar": "هل ترغب في استخدام مستنداتك الصادرة من الإمارات في الخارج؟ نوفر خدمات التصديق الكاملة من وزارة الخارجية (MOFA) والسفارات المعنية، لتصبح أوراقك معتمدة دولياً."
+          "en": "For UAE documents that must be legally recognized abroad, we handle the full attestation process, including the Ministry of Foreign Affairs (MOFA) and relevant embassies, making your documents valid globally.",
+          "ar": "لاستخدام مستنداتك الصادرة من الإمارات في الخارج، نوفر خدمات التصديق الكاملة من وزارة الخارجية (MOFA) والسفارات المعنية، لتصبح أوراقك معتمدة دولياً."
         },
         {
           "en": "For business owners, we draft and notarize essential corporate documents, such as Memorandums of Association (MOA) and Board Resolutions, keeping your company compliant and operational without delays.",
-          "ar": "لقطاع الأعمال والشركات، نوفر خدمات صياغة وتوثيق المستندات التجارية مثل عقود التأسيس وقرارات مجلس الإدارة، لضمان استمرارية أعمالك بشكل قانوني سلس وموثق."
+          "ar": "لقطاع الأعمال والشركات، نوفر خدمات صياغة وتوثيق المستندات التجارية مثل عقود التأسيس وقرارات مجلس الإدارة، بما يتيح استمرارية أعمالك بشكل قانوني سلس وموثق."
         },
         {
           "en": "We value your time. What used to be a lengthy process is now streamlined. In most cases, your document is drafted, approved, and officially notarized on the exact same day you contact us.",
-          "ar": "وقتك يهمنا. الإجراءات الحكومية التي كانت تتطلب أياماً، تم اختصارها الآن بفضل الأنظمة الرقمية. في أغلب الحالات، يتم صياغة وتوثيق وكالتك في نفس اليوم."
+          "ar": "الإجراءات الحكومية التي كانت تتطلب أياماً، تم اختصارها الآن بفضل الأنظمة الرقمية. في أغلب الحالات، يتم صياغة وتوثيق وكالتك في نفس اليوم."
         },
         {
           "en": "Send us a WhatsApp message detailing your requirements. We will respond promptly with a clear procedure, transparent costs, and no hidden fees. Your dedicated specialist will take it from there.",
-          "ar": "تواصل معنا عبر واتساب بتفاصيل طلبك. سنوافيك فوراً بآلية العمل والتكلفة الشفافة بدون أي رسوم خفية، وسيتولى فريقنا القانوني إتمام باقي الإجراءات نيابة عنك."
+          "ar": "تواصل معنا عبر واتساب بتفاصيل طلبك. ونرد عليك فوراً بآلية العمل والتكلفة بشفافية تامة ودون رسوم خفية، ويتولى فريقنا إتمام باقي الإجراءات نيابة عنك."
         }
       ],
       "list_items": [],
@@ -1606,7 +1606,7 @@
           },
           "a": {
             "en": "No physical visit is required. We handle the drafting and coordination, and you attend a brief online session with the notary to finalize the document electronically.",
-            "ar": "لا يتطلب الأمر أي حضور شخصي. نحن نتولى الصياغة والتنسيق، وما عليك سوى حضور جلسة مرئية قصيرة عبر الإنترنت مع كاتب العدل لاعتماد المستند رقمياً."
+            "ar": "لا يتطلب الأمر أي حضور شخصي. نحن نتولى الصياغة والتنسيق، ويقتصر دورك على حضور جلسة مرئية قصيرة عبر الإنترنت مع كاتب العدل لاعتماد المستند رقمياً."
           }
         },
         {
@@ -1652,7 +1652,7 @@
       ],
       "prices": [],
       "title_ar": "توثيق وكالة قانونية في دبي | سريع وآمن | POA in 30",
-      "meta_ar": "هل تحتاج إلى توثيق وكالة قانونية؟ نقدم خدمة الصياغة والتوثيق أونلاين عبر محاكم دبي ووزارة العدل أينما كنت. تواصل معنا للبدء فوراً.",
+      "meta_ar": "خدمة صياغة وتوثيق الوكالات القانونية أونلاين عبر محاكم دبي ووزارة العدل، أينما كنت. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني في اليوم نفسه.",
       "seo": {
         "h1": {
           "en": "Draft and Notarize Your Dubai Power of Attorney Online",
@@ -1663,8 +1663,8 @@
           "ar": "توثيق وكالة قانونية في دبي | سريع وآمن | POA in 30"
         },
         "meta_description": {
-          "en": "Need a Power of Attorney in Dubai? We draft and notarize your legal documents online via Dubai Courts and the Ministry of Justice. Fast and secure.",
-          "ar": "هل تحتاج إلى توثيق وكالة قانونية؟ نقدم خدمة الصياغة والتوثيق أونلاين عبر محاكم دبي ووزارة العدل أينما كنت. تواصل معنا للبدء فوراً."
+          "en": "Power of Attorney in Dubai, drafted and notarized online via Dubai Courts and the Ministry of Justice. Delivered to your inbox the same day.",
+          "ar": "خدمة صياغة وتوثيق الوكالات القانونية أونلاين عبر محاكم دبي ووزارة العدل، أينما كنت. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني في اليوم نفسه."
         },
         "wa_message": {
           "en": "Hi, I need notary support in Dubai.",
@@ -1735,8 +1735,8 @@
                 "ar": "راجع مسودتك — مباشرةً على واتساب"
               },
               "body": {
-                "en": "We send the bilingual draft (Arabic + English) for your review before the notarization session. Any changes are made instantly. You only proceed when you are satisfied.",
-                "ar": "نُرسل المسودة الثنائية اللغة (عربي + إنجليزي) لمراجعتك قبل جلسة التوثيق. أي تعديلات تُنجَز فوراً. لا تمضي إلا حين تكون راضياً."
+                "en": "We send the bilingual draft (Arabic + English) for your review before the notarization session. Any changes are made instantly. You only sign when you are fully satisfied.",
+                "ar": "نُرسل المسودة الثنائية اللغة (عربي + إنجليزي) لمراجعتك قبل جلسة التوثيق. أي تعديلات تُنجَز فوراً. لا تقم بالتوقيع إلا حين تكون راضياً."
               }
             },
             {
@@ -1745,8 +1745,8 @@
                 "ar": "مكالمة الفيديو — 30 دقيقة — الوثيقة تُسلَّم"
               },
               "body": {
-                "en": "You appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport + OTP. The notarized POA arrives in your inbox immediately after the session.",
-                "ar": "تمثل أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية بجواز السفر ورمز OTP. تصل الوكالة الموثَّقة إلى صندوق بريدك فور انتهاء الجلسة."
+                "en": "You appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport. The notarized POA arrives in your inbox immediately after the session.",
+                "ar": "تمثل أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية بجواز السفر. تصل الوكالة الموثَّقة إلى صندوق بريدك فور انتهاء الجلسة."
               }
             }
           ]
@@ -1780,7 +1780,7 @@
       "h1_ar": "حماية أصولك في دبي: ضمان استمرارية أعمالك عبر التمثيل القانوني",
       "title_en": "Power of Attorney Dubai | Notarization via Video Call | POA in 30",
       "title_ar": "إصدار وكالة قانونية في دبي | توثيق رقمي | POA in 30",
-      "meta_en": "Don't let your business or property deals stall because you aren't physically in Dubai. Get your Power of Attorney drafted and notarized through Dubai Courts or the UAE Ministry of Justice via a video call in minutes.",
+      "meta_en": "Your Power of Attorney drafted and notarized through Dubai Courts or the UAE Ministry of Justice via a video call — fully remote, in minutes.",
       "meta_ar": "لا تدع غيابك عن دبي يعطل مصالحك. نوفر لك صياغة وتوثيق وكالتك القانونية رقمياً لتفويض من يمثلك رسمياً في إدارة أعمالك والتزاماتك.",
       "sections": [
         {
@@ -1844,12 +1844,12 @@
           "ar": "قد تتطلب الصفقات العقارية أو المعاملات التجارية الحاسمة في دبي توقيعاً عاجلاً لإتمامها. في حال عدم تواجدك داخل الدولة، وبدون وكالة قانونية موثقة، يفتقر من ينوب عنك للصلاحية الرسمية، مما قد يعرض مصالحك للتأخير أو التجميد."
         },
         {
-          "en": "A properly drafted POA acts as your legal safeguard. It allows a trusted individual—your attorney-in-fact—to step into your shoes, ensuring that banking, real estate, and corporate matters proceed smoothly, exactly as if you were standing at the counter yourself.",
-          "ar": "الوكالة المصاغة باحترافية هي درعك القانوني. فهي تمنح ممثلك المعتمد الصلاحية الكاملة لإدارة شؤونك المصرفية، والعقارية، والتجارية بفاعلية، لتمضي أعمالك قدماً وبنفس القوة القانونية لحضورك الشخصي."
+          "en": "A properly drafted POA acts as your legal safeguard. It allows a trusted individual—your attorney-in-fact—to step into your shoes, ensuring that banking, real estate, and corporate matters proceed smoothly, exactly as if you were standing at the counter yourself. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "الوكالة المصاغة باحترافية هي درعك القانوني. فهي تمنح ممثلك المعتمد الصلاحية الكاملة لإدارة شؤونك المصرفية، والعقارية، والتجارية بفاعلية، لتمضي أعمالك قدماً وبنفس القوة القانونية لحضورك الشخصي. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "Issuing a POA used to require flights and queues. Now, our platform connects you directly with Dubai Courts and the Ministry of Justice for notarization via a video call. You can establish your legal proxy from your smartphone, keeping your operations moving without interruption.",
-          "ar": "لم يعد إصدار الوكالات يتطلب عناء السفر والمراجعات الميدانية. نحن نربطك مباشرة بالأنظمة الرقمية لمحاكم دبي ووزارة العدل لإتمام التوثيق عن بُعد عبر مكالمة فيديو، مما يضمن استمرارية أعمالك دون أي انقطاع."
+          "ar": "لم يعد إصدار الوكالات يتطلب عناء السفر والمراجعات الميدانية. نحن نربطك مباشرة بالأنظمة الرقمية لمحاكم دبي ووزارة العدل لإتمام التوثيق عن بُعد عبر مكالمة فيديو، بما يحافظ على استمرارية أعمالك دون انقطاع."
         }
       ],
       "list_items": [
@@ -1922,7 +1922,7 @@
           },
           "a": {
             "en": "Yes. You can issue a UAE-valid Power of Attorney from anywhere in the world through a video call with a licensed UAE Notary Public — through Dubai Courts or the UAE Ministry of Justice via a video call. During the session, the Notary verifies your identity using your passport, reads the document aloud, and records your consent. The notarized POA is delivered to you by email and is immediately valid across all UAE authorities without additional embassy attestation (for most types).",
-            "ar": "نعم. يمكنك إصدار وكالة قانونية سارية إماراتياً من أي مكان في العالم عبر مكالمة فيديو مع كاتب عدل إماراتي مرخَّص — عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. خلال الجلسة، يتحقق كاتب العدل من هويتك عبر جواز سفرك، ويقرأ الوثيقة بصوت عالٍ، ويسجّل موافقتك. تُسلَّم الوكالة الموثَّقة على بريدك الإلكتروني وتكون سارية فوراً لدى جميع الجهات الإماراتية."
+            "ar": "نعم. يمكنك إصدار وكالة قانونية سارية إماراتياً من أي مكان في العالم عبر مكالمة فيديو مع كاتب عدل إماراتي مرخَّص — عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. خلال الجلسة، يتحقق كاتب العدل من هويتك عبر جواز سفرك، ويقرأ الوثيقة بصوت عالٍ، ويسجّل موافقتك. تُسلَّم الوكالة الموثَّقة على بريدك الإلكتروني وتكون سارية فوراً لدى جميع الجهات الإماراتية."
           }
         },
         {
@@ -2143,8 +2143,8 @@
                 "ar": "يحضر الموكِّل أمام كاتب العدل — من 5 إلى 15 دقيقة"
               },
               "body": {
-                "en": "You (the principal) appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport + OTP. Session is recorded.",
-                "ar": "تمثل أنت (الموكِّل) أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُتحقق الهوية بجواز السفر ورمز OTP. تُسجَّل الجلسة."
+                "en": "You (the principal) appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport. Session is recorded.",
+                "ar": "تمثل أنت (الموكِّل) أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية بجواز السفر. تُسجَّل الجلسة."
               }
             },
             {
@@ -2197,7 +2197,7 @@
       "title_en": "General POA Dubai | Broad Authority | POA in 30",
       "title_ar": "توثيق وكالة عامة في دبي | صلاحيات شاملة | POA in 30",
       "meta_en": "Leaving Dubai for an extended period? A General Power of Attorney ensures your utilities, bank accounts, and legal matters are handled securely.",
-      "meta_ar": "هل تخطط للتواجد خارج دبي لفترة طويلة؟ الوكالة العامة تضمن إدارة التزاماتك القانونية والمالية بأمان عبر ممثل معتمد. وثق وكالتك رقمياً الآن.",
+      "meta_ar": "الوكالة العامة تتيح إدارة التزاماتك القانونية والمالية عبر ممثل معتمد أثناء تواجدك خارج دبي لفترة طويلة. صياغة وتوثيق رقمي كامل.",
       "sections": [
         {
           "en": "What a General Power of Attorney actually does",
@@ -2241,7 +2241,7 @@
         },
         {
           "en": "This is exactly where a General Power of Attorney becomes indispensable. It grants a trusted confidant the broad legal authority to sign documents, interact with government entities, and keep your daily affairs running smoothly, sparing you the burden of unresolved obligations.",
-          "ar": "هنا تبرز الأهمية الاستراتيجية للوكالة العامة. فهي تمنح ممثلك القانوني صلاحيات واسعة وموثقة للتعامل مع مختلف الجهات الحكومية والخاصة، وتوقيع المستندات نيابة عنك، مما يضمن سير أعمالك بانتظام ويجنبك تراكم الالتزامات."
+          "ar": "هنا تبرز الأهمية الاستراتيجية للوكالة العامة. فهي تمنح ممثلك القانوني صلاحيات واسعة وموثقة للتعامل مع مختلف الجهات الحكومية والخاصة، وتوقيع المستندات نيابة عنك، بما يدعم سير أعمالك بانتظام ويجنبك تراكم الالتزامات."
         },
         {
           "en": "We draft your General POA to encompass precisely what you need, balancing broad capability with necessary safeguards. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, allowing you to finalize the document before your departure.",
@@ -2344,7 +2344,7 @@
         },
         "meta_description": {
           "en": "Leaving Dubai for an extended period? A General Power of Attorney ensures your utilities, bank accounts, and legal matters are handled securely.",
-          "ar": "هل تخطط للتواجد خارج دبي لفترة طويلة؟ الوكالة العامة تضمن إدارة التزاماتك القانونية والمالية بأمان عبر ممثل معتمد. وثق وكالتك رقمياً الآن."
+          "ar": "الوكالة العامة تتيح إدارة التزاماتك القانونية والمالية عبر ممثل معتمد أثناء تواجدك خارج دبي لفترة طويلة. صياغة وتوثيق رقمي كامل."
         },
         "wa_message": {
           "en": "Hi, I need a General Power of Attorney in Dubai. Can you help?",
@@ -2549,7 +2549,7 @@
       "title_en": "Real Estate POA Dubai | DLD-Compliant | POA in 30",
       "title_ar": "وكالة العقارات دبي | متوافقة DLD | POA in 30",
       "meta_en": "Selling your Dubai property remotely? Our DLD-compliant Real Estate POA empowers your representative to close the deal and secure funds in your name.",
-      "meta_ar": "هل تقوم ببيع عقارك ولا تستطيع الحضور؟ تتيح وكالتنا العقارية لممثلك إتمام إجراءات البيع بشكل رسمي، مع ضمان تحويل العوائد المالية لحسابك مباشرة.",
+      "meta_ar": "الوكالة العقارية تتيح لممثلك إتمام إجراءات البيع رسمياً وأنت خارج الدولة، بصياغة تقيِّد تحويل العوائد المالية إلى حسابك مباشرة.",
       "sections": [
         {
           "en": "What a Real Estate POA actually authorizes",
@@ -2600,12 +2600,12 @@
           "ar": "عند توفر المشتري الجاد لعقارك في دبي وجاهزية العقود للتوقيع، يمثل تواجدك خارج الدولة العائق الوحيد أمام إتمام الإجراء. تأجيل عملية نقل الملكية في دائرة الأراضي والأملاك قد يعرض الصفقة للإلغاء."
         },
         {
-          "en": "A specialized Real Estate Power of Attorney bridges this gap. The Dubai Land Department (DLD) requires a specific format for property transactions. We draft this tailored POA to empower your representative to sign the final transfer documents on your behalf.",
-          "ar": "توفر الوكالة العقارية المخصصة الحل الجذري لهذه الحالات. تشترط دائرة الأراضي والأملاك (DLD) صيغاً قانونية صارمة للمعاملات العقارية. نحن نصيغ الوكالة بما يتوافق تماماً مع هذه الاشتراطات، لتمكين ممثلك من توقيع عقود نقل الملكية رسمياً."
+          "en": "A specialized Real Estate Power of Attorney bridges this gap. The Dubai Land Department (DLD) requires a specific format for property transactions. We draft this tailored POA to empower your representative to sign the final transfer documents on your behalf. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "توفر الوكالة العقارية المخصصة الحل الجذري لهذه الحالات. تشترط دائرة الأراضي والأملاك (DLD) صيغاً قانونية صارمة للمعاملات العقارية. نحن نصيغ الوكالة بما يتوافق تماماً مع هذه الاشتراطات، لتمكين ممثلك من توقيع عقود نقل الملكية رسمياً. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "Financial security is paramount when handling real estate. Our drafting ensures your POA explicitly mandates that all manager's cheques and sale proceeds must be issued exclusively in your name, protecting your funds completely while closing the deal.",
-          "ar": "الحماية المالية هي الركيزة الأساسية في المعاملات العقارية. تتضمن صياغتنا القانونية نصوصاً صريحة تُلزم بأن تُصدر كافة الشيكات المصرفية وعوائد البيع باسمك الشخصي حصراً، لضمان أعلى درجات الأمان لأموالك."
+          "ar": "الحماية المالية هي الركيزة الأساسية في المعاملات العقارية. تتضمن صياغتنا القانونية نصوصاً صريحة تُلزم بأن تُصدر كافة الشيكات المصرفية وعوائد البيع باسمك الشخصي حصراً، توخياً لأعلى درجات الأمان لأموالك."
         }
       ],
       "list_items": [
@@ -2637,7 +2637,7 @@
             "ar": "ما هي أنواع الوكالة العقارية الأربعة في دبي؟"
           },
           "a": {
-            "en": "There are 4 main types: (1) Property Sale POA — authorizes your agent to sell a specific named property at DLD, sign Form F (MOU), and complete the transfer — sale proceeds (Manager's Cheque) must be issued in the seller's name; (2) Property Purchase POA — authorizes signing the SPA, paying DLD registration fees (4%), and collecting the Title Deed; (3) Property Management POA — covers leasing, rent collection, DEWA, and authority before RDC — does NOT include sale or mortgage unless explicitly added; (4) Property Gifting (Hiba) POA — authorizes the transfer of property ownership as a gift, .",
+            "en": "There are 4 main types: (1) Property Sale POA — authorizes your agent to sell a specific named property at DLD, sign Form F (MOU), and complete the transfer — sale proceeds (Manager's Cheque) must be issued in the seller's name; (2) Property Purchase POA — authorizes signing the SPA, paying DLD registration fees (4%), and collecting the Title Deed; (3) Property Management POA — covers leasing, rent collection, DEWA, and authority before RDC — does NOT include sale or mortgage unless explicitly added; (4) Property Gifting (Hiba) POA — authorizes the transfer of property ownership as a gift,.",
             "ar": "هناك 4 أنواع رئيسية: (١) وكالة بيع عقار — تُخوِّل وكيلك ببيع عقار محدد مُسمَّى في دائرة الأراضي وتوقيع النموذج F وإتمام النقل — يُصدَر الشيك الإداري باسم البائع وليس الوكيل؛ (٢) وكالة شراء عقار — تُخوِّل بتوقيع اتفاقية البيع ودفع رسوم تسجيل الدائرة (4%) واستلام سند الملكية؛ (٣) وكالة إدارة عقار — تشمل التأجير وتحصيل الإيجار وديوا والتمثيل أمام مركز النزاعات الإيجارية — ولا تشمل البيع أو الرهن إلا إذا أُضيفا صراحةً؛ (٤) وكالة هبة عقار — تُخوِّل نقل ملكية العقار هبةً، وتخضع لرسوم هبة الدائرة (رسوم مخفضة للأقارب من الدرجة الأولى)."
           }
         },
@@ -2668,7 +2668,7 @@
           },
           "a": {
             "en": "Yes. A non-UAE resident can be appointed as agent in a Real Estate POA. The agent's full passport details must be included in the POA. For DLD transactions: the agent must physically attend the Real Estate Trustee office — they cannot complete the DLD transfer remotely. However, the principal (property owner) can grant the POA remotely from abroad through Dubai Courts or the UAE Ministry of Justice via a video call. The POA itself is delivered electronically and is valid for DLD transactions from the date of notarization.",
-            "ar": "نعم. يمكن تعيين شخص غير مقيم في الإمارات وكيلاً في الوكالة العقارية. يجب تضمين بيانات جواز سفر الوكيل كاملةً في الوكالة. بالنسبة لمعاملات دائرة الأراضي: يجب على الوكيل الحضور جسدياً في مكتب أمانة الدائرة — لا يستطيع إتمام نقل الملكية في الدائرة عن بُعد. غير أن الموكِّل (مالك العقار) يمكنه منح الوكالة عن بُعد من الخارج عبر عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُسلَّم الوكالة إلكترونياً وتكون صالحة لمعاملات الدائرة اعتباراً من تاريخ التوثيق."
+            "ar": "نعم. يمكن تعيين شخص غير مقيم في الإمارات وكيلاً في الوكالة العقارية. يجب تضمين بيانات جواز سفر الوكيل كاملةً في الوكالة. بالنسبة لمعاملات دائرة الأراضي: يجب على الوكيل الحضور جسدياً في مكتب أمانة الدائرة — لا يستطيع إتمام نقل الملكية في الدائرة عن بُعد. غير أن الموكِّل (مالك العقار) يمكنه منح الوكالة عن بُعد من الخارج عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُسلَّم الوكالة إلكترونياً وتكون صالحة لمعاملات الدائرة اعتباراً من تاريخ التوثيق."
           }
         },
         {
@@ -2694,7 +2694,7 @@
         },
         "meta_description": {
           "en": "Selling your Dubai property remotely? Our DLD-compliant Real Estate POA empowers your representative to close the deal and secure funds in your name.",
-          "ar": "هل تقوم ببيع عقارك ولا تستطيع الحضور؟ تتيح وكالتنا العقارية لممثلك إتمام إجراءات البيع بشكل رسمي، مع ضمان تحويل العوائد المالية لحسابك مباشرة."
+          "ar": "الوكالة العقارية تتيح لممثلك إتمام إجراءات البيع رسمياً وأنت خارج الدولة، بصياغة تقيِّد تحويل العوائد المالية إلى حسابك مباشرة."
         },
         "wa_message": {
           "en": "Hi, I need a Real Estate Power of Attorney in Dubai. Can you help?",
@@ -2706,7 +2706,7 @@
           "type": "para",
           "text": {
             "en": "A Real Estate Power of Attorney in Dubai authorizes a named agent to complete property transactions on your behalf — whether you are abroad, unable to attend in person, or prefer to delegate to a trusted specialist. All real estate POAs in Dubai must be drafted in Dubai Courts bilingual format and notarized through Dubai Courts or the UAE Ministry of Justice via a video call. The agent cannot exceed the scope of the POA — any action outside the defined authority is void.",
-            "ar": "الوكالة العقارية في دبي تُخوِّل وكيلاً مُسمَّى بإتمام المعاملات العقارية نيابةً عنك — سواء كنت في الخارج أو غير قادر على الحضور شخصياً أو تُفضِّل تفويض مختص موثوق. يجب صياغة جميع الوكالات العقارية في دبي بصيغة محاكم دبي الثنائية اللغة وتوثيقها عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. لا يجوز للوكيل تجاوز نطاق الوكالة — أي تصرف خارج الصلاحيات المحددة يُعدّ باطلاً."
+            "ar": "الوكالة العقارية في دبي تُخوِّل وكيلاً مُسمَّى بإتمام المعاملات العقارية نيابةً عنك — سواء كنت في الخارج أو غير قادر على الحضور شخصياً أو تُفضِّل تفويض مختص موثوق. يجب صياغة جميع الوكالات العقارية في دبي بصيغة محاكم دبي الثنائية اللغة وتوثيقها عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. لا يجوز للوكيل تجاوز نطاق الوكالة — أي تصرف خارج الصلاحيات المحددة يُعدّ باطلاً."
           }
         },
         {
@@ -2717,7 +2717,7 @@
           },
           "text": {
             "en": "A Real Estate POA for Dubai Land Department must be in Dubai Courts bilingual format — not Federal format. It must name the specific property, specify the exact authorized transactions, and be issued within 3–6 months. Wrong format = rejected at the DLD counter. You must restart the entire process.",
-            "ar": "الوكالة العقارية لدائرة الأراضي والأملاك يجب أن يكون بصيغة محاكم دبي الثنائية اللغة — لا الصيغة الاتحادية. يجب أن يُسمِّي العقار المحدد ويُحدِّد المعاملات المُفوَّض بها بالضبط ويكون صادراً خلال 3 إلى 6 أشهر. صيغة خاطئة = رفض عند كاونتر الدائرة. يجب إعادة البداية من الصفر."
+            "ar": "الوكالة العقارية لدائرة الأراضي والأملاك يجب أن تكون بصيغة محاكم دبي الثنائية اللغة — لا الصيغة الاتحادية. يجب أن تُسمِّي العقار المحدد ويُحدِّد المعاملات المُفوَّض بها بالضبط ويكون صادراً خلال 3 إلى 6 أشهر. صيغة خاطئة = رفض عند كاونتر الدائرة. يجب إعادة البداية من الصفر."
           }
         },
         {
@@ -2839,7 +2839,7 @@
           "ref": "Sample Text — Property Management Power of Attorney (Dubai Courts Format)",
           "text": {
             "en": "I, the undersigned, [Full Name], nationality: [Nationality], holder of Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], acting in my personal capacity, hereby authorize [Full Name of Agent], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], to manage and oversee all properties registered in my name within the UAE — specifically Title Deed No. [XXXXXXX], located at [Address/Area], Dubai — including: leasing and renewing lease contracts, rent collection and issuing receipts, managing tenant interactions, property maintenance and repair, and terminating lease contracts. This authorization includes representing me before all governmental and private authorities, including Dubai Land Department (DLD), DEWA, Dubai Courts, Rental Disputes Settlement Centre (RDC), Dubai Municipality, and all related entities. This POA does NOT authorize the agent to sell, mortgage, or gift the property unless a separate Special POA is issued for that specific purpose. This POA is valid for [duration] from the date of notarization through Dubai Courts or the UAE Ministry of Justice via a video call, unless revoked earlier.",
-            "ar": "أنا الموقِّع أدناه، [الاسم الكامل]، الجنسية: [الجنسية]، حامل بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أتصرف بصفتي الشخصية، أُعيِّن وأُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، لإدارة والإشراف على جميع العقارات المسجَّلة باسمي داخل الإمارات — وتحديداً سند الملكية رقم [XXXXXXX] الكائن في [العنوان/المنطقة]، دبي — بما يشمل: تأجير العقار وتجديد عقود الإيجار وتحصيل الإيجارات وإصدار الإيصالات وإدارة علاقات المستأجرين وصيانة العقار وإصلاحه وإنهاء عقود الإيجار. تشمل هذه التفويض تمثيلي أمام جميع الجهات الحكومية والخاصة، بما فيها دائرة الأراضي والأملاك وهيئة كهرباء ومياه دبي ومحاكم دبي ومركز تسوية النزاعات الإيجارية وبلدية دبي وجميع الجهات المرتبطة. لا تُخوِّل هذه الوكالة الوكيلَ ببيع العقار أو رهنه أو هبته إلا إذا صدرت وكالة خاصة منفصلة لهذا الغرض المحدد. هذه الوكالة سارية لمدة [المدة] من تاريخ توثيقها عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو، ما لم تُلغَ قبل ذلك."
+            "ar": "أنا الموقِّع أدناه، [الاسم الكامل]، الجنسية: [الجنسية]، حامل بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أتصرف بصفتي الشخصية، أُعيِّن وأُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، لإدارة والإشراف على جميع العقارات المسجَّلة باسمي داخل الإمارات — وتحديداً سند الملكية رقم [XXXXXXX] الكائن في [العنوان/المنطقة]، دبي — بما يشمل: تأجير العقار وتجديد عقود الإيجار وتحصيل الإيجارات وإصدار الإيصالات وإدارة علاقات المستأجرين وصيانة العقار وإصلاحه وإنهاء عقود الإيجار. تشمل هذه التفويض تمثيلي أمام جميع الجهات الحكومية والخاصة، بما فيها دائرة الأراضي والأملاك وهيئة كهرباء ومياه دبي ومحاكم دبي ومركز تسوية النزاعات الإيجارية وبلدية دبي وجميع الجهات المرتبطة. لا تُخوِّل هذه الوكالة الوكيلَ ببيع العقار أو رهنه أو هبته إلا إذا صدرت وكالة خاصة منفصلة لهذا الغرض المحدد. هذه الوكالة سارية لمدة [المدة] من تاريخ توثيقها عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو، ما لم تُلغَ قبل ذلك."
           }
         }
       ]
@@ -2849,8 +2849,8 @@
       "h1_ar": "وكالة المركبات في دبي — البيع والتصدير والإدارة",
       "title_en": "Vehicle POA Dubai | Car Authority Online | POA in 30",
       "title_ar": "وكالة المركبات دبي | السيارات أونلاين | POA in 30",
-      "meta_en": "Need to sell, export, or manage your Dubai car remotely? Our RTA-compliant Vehicle POA authorizes a representative to act on your behalf.",
-      "meta_ar": "هل غادرت الدولة وسيارتك في دبي؟ أصدر وكالة مركبات رقمياً لتفويض ممثلك القانوني ببيعها أو تصديرها رسمياً عبر هيئة الطرق والمواصلات.",
+      "meta_en": "An RTA-compliant Vehicle POA authorizes a representative to sell, export, or manage your Dubai car on your behalf while you are away.",
+      "meta_ar": "وكالة مركبات رقمية تفوض ممثلك القانوني ببيع سيارتك في دبي أو تصديرها رسمياً عبر هيئة الطرق والمواصلات بعد مغادرتك الدولة.",
       "sections": [
         {
           "en": "What a Vehicle POA actually authorizes",
@@ -2894,7 +2894,7 @@
         },
         {
           "en": "Our Vehicle Power of Attorney is designed for exactly this scenario. The Roads and Transport Authority (RTA) requires explicit vehicle identifiers—chassis and plate numbers—on the legal document. We ensure your draft meets these specifications for direct acceptance.",
-          "ar": "صُممت وكالة المركبات لتلبية هذه المتطلبات التشغيلية. تشترط هيئة الطرق والمواصلات إدراج بيانات تفصيلية للمركبة (مثل رقم القاعدة/الشاسيه ورقم اللوحة) في المستند القانوني. نحن نتكفل بصياغة الوكالة وفقاً لهذه المعايير لضمان الاعتماد المباشر."
+          "ar": "صُممت وكالة المركبات لتلبية هذه المتطلبات التشغيلية. تشترط هيئة الطرق والمواصلات إدراج بيانات تفصيلية للمركبة (مثل رقم القاعدة/الشاسيه ورقم اللوحة) في المستند القانوني. نحن نتكفل بصياغة الوكالة وفقاً لهذه المعايير بما يستوفي شروط الاعتماد المباشر."
         },
         {
           "en": "Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, so you can finalize this legal authorization from your new home country. Your representative can then clear fines, transfer ownership, and ensure the sale proceeds reach you securely.",
@@ -2963,7 +2963,7 @@
           },
           "a": {
             "en": "Yes. You can grant a Vehicle POA from anywhere in the world through Dubai Courts or the UAE Ministry of Justice via a video call. The notarized POA is delivered by email and your agent can present it at RTA immediately. No additional MOFA attestation is required for a UANotarized via video call vehicle POA — it is valid across all UAE traffic authorities from the date of notarization.",
-            "ar": "نعم. يمكنك منح وكالة مركبة من أي مكان في العالم عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني ويستطيع وكيلك تقديمها في هيئة الطرق والمواصلات فوراً. لا يُشترط تصديق وزارة الخارجية لوكالة المركبة الموثَّقة إماراتياً — وهي صالحة لدى جميع سلطات المرور الإماراتية اعتباراً من تاريخ التوثيق."
+            "ar": "نعم. يمكنك منح وكالة مركبة من أي مكان في العالم عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني ويستطيع وكيلك تقديمها في هيئة الطرق والمواصلات فوراً. لا يُشترط تصديق وزارة الخارجية لوكالة المركبة الموثَّقة إماراتياً — وهي صالحة لدى جميع سلطات المرور الإماراتية اعتباراً من تاريخ التوثيق."
           }
         }
       ],
@@ -2978,8 +2978,8 @@
           "ar": "وكالة المركبات دبي | السيارات أونلاين | POA in 30"
         },
         "meta_description": {
-          "en": "Need to sell, export, or manage your Dubai car remotely? Our RTA-compliant Vehicle POA authorizes a representative to act on your behalf.",
-          "ar": "هل غادرت الدولة وسيارتك في دبي؟ أصدر وكالة مركبات رقمياً لتفويض ممثلك القانوني ببيعها أو تصديرها رسمياً عبر هيئة الطرق والمواصلات."
+          "en": "An RTA-compliant Vehicle POA authorizes a representative to sell, export, or manage your Dubai car on your behalf while you are away.",
+          "ar": "وكالة مركبات رقمية تفوض ممثلك القانوني ببيع سيارتك في دبي أو تصديرها رسمياً عبر هيئة الطرق والمواصلات بعد مغادرتك الدولة."
         },
         "wa_message": {
           "en": "Hi, I need a Vehicle Power of Attorney in Dubai. Can you help?",
@@ -3155,7 +3155,7 @@
           "ref": "Sample Text — Vehicle Power of Attorney (Dubai Courts Format)",
           "text": {
             "en": "I, the undersigned, [Full Name], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], hereby authorize [Agent Full Name], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], to act on my behalf in all matters related to the vehicle registered in my name: Plate No.: [XXXXXXX], Chassis No.: [XXXXXXX], Make: [Make], Model: [Model], Year: [Year] — including: selling, purchasing, registering, renewing registration, transferring ownership, paying traffic fines and government fees, and representing me before RTA (Roads and Transport Authority), Dubai Police Traffic Department, customs authorities, insurance companies, and all related entities. This POA does NOT authorize the agent to mortgage the vehicle or sub-delegate this authority. This POA is issued through Dubai Courts or the UAE Ministry of Justice via a video call and is valid for [duration] from the date of notarization unless revoked earlier.",
-            "ar": "أنا الموقِّع أدناه، [الاسم الكامل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، للتصرف نيابةً عني في جميع الشؤون المتعلقة بالمركبة المسجَّلة باسمي: رقم اللوحة: [XXXXXXX]، رقم الهيكل: [XXXXXXX]، الماركة: [الماركة]، الموديل: [الموديل]، السنة: [السنة] — بما يشمل: البيع والشراء والتسجيل وتجديد التسجيل ونقل الملكية وتسوية المخالفات المرورية ودفع الرسوم الحكومية والتمثيل أمام هيئة الطرق والمواصلات وإدارة مرور دبي وسلطات الجمارك وشركات التأمين وجميع الجهات ذات الصلة. لا تُخوِّل هذه الوكالة الوكيلَ برهن المركبة أو تفويض هذه الصلاحية لغيره. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو وهي سارية لمدة [المدة] من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
+            "ar": "أنا الموقِّع أدناه، [الاسم الكامل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، للتصرف نيابةً عني في جميع الشؤون المتعلقة بالمركبة المسجَّلة باسمي: رقم اللوحة: [XXXXXXX]، رقم الهيكل: [XXXXXXX]، الماركة: [الماركة]، الموديل: [الموديل]، السنة: [السنة] — بما يشمل: البيع والشراء والتسجيل وتجديد التسجيل ونقل الملكية وتسوية المخالفات المرورية ودفع الرسوم الحكومية والتمثيل أمام هيئة الطرق والمواصلات وإدارة مرور دبي وسلطات الجمارك وشركات التأمين وجميع الجهات ذات الصلة. لا تُخوِّل هذه الوكالة الوكيلَ برهن المركبة أو تفويض هذه الصلاحية لغيره. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو وهي سارية لمدة [المدة] من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
           }
         },
         {
@@ -3177,8 +3177,8 @@
                 "ar": "التوثيق بمكالمة الفيديو — من أي مكان"
               },
               "body": {
-                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport + OTP. Delivered by email within hours.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُتحقق الهوية بجواز السفر ورمز OTP. التسليم بالبريد الإلكتروني في غضون ساعات."
+                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport. Delivered by email within hours.",
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية بجواز السفر. التسليم بالبريد الإلكتروني في غضون ساعات."
               }
             },
             {
@@ -3214,8 +3214,8 @@
       "h1_ar": "الوكالة البنكية في دبي — صياغة دقيقة وفق متطلبات البنوك",
       "title_en": "Bank POA Dubai | Account & Loan Authority | POA in 30",
       "title_ar": "الوكالة البنكية دبي | حسابات وقروض | POA in 30",
-      "meta_en": "Manage your Dubai bank accounts from abroad. We draft Bank POAs compliant with UAE regulations to keep your finances accessible. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
-      "meta_ar": "هل تمنعك ظروفك من زيارة البنك؟ نصيغ وكالتك البنكية وفق شروط البنوك الإماراتية لضمان عدم تعطل معاملاتك المالية. نوثقها لك رقمياً.",
+      "meta_en": "We draft Bank POAs compliant with UAE bank requirements. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
+      "meta_ar": "نصيغ وكالتك البنكية وفق شروط البنوك الإماراتية بما يحول دون تعطل معاملاتك المالية أثناء غيابك، مع توثيق رقمي كامل.",
       "sections": [
         {
           "en": "What a Bank POA actually authorizes",
@@ -3259,7 +3259,7 @@
         },
         {
           "en": "UAE banks strictly follow Anti-Money Laundering (AML) rules, which means they regularly reject General POAs. You need a dedicated Bank POA that clearly specifies your bank, branch, and exact account numbers.",
-          "ar": "تطبق البنوك في الإمارات لوائح تنظيمية صارمة، مما يجعلها ترفض الوكالات العامة في معظم الأحيان. أنت تحتاج إلى \"وكالة بنكية\" مخصصة تذكر بوضوح اسم البنك، الفرع، وأرقام الحسابات بدقة لضمان قبولها."
+          "ar": "تطبق البنوك في الإمارات لوائح تنظيمية صارمة، مما يجعلها ترفض الوكالات العامة في معظم الأحيان. أنت تحتاج إلى \"وكالة بنكية\" مخصصة تذكر بوضوح اسم البنك، الفرع، وأرقام الحسابات بدقة وفق اشتراطات قبولها."
         },
         {
           "en": "We draft your document to meet these exact banking standards. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, after which your representative can manage transfers, loans, or account closures securely.",
@@ -3326,7 +3326,7 @@
           },
           "a": {
             "en": "Yes. You can issue a UAE-valid Banking POA from anywhere in the world through Dubai Courts or the UAE Ministry of Justice via a video call. The notarized POA is delivered by email and is valid for use at UAE banks immediately. No additional MOFA attestation is required for a UANotarized via video call Banking POA. Important: even with a valid remotnotarized via video call POA, your bank may still require the agent to visit a branch in person — the POA authorizes the transactions, but the bank's operational policy determines how the agent engages.",
-            "ar": "نعم. يمكنك إصدار وكالة مصرفية سارية إماراتياً من أي مكان في العالم عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني وهي صالحة للاستخدام في البنوك الإماراتية فوراً. لا يُشترط تصديق وزارة الخارجية للوكالة المصرفية الموثَّقة إماراتياً. مهم: حتى مع وكالة صالحة موثَّقة عن بُعد، قد يشترط بنكك حضور الوكيل شخصياً في الفرع — الوكالة تُخوِّل بالمعاملات، لكن سياسة البنك التشغيلية تحدد كيفية تعامل الوكيل."
+            "ar": "نعم. يمكنك إصدار وكالة مصرفية سارية إماراتياً من أي مكان في العالم عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني وهي صالحة للاستخدام في البنوك الإماراتية فوراً. لا يُشترط تصديق وزارة الخارجية للوكالة المصرفية الموثَّقة إماراتياً. مهم: حتى مع وكالة صالحة موثَّقة عن بُعد، قد يشترط بنكك حضور الوكيل شخصياً في الفرع — الوكالة تُخوِّل بالمعاملات، لكن سياسة البنك التشغيلية تحدد كيفية تعامل الوكيل."
           }
         },
         {
@@ -3512,8 +3512,8 @@
                 "ar": "التوثيق بمكالمة الفيديو — من أي مكان"
               },
               "body": {
-                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport + OTP. Delivered by email within hours.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُتحقق الهوية بجواز السفر ورمز OTP. التسليم بالبريد الإلكتروني في غضون ساعات."
+                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport. Delivered by email within hours.",
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية بجواز السفر. التسليم بالبريد الإلكتروني في غضون ساعات."
               }
             },
             {
@@ -3560,8 +3560,8 @@
       "h1_ar": "الوكالة الخاصة في دبي — صياغة دقيقة لمعاملة محددة",
       "title_en": "Special POA Dubai | Specific Authority | POA in 30",
       "title_ar": "الوكالة الخاصة دبي | صلاحيات محددة | POA in 30",
-      "meta_en": "Government departments require precision. Our Special Power of Attorney is tailored for one exact transaction to ensure instant acceptance. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
-      "meta_ar": "الدوائر الحكومية تشترط الدقة. نصيغ لك وكالة خاصة لمهمة واحدة فقط لضمان قبول معاملتك فوراً وبدون تعقيدات. التوثيق يتم رقمياً في دقائق.",
+      "meta_en": "Special POA drafted for one exact transaction, as government bodies require. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
+      "meta_ar": "الدوائر الحكومية تشترط الدقة. نصيغ لك وكالة خاصة لمهمة واحدة فقط بصياغة تستوفي اشتراطات الجهة المعنية. التوثيق يتم رقمياً في دقائق.",
       "sections": [
         {
           "en": "What makes a Special POA different",
@@ -3604,8 +3604,8 @@
           "ar": "الدوائر الحكومية في دبي ترفض الوكالات العامة أو غير الواضحة في كثير من الأحيان. إذا كنت تحتاج لإنجاز مهمة واحدة فقط—مثل بيع عقار معين أو إلغاء رخصة تجارية محددة—فأنت بحاجة إلى وكالة خاصة."
         },
         {
-          "en": "A Special POA protects you by strictly limiting your representative's power to that exact transaction. Because it is tied to specific identifiers—like a Title Deed number or a chassis number—it ensures smooth processing at the official counters.",
-          "ar": "الوكالة الخاصة تحميك لأنها تقصر صلاحية ممثلك على هذه المعاملة فقط. وبما أنها تتضمن تفاصيل دقيقة—مثل رقم سند الملكية أو رقم الشاسيه—فهي تضمن قبول الأوراق فوراً عند تقديمها للموظف المسؤول."
+          "en": "A Special POA protects you by strictly limiting your representative's power to that exact transaction. Because it is tied to specific identifiers—like a Title Deed number or a chassis number—it ensures smooth processing at the official counters. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "الوكالة الخاصة تحميك لأنها تقصر صلاحية ممثلك على هذه المعاملة فقط. وبما أنها تتضمن تفاصيل دقيقة—مثل رقم سند الملكية أو رقم الشاسيه—فهي تستوفي اشتراطات القبول عند تقديمها للموظف المسؤول. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "We do not use generic templates. We draft your document based on the exact requirements of the authority receiving it. Once drafted, we arrange your digital notarization so your representative can act immediately.",
@@ -3650,7 +3650,7 @@
           },
           "a": {
             "en": "A General Power of Attorney grants broad authority across multiple legal and financial matters, valid for up to 2 years. A Special Power of Attorney grants authority for one specific purpose only — and expires automatically once that purpose is fulfilled. No action outside the stated scope can be taken by the agent.",
-            "ar": "الوكالة الخاصة تمنح وكيلك صلاحية لغرض محدد واحد فقط — ولا شيء أكثر. يُصاغ المستند بلغة صريحة تُقيّد نطاق صلاحيات الوكيل، مما يضمن عدم تصرفه خارج ما فوّضته إياه."
+            "ar": "الوكالة الخاصة تمنح وكيلك صلاحية لغرض محدد واحد فقط — ولا شيء أكثر. يُصاغ المستند بلغة صريحة تُقيّد نطاق صلاحيات الوكيل، بما يحول دون تصرفه خارج ما فوّضته إياه."
           }
         },
         {
@@ -3913,8 +3913,8 @@
       "h1_ar": "الوكالة القضائية في دبي — التمثيل القانوني أمام المحاكم",
       "title_en": "Court Power of Attorney Dubai | Litigation POA | POA in 30",
       "title_ar": "وكالة قضائية في دبي | تفويض محاميك رقمياً",
-      "meta_en": "Facing a legal case in Dubai while abroad? Authorize a lawyer to represent you in court with a Litigation POA. Drafted and digitally notarized fast.",
-      "meta_ar": "هل لديك دعوى قانونية في دبي وأنت بالخارج؟ فوض محاميك لتمثيلك أمام المحاكم عبر وكالة قضائية. صياغة دقيقة وتوثيق رقمي سريع لإنجاز معاملاتك.",
+      "meta_en": "A Litigation POA authorizes a lawyer to represent you before Dubai courts while you are abroad. Drafted and digitally notarized.",
+      "meta_ar": "وكالة قضائية لتفويض محاميك بتمثيلك أمام محاكم دبي وأنت خارج الدولة. صياغة دقيقة وتوثيق رقمي عبر مكالمة فيديو.",
       "sections": [
         {
           "en": "What a Court POA authorizes",
@@ -3961,8 +3961,8 @@
           "ar": "الوكالة القضائية هي الحل القانوني لهذه المشكلة. فهي تفوض محاميك أو ممثلك القانوني لتقديم المذكرات، حضور الجلسات، والدفاع عن حقوقك أمام محاكم دبي أو مركز فض المنازعات الإيجارية (RDC)."
         },
         {
-          "en": "Authorizing your lawyer is straightforward. Provide us with your case details, and we will draft the proper legal mandate. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, allowing your legal team to start acting immediately.",
-          "ar": "تفويض محاميك رسمياً أصبح ميسوراً. أرسل لنا تفاصيل الدعوى وسنقوم بصياغة الوكالة المطلوبة. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، ليبدأ فريقك القانوني عمله فوراً دون انتظار حضورك."
+          "en": "Authorizing your lawyer is straightforward. Provide us with your case details, and we will draft the proper legal mandate. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, allowing your appointed legal representative to start acting immediately.",
+          "ar": "لتفويض محاميك رسمياً، أرسل لنا تفاصيل الدعوى ونتولى صياغة الوكالة المطلوبة. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، ليبدأ فريقك القانوني عمله فوراً دون انتظار حضورك."
         }
       ],
       "list_items": [
@@ -4033,7 +4033,7 @@
           },
           "a": {
             "en": "They are separate judicial systems with different requirements. Dubai Courts (Arabic proceedings): POA must be in Arabic, notarized through Dubai Courts or the UAE Ministry of Justice via a video call, and name the specific case number. DIFC Courts (English proceedings): POA can be in English, notarized by a UAE Notary Public or a recognized foreign notary, and must explicitly reference DIFC jurisdiction. A Dubai Courts POA is not automatically valid for DIFC proceedings — you need a separate, correctly formatted POA for each system.",
-            "ar": "هما منظومتان قضائيتان منفصلتان بمتطلبات مختلفة. محاكم دبي (إجراءات بالعربية): يجب أن تكون الوكالة باللغة العربية، موثَّقة عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو، وتذكر رقم القضية المحدد. محاكم مركز دبي المالي الدولي (إجراءات بالإنجليزية): يمكن تحرير الوكالة بالإنجليزية، موثَّقة من كاتب عدل إماراتي أو كاتب عدل أجنبي معترَف به، وتُشير صراحةً إلى اختصاص المركز. لا تُعدّ وكالة محاكم دبي صالحة تلقائياً لإجراءات المركز — تحتاج وكالة منفصلة ومُنسَّقة لكل منظومة."
+            "ar": "هما منظومتان قضائيتان منفصلتان بمتطلبات مختلفة. محاكم دبي (إجراءات بالعربية): يجب أن تكون الوكالة باللغة العربية، موثَّقة عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو، وتذكر رقم القضية المحدد. محاكم مركز دبي المالي الدولي (إجراءات بالإنجليزية): يمكن تحرير الوكالة بالإنجليزية، موثَّقة من كاتب عدل إماراتي أو كاتب عدل أجنبي معترَف به، وتُشير صراحةً إلى اختصاص المركز. لا تُعدّ وكالة محاكم دبي صالحة تلقائياً لإجراءات المركز — تحتاج وكالة منفصلة ومُنسَّقة لكل منظومة."
           }
         },
         {
@@ -4068,8 +4068,8 @@
           "ar": "وكالة قضائية في دبي | تفويض محاميك رقمياً"
         },
         "meta_description": {
-          "en": "Facing a legal case in Dubai while abroad? Authorize a lawyer to represent you in court with a Litigation POA. Drafted and digitally notarized fast.",
-          "ar": "هل لديك دعوى قانونية في دبي وأنت بالخارج؟ فوض محاميك لتمثيلك أمام المحاكم عبر وكالة قضائية. صياغة دقيقة وتوثيق رقمي سريع لإنجاز معاملاتك."
+          "en": "A Litigation POA authorizes a lawyer to represent you before Dubai courts while you are abroad. Drafted and digitally notarized.",
+          "ar": "وكالة قضائية لتفويض محاميك بتمثيلك أمام محاكم دبي وأنت خارج الدولة. صياغة دقيقة وتوثيق رقمي عبر مكالمة فيديو."
         },
         "wa_message": {
           "en": "Hi, I need a Court Power of Attorney for a case in Dubai. Can you help?",
@@ -4161,11 +4161,11 @@
             {
               "title": {
                 "en": "Notarize through Dubai Courts or the UAE Ministry of Justice via a video call",
-                "ar": "التوثيق عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو"
+                "ar": "التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو"
               },
               "body": {
-                "en": "You appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity is verified via passport and OTP. The session is recorded.",
-                "ar": "تمثل أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُتحقق الهوية عبر جواز السفر ورمز OTP. تُسجَّل الجلسة."
+                "en": "You appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity is verified via passport and. The session is recorded.",
+                "ar": "تمثل أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية عبر جواز السفر. تُسجَّل الجلسة."
               }
             },
             {
@@ -4221,7 +4221,7 @@
           },
           "text": {
             "en": "A Court POA must specify the court, the type of case, and the specific powers granted. A POA that says \"represent me before all courts\" may be challenged. Best practice is to name the specific court and case reference if available.",
-            "ar": "يجب أن يُحدِّد الوكالة القضائية المحكمة ونوع القضية والصلاحيات المُمنوحة بالتحديد. قد يُطعن في الوكالة الذي يقول \"مثِّلني أمام جميع المحاكم\". أفضل الممارسات هو تسمية المحكمة المحددة ومرجع القضية إن وُجد."
+            "ar": "يجب أن تُحدِّد الوكالة القضائية المحكمة ونوع القضية والصلاحيات المُمنوحة بالتحديد. قد يُطعن في الوكالة التي تقول \"مثِّلني أمام جميع المحاكم\". أفضل الممارسات هو تسمية المحكمة المحددة ومرجع القضية إن وُجد."
           }
         }
       ]
@@ -4231,7 +4231,7 @@
       "h1_ar": "إذن سفر الأطفال في دبي — للسفر بدون أحد الوالدين أو كليهما",
       "title_en": "Child Travel Consent POA Dubai | Minors | POA in 30",
       "title_ar": "إذن سفر الأطفال دبي | القاصرين | POA in 30",
-      "meta_en": "Prevent airport delays with a notarized Child Travel Consent POA for minors traveling alone or with one parent. Drafted and notarized through Dubai Courts or the UAE Ministry of Justice via a video call from Dubai.",
+      "meta_en": "Child Travel Consent POA for minors traveling alone or with one parent. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
       "meta_ar": "تجنب تأخير رحلتك في المطار. أصدر موافقة ووكالة سفر موثقة للأطفال المسافرين مع أحد الوالدين أو بمفردهم. إجراءات أونلاين سريعة من دبي.",
       "sections": [
         {
@@ -4609,7 +4609,7 @@
           "ref": "Sample Text — Child Travel Consent (Dubai Courts Format)",
           "text": {
             "en": "I, the undersigned, [Full Name of Consenting Parent], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], hereby give my explicit and full consent for my child: [Full Name of Child], date of birth: [DD/MM/YYYY], Passport No.: [XXXXXXX], to travel internationally in the company of [Full Name of Accompanying Person], nationality: [Nationality], Passport No.: [XXXXXXX], relationship to child: [Relationship]. This travel consent covers travel to [Destination Country/Countries] for the period from [Date] to [Date], or for a period not exceeding [Duration]. The accompanying person is authorized to: accompany the child, handle travel-related documentation, and act as temporary guardian during the travel period. This consent is issued through Dubai Courts or the UAE Ministry of Justice via a video call and is valid for the stated travel period unless revoked earlier.",
-            "ar": "أنا الموقِّع أدناه، [الاسم الكامل للوالد الموافق]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُعطي موافقتي الصريحة والكاملة لطفلي: [الاسم الكامل للطفل]، تاريخ الميلاد: [يوم/شهر/سنة]، جواز سفر رقم: [XXXXXXX]، للسفر دولياً برفقة [الاسم الكامل للشخص المرافق]، الجنسية: [الجنسية]، جواز سفر رقم: [XXXXXXX]، صلة القرابة بالطفل: [صلة القرابة]. تشمل موافقة السفر هذه السفر إلى [الدولة/الدول المقصودة] للفترة من [التاريخ] إلى [التاريخ]، أو لفترة لا تتجاوز [المدة]. يُخوَّل الشخص المرافق بـ: مرافقة الطفل والتعامل مع وثائق السفر والتصرف كولي مؤقت خلال فترة السفر. يُصدر هذا الإذن عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو وهو سارٍ للفترة المذكورة ما لم يُلغَ قبل ذلك."
+            "ar": "أنا الموقِّع أدناه، [الاسم الكامل للوالد الموافق]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُعطي موافقتي الصريحة والكاملة لطفلي: [الاسم الكامل للطفل]، تاريخ الميلاد: [يوم/شهر/سنة]، جواز سفر رقم: [XXXXXXX]، للسفر دولياً برفقة [الاسم الكامل للشخص المرافق]، الجنسية: [الجنسية]، جواز سفر رقم: [XXXXXXX]، صلة القرابة بالطفل: [صلة القرابة]. تشمل موافقة السفر هذه السفر إلى [الدولة/الدول المقصودة] للفترة من [التاريخ] إلى [التاريخ]، أو لفترة لا تتجاوز [المدة]. يُخوَّل الشخص المرافق بـ: مرافقة الطفل والتعامل مع وثائق السفر والتصرف كولي مؤقت خلال فترة السفر. يُصدر هذا الإذن عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو وهو سارٍ للفترة المذكورة ما لم يُلغَ قبل ذلك."
           }
         },
         {
@@ -4633,7 +4633,7 @@
       "h1_ar": "وكالة الميراث في دبي — إدارة التركة عن بُعد",
       "title_en": "Inheritance POA Dubai | Estate Authority | POA in 30",
       "title_ar": "وكالة الميراث دبي | إدارة التركة | POA in 30",
-      "meta_en": "Our Inheritance POA allows your family to authorize a representative in Dubai to administer the estate remotely. Drafted and notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
+      "meta_en": "Authorize a representative to administer an estate in Dubai remotely. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
       "meta_ar": "في أوقات الفقد، نسهل عليكم الإجراءات. تفوض وكالة الورثة ممثلاً عن العائلة لإدارة وحماية الأصول في دبي عن بُعد. صياغة قانونية وتوثيق رقمي سريع.",
       "sections": [
         {
@@ -4759,7 +4759,7 @@
           },
           "a": {
             "en": "Yes. Each heir can issue a separate Inheritance POA — they do not all need to sign the same document. Heirs in the UAE: notarize through Dubai Courts or the UAE Ministry of Justice via a video call. Heirs abroad: notarize locally, then go through the full attestation chain (local MoFA → UAE Embassy → UAE MoFA), or notarize directly via the UAE Ministry of Justice video call service from abroad — this avoids the full attestation chain entirely. All individual POAs are presented together to the relevant authority (DLD, bank, etc.) along with the Certificate of Inheritance.",
-            "ar": "نعم. يستطيع كل وارث إصدار وكالة ميراث منفصلة — لا يلزم أن يوقِّعوا جميعاً على الوثيقة ذاتها. الورثة في الإمارات: التوثيق عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. الورثة في الخارج: التوثيق محلياً ثم إتباع سلسلة المصادقة الكاملة (وزارة خارجية البلد المحلية ← سفارة الإمارات ← وزارة خارجية الإمارات)، أو التوثيق مباشرةً عبر خدمة مكالمة الفيديو لوزارة العدل الاتحادية من الخارج — مما يُجنِّب سلسلة المصادقة بالكامل. تُقدَّم جميع الوكالات الفردية معاً للجهة المعنية (دائرة الأراضي أو البنك أو غيرهما) مرفقةً بحصر الورثة."
+            "ar": "نعم. يستطيع كل وارث إصدار وكالة ميراث منفصلة — لا يلزم أن يوقِّعوا جميعاً على الوثيقة ذاتها. الورثة في الإمارات: التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. الورثة في الخارج: التوثيق محلياً ثم إتباع سلسلة المصادقة الكاملة (وزارة خارجية البلد المحلية ← سفارة الإمارات ← وزارة خارجية الإمارات)، أو التوثيق مباشرةً عبر خدمة مكالمة الفيديو لوزارة العدل الإماراتية من الخارج — مما يُجنِّب سلسلة المصادقة بالكامل. تُقدَّم جميع الوكالات الفردية معاً للجهة المعنية (دائرة الأراضي أو البنك أو غيرهما) مرفقةً بحصر الورثة."
           }
         },
         {
@@ -4826,7 +4826,7 @@
             },
             {
               "en": "Official notarization is mandatory — inside UAE: through Dubai Courts or the UAE Ministry of Justice via a video call; outside UAE: notarized locally + authenticated by Ministry of Foreign Affairs + UAE Embassy + UAE MoFA",
-              "ar": "التوثيق الرسمي إلزامي — داخل الإمارات: عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو؛ خارج الإمارات: موثَّق محلياً + مصادَق عليه من وزارة الخارجية + سفارة الإمارات + وزارة خارجية الإمارات"
+              "ar": "التوثيق الرسمي إلزامي — داخل الإمارات: عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو؛ خارج الإمارات: موثَّق محلياً + مصادَق عليه من وزارة الخارجية + سفارة الإمارات + وزارة خارجية الإمارات"
             },
             {
               "en": "Non-Arabic documents must be officially translated by a UAE-certified legal translator",
@@ -4872,7 +4872,7 @@
           "ref": "Sample Text — Inheritance Power of Attorney (Dubai Courts Format)",
           "text": {
             "en": "We, the undersigned heir(s) of the late [Full Name of Deceased], hereby appoint and authorize [Full Name of Agent], holder of Passport No. [XXXXXXX], as our lawful representative to act on our behalf in all inheritance matters, including: completing all inheritance procedures before Dubai Courts and UAE courts; collecting and receiving our share of the estate (cash, property, vehicles, and investments); signing and executing all documents before Dubai Land Department (DLD), UAE banks, Roads and Transport Authority (RTA), Dubai Electricity and Water Authority (DEWA), Ministry of Interior, and all other government and private entities; representing us in any legal proceedings related to the estate; and appointing lawyers where necessary. This Power of Attorney is issued through Dubai Courts or the UAE Ministry of Justice via a video call and is valid within the UAE from the date of notarization unless revoked earlier.",
-            "ar": "نحن الموقِّعون أدناه، ورثة المرحوم/ة [الاسم الكامل للمتوفى]، نُعيِّن ونُفوِّض [الاسم الكامل للوكيل]، حامل جواز السفر رقم [XXXXXXX]، وكيلاً قانونياً شرعياً للتصرف نيابةً عنا في جميع شؤون الميراث، بما فيها: إتمام جميع إجراءات الميراث أمام محاكم دبي والمحاكم الإماراتية؛ استلام وتسلُّم حصتنا من التركة (نقداً وعقارات ومركبات واستثمارات)؛ التوقيع على جميع الوثائق وتنفيذها أمام دائرة الأراضي والأملاك والبنوك الإماراتية وهيئة الطرق والمواصلات وهيئة كهرباء ومياه دبي ووزارة الداخلية وجميع الجهات الحكومية والخاصة الأخرى؛ تمثيلنا في أي إجراءات قانونية تتعلق بالتركة؛ وتعيين محامين عند الاقتضاء. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو وهي سارية داخل الإمارات اعتباراً من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
+            "ar": "نحن الموقِّعون أدناه، ورثة المرحوم/ة [الاسم الكامل للمتوفى]، نُعيِّن ونُفوِّض [الاسم الكامل للوكيل]، حامل جواز السفر رقم [XXXXXXX]، وكيلاً قانونياً شرعياً للتصرف نيابةً عنا في جميع شؤون الميراث، بما فيها: إتمام جميع إجراءات الميراث أمام محاكم دبي والمحاكم الإماراتية؛ استلام وتسلُّم حصتنا من التركة (نقداً وعقارات ومركبات واستثمارات)؛ التوقيع على جميع الوثائق وتنفيذها أمام دائرة الأراضي والأملاك والبنوك الإماراتية وهيئة الطرق والمواصلات وهيئة كهرباء ومياه دبي ووزارة الداخلية وجميع الجهات الحكومية والخاصة الأخرى؛ تمثيلنا في أي إجراءات قانونية تتعلق بالتركة؛ وتعيين محامين عند الاقتضاء. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو وهي سارية داخل الإمارات اعتباراً من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
           }
         },
         {
@@ -4976,7 +4976,7 @@
       "title_en": "Company Formation POA Dubai | LLC Setup | POA in 30",
       "title_ar": "وكالة تأسيس شركة دبي | LLC | POA in 30",
       "meta_en": "Setting up a business in Dubai from abroad? Empower a representative to handle DED or free-zone incorporation steps via our Company Formation POA.",
-      "meta_ar": "هل تستثمر في دبي من الخارج؟ وكالة تأسيس الشركات تفوض ممثلك لإنجاز تراخيص الدائرة الاقتصادية أو المناطق الحرة نيابة عنك بخطوات قانونية معتمدة.",
+      "meta_ar": "وكالة تأسيس الشركات تفوض ممثلك لإنجاز تراخيص الدائرة الاقتصادية أو المناطق الحرة نيابة عنك بخطوات قانونية معتمدة — من خارج الدولة.",
       "sections": [
         {
           "en": "What a Company Formation POA covers end-to-end",
@@ -5024,7 +5024,7 @@
         },
         {
           "en": "A Company Formation Power of Attorney grants your representative the legal authority to interact with the Department of Economy and Tourism (DED) or Free Zone authorities, ensuring your business license is issued correctly and on schedule.",
-          "ar": "وكالة تأسيس الشركات هي أداتك الاستراتيجية لبدء أعمالك. فهي تمنح ممثلك الصلاحية القانونية للتعامل المباشر مع دائرة الاقتصاد والسياحة (DED) أو سلطات المناطق الحرة، مما يضمن إصدار رخصتك التجارية بسرعة ودقة."
+          "ar": "وكالة تأسيس الشركات هي أداتك الاستراتيجية لبدء أعمالك. فهي تمنح ممثلك الصلاحية القانونية للتعامل المباشر مع دائرة الاقتصاد والسياحة (DED) أو سلطات المناطق الحرة، بما ييسِّر إصدار رخصتك التجارية بدقة."
         },
         {
           "en": "We draft this POA to precisely match the entity type you are establishing—whether a mainland LLC or a free-zone branch. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, after which your agent can secure trade names, sign memorandums, and initiate banking setups on your behalf.",
@@ -5155,7 +5155,7 @@
         },
         "meta_description": {
           "en": "Setting up a business in Dubai from abroad? Empower a representative to handle DED or free-zone incorporation steps via our Company Formation POA.",
-          "ar": "هل تستثمر في دبي من الخارج؟ وكالة تأسيس الشركات تفوض ممثلك لإنجاز تراخيص الدائرة الاقتصادية أو المناطق الحرة نيابة عنك بخطوات قانونية معتمدة."
+          "ar": "وكالة تأسيس الشركات تفوض ممثلك لإنجاز تراخيص الدائرة الاقتصادية أو المناطق الحرة نيابة عنك بخطوات قانونية معتمدة — من خارج الدولة."
         },
         "wa_message": {
           "en": "Hi, I want to form a company in Dubai through an attorney. Can you help draft the POA?",
@@ -5168,7 +5168,7 @@
           "accent": true,
           "text": {
             "en": "Start your investment journey without physical presence. We draft POAs to authorize agents for incorporation procedures at DED and Free Zones.",
-            "ar": "نمنحك القدرة على بدء استثمارك دون عناء الحضور. نوفر صياغة قانونية لتفويض وكيل لإنهاء إجراءات التأسيس لدى الدوائر الاقتصادية والمناطق الحرة."
+            "ar": "يمكنك بدء إجراءات تأسيس شركتك دون الحاجة إلى الحضور الشخصي. نوفر صياغة قانونية لتفويض وكيل لإنهاء إجراءات التأسيس لدى الدوائر الاقتصادية والمناطق الحرة."
           }
         },
         {
@@ -5313,7 +5313,7 @@
       "title_en": "Property Gift POA Dubai | Hiba Transfer | POA in 30",
       "title_ar": "وكالة هبة العقار دبي | نقل بدون بيع | POA in 30",
       "meta_en": "Transferring a Dubai property to your child or spouse? Our Hiba POA empowers a representative to handle the DLD gifting process without a sale price.",
-      "meta_ar": "هل ترغب في نقل ملكية شقة لابنك أو زوجتك؟ وكالة الهبة تفوض ممثلك لإتمام الإجراءات في دائرة الأراضي بسلاسة وبدون تعقيدات عقود البيع.",
+      "meta_ar": "وكالة هبة عقار لنقل الملكية إلى الأقارب من الدرجة الأولى، تفوض ممثلك لإتمام الإجراءات في دائرة الأراضي والأملاك دون تعقيدات عقود البيع.",
       "sections": [
         {
           "en": "What a Property Gifting POA does — and who it is for",
@@ -5432,7 +5432,7 @@
           },
           "a": {
             "en": "Gifting (Hiba) is a transfer of property ownership without payment — the donor receives nothing in return. UAE law treats them differently. A sale involves a purchase price and DLD charges the standard 4% transfer fee. For gifting to first-degree relatives (parents, children, spouses), DLD charges a reduced fee of. Gifting is governed by Federal Law No. 28 of 2005 (Personal Status) for Muslim families, while property sales are governed by Federal Law No. 5 of 1985 (Civil Transactions). A gift once accepted cannot be revoked under UAE law except in specific circumstances.",
-            "ar": "الهبة نقل ملكية عقار بدون مقابل — لا يتلقى الواهب شيئاً في المقابل. البيع يتضمن ثمناً للشراء وتفرض الدائرة رسوم تحويل قياسية بنسبة . بالنسبة للهبة للأقارب من الدرجة الأولى (الوالدين والأبناء والزوجين)، تفرض الدائرة رسوماً مخفَّضة بنسبة من قيمة العقار — أقل بكثير من رسوم البيع. تخضع الهبة للقانون الاتحادي رقم 28 لسنة 2005 (الأحوال الشخصية) للأسر المسلمة، بينما تخضع مبيعات العقارات للقانون الاتحادي رقم 5 لسنة 1985 (المعاملات المدنية). الهبة بعد قبولها لا يمكن الرجوع فيها بموجب القانون الإماراتي إلا في ظروف محددة."
+            "ar": "الهبة نقل ملكية عقار بدون مقابل — لا يتلقى الواهب شيئاً في المقابل. البيع يتضمن ثمناً للشراء وتفرض الدائرة رسوم تحويل قياسية بنسبة. بالنسبة للهبة للأقارب من الدرجة الأولى (الوالدين والأبناء والزوجين)، تفرض الدائرة رسوماً مخفَّضة بنسبة من قيمة العقار — أقل بكثير من رسوم البيع. تخضع الهبة للقانون الاتحادي رقم 28 لسنة 2005 (الأحوال الشخصية) للأسر المسلمة، بينما تخضع مبيعات العقارات للقانون الاتحادي رقم 5 لسنة 1985 (المعاملات المدنية). الهبة بعد قبولها لا يمكن الرجوع فيها بموجب القانون الإماراتي إلا في ظروف محددة."
           }
         },
         {
@@ -5478,7 +5478,7 @@
         },
         "meta_description": {
           "en": "Transferring a Dubai property to your child or spouse? Our Hiba POA empowers a representative to handle the DLD gifting process without a sale price.",
-          "ar": "هل ترغب في نقل ملكية شقة لابنك أو زوجتك؟ وكالة الهبة تفوض ممثلك لإتمام الإجراءات في دائرة الأراضي بسلاسة وبدون تعقيدات عقود البيع."
+          "ar": "وكالة هبة عقار لنقل الملكية إلى الأقارب من الدرجة الأولى، تفوض ممثلك لإتمام الإجراءات في دائرة الأراضي والأملاك دون تعقيدات عقود البيع."
         },
         "wa_message": {
           "en": "Hi, I want to gift a property in Dubai through Hiba. Can you help draft the POA?",
@@ -5501,7 +5501,7 @@
           },
           "text": {
             "en": "When transferring property as a gift to a first-degree relative (parent, child, or spouse), Dubai Land Department charges a reduced transfer fee for immediate family members— This reduced fee applies only to direct family relationships: parents → children, children → parents, and between spouses. Siblings and other relatives pay the standard fee. Proof of family relationship (family book, birth certificate, or marriage certificate) is required at DLD to qualify for the reduced rate.",
-            "ar": "عند نقل ملكية عقار هبةً لقريب من الدرجة الأولى (أحد الوالدين أو الأبناء أو الزوج/الزوجة)، تفرض دائرة الأراضي والأملاك رسوم تحويل مخفَّضة بنسبة من قيمة العقار — مقارنةً برسوم البيع التجاري القياسية البالغة . تنطبق هذه الرسوم المخفَّضة على العلاقات الأسرية المباشرة فقط: الوالدان → الأبناء، الأبناء → الوالدين، وبين الزوجين. الأشقاء وسائر الأقارب يدفعون الرسوم القياسية . يُشترط تقديم إثبات صلة القرابة (دفتر الأسرة أو شهادة الميلاد أو عقد الزواج) في الدائرة للتأهل للسعر المخفَّض."
+            "ar": "عند نقل ملكية عقار هبةً لقريب من الدرجة الأولى (أحد الوالدين أو الأبناء أو الزوج/الزوجة)، تفرض دائرة الأراضي والأملاك رسوم تحويل مخفَّضة بنسبة من قيمة العقار — مقارنةً برسوم البيع التجاري القياسية البالغة. تنطبق هذه الرسوم المخفَّضة على العلاقات الأسرية المباشرة فقط: الوالدان → الأبناء، الأبناء → الوالدين، وبين الزوجين. الأشقاء وسائر الأقارب يدفعون الرسوم القياسية. يُشترط تقديم إثبات صلة القرابة (دفتر الأسرة أو شهادة الميلاد أو عقد الزواج) في الدائرة للتأهل للسعر المخفَّض."
           }
         },
         {
@@ -5542,7 +5542,7 @@
           "ref": "Sample Text — Property Gifting (Hiba) Power of Attorney (Dubai Courts Format)",
           "text": {
             "en": "I, the undersigned, [Full Name of Donor], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], hereby authorize [Full Name of Agent], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], to complete all procedures related to the gifting (Hiba) of the property registered in my name: Title Deed No. [XXXXXXX], located at [Address/Area], Dubai — to [Full Name of Recipient], [relationship to donor], Emirates ID No.: [XXXXXXX]. This includes: signing the Hiba deed before Dubai Land Department (DLD), attending the DLD Trustee Office, paying applicable gifting fees ( for first-degree relatives), and collecting the new Title Deed issued in the recipient's name. This POA is issued through Dubai Courts or the UAE Ministry of Justice via a video call and is valid for one year from the date of notarization unless revoked earlier.",
-            "ar": "أنا الموقِّع أدناه، [الاسم الكامل للواهب]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، بإتمام جميع إجراءات هبة العقار المسجَّل باسمي: سند الملكية رقم [XXXXXXX]، الكائن في [العنوان/المنطقة]، دبي — إلى [الاسم الكامل للمتلقي]، [صلة القرابة بالواهب]، بطاقة هوية إماراتية رقم: [XXXXXXX]. يشمل ذلك: توقيع سند الهبة أمام دائرة الأراضي والأملاك والحضور في مكتب الأمانة العقارية ودفع رسوم الهبة المطبَّقة ( للأقارب من الدرجة الأولى) واستلام سند الملكية الجديد الصادر باسم المتلقي. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو وهي سارية لمدة سنة واحدة من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
+            "ar": "أنا الموقِّع أدناه، [الاسم الكامل للواهب]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، بإتمام جميع إجراءات هبة العقار المسجَّل باسمي: سند الملكية رقم [XXXXXXX]، الكائن في [العنوان/المنطقة]، دبي — إلى [الاسم الكامل للمتلقي]، [صلة القرابة بالواهب]، بطاقة هوية إماراتية رقم: [XXXXXXX]. يشمل ذلك: توقيع سند الهبة أمام دائرة الأراضي والأملاك والحضور في مكتب الأمانة العقارية ودفع رسوم الهبة المطبَّقة ( للأقارب من الدرجة الأولى) واستلام سند الملكية الجديد الصادر باسم المتلقي. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو وهي سارية لمدة سنة واحدة من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
           }
         },
         {
@@ -5573,7 +5573,7 @@
               },
               "body": {
                 "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call — from anywhere in the world. Delivered by email within hours.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو — من أي مكان في العالم. التسليم بالبريد الإلكتروني في غضون ساعات."
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو — من أي مكان في العالم. التسليم بالبريد الإلكتروني في غضون ساعات."
               }
             },
             {
@@ -5609,8 +5609,8 @@
       "h1_ar": "وكالة وزارة العمل في دبي — تسوية الحقوق العمالية عن بُعد",
       "title_en": "MOHRE POA Dubai | Labour & End-of-Service | POA in 30",
       "title_ar": "وكالة وزارة العمل دبي | MOHRE | POA in 30",
-      "meta_en": "Facing an end-of-service dispute from abroad? Empower a representative to file MOHRE complaints and secure your settlements in Dubai.",
-      "meta_ar": "هل تواجه تعنتاً في تسوية حقوقك بعد مغادرة الدولة؟ فوض ممثلاً لتقديم الشكاوى العمالية وتحصيل مستحقاتك لدى وزارة الموارد البشرية (MOHRE) بشكل رسمي.",
+      "meta_en": "A MOHRE POA empowers a representative to file labour complaints and collect your end-of-service settlements in Dubai while you are abroad.",
+      "meta_ar": "وكالة لتفويض ممثل بتقديم الشكاوى العمالية وتحصيل مستحقاتك لدى وزارة الموارد البشرية والتوطين (MOHRE) بشكل رسمي بعد مغادرتك الدولة.",
       "sections": [
         {
           "en": "What a MOHRE POA covers",
@@ -5658,11 +5658,11 @@
         },
         {
           "en": "A specialized MOHRE Power of Attorney enables a representative on the ground to act decisively on your behalf. This document grants them the authority to formally interact with the Ministry of Human Resources and Emiratisation to secure your rightful dues.",
-          "ar": "وكالة العمل المخصصة تمنح ممثلك على الأرض القدرة على التحرك بحسم نيابة عنك. فهذه الوثيقة تخوله التعامل المباشر مع وزارة الموارد البشرية والتوطين (MOHRE) لضمان تحصيل مستحقاتك القانونية."
+          "ar": "وكالة العمل المخصصة تمنح ممثلك على الأرض القدرة على التحرك بحسم نيابة عنك. فهذه الوثيقة تخوله التعامل المباشر مع وزارة الموارد البشرية والتوطين (MOHRE) لمتابعة تحصيل مستحقاتك القانونية."
         },
         {
           "en": "We draft this POA to include strong provisions for filing labour complaints, attending arbitration sessions, and receiving final settlement cheques securely in your name. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, allowing you to close this matter without booking a return flight.",
-          "ar": "نصيغ هذه الوكالة لتشمل صلاحيات قوية تمكن وكيلك من تسجيل الشكاوى العمالية، حضور جلسات التسوية، واستلام شيكات المستحقات باسمك بأمان. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، لتتمكن من إغلاق هذا الملف بإنصاف دون عناء السفر."
+          "ar": "نصيغ هذه الوكالة لتشمل صلاحيات قوية تمكن وكيلك من تسجيل الشكاوى العمالية، حضور جلسات التسوية، واستلام شيكات المستحقات باسمك بأمان. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، لتتمكن من إغلاق هذا الملف بإنصاف دون الحاجة إلى السفر."
         }
       ],
       "list_items": [
@@ -5703,7 +5703,7 @@
           },
           "a": {
             "en": "Yes. A MOHRE Power of Attorney can cover all employees under your trade license — you do not need a separate POA for each employee. The POA should state 'all current and future employees registered under Trade License No. [X]' to ensure new hires are covered. Where the POA is for a specific purpose (such as a single MOHRE dispute), it should name the case reference. Important: MOHRE procedural representation does not require a licensed lawyer — a properly authorized HR manager or PRO can handle this through a notarized POA.",
-            "ar": "نعم. يمكن لوكالة MOHRE أن تغطي جميع الموظفين المسجلين تحت رخصتك التجارية — دون الحاجة إلى وكالة منفصلة لكل موظف. ينبغي أن تنص الوكالة على 'جميع الموظفين الحاليين والمستقبليين المسجلين تحت رخصة تجارية رقم [X]' لضمان تغطية الموظفين الجدد. عندما تكون الوكالة لغرض محدد كنزاع واحد أمام وزارة الموارد البشرية، يجب ذكر رقم الملف. ملاحظة مهمة: التمثيل الإجرائي أمام وزارة الموارد البشرية لا يستلزم محامياً مرخصاً — يمكن لمدير موارد بشرية أو مسؤول شؤون حكومية مُفوَّض رسمياً القيام بذلك عبر وكالة موثقة."
+            "ar": "نعم. يمكن لوكالة MOHRE أن تغطي جميع الموظفين المسجلين تحت رخصتك التجارية — دون الحاجة إلى وكالة منفصلة لكل موظف. ينبغي أن تنص الوكالة على 'جميع الموظفين الحاليين والمستقبليين المسجلين تحت رخصة تجارية رقم [X]' بما يغطي الموظفين الجدد. عندما تكون الوكالة لغرض محدد كنزاع واحد أمام وزارة الموارد البشرية، يجب ذكر رقم الملف. ملاحظة مهمة: التمثيل الإجرائي أمام وزارة الموارد البشرية لا يستلزم محامياً مرخصاً — يمكن لمدير موارد بشرية أو مسؤول شؤون حكومية مُفوَّض رسمياً القيام بذلك عبر وكالة موثقة."
           }
         },
         {
@@ -5758,8 +5758,8 @@
           "ar": "وكالة وزارة العمل دبي | MOHRE | POA in 30"
         },
         "meta_description": {
-          "en": "Facing an end-of-service dispute from abroad? Empower a representative to file MOHRE complaints and secure your settlements in Dubai.",
-          "ar": "هل تواجه تعنتاً في تسوية حقوقك بعد مغادرة الدولة؟ فوض ممثلاً لتقديم الشكاوى العمالية وتحصيل مستحقاتك لدى وزارة الموارد البشرية (MOHRE) بشكل رسمي."
+          "en": "A MOHRE POA empowers a representative to file labour complaints and collect your end-of-service settlements in Dubai while you are abroad.",
+          "ar": "وكالة لتفويض ممثل بتقديم الشكاوى العمالية وتحصيل مستحقاتك لدى وزارة الموارد البشرية والتوطين (MOHRE) بشكل رسمي بعد مغادرتك الدولة."
         },
         "wa_message": {
           "en": "Hi, I need a MOHRE Power of Attorney in Dubai. Can you help?",
@@ -5950,7 +5950,7 @@
               },
               "body": {
                 "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. The POA is issued in Federal format — confirmed before drafting.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُصدَر الوكالة بالصيغة الاتحادية — يُؤكَّد ذلك قبل الصياغة."
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُصدَر الوكالة بالصيغة الاتحادية — يُؤكَّد ذلك قبل الصياغة."
               }
             },
             {
@@ -5994,11 +5994,11 @@
     },
     "/power-of-attorney/real-estate/sale": {
       "h1_en": "Real Estate Sale POA Dubai — Close the Deal Remotely",
-      "h1_ar": "أتمم بيع عقارك فوراً: وكالة بيع العقارات في دبي",
+      "h1_ar": "وكالة بيع العقار في دبي — إتمام البيع عن بُعد",
       "title_en": "Property Sale POA Dubai | Sell Remote | POA in 30",
       "title_ar": "وكالة بيع العقار دبي | بيع عن بُعد | POA in 30",
-      "meta_en": "Have a buyer for your Dubai property but cannot travel? Draft a Property Sale POA to finalize the DLD transfer and secure your funds.",
-      "meta_ar": "هل لديك مشترٍ لعقارك ولا تستطيع الحضور؟ أصدر وكالة بيع لإتمام الإجراءات فوراً في دائرة الأراضي والأملاك لضمان إتمام الصفقة واستلام أموالك بأمان.",
+      "meta_en": "A Property Sale POA lets your representative finalize the DLD transfer and secure your funds when you have a buyer but cannot travel.",
+      "meta_ar": "وكالة بيع عقار لإتمام إجراءات نقل الملكية في دائرة الأراضي والأملاك نيابة عنك وأنت خارج الدولة، بصياغة تحفظ ضوابط استلام الثمن.",
       "sections": [
         {
           "en": "What a Sale POA does — and what the DLD will check",
@@ -6038,7 +6038,7 @@
       "content": [
         {
           "en": "When a serious buyer is ready to close the deal this week, your distance from Dubai shouldn't put the sale at risk of falling through.",
-          "ar": "تمتلك عقاراً في دبي ووجدت المشتري الجاهز لإتمام الصفقة هذا الأسبوع. تواجدك خارج الدولة لا ينبغي أن يعرض هذه الصفقة المربحة لخطر الإلغاء أو التأخير."
+          "ar": "إذا كنت تمتلك عقاراً في دبي ووجدت مشترياً جاهزاً لإتمام الصفقة، فلا ينبغي أن يؤدي تواجدك خارج الدولة إلى تعريض البيع للإلغاء أو التأخير."
         },
         {
           "en": "A Real Estate Sale POA is designed for prompt action. It authorizes your representative to attend the Dubai Land Department (DLD) on your behalf, finalize the transfer of ownership, and ensure the buyer's payment is secured in your name.",
@@ -6141,15 +6141,15 @@
       "seo": {
         "h1": {
           "en": "Real Estate Sale POA Dubai — Close the Deal Remotely",
-          "ar": "أتمم بيع عقارك فوراً: وكالة بيع العقارات في دبي"
+          "ar": "وكالة بيع العقار في دبي — إتمام البيع عن بُعد"
         },
         "meta_title": {
           "en": "Property Sale POA Dubai | Sell Remote | POA in 30",
           "ar": "وكالة بيع العقار دبي | بيع عن بُعد | POA in 30"
         },
         "meta_description": {
-          "en": "Have a buyer for your Dubai property but cannot travel? Draft a Property Sale POA to finalize the DLD transfer and secure your funds.",
-          "ar": "هل لديك مشترٍ لعقارك ولا تستطيع الحضور؟ أصدر وكالة بيع لإتمام الإجراءات فوراً في دائرة الأراضي والأملاك لضمان إتمام الصفقة واستلام أموالك بأمان."
+          "en": "A Property Sale POA lets your representative finalize the DLD transfer and secure your funds when you have a buyer but cannot travel.",
+          "ar": "وكالة بيع عقار لإتمام إجراءات نقل الملكية في دائرة الأراضي والأملاك نيابة عنك وأنت خارج الدولة، بصياغة تحفظ ضوابط استلام الثمن."
         },
         "wa_message": {
           "en": "Hi, I need a Real Estate Sale POA for my Dubai property. Can you help?",
@@ -6168,11 +6168,11 @@
           "type": "warning",
           "title": {
             "en": "DLD rejects incorrectly formatted Real Estate POAs on the spot",
-            "ar": "دائرة الأراضي والأملاك ترفض الوكالات العقارية بصيغة خاطئة فوراً"
+            "ar": "صيغة وكالة البيع التي تقبلها دائرة الأراضي — والصيغ التي تُرفض"
           },
           "text": {
             "en": "A Real Estate POA for Dubai Land Department must be in Dubai Courts bilingual format — not Federal format. It must name the specific property, specify the exact authorized transactions, and be issued within 3–6 months. Wrong format = rejected at the DLD counter. You must restart the entire process.",
-            "ar": "الوكالة العقارية لدائرة الأراضي والأملاك يجب أن يكون بصيغة محاكم دبي الثنائية اللغة — لا الصيغة الاتحادية. يجب أن يُسمِّي العقار المحدد ويُحدِّد المعاملات المُفوَّض بها بالضبط ويكون صادراً خلال 3 إلى 6 أشهر. صيغة خاطئة = رفض عند كاونتر الدائرة. يجب إعادة البداية من الصفر."
+            "ar": "الوكالة العقارية لدائرة الأراضي والأملاك يجب أن تكون بصيغة محاكم دبي الثنائية اللغة — لا الصيغة الاتحادية. يجب أن تُسمِّي العقار المحدد ويُحدِّد المعاملات المُفوَّض بها بالضبط ويكون صادراً خلال 3 إلى 6 أشهر. صيغة خاطئة = رفض عند كاونتر الدائرة. يجب إعادة البداية من الصفر."
           }
         },
         {
@@ -6259,8 +6259,8 @@
                 "ar": "التوثيق عبر مكالمة الفيديو"
               },
               "body": {
-                "en": "You appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call — from anywhere in the world. Identity verified by passport + OTP.",
-                "ar": "تمثل أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو — من أي مكان في العالم. تُتحقق الهوية بجواز السفر ورمز OTP."
+                "en": "You appear before a licensed UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call — from anywhere in the world. Identity verified by passport.",
+                "ar": "تمثل أمام كاتب عدل إماراتي مرخَّص عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو — من أي مكان في العالم. تُتحقق الهوية بجواز السفر."
               }
             },
             {
@@ -6422,7 +6422,7 @@
       "title_en": "Property Purchase POA Dubai | Buy Remote | POA in 30",
       "title_ar": "وكالة شراء عقار دبي | شراء عن بُعد | POA in 30",
       "meta_en": "Buying property in Dubai while abroad? A Purchase POA lets your agent complete the entire DLD transaction. Notarized via Dubai Courts or UAE Ministry of Justice.",
-      "meta_ar": "هل استثمرت في عقار على المخطط وتحتاج لمن يستلمه ويسجله نيابة عنك في دبي؟ وكالة الشراء تتيح لممثلك إنهاء الإجراءات بسهولة وأمان دون الحاجة لسفرك.",
+      "meta_ar": "وكالة الشراء تتيح لممثلك استلام عقارك على المخطط وتسجيله في دبي نيابة عنك، دون الحاجة إلى سفرك.",
       "sections": [
         {
           "en": "What a Purchase POA covers from start to title transfer",
@@ -6466,7 +6466,7 @@
         },
         {
           "en": "A Real Estate Purchase Power of Attorney lets someone you trust finalize the entire transaction on your behalf — from signing the initial Memorandum of Understanding (MOU) to completing the final registration at the DLD.",
-          "ar": "تتيح وكالة الشراء العقاري لشخص تثق به إتمام الصفقة كاملة نيابة عنك. بدءاً من توقيع مذكرة التفاهم (MOU) المبدئية وصولاً إلى التسجيل النهائي في دائرة الأراضي، يضمن ممثلك عدم تعطل استثمارك."
+          "ar": "تتيح وكالة الشراء العقاري لشخص تثق به إتمام الصفقة كاملة نيابة عنك. بدءاً من توقيع مذكرة التفاهم (MOU) المبدئية وصولاً إلى التسجيل النهائي في دائرة الأراضي، يتابع ممثلك كل مرحلة بما يحول دون تعطل استثمارك."
         },
         {
           "en": "We draft this document precisely, focusing on administrative execution rather than broad financial control over your accounts. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, after which your representative can officially receive the Title Deed and the property keys in your name.",
@@ -6527,7 +6527,7 @@
           },
           "a": {
             "en": "Yes. The entire purchase process can be completed by your agent using a Property Purchase POA — from signing the MOU and SPA, to paying fees, attending the DLD Trustee Office, and collecting the Title Deed in your name. You grant the POA via a video call notarization session with a UAE Notary Public — through Dubai Courts or the UAE Ministry of Justice via a video call — from anywhere in the world. The notarized POA is delivered by email and your agent proceeds with the full purchase process. You receive the Title Deed (usually as a scanned copy first) — all without setting foot in Dubai.",
-            "ar": "نعم. يمكن إتمام عملية الشراء بأكملها بواسطة وكيلك عبر وكالة شراء عقار — من توقيع مذكرة التفاهم واتفاقية البيع وحتى دفع الرسوم والحضور في مكتب الأمانة واستلام سند الملكية باسمك. تمنح الوكالة عبر جلسة توثيق بمكالمة الفيديو مع كاتب عدل إماراتي — عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو — من أي مكان في العالم. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني ويمضي وكيلك في عملية الشراء الكاملة. تستلم سند الملكية (عادةً كنسخة ممسوحة ضوئياً أولاً) — كل ذلك دون أن تطأ دبي."
+            "ar": "نعم. يمكن إتمام عملية الشراء بأكملها بواسطة وكيلك عبر وكالة شراء عقار — من توقيع مذكرة التفاهم واتفاقية البيع وحتى دفع الرسوم والحضور في مكتب الأمانة واستلام سند الملكية باسمك. تمنح الوكالة عبر جلسة توثيق بمكالمة الفيديو مع كاتب عدل إماراتي — عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو — من أي مكان في العالم. تُسلَّم الوكالة الموثَّقة بالبريد الإلكتروني ويمضي وكيلك في عملية الشراء الكاملة. تستلم سند الملكية (عادةً كنسخة ممسوحة ضوئياً أولاً) — كل ذلك دون أن تطأ دبي."
           }
         },
         {
@@ -6572,11 +6572,11 @@
           "type": "warning",
           "title": {
             "en": "DLD rejects incorrectly formatted Real Estate POAs on the spot",
-            "ar": "دائرة الأراضي والأملاك ترفض الوكالات العقارية بصيغة خاطئة فوراً"
+            "ar": "ما تشترطه دائرة الأراضي في وكالة الشراء قبل قبولها"
           },
           "text": {
             "en": "A Real Estate POA for Dubai Land Department must be in Dubai Courts bilingual format — not Federal format. It must name the specific property, specify the exact authorized transactions, and be issued within 3–6 months. Wrong format = rejected at the DLD counter. You must restart the entire process.",
-            "ar": "الوكالة العقارية لدائرة الأراضي والأملاك يجب أن يكون بصيغة محاكم دبي الثنائية اللغة — لا الصيغة الاتحادية. يجب أن يُسمِّي العقار المحدد ويُحدِّد المعاملات المُفوَّض بها بالضبط ويكون صادراً خلال 3 إلى 6 أشهر. صيغة خاطئة = رفض عند كاونتر الدائرة. يجب إعادة البداية من الصفر."
+            "ar": "الوكالة العقارية لدائرة الأراضي والأملاك يجب أن تكون بصيغة محاكم دبي الثنائية اللغة — لا الصيغة الاتحادية. يجب أن تُسمِّي العقار المحدد ويُحدِّد المعاملات المُفوَّض بها بالضبط ويكون صادراً خلال 3 إلى 6 أشهر. صيغة خاطئة = رفض عند كاونتر الدائرة. يجب إعادة البداية من الصفر."
           }
         },
         {
@@ -6733,11 +6733,11 @@
         },
         {
           "en": "This document is strictly administrative. Unlike a Sale POA, it categorically limits the appointed agent's authority to operational tasks, expressly excluding any rights to sell, mortgage, or transfer ownership of the property — keeping your asset fully protected.",
-          "ar": "تُصنف هذه الأداة القانونية ضمن الوكالات الإدارية الصارمة. فهي تقيد صلاحيات الوكيل بالمهام التشغيلية فقط، وتستبعد صراحةً أي حقوق لبيع، رهن، أو نقل ملكية العقار، مما يضمن الحماية المطلقة للأصول من أي تصرفات غير مصرح بها."
+          "ar": "تُصنف هذه الأداة القانونية ضمن الوكالات الإدارية الصارمة. فهي تقيد صلاحيات الوكيل بالمهام التشغيلية فقط، وتستبعد صراحةً أي حقوق لبيع، رهن، أو نقل ملكية العقار، بما يوفر حماية صارمة للأصول من أي تصرفات غير مصرح بها."
         },
         {
           "en": "We draft the POA to comply with Dubai Land Department (DLD) and Real Estate Regulatory Agency (RERA) requirements. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, after which your representative can register Ejari contracts, manage utility connections, and represent you in day-to-day matters.",
-          "ar": "تضمن الصياغة الشاملة التوافق مع متطلبات دائرة الأراضي والأملاك ومؤسسة التنظيم العقاري (RERA). يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، ليتمكن ممثلك بعدها من تسجيل عقود \"إيجاري\"، إدارة المرافق، وتمثيلك بصفة رسمية في الشؤون التشغيلية اليومية."
+          "ar": "تستوفي الصياغة الشاملة متطلبات دائرة الأراضي والأملاك ومؤسسة التنظيم العقاري (RERA). يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، ليتمكن ممثلك بعدها من تسجيل عقود \"إيجاري\"، إدارة المرافق، وتمثيلك بصفة رسمية في الشؤون التشغيلية اليومية."
         }
       ],
       "list_items": [
@@ -6788,7 +6788,7 @@
           },
           "a": {
             "en": "Yes — and we strongly recommend it. A Property Management POA can specify exactly which actions are permitted and which require your separate approval. For example: lease agreements up to 1 year (permitted), lease agreements over 1 year (requires your approval), routine maintenance (permitted), major structural works (requires your approval). Setting these limits protects your interests and ensures your agent acts only within the boundaries you define.",
-            "ar": "نعم — ونوصي بذلك بشدة. يمكن لوكالة إدارة العقار أن تُحدد بدقة الإجراءات الجائزة وتلك التي تستلزم موافقتك المنفصلة. مثلاً: عقود إيجار تصل إلى سنة (مسموح)، عقود إيجار تتجاوز سنة (تستلزم موافقتك)، أعمال صيانة روتينية (مسموح)، أعمال هيكلية كبرى (تستلزم موافقتك). تضمن هذه الحدود حماية مصالحك وتصرف الوكيل في الإطار الذي تحدده."
+            "ar": "نعم — ونوصي بذلك بشدة. يمكن لوكالة إدارة العقار أن تُحدد بدقة الإجراءات الجائزة وتلك التي تستلزم موافقتك المنفصلة. مثلاً: عقود إيجار تصل إلى سنة (مسموح)، عقود إيجار تتجاوز سنة (تستلزم موافقتك)، أعمال صيانة روتينية (مسموح)، أعمال هيكلية كبرى (تستلزم موافقتك). تحمي هذه الحدود مصالحك وتُبقي تصرف الوكيل في الإطار الذي تحدده."
           }
         },
         {
@@ -6937,7 +6937,7 @@
           "ref": "Sample Text — Property Management POA (Dubai Courts Format)",
           "text": {
             "en": "I, the undersigned, [Full Name], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], hereby authorize [Agent Full Name], nationality: [Nationality], Emirates ID No.: [XXXXXXX], Passport No.: [XXXXXXX], to manage and oversee the property registered in my name: Title Deed No. [XXXXXXX], located at [Address], Dubai — including: signing and renewing lease agreements, rent collection and issuing receipts, managing tenant interactions, property maintenance and repairs, and terminating lease contracts. This authorization includes representing me before Dubai Land Department (DLD), RERA, DEWA, Dubai Courts, Rental Disputes Settlement Centre (RDC), Dubai Municipality, and all related governmental and private authorities. This POA does NOT authorize the agent to sell, mortgage, or gift the property. This POA is issued through Dubai Courts or the UAE Ministry of Justice via a video call and is valid for [duration] from the date of notarization unless revoked earlier.",
-            "ar": "أنا الموقِّع أدناه، [الاسم الكامل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، بإدارة والإشراف على العقار المسجَّل باسمي: سند الملكية رقم [XXXXXXX]، الكائن في [العنوان]، دبي — بما يشمل: توقيع عقود الإيجار وتجديدها وتحصيل الإيجارات وإصدار الإيصالات وإدارة علاقات المستأجرين والصيانة والإصلاحات وإنهاء عقود الإيجار. يشمل هذا التفويض تمثيلي أمام دائرة الأراضي والأملاك ومؤسسة التنظيم العقاري وهيئة كهرباء ومياه دبي ومحاكم دبي ومركز تسوية النزاعات الإيجارية وبلدية دبي وجميع الجهات الحكومية والخاصة المرتبطة. لا تُخوِّل هذه الوكالة الوكيلَ ببيع العقار أو رهنه أو هبته. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو وهي سارية لمدة [المدة] من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
+            "ar": "أنا الموقِّع أدناه، [الاسم الكامل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، أُفوِّض [الاسم الكامل للوكيل]، الجنسية: [الجنسية]، بطاقة هوية إماراتية رقم: [XXXXXXX]، جواز سفر رقم: [XXXXXXX]، بإدارة والإشراف على العقار المسجَّل باسمي: سند الملكية رقم [XXXXXXX]، الكائن في [العنوان]، دبي — بما يشمل: توقيع عقود الإيجار وتجديدها وتحصيل الإيجارات وإصدار الإيصالات وإدارة علاقات المستأجرين والصيانة والإصلاحات وإنهاء عقود الإيجار. يشمل هذا التفويض تمثيلي أمام دائرة الأراضي والأملاك ومؤسسة التنظيم العقاري وهيئة كهرباء ومياه دبي ومحاكم دبي ومركز تسوية النزاعات الإيجارية وبلدية دبي وجميع الجهات الحكومية والخاصة المرتبطة. لا تُخوِّل هذه الوكالة الوكيلَ ببيع العقار أو رهنه أو هبته. تُصدر هذه الوكالة عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو وهي سارية لمدة [المدة] من تاريخ التوثيق ما لم تُلغَ قبل ذلك."
           }
         },
         {
@@ -6967,8 +6967,8 @@
                 "ar": "التوثيق بمكالمة الفيديو — من أي مكان"
               },
               "body": {
-                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport + OTP. Delivered by email within hours.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. تُتحقق الهوية بجواز السفر ورمز OTP. التسليم بالبريد الإلكتروني في غضون ساعات."
+                "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Identity verified by passport. Delivered by email within hours.",
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. تُتحقق الهوية بجواز السفر. التسليم بالبريد الإلكتروني في غضون ساعات."
               }
             },
             {
@@ -7004,8 +7004,8 @@
       "h1_ar": "وكالة بيع المركبات في دبي — نقل الملكية عن بُعد",
       "title_en": "Car Sale POA Dubai | Sell Vehicle Remote | POA in 30",
       "title_ar": "وكالة بيع السيارة دبي | بيع عن بُعد | POA in 30",
-      "meta_en": "Need to sell your car but leaving Dubai soon? A Vehicle Sale POA allows your representative to transfer ownership at the RTA. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
-      "meta_ar": "هل تغادر دبي قريباً وتحتاج لبيع سيارتك؟ وكالة بيع المركبات تتيح لممثلك نقل الملكية في هيئة الطرق والمواصلات نيابة عنك. صياغة دقيقة وتوثيق رقمي فوري.",
+      "meta_en": "Vehicle Sale POA — your representative transfers ownership at the RTA. Notarized through Dubai Courts or the UAE Ministry of Justice via a video call.",
+      "meta_ar": "وكالة بيع المركبات تتيح لممثلك نقل ملكية سيارتك في هيئة الطرق والمواصلات نيابة عنك إذا كنت تغادر دبي قبل إتمام البيع. صياغة دقيقة وتوثيق رقمي.",
       "sections": [
         {
           "en": "What a Vehicle Sale POA covers from agreement to transfer",
@@ -7239,7 +7239,7 @@
           "items": [
             {
               "en": "Must be officially notarized — through Dubai Courts or the UAE Ministry of Justice via a video call",
-              "ar": "يجب توثيقها رسمياً — عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو"
+              "ar": "يجب توثيقها رسمياً — عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو"
             },
             {
               "en": "Vehicle details must include BOTH chassis number AND plate number — one alone is insufficient",
@@ -7345,7 +7345,7 @@
               },
               "body": {
                 "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. POA delivered by email within hours.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. الوكالة تُسلَّم بالبريد الإلكتروني في غضون ساعات."
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. الوكالة تُسلَّم بالبريد الإلكتروني في غضون ساعات."
               }
             },
             {
@@ -7653,7 +7653,7 @@
               },
               "body": {
                 "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. POA must explicitly state 'export' authority with chassis and plate number.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. يجب أن تذكر الوكالة صراحةً صلاحية 'التصدير' مع رقم الهيكل ورقم اللوحة."
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. يجب أن تذكر الوكالة صراحةً صلاحية 'التصدير' مع رقم الهيكل ورقم اللوحة."
               }
             },
             {
@@ -7759,7 +7759,7 @@
       "title_en": "Vehicle Management POA Dubai | Renew & Pay | POA in 30",
       "title_ar": "وكالة إدارة المركبات دبي | تجديد ومخالفات | POA in 30",
       "meta_en": "Traveling for an extended period? Authorize a representative to renew registration, clear fines, and maintain your vehicle in Dubai securely.",
-      "meta_ar": "هل تسافر لفترة طويلة؟ فوض ممثلاً لتجديد ملكية سيارتك، دفع المخالفات، وإجراء الصيانة الدورية في دبي. وكالة إدارة لا تمنح حق البيع لحماية أملاكك.",
+      "meta_ar": "وكالة إدارة المركبات تفوض ممثلاً لتجديد الملكية ودفع المخالفات وإجراء الصيانة الدورية أثناء سفرك الطويل — دون منح حق البيع، حمايةً لأملاكك.",
       "sections": [
         {
           "en": "What a Vehicle Management POA covers",
@@ -7803,7 +7803,7 @@
         },
         {
           "en": "A Vehicle Management Power of Attorney is strictly administrative. Unlike a Sale POA, it ensures your car is maintained, tested, and legally driven, but completely blocks your representative from attempting to sell, export, or mortgage the vehicle.",
-          "ar": "وكالة إدارة المركبات ذات طبيعة إدارية صارمة. على عكس وكالة البيع، تضمن هذه الوثيقة فحص وتجديد وصيانة سيارتك، لكنها تمنع الوكيل تماماً من بيع، تصدير، أو رهن المركبة بأي شكل."
+          "ar": "وكالة إدارة المركبات ذات طبيعة إدارية صارمة. على عكس وكالة البيع، تتيح هذه الوثيقة فحص وتجديد وصيانة سيارتك، لكنها تمنع الوكيل تماماً من بيع، تصدير، أو رهن المركبة بأي شكل."
         },
         {
           "en": "We draft this document to allow routine operational tasks. Your appointed agent can take the car for RTA testing, renew the insurance, and settle Salik charges. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
@@ -7848,7 +7848,7 @@
           },
           "a": {
             "en": "Yes. A Vehicle Management POA can cover all vehicles registered in your name — you do not need a separate POA for each vehicle. The POA should either list each vehicle by chassis number and plate number, or use the phrase 'all vehicles currently registered in the name of [principal name]' to ensure it covers any vehicles acquired after the POA is issued. We advise on the appropriate scope based on your situation.",
-            "ar": "نعم. يمكن لوكالة إدارة المركبات أن تغطي جميع المركبات المسجلة باسمك — دون الحاجة إلى وكالة منفصلة لكل مركبة. ينبغي أن تُدرج الوكالة كل مركبة برقم الشاسيه ورقم اللوحة، أو تستخدم عبارة 'جميع المركبات المسجلة حالياً باسم [اسم الموكّل]' لضمان تغطية أي مركبات يتم اقتناؤها بعد إصدار الوكالة. نُرشدك إلى النطاق المناسب بحسب وضعك."
+            "ar": "نعم. يمكن لوكالة إدارة المركبات أن تغطي جميع المركبات المسجلة باسمك — دون الحاجة إلى وكالة منفصلة لكل مركبة. ينبغي أن تُدرج الوكالة كل مركبة برقم الشاسيه ورقم اللوحة، أو تستخدم عبارة 'جميع المركبات المسجلة حالياً باسم [اسم الموكّل]' بما يغطي أي مركبات يتم اقتناؤها بعد إصدار الوكالة. نُرشدك إلى النطاق المناسب بحسب وضعك."
           }
         },
         {
@@ -7914,7 +7914,7 @@
         },
         "meta_description": {
           "en": "Traveling for an extended period? Authorize a representative to renew registration, clear fines, and maintain your vehicle in Dubai securely.",
-          "ar": "هل تسافر لفترة طويلة؟ فوض ممثلاً لتجديد ملكية سيارتك، دفع المخالفات، وإجراء الصيانة الدورية في دبي. وكالة إدارة لا تمنح حق البيع لحماية أملاكك."
+          "ar": "وكالة إدارة المركبات تفوض ممثلاً لتجديد الملكية ودفع المخالفات وإجراء الصيانة الدورية أثناء سفرك الطويل — دون منح حق البيع، حمايةً لأملاكك."
         },
         "wa_message": {
           "en": "Hi, I need a Vehicle Management POA for my Dubai car. Can you help?",
@@ -8034,7 +8034,7 @@
               },
               "body": {
                 "en": "You appear before a UAE Notary Public through Dubai Courts or the UAE Ministry of Justice via a video call. Delivered by email within hours.",
-                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الاتحادية بمكالمة فيديو. التسليم بالبريد الإلكتروني في غضون ساعات."
+                "ar": "تمثل أمام كاتب عدل إماراتي عبر محاكم دبي أو وزارة العدل الإماراتية بمكالمة فيديو. التسليم بالبريد الإلكتروني في غضون ساعات."
               }
             },
             {
@@ -8070,8 +8070,8 @@
       "h1_ar": "إنذار الإخلاء في دبي — استرداد عقارك قانونياً",
       "title_en": "Eviction Notice Dubai | Article 25 Notice | POA in 30",
       "title_ar": "إنذار الإخلاء دبي | المادة 25 | POA in 30",
-      "meta_en": "Facing a tenant dispute in Dubai? We draft and serve Article 25 compliant Eviction Notices via Tableegh for strict court admissibility.",
-      "meta_ar": "هل تواجه نزاعاً مع مستأجر متعنت؟ ابدأ خطواتك القانونية بشكل صحيح. نصيغ لك إنذار الإخلاء وفق المادة 25 ونرسله عبر \"تبليغ\" لضمان قوة موقفك أمام المحكمة.",
+      "meta_en": "We draft and serve Article 25 compliant eviction notices via the Tableegh platform, prepared for strict court admissibility in Dubai tenancy disputes.",
+      "meta_ar": "صياغة إنذار الإخلاء وفق المادة 25 وإرساله عبر منصة \"تبليغ\" المعتمدة — الخطوة الأولى الصحيحة قانوناً في النزاع الإيجاري أمام المحكمة.",
       "sections": [
         {
           "en": "The Article 25 framework that governs eviction in Dubai",
@@ -8114,8 +8114,8 @@
           "ar": "التعامل مع مستأجر يمتنع عن سداد الإيجار أو يخالف بنود العقد يشكل عبئاً مالياً وتشغيلياً على المالك. ومع ذلك، فإن محاولة إخلاء العقار في دبي دون أساس قانوني سليم ستؤدي حتماً إلى رفض دعواك في مركز فض المنازعات الإيجارية (RDC)."
         },
         {
-          "en": "Dealing with a non-paying or non-compliant tenant? We draft and serve a formally notarized Eviction Notice that meets exact RDC requirements — then coordinate delivery through Tableegh for court-admissible proof of service. Under Law No. 26 of 2007 (Article 25), a valid eviction notice is a legal prerequisite before any RDC case can be filed.",
-          "ar": "تواجه مستأجراً لا يسدد الإيجار أو يخالف شروط العقد؟ نصوغ إنذار إخلاء موثقاً رسمياً وفق اشتراطات مركز تسوية النزاعات الإيجارية — ثم ننسق تسليمه عبر تبليغ بما يُثبت صحة التبليغ أمام المحكمة. بموجب القانون رقم 26 لسنة 2007 (المادة 25)، يُعدّ إنذار الإخلاء الصالح شرطاً قانونياً مسبقاً لأي دعوى أمام مركز تسوية النزاعات."
+          "en": "Dealing with a non-paying or non-compliant tenant? We draft and serve a formally notarized Eviction Notice that meets exact RDC requirements — then coordinate delivery through Tableegh for court-admissible proof of service. Under Law No. 26 of 2007 (Article 25), a valid eviction notice is a legal prerequisite before any RDC case can be filed. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "تواجه مستأجراً لا يسدد الإيجار أو يخالف شروط العقد؟ نصوغ إنذار إخلاء موثقاً رسمياً وفق اشتراطات مركز تسوية النزاعات الإيجارية — ثم ننسق تسليمه عبر تبليغ بما يُثبت صحة التبليغ أمام المحكمة. بموجب القانون رقم 26 لسنة 2007 (المادة 25)، يُعدّ إنذار الإخلاء الصالح شرطاً قانونياً مسبقاً لأي دعوى أمام مركز تسوية النزاعات. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "We draft your Eviction Notice to meet exact RDC standards. Crucially, we mandate delivery through Tableegh, the official court-accredited service. This provides you with an irrefutable delivery certificate, legally proving the tenant was served and starting the official statutory countdown.",
@@ -8239,8 +8239,8 @@
           "ar": "إنذار الإخلاء دبي | المادة 25 | POA in 30"
         },
         "meta_description": {
-          "en": "Facing a tenant dispute in Dubai? We draft and serve Article 25 compliant Eviction Notices via Tableegh for strict court admissibility.",
-          "ar": "هل تواجه نزاعاً مع مستأجر متعنت؟ ابدأ خطواتك القانونية بشكل صحيح. نصيغ لك إنذار الإخلاء وفق المادة 25 ونرسله عبر \"تبليغ\" لضمان قوة موقفك أمام المحكمة."
+          "en": "We draft and serve Article 25 compliant eviction notices via the Tableegh platform, prepared for strict court admissibility in Dubai tenancy disputes.",
+          "ar": "صياغة إنذار الإخلاء وفق المادة 25 وإرساله عبر منصة \"تبليغ\" المعتمدة — الخطوة الأولى الصحيحة قانوناً في النزاع الإيجاري أمام المحكمة."
         },
         "wa_message": {
           "en": "Hi, I need to issue an eviction notice in Dubai. Can you help?",
@@ -8591,8 +8591,8 @@
           "type": "law",
           "ref": "Sample Text — Eviction Notice (Article 25 Dubai Law No. 33 of 2008)",
           "text": {
-            "en": "LEGAL EVICTION NOTICE\n\nTo: [Full Name of Tenant], residing at [Property Address], Dubai.\n\nFrom: [Full Name of Landlord / or Agent with POA No. XXXXX], owner of the property: [Property Address], Title Deed No. [XXXXXXX].\n\nPursuant to Article 25 of Dubai Law No. 33 of 2008 (as amended), you are hereby notified to vacate and deliver possession of the above property within [12 months / 30 days] from the date of this notice — on or before [Date].\n\nReason for eviction: [Reason — e.g., personal use by owner / property sale / non-payment of rent].\n\nThis notice is served through [licensed notification service / Notary Public / registered mail]. Failure to vacate by the stated date will result in a case being filed before the Rental Disputes Settlement Centre (RDC), Dubai Courts.\n\nDate of Notice: [Date]     Landlord Signature: ________________",
-            "ar": "إشعار إخلاء قانوني\n\nإلى: [الاسم الكامل للمستأجر]، المقيم في [عنوان العقار]، دبي.\n\nمن: [الاسم الكامل للمالك / أو الوكيل بموجب الوكالة رقم XXXXX]، مالك العقار: [عنوان العقار]، سند الملكية رقم [XXXXXXX].\n\nاستناداً إلى المادة 25 من القانون رقم 33 لسنة 2008 بشأن علاقة الإيجار في إمارة دبي (وتعديلاته)، يُشعَر بموجبه بضرورة إخلاء العقار المذكور وتسليمه في غضون [12 شهراً / 30 يوماً] من تاريخ هذا الإشعار — في أو قبل تاريخ [التاريخ].\n\nسبب الإخلاء: [السبب — مثلاً: الاستخدام الشخصي للمالك / بيع العقار / عدم سداد الإيجار].\n\nيُسلَّم هذا الإشعار عبر [مزود خدمة الإشعارات المرخَّص / كاتب العدل / البريد المسجَّل]. في حال عدم الإخلاء بحلول التاريخ المحدد سيُرفع قضية أمام مركز تسوية النزاعات الإيجارية (RDC)، محاكم دبي.\n\nتاريخ الإشعار: [التاريخ]     توقيع المالك: ________________"
+            "en": "LEGAL EVICTION NOTICE\n\nTo: [Full Name of Tenant], residing at [Property Address], Dubai.\n\nFrom: [Full Name of Landlord / or Agent with POA No. XXXXX], owner of the property: [Property Address], Title Deed No. [XXXXXXX].\n\nPursuant to Article 25 of Dubai Law No. 33 of 2008 (as amended), you are hereby notified to vacate and deliver possession of the above property within [12 months / 30 days] from the date of this notice — on or before [Date].\n\nReason for eviction: [Reason — e.g., personal use by owner / property sale / non-payment of rent].\n\nThis notice is served through [licensed notification service / Notary Public / registered mail]. Failure to vacate by the stated date will result in a case being filed before the Rental Disputes Settlement Centre (RDC), Dubai Courts.\n\nDate of Notice: [Date] Landlord Signature: ________________",
+            "ar": "إشعار إخلاء قانوني\n\nإلى: [الاسم الكامل للمستأجر]، المقيم في [عنوان العقار]، دبي.\n\nمن: [الاسم الكامل للمالك / أو الوكيل بموجب الوكالة رقم XXXXX]، مالك العقار: [عنوان العقار]، سند الملكية رقم [XXXXXXX].\n\nاستناداً إلى المادة 25 من القانون رقم 33 لسنة 2008 بشأن علاقة الإيجار في إمارة دبي (وتعديلاته)، يُشعَر بموجبه بضرورة إخلاء العقار المذكور وتسليمه في غضون [12 شهراً / 30 يوماً] من تاريخ هذا الإشعار — في أو قبل تاريخ [التاريخ].\n\nسبب الإخلاء: [السبب — مثلاً: الاستخدام الشخصي للمالك / بيع العقار / عدم سداد الإيجار].\n\nيُسلَّم هذا الإشعار عبر [مزود خدمة الإشعارات المرخَّص / كاتب العدل / البريد المسجَّل]. في حال عدم الإخلاء بحلول التاريخ المحدد سيُرفع قضية أمام مركز تسوية النزاعات الإيجارية (RDC)، محاكم دبي.\n\nتاريخ الإشعار: [التاريخ] توقيع المالك: ________________"
           }
         }
       ]
@@ -8603,7 +8603,7 @@
       "title_en": "Legal Notice Dubai | Drafting & Tableegh Service | POA in 30",
       "title_ar": "إنذار عدلي في دبي | صياغة وتوجيه رسمي",
       "meta_en": "Involved in a commercial or personal dispute in Dubai? Establish your legal position with a formal Legal Notice, drafted precisely and served via Tableegh.",
-      "meta_ar": "هل تواجه نزاعاً تجارياً أو شخصياً؟ اثبت حقوقك القانونية كخطوة أولى عبر إنذار عدلي موثق. نصيغ الإنذار ونوجهه عبر قنوات المحكمة الرسمية لدعم موقفك.",
+      "meta_ar": "الإنذار العدلي الموثق هو الخطوة الأولى لإثبات الحقوق في النزاعات التجارية والشخصية. نصيغ الإنذار ونوجهه عبر قنوات المحكمة الرسمية.",
       "sections": [
         {
           "en": "What a legal notice is, and why it matters in Dubai",
@@ -8646,8 +8646,8 @@
           "ar": "عند الإخلال بعقد تجاري أو تفاقم نزاع شخصي، فإن اللجوء المباشر للمحكمة نادراً ما يكون الخطوة الأذكى. قبل أن تقبل محاكم دبي دعواك، يجب أن تثبت أنك طالبت بحقوقك رسمياً ومنحت الطرف الآخر فرصة لتصحيح الوضع."
         },
         {
-          "en": "A notarized Legal Notice serves as the definitive pre-litigation step. It transforms your demands from informal emails into a formal, legally binding warning. This document officially crystallizes the dispute, setting strict deadlines for the other party to comply before legal action ensues.",
-          "ar": "يُعد الإنذار العدلي الموثق الخطوة التمهيدية الحاسمة قبل التقاضي. فهو يحول مطالباتك من مجرد رسائل إلكترونية إلى تحذير قانوني صارم، يبلور النزاع رسمياً ويضع مهلاً زمنية محددة للطرف الآخر للامتثال قبل تصعيد الأمر للقضاء."
+          "en": "A notarized Legal Notice serves as the definitive pre-litigation step. It transforms your demands from informal emails into a formal, legally binding warning. This document officially crystallizes the dispute, setting strict deadlines for the other party to comply before legal action ensues. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "يُعد الإنذار العدلي الموثق الخطوة التمهيدية الحاسمة قبل التقاضي. فهو يحول مطالباتك من مجرد رسائل إلكترونية إلى تحذير قانوني صارم، يبلور النزاع رسمياً ويضع مهلاً زمنية محددة للطرف الآخر للامتثال قبل تصعيد الأمر للقضاء. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "Precision is key. We draft your Legal Notice to articulate the exact breaches and demands according to UAE law. We then ensure it is served through the official Tableegh system, providing you with the essential delivery certificate required to support your future court filings.",
@@ -8681,7 +8681,7 @@
         },
         {
           "en": "Secure an official Tableegh delivery report for court admissibility.",
-          "ar": "استخراج تقرير التسليم الرسمي (تبليغ) لضمان قبول الدعوى."
+          "ar": "استخراج تقرير التسليم الرسمي (تبليغ) المطلوب لقبول الدعوى."
         }
       ],
       "faq": [
@@ -8768,7 +8768,7 @@
         },
         "meta_description": {
           "en": "Involved in a commercial or personal dispute in Dubai? Establish your legal position with a formal Legal Notice, drafted precisely and served via Tableegh.",
-          "ar": "هل تواجه نزاعاً تجارياً أو شخصياً؟ اثبت حقوقك القانونية كخطوة أولى عبر إنذار عدلي موثق. نصيغ الإنذار ونوجهه عبر قنوات المحكمة الرسمية لدعم موقفك."
+          "ar": "الإنذار العدلي الموثق هو الخطوة الأولى لإثبات الحقوق في النزاعات التجارية والشخصية. نصيغ الإنذار ونوجهه عبر قنوات المحكمة الرسمية."
         },
         "wa_message": {
           "en": "Hi, I need to send a legal notice in Dubai. Can you help?",
@@ -8931,7 +8931,7 @@
       "title_en": "Cancel POA Dubai | Revocation Notice | POA in 30",
       "title_ar": "إنذار إلغاء الوكالة دبي | تبليغ رسمي | POA in 30",
       "meta_en": "Discovered your representative acting against your interests? Protect your assets by serving a formal POA Revocation Notice to the agent and third parties.",
-      "meta_ar": "هل أساء وكيلك استخدام صلاحياته؟ احمِ أصولك عبر إرسال إنذار إلغاء رسمي للوكيل والجهات ذات الصلة لضمان وقف التعامل بالوكالة السابقة تماماً.",
+      "meta_ar": "عند إساءة الوكيل استخدام صلاحياته، يُرسَل إنذار إلغاء رسمي إلى الوكيل والجهات ذات الصلة لوقف التعامل بالوكالة السابقة تماماً وحماية أصولك.",
       "sections": [
         {
           "en": "Why a POA cancellation needs a formal notice, not just a phone call",
@@ -8974,12 +8974,12 @@
           "ar": "منح الوكالة القانونية يتطلب ثقة مطلقة. إذا اكتشفت أن ممثلك يتصرف بخلاف توجيهاتك أو يسيء إدارة أصولك، فإن إبلاغه شفهياً بإيقاف العمل ليس له أي قيمة قانونية. سيظل محتفظاً بكامل الصلاحيات للتصرف في شؤونك حتى يتم الإلغاء رسمياً."
         },
         {
-          "en": "A formal POA Revocation Notice is the proper way to shield your assets. Canceling the document at the Notary Public is just step one. By law, you must formally notify the agent that their powers are terminated to protect yourself from liability for their future actions.",
-          "ar": "\"إنذار إلغاء الوكالة\" هو الإجراء الصحيح لحماية أصولك. إلغاء المستند لدى كاتب العدل هو مجرد الخطوة الأولى؛ إذ يُلزمك القانون بإخطار الوكيل رسمياً بإنهاء صلاحياته لإخلاء مسؤوليتك عن أي تصرفات قد يقوم بها مستقبلاً."
+          "en": "A formal POA Revocation Notice is the proper way to shield your assets. Canceling the document at the Notary Public is just step one. By law, you must formally notify the agent that their powers are terminated to protect yourself from liability for their future actions. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "\"إنذار إلغاء الوكالة\" هو الإجراء الصحيح لحماية أصولك. إلغاء المستند لدى كاتب العدل هو مجرد الخطوة الأولى؛ إذ يُلزمك القانون بإخطار الوكيل رسمياً بإنهاء صلاحياته لإخلاء مسؤوليتك عن أي تصرفات قد يقوم بها مستقبلاً. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "We ensure this critical cutoff happens effectively. We draft the official revocation notice and serve it via Tableegh directly to the agent. We can also serve this notice to relevant third parties — such as banks or the Dubai Land Department — to ensure the old POA is blocked everywhere.",
-          "ar": "نحن نتولى تفعيل هذا الإيقاف بحسم. نصيغ إنذار الإلغاء ونوجهه عبر \"تبليغ\" للوكيل مباشرة. والأهم من ذلك، يمكننا توجيه الإنذار للجهات ذات الصلة — كالبنوك ودائرة الأراضي — لضمان تجميد العمل بالوكالة القديمة في كافة الدوائر."
+          "ar": "نحن نتولى تفعيل هذا الإيقاف بحسم. نصيغ إنذار الإلغاء ونوجهه عبر \"تبليغ\" للوكيل مباشرة. والأهم من ذلك، يمكننا توجيه الإنذار للجهات ذات الصلة — كالبنوك ودائرة الأراضي — بما يوقف العمل بالوكالة القديمة في كافة الدوائر."
         },
         {
           "en": "The POA revocation notice is a separate legal instrument, formally notarized through Dubai Courts or the UAE Ministry of Justice via a video call, then served through Tableegh.",
@@ -9076,7 +9076,7 @@
         },
         "meta_description": {
           "en": "Discovered your representative acting against your interests? Protect your assets by serving a formal POA Revocation Notice to the agent and third parties.",
-          "ar": "هل أساء وكيلك استخدام صلاحياته؟ احمِ أصولك عبر إرسال إنذار إلغاء رسمي للوكيل والجهات ذات الصلة لضمان وقف التعامل بالوكالة السابقة تماماً."
+          "ar": "عند إساءة الوكيل استخدام صلاحياته، يُرسَل إنذار إلغاء رسمي إلى الوكيل والجهات ذات الصلة لوقف التعامل بالوكالة السابقة تماماً وحماية أصولك."
         },
         "wa_message": {
           "en": "Hi, I need to cancel a Power of Attorney in Dubai. Can you help?",
@@ -9206,11 +9206,11 @@
     },
     "/e-notary": {
       "h1_en": "E-Notary in Dubai — video-call notarization through Dubai Courts",
-      "h1_ar": "التوثيق عبر مكالمة الفيديو في دبي — مكالمة فيديو من محاكم دبي",
+      "h1_ar": "التوثيق عبر مكالمة فيديو في دبي — من محاكم دبي أو وزارة العدل",
       "title_en": "Online Notary Dubai | E-Notary by Video Call | POA in 30",
       "title_ar": "كاتب عدل أونلاين دبي | توثيق رقمي فوري",
       "meta_en": "Skip the traffic and queues. Our E-Notary service connects you with Dubai Courts via secure video call to notarize POAs and contracts from your device.",
-      "meta_ar": "وفر وقتك وتجنب زحام المراجعات. خدمة الكاتب العدل الإلكتروني تربطك بمحاكم دبي عبر مكالمة مرئية لتوثيق وكالاتك وعقودك رسمياً وأنت في مكانك.",
+      "meta_ar": "خدمة الكاتب العدل الإلكتروني تربطك بمحاكم دبي عبر مكالمة مرئية لتوثيق وكالاتك وعقودك رسمياً دون أي حضور شخصي.",
       "sections": [
         {
           "en": "What notarization via video call means in Dubai today",
@@ -9363,7 +9363,7 @@
       "seo": {
         "h1": {
           "en": "E-Notary in Dubai — video-call notarization through Dubai Courts",
-          "ar": "التوثيق عبر مكالمة الفيديو في دبي — مكالمة فيديو من محاكم دبي"
+          "ar": "التوثيق عبر مكالمة فيديو في دبي — من محاكم دبي أو وزارة العدل"
         },
         "meta_title": {
           "en": "Online Notary Dubai | E-Notary by Video Call | POA in 30",
@@ -9371,7 +9371,7 @@
         },
         "meta_description": {
           "en": "No office visits. No queues. Our E-Notary service connects you with Dubai Courts via secure video call to notarize POAs and contracts from your device.",
-          "ar": "وفر وقتك وتجنب زحام المراجعات. خدمة الكاتب العدل الإلكتروني تربطك بمحاكم دبي عبر مكالمة مرئية لتوثيق وكالاتك وعقودك رسمياً وأنت في مكانك."
+          "ar": "خدمة الكاتب العدل الإلكتروني تربطك بمحاكم دبي عبر مكالمة مرئية لتوثيق وكالاتك وعقودك رسمياً دون أي حضور شخصي."
         },
         "wa_message": {
           "en": "Hi, I need notarization via video call in Dubai. Can you help?",
@@ -9432,7 +9432,7 @@
             "items": [
               {
                 "en": "No office visit — done from your home, office, or anywhere with internet",
-                "ar": "بدون زيارة مكتب — من منزلك أو مكتبك أو أي مكان بإنترنت"
+                "ar": "بدون زيارة مكتب — من أي مكان عبر اتصال إنترنت"
               },
               {
                 "en": "30 minutes total — drafting, session, delivery",
@@ -9510,8 +9510,8 @@
                 "ar": "مكالمة الفيديو — ١٥-٣٠ دقيقة — الوثيقة في بريدك"
               },
               "body": {
-                "en": "You appear before the notary via video call. Identity verified by passport + OTP. The notarized document is emailed to you immediately — ready to use.",
-                "ar": "تمثل أمام كاتب العدل عبر مكالمة الفيديو. تُتحقق الهوية بجواز السفر ورمز OTP. تُرسَل الوثيقة الموثَّقة بالبريد الإلكتروني فوراً — جاهزة للاستخدام."
+                "en": "You appear before the notary via video call. Identity verified by passport. The notarized document is emailed to you immediately — ready to use.",
+                "ar": "تمثل أمام كاتب العدل عبر مكالمة الفيديو. تُتحقق الهوية بجواز السفر. تُرسَل الوثيقة الموثَّقة بالبريد الإلكتروني فوراً — جاهزة للاستخدام."
               }
             }
           ]
@@ -9536,7 +9536,7 @@
               "ar": "اتصال إنترنت مستقر — الجيل الرابع أو واي-فاي كلاهما مناسب"
             },
             {
-              "en": "Active mobile number for the OTP verification message",
+              "en": "Active mobile number for the verification message",
               "ar": "رقم هاتف نشط لاستلام رسالة التحقق بالرمز"
             },
             {
@@ -9600,7 +9600,7 @@
       "title_en": "Mobile Notary Dubai | At Your Location | POA in 30",
       "title_ar": "الكاتب العدل المتنقل دبي | في موقعك | POA in 30",
       "meta_en": "When notarization via video call isn't possible, our Mobile Notary brings the official process to your hospital room, home, or office in Dubai for urgent signings.",
-      "meta_ar": "عندما يتعذر التوثيق أونلاين، خدمة الكاتب العدل المتنقل توفر لك زيارة رسمية في المستشفى، أو المنزل، أو المكتب في دبي لإنهاء التوقيعات العاجلة بمرونة.",
+      "meta_ar": "عندما يتعذر التوثيق عن بُعد، خدمة الكاتب العدل المتنقل توفر لك زيارة رسمية في المستشفى، أو المنزل، أو المكتب في دبي لإنهاء التوقيعات العاجلة بمرونة.",
       "sections": [
         {
           "en": "When a mobile notary visit is the right option",
@@ -9639,16 +9639,16 @@
       ],
       "content": [
         {
-          "en": "While digital notarization handles most situations, certain circumstances make a video call impractical. If an elderly family member is immobile, a loved one is receiving urgent care in a hospital, or you need to coordinate a multi-party corporate signing at your headquarters, physical presence becomes a necessity.",
-          "ar": "رغم أن التوثيق الرقمي يغطي معظم الحالات، تفرض ظروف الحياة أحياناً مواقف يتعذر فيها استخدام المكالمات المرئية. إذا كان هناك فرد مسن بالأسرة غير قادر على الحركة، أو مريض يتلقى رعاية عاجلة في المستشفى، أو رغبت في توقيع جماعي لشركتك في مقر الإدارة، يصبح الحضور الميداني ضرورة."
+          "en": "While digital notarization handles most situations, certain circumstances make a video call impractical. If an elderly family member is immobile, a loved one is receiving urgent care in a hospital, or you need to coordinate a multi-party corporate signing at your headquarters, physical presence becomes a necessity. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call in the standard remote service; the Mobile Notary covers the situations where a video call is not possible.",
+          "ar": "رغم أن التوثيق الرقمي يغطي معظم الحالات، تفرض ظروف الحياة أحياناً مواقف يتعذر فيها استخدام المكالمات المرئية. إذا كان هناك فرد مسن بالأسرة غير قادر على الحركة، أو مريض يتلقى رعاية عاجلة في المستشفى، أو رغبت في توقيع جماعي لشركتك في مقر الإدارة، يصبح الحضور الميداني ضرورة. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو في الخدمة القياسية عن بُعد؛ أما الكاتب العدل المتنقل فيغطي الحالات التي تتعذر فيها مكالمة الفيديو."
         },
         {
           "en": "The Mobile Notary service brings the official authority of Dubai Courts directly to your location. This is a discreet on-site service designed to accommodate sensitive situations, ensuring that physical limitations do not prevent your family or business from executing essential, time-sensitive legal documents.",
-          "ar": "خدمة الكاتب العدل المتنقل تنقل الصلاحية الرسمية لمحاكم دبي إلى مقر تواجدك مباشرة. هذه خدمة ميدانية مصممة للتعامل مع الحالات الحساسة، لضمان ألا تقف القيود الصحية أو اللوجستية عائقاً أمام إنجاز مستنداتك القانونية الحساسة للوقت."
+          "ar": "خدمة الكاتب العدل المتنقل تنقل الصلاحية الرسمية لمحاكم دبي إلى مقر تواجدك مباشرة. هذه خدمة ميدانية مصممة للتعامل مع الحالات الحساسة، بما يحول دون أن تقف القيود الصحية أو اللوجستية عائقاً أمام إنجاز مستنداتك القانونية الحساسة للوقت."
         },
         {
           "en": "We manage the logistics for you. After drafting the required POA or declaration, we coordinate with the Notary Public to dispatch an official to your exact location — whether a hospital bedside or a boardroom — ensuring the legal signing is completed smoothly and discreetly.",
-          "ar": "نحن نتولى كافة الترتيبات اللوجستية نيابة عنك. بعد صياغة الوكالة أو الإقرار، ننسق مع كاتب العدل لتوجيه مسؤول رسمي إلى موقعك بدقة — سواء كان غرفة مستشفى أو قاعة اجتماعات — لضمان إتمام التوقيع بسلاسة تامة واحترام للخصوصية."
+          "ar": "نحن نتولى كافة الترتيبات اللوجستية نيابة عنك. بعد صياغة الوكالة أو الإقرار، ننسق مع كاتب العدل لتوجيه مسؤول رسمي إلى موقعك بدقة — سواء كان غرفة مستشفى أو قاعة اجتماعات — بما يتيح إتمام التوقيع بسلاسة تامة واحترام للخصوصية."
         },
         {
           "en": "When your document requires notarization but you cannot attend a video call, our Mobile Notary visits you in person — the notarization is performed under the same official Dubai Courts authority.",
@@ -9955,8 +9955,8 @@
           "ar": "لقد بنيت حياة ناجحة كمغترب في دبي؛ امتلكت منزلاً، كونت مدخرات، وأسست عائلة. ولكن، في حال وقوع ما لا يحمد عقباه دون وجود \"وصية مسجلة\"، قد تطبق المحاكم الإماراتية قواعد الميراث التلقائية على أصولك، وهو ما قد يتعارض مع رغبتك في كيفية توزيع ثروتك."
         },
         {
-          "en": "A Last Will and Testament provides clear legal protection for non-Muslim expats. By registering a Will, you take direct control. You explicitly direct who inherits your property, who accesses your bank accounts, and crucially, who assumes legal guardianship of your minor children.",
-          "ar": "توفر الوصية الرسمية حماية قانونية واضحة للمغتربين غير المسلمين. من خلال تسجيل وصيتك، فإنك تستعيد السيطرة المباشرة؛ حيث تحدد بوضوح من يرث عقاراتك، من يدير حساباتك البنكية، والأهم من ذلك، من يتولى الوصاية القانونية على أطفالك القصر."
+          "en": "A Last Will and Testament provides clear legal protection for non-Muslim expats. By registering a Will, you take direct control. You explicitly direct who inherits your property, who accesses your bank accounts, and crucially, who assumes legal guardianship of your minor children. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "توفر الوصية الرسمية حماية قانونية واضحة للمغتربين غير المسلمين. من خلال تسجيل وصيتك، فإنك تستعيد السيطرة المباشرة؛ حيث تحدد بوضوح من يرث عقاراتك، من يدير حساباتك البنكية، والأهم من ذلك، من يتولى الوصاية القانونية على أطفالك القصر. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "We specialize in drafting comprehensive Wills registered with either the DIFC Wills Service Centre (covering your entire UAE estate) or the Dubai Courts Wills Registry (focused on local property). We structure the document to protect your family from frozen assets and prolonged legal disputes.",
@@ -9974,7 +9974,7 @@
         },
         {
           "en": "Guardianship provisions to secure the care of minor children.",
-          "ar": "بنود الوصاية القانونية لضمان رعاية وحماية الأطفال القصر."
+          "ar": "بنود الوصاية القانونية لرعاية وحماية الأطفال القصر."
         },
         {
           "en": "Appointing trusted executors to administer the estate distribution.",
@@ -10158,7 +10158,7 @@
           },
           "text": {
             "en": "For Muslim expatriates and UAE nationals: UAE Sharia inheritance law applies automatically — assets are distributed according to Islamic rules regardless of any foreign will. For non-Muslim expatriates: without a UAE-registered will, UAE courts apply the law of the deceased's home country to UAE assets — but this process can take months or years, freezing UAE bank accounts and real estate in the meantime. A UAE-registered will eliminates the freeze, names your executor, and ensures your UAE assets go where you intend.",
-            "ar": "للمغتربين المسلمين والمواطنين الإماراتيين: يسري قانون الميراث الإسلامي الإماراتي تلقائياً — تُوزَّع الأصول وفق الأحكام الإسلامية بصرف النظر عن أي وصية أجنبية. للمغتربين غير المسلمين: بدون وصية مسجَّلة إماراتياً، تُطبِّق المحاكم الإماراتية قانون بلد المتوفى الأصلي على الأصول الإماراتية — لكن هذه العملية قد تستغرق أشهراً أو سنوات يتجمد خلالها الحساب البنكي الإماراتي والعقارات. وصية مسجَّلة إماراتياً تُلغي التجميد وتُسمِّي منفِّذ الوصية وتضمن توزيع أصولك الإماراتية وفق رغبتك."
+            "ar": "للمغتربين المسلمين والمواطنين الإماراتيين: يسري قانون الميراث الإسلامي الإماراتي تلقائياً — تُوزَّع الأصول وفق الأحكام الإسلامية بصرف النظر عن أي وصية أجنبية. للمغتربين غير المسلمين: بدون وصية مسجَّلة إماراتياً، تُطبِّق المحاكم الإماراتية قانون بلد المتوفى الأصلي على الأصول الإماراتية — لكن هذه العملية قد تستغرق أشهراً أو سنوات يتجمد خلالها الحساب البنكي الإماراتي والعقارات. وصية مسجَّلة إماراتياً تُلغي التجميد وتُسمِّي منفِّذ الوصية وتنص على توزيع أصولك الإماراتية وفق رغبتك."
           }
         },
         {
@@ -10216,7 +10216,7 @@
           },
           "text": {
             "en": "For non-Muslim expatriates who die without a registered will in Dubai, UAE courts may apply Sharia inheritance principles to UAE-based assets by default. This means assets may not be distributed according to the deceased's wishes or according to the law of their home country. Registering a will — whether through the DIFC Wills Service or Dubai Courts — ensures your estate is handled according to your expressed instructions.",
-            "ar": "بالنسبة للمغتربين غير المسلمين الذين يتوفون دون وصية مسجلة في دبي، قد تُطبق محاكم الإمارات مبادئ الميراث الشرعي الإسلامي على الأصول المقيمة في الإمارات افتراضياً. هذا يعني أن الأصول قد لا تُوزَّع وفقاً لرغبات المتوفى أو وفقاً لقانون بلده الأصلي. تسجيل وصية — سواء عبر خدمة وصايا مركز دبي المالي العالمي أو محاكم دبي — يضمن التعامل مع تركتك وفقاً لتعليماتك الصريحة."
+            "ar": "بالنسبة للمغتربين غير المسلمين الذين يتوفون دون وصية مسجلة في دبي، قد تُطبق محاكم الإمارات مبادئ الميراث الشرعي الإسلامي على الأصول المقيمة في الإمارات افتراضياً. هذا يعني أن الأصول قد لا تُوزَّع وفقاً لرغبات المتوفى أو وفقاً لقانون بلده الأصلي. تسجيل وصية — سواء عبر خدمة وصايا مركز دبي المالي العالمي أو محاكم دبي — يُخضِع التعامل مع تركتك لتعليماتك الصريحة."
           }
         },
         {
@@ -10285,8 +10285,8 @@
           "ar": "تتغير ظروف الحياة وتتبدل العلاقات. الوكيل الذي اعتمدت عليه العام الماضي قد لا يكون مناسباً اليوم. إبقاء وكالة قديمة سارية المفعول يمثل ثغرة قانونية، حيث يظل الوكيل محتفظاً بصلاحية إبرام العقود، الوصول للأموال، أو إدارة العقارات باسمك حتى يتم إبطال المستند رسمياً."
         },
         {
-          "en": "You can neutralize this risk with a formal POA Cancellation. We assist you in preparing the legal documents required to deregister the POA within the Dubai Courts system. Once notarized, the cancellation revokes the agent's power, securing your assets and ensuring no future transactions can be executed under your name.",
-          "ar": "يمكنك تحييد هذه المخاطرة عبر إجراء \"إلغاء وكالة\" رسمي. نحن نساعدك في إعداد المستندات القانونية الدقيقة المطلوبة لإلغاء قيود الوكالة من نظام محاكم دبي. بمجرد التوثيق، يتم إسقاط صلاحيات الوكيل، مما يؤمن أصولك ويمنع إجراء أي تصرفات لاحقة باسمك."
+          "en": "You can neutralize this risk with a formal POA Cancellation. We assist you in preparing the legal documents required to deregister the POA within the Dubai Courts system. Once notarized, the cancellation revokes the agent's power, securing your assets and ensuring no future transactions can be executed under your name. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "يمكنك تحييد هذه المخاطرة عبر إجراء \"إلغاء وكالة\" رسمي. نحن نساعدك في إعداد المستندات القانونية الدقيقة المطلوبة لإلغاء قيود الوكالة من نظام محاكم دبي. بمجرد التوثيق، يتم إسقاط صلاحيات الوكيل، مما يؤمن أصولك ويمنع إجراء أي تصرفات لاحقة باسمك. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "POA cancellation is notarized through Dubai Courts or the UAE Ministry of Justice via a video call — the same official channels used to issue the original POA.",
@@ -10358,7 +10358,7 @@
       ],
       "prices": [],
       "title_ar": "إلغاء الوكالة دبي | الصياغة والتبليغ | POA in 30",
-      "meta_ar": "هل تغيرت ظروفك؟ نتولى إجراءات الإلغاء الرسمي لوكالتك السابقة لدى محاكم دبي لإنهاء الصلاحيات القانونية لوكيلك بشكل فوري وموثق.",
+      "meta_ar": "نتولى إجراءات الإلغاء الرسمي لوكالتك السابقة لدى محاكم دبي، لإنهاء الصلاحيات القانونية لوكيلك بشكل موثق نافذ.",
       "seo": {
         "h1": {
           "en": "POA Cancellation Dubai — Revoke Any Power of Attorney",
@@ -10370,7 +10370,7 @@
         },
         "meta_description": {
           "en": "Has your situation changed? We manage the formal cancellation of your Power of Attorney at Dubai Courts to revoke your agent's legal authority.",
-          "ar": "هل تغيرت ظروفك؟ نتولى إجراءات الإلغاء الرسمي لوكالتك السابقة لدى محاكم دبي لإنهاء الصلاحيات القانونية لوكيلك بشكل فوري وموثق."
+          "ar": "نتولى إجراءات الإلغاء الرسمي لوكالتك السابقة لدى محاكم دبي، لإنهاء الصلاحيات القانونية لوكيلك بشكل موثق نافذ."
         },
         "wa_message": {
           "en": "I need to cancel a Power of Attorney in Dubai",
@@ -10523,7 +10523,7 @@
           "type": "success",
           "title": {
             "en": "Need to cancel a POA urgently?",
-            "ar": "هل تحتاج لإلغاء وكالة بشكل عاجل؟"
+            "ar": "إلغاء الوكالة بشكل عاجل"
           },
           "text": {
             "en": "Contact us immediately on WhatsApp. Send us a copy of the POA, and our team will prepare the cancellation documents and process them through the Dubai Courts Notary on the very same day.",
@@ -10634,7 +10634,7 @@
           },
           "a": {
             "en": "For urgent cases: once you provide all required documents and we confirm the POA scope, the video call session with the notary can typically be arranged within 2 to 4 hours on the same business day. The notarized document is delivered by email immediately after the session ends. For genuinely critical situations — such as a property transaction closing today — contact us via WhatsApp first thing in the morning to allow maximum scheduling flexibility.",
-            "ar": "في الحالات العاجلة: بمجرد تقديم كافة المستندات المطلوبة وتأكيد نطاق الوكالة، يمكن في الغالب ترتيب جلسة الفيديو مع الكاتب العدل في غضون ساعتين إلى أربع ساعات في نفس يوم العمل. يُسلَّم المستند الموثق إلى بريدك الإلكتروني فور انتهاء الجلسة. للحالات البالغة الإلحاح — كإغلاق صفقة عقارية اليوم — تواصل معنا عبر واتساب في بداية وقت الدوام لضمان أقصى مرونة في الجدولة."
+            "ar": "في الحالات العاجلة: بمجرد تقديم كافة المستندات المطلوبة وتأكيد نطاق الوكالة، يمكن في الغالب ترتيب جلسة الفيديو مع الكاتب العدل في غضون ساعتين إلى أربع ساعات في نفس يوم العمل. يُسلَّم المستند الموثق إلى بريدك الإلكتروني فور انتهاء الجلسة. للحالات البالغة الإلحاح — كإغلاق صفقة عقارية اليوم — تواصل معنا عبر واتساب في بداية وقت الدوام لإتاحة أقصى مرونة في الجدولة."
           }
         },
         {
@@ -10889,7 +10889,7 @@
       "title_en": "RDC Dubai | Rental Dispute Centre Support | POA in 30",
       "title_ar": "مركز فض المنازعات الإيجارية دبي | RDC | POA in 30",
       "meta_en": "Caught in a rental dispute in Dubai? We guide landlords and tenants through the RDC process, from serving Tableegh notices to mediation and hearings.",
-      "meta_ar": "هل تواجه نزاعاً إيجارياً في دبي ولا تعرف من أين تبدأ؟ نرشد الملاك والمستأجرين في إجراءات RDC، بدءاً من إنذارات الإخلاء وحتى جلسات التسوية.",
+      "meta_ar": "إرشاد الملاك والمستأجرين في إجراءات مركز فض المنازعات الإيجارية (RDC)، من إنذارات الإخلاء حتى جلسات التسوية.",
       "sections": [
         {
           "en": "What the Rental Dispute Centre handles",
@@ -10932,12 +10932,12 @@
           "ar": "سواء كنت مالكاً تتعامل مع تأخر في الإيجار، أو مستأجراً يواجه إخلاءً تعسفياً، فإن التعامل مع مركز فض المنازعات الإيجارية (RDC) يتطلب إعداداً قانونياً منظماً. القواعد الإجرائية صارمة، وأي خطأ قد يضر بدعواك."
         },
         {
-          "en": "We provide clear, structured support to get your case filed correctly. You cannot simply walk into the RDC and demand a hearing; the process requires a formal foundation, starting with a legally notarized notice delivered via Tableegh.",
-          "ar": "نحن نقدم لك دعماً قانونياً واضحاً لتسجيل دعواك بشكل صحيح. لا يمكنك اللجوء للمركز والمطالبة بجلسة مباشرة؛ إذ يتطلب الأمر أساساً قانونياً صارماً، يبدأ بإنذار عدلي موثق ومُرسل عبر نظام \"تبليغ\"."
+          "en": "We provide clear, structured support to get your case filed correctly. You cannot simply walk into the RDC and demand a hearing; the process requires a formal foundation, starting with a legally notarized notice delivered via Tableegh. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "نحن نقدم لك دعماً قانونياً واضحاً لتسجيل دعواك بشكل صحيح. لا يمكنك اللجوء للمركز والمطالبة بجلسة مباشرة؛ إذ يتطلب الأمر أساساً قانونياً صارماً، يبدأ بإنذار عدلي موثق ومُرسل عبر نظام \"تبليغ\". يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "Our team handles the heavy lifting. We draft your initial notices, compile your tenancy evidence, officially file the dispute, and prepare you for mandatory mediation, ensuring you approach the judge with a well-prepared case.",
-          "ar": "يتولى فريقنا المهام المعقدة نيابة عنك. نصيغ الإنذارات الأولية، نجهز أدلتك الإيجارية، نقيد الدعوى رسمياً، ونعدك لجلسات الصلح الإلزامية، لتضمن الوقوف أمام القاضي بموقف قانوني صلب."
+          "ar": "يتولى فريقنا المهام المعقدة نيابة عنك. نصيغ الإنذارات الأولية، نجهز أدلتك الإيجارية، نقيد الدعوى رسمياً، ونعدك لجلسات الصلح الإلزامية، لتقف أمام القاضي بموقف قانوني صلب."
         }
       ],
       "list_items": [
@@ -11038,7 +11038,7 @@
         },
         "meta_description": {
           "en": "Caught in a rental dispute in Dubai? We guide landlords and tenants through the RDC process, from serving Tableegh notices to mediation and hearings.",
-          "ar": "هل تواجه نزاعاً إيجارياً في دبي ولا تعرف من أين تبدأ؟ نرشد الملاك والمستأجرين في إجراءات RDC، بدءاً من إنذارات الإخلاء وحتى جلسات التسوية."
+          "ar": "إرشاد الملاك والمستأجرين في إجراءات مركز فض المنازعات الإيجارية (RDC)، من إنذارات الإخلاء حتى جلسات التسوية."
         },
         "wa_message": {
           "en": "Hi, I need RDC support for a rental dispute in Dubai. Can you help?",
@@ -11187,7 +11187,7 @@
           },
           "text": {
             "en": "The Rental Disputes Center often requires formal Tableegh — the official notice delivery through Dubai Courts — as proof that the other party was properly informed before the dispute was escalated. Without a valid Tableegh receipt, the RDC may reject a case or require the applicant to re-serve notice. We handle Tableegh as part of the RDC preparation process, ensuring your file is complete before you submit.",
-            "ar": "كثيراً ما يشترط مركز فض النزاعات الإيجارية التبليغ الرسمي — إشعار التسليم الرسمي عبر محاكم دبي — كدليل على إبلاغ الطرف الآخر رسمياً قبل تصعيد النزاع. بدون إيصال تبليغ صالح، قد يرفض المركز القضية أو يطلب إعادة التبليغ. نتولى التبليغ كجزء من عملية التحضير لمركز فض النزاعات، لضمان اكتمال ملفك قبل التقديم."
+            "ar": "كثيراً ما يشترط مركز فض النزاعات الإيجارية التبليغ الرسمي — إشعار التسليم الرسمي عبر محاكم دبي — كدليل على إبلاغ الطرف الآخر رسمياً قبل تصعيد النزاع. بدون إيصال تبليغ صالح، قد يرفض المركز القضية أو يطلب إعادة التبليغ. نتولى التبليغ كجزء من عملية التحضير لمركز فض النزاعات، بما يستكمل ملفك قبل التقديم."
           }
         },
         {
@@ -11595,8 +11595,8 @@
           "ar": "تفتقر تطبيقات المراسلة الرقمية والبريد الإلكتروني العادي للحجية القانونية المطلوبة لبدء الإجراءات الرسمية في دبي. ورغم فاعليتها في التواصل اليومي، إلا أنها لا تستوفي اشتراطات الإخطار القانوني الصارمة التي ينص عليها التشريع الإماراتي أثناء النزاعات التجارية أو الإيجارية."
         },
         {
-          "en": "Tableegh is the official, court-mandated service channel operated under the jurisdiction of Dubai Courts. Legal notices directed through this system are delivered by court-appointed officers using formal tracking protocols, ensuring that the service of process is executed according to judicial standards.",
-          "ar": "\"تبليغ\" هي القناة الرسمية للإعلانات القانونية التابعة لسلطة محاكم دبي. تُوجه الإنذارات عبر هذا النظام بواسطة مندوبين معتمدين من المحكمة باستخدام بروتوكولات تتبع رسمية، مما يضمن تنفيذ إعلان الأطراف وفقاً للمعايير القضائية المقررة."
+          "en": "Tableegh is the official, court-mandated service channel operated under the jurisdiction of Dubai Courts. Legal notices directed through this system are delivered by court-appointed officers using formal tracking protocols, ensuring that the service of process is executed according to judicial standards. Before service, the notice itself is formally notarized. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "\"تبليغ\" هي القناة الرسمية للإعلانات القانونية التابعة لسلطة محاكم دبي. تُوجه الإنذارات عبر هذا النظام بواسطة مندوبين معتمدين من المحكمة باستخدام بروتوكولات تتبع رسمية، بحيث يُنفَّذ إعلان الأطراف وفقاً للمعايير القضائية المقررة. وقبل التبليغ، يُوثَّق الإنذار نفسه رسمياً. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "The primary function of the Tableegh system is the generation of an official Certificate of Delivery. This court-admissible document is a prerequisite for filing cases before the Rental Disputes Center (RDC) or civil courts, establishing the exact commencement date of statutory notice periods.",
@@ -11856,7 +11856,7 @@
       "title_en": "Why POA Rejected Dubai | Causes & Fix | POA in 30",
       "title_ar": "لماذا تُرفض الوكالات في دبي | الأسباب | POA in 30",
       "meta_en": "Power of Attorney rejected by a UAE bank or authority? Understand the compliance failures—broad scopes, missing identifiers—and how to correct them.",
-      "meta_ar": "هل رفضت البنوك أو الدوائر وكالتك؟ تعرف على أسباب عدم الامتثال—مثل اتساع الصلاحيات أو غياب المعرفات—والإجراءات القانونية المعتمدة لتصحيحها.",
+      "meta_ar": "أسباب رفض البنوك والدوائر الحكومية للوكالات — من اتساع الصلاحيات إلى غياب المعرفات — والإجراءات القانونية المعتمدة لتصحيحها.",
       "sections": [
         {
           "en": "Why this page is procedural, not promotional",
@@ -11941,7 +11941,7 @@
           },
           "a": {
             "en": "The Notary Public's mandate is to verify the principal's identity and legal capacity to sign the document. The Notary does not audit the text for compliance with external banking regulations; ensuring the draft meets specific institutional criteria remains the principal's responsibility.",
-            "ar": "يتمثل الاختصاص الأساسي لكاتب العدل في التحقق من هوية الموكل وأهليته القانونية لتوقيع المستند. ولا تشمل صلاحياته تدقيق النص لضمان توافقه مع اللوائح المصرفية الخارجية؛ إذ تقع مسؤولية مطابقة الصياغة لمعايير الجهات المستلمة على عاتق الموكل."
+            "ar": "يتمثل الاختصاص الأساسي لكاتب العدل في التحقق من هوية الموكل وأهليته القانونية لتوقيع المستند. ولا تشمل صلاحياته تدقيق النص للتحقق من توافقه مع اللوائح المصرفية الخارجية؛ إذ تقع مسؤولية مطابقة الصياغة لمعايير الجهات المستلمة على عاتق الموكل."
           }
         },
         {
@@ -11997,7 +11997,7 @@
         },
         "meta_description": {
           "en": "Power of Attorney rejected by a UAE bank or authority? Understand the compliance failures—broad scopes, missing identifiers—and how to correct them.",
-          "ar": "هل رفضت البنوك أو الدوائر وكالتك؟ تعرف على أسباب عدم الامتثال—مثل اتساع الصلاحيات أو غياب المعرفات—والإجراءات القانونية المعتمدة لتصحيحها."
+          "ar": "أسباب رفض البنوك والدوائر الحكومية للوكالات — من اتساع الصلاحيات إلى غياب المعرفات — والإجراءات القانونية المعتمدة لتصحيحها."
         },
         "wa_message": {
           "en": "Hi, my POA was returned by the bank/authority. Can you help?",
@@ -12194,7 +12194,7 @@
           },
           "a": {
             "en": "A General POA grants broad administrative authorities, which financial entities frequently reject due to compliance risks. A Special POA limits authority to a distinct, explicitly defined transaction, ensuring regulatory compliance and institutional acceptance.",
-            "ar": "تمنح الوكالة العامة صلاحيات إدارية واسعة، وهو ما ترفضه الكيانات المالية مراراً لتعارضه مع ضوابط الامتثال. بينما تُقيد الوكالة الخاصة الصلاحيات بمعاملة محددة وصريحة، مما يضمن التوافق التنظيمي والقبول المؤسسي."
+            "ar": "تمنح الوكالة العامة صلاحيات إدارية واسعة، وهو ما ترفضه الكيانات المالية مراراً لتعارضه مع ضوابط الامتثال. بينما تُقيد الوكالة الخاصة الصلاحيات بمعاملة محددة وصريحة، بما يستوفي متطلبات التوافق التنظيمي والقبول المؤسسي."
           }
         },
         {
@@ -12214,7 +12214,7 @@
           },
           "a": {
             "en": "Yes. Arabic is the official language of the UAE judiciary. All documents presented for official notarization must be drafted in Arabic. Bilingual text (English/Arabic) is commonly used to ensure understanding for all parties while maintaining compliance.",
-            "ar": "نعم. تُعد اللغة العربية اللغة الرسمية للنظام القضائي في الإمارات. وتُشترط الصياغة بالعربية لكافة المستندات المقدمة للتوثيق الرسمي. ويتم الاعتماد على النص ثنائي اللغة لضمان الفهم الشامل بين الأطراف المتنوعة مع الحفاظ على التوافق القانوني."
+            "ar": "نعم. تُعد اللغة العربية اللغة الرسمية للنظام القضائي في الإمارات. وتُشترط الصياغة بالعربية لكافة المستندات المقدمة للتوثيق الرسمي. ويتم الاعتماد على النص ثنائي اللغة بما يتيح الفهم الشامل بين الأطراف المتنوعة مع الحفاظ على التوافق القانوني."
           }
         },
         {
@@ -12264,7 +12264,7 @@
           },
           "a": {
             "en": "Yes. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call, which means the full process is completed remotely regardless of your location. You need a stable internet connection, a device with a working camera, and your original passport. Contact us with your document type and we will walk you through the full remote process.",
-            "ar": "نعم. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية عبر مكالمة فيديو، مما يعني إمكانية إتمام العملية الكاملة بصرف النظر عن موقعك. تحتاج إلى اتصال إنترنت مستقر وجهاز بكاميرا تعمل وجواز سفرك الأصلي. تواصل معنا بنوع مستندك وسنشرح لك العملية الكاملة عن بُعد."
+            "ar": "نعم. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو، مما يعني إمكانية إتمام العملية الكاملة بصرف النظر عن موقعك. تحتاج إلى اتصال إنترنت مستقر وجهاز بكاميرا تعمل وجواز سفرك الأصلي. تواصل معنا بنوع مستندك وسنشرح لك العملية الكاملة عن بُعد."
           }
         },
         {
@@ -12399,8 +12399,8 @@
       ],
       "content": [
         {
-          "en": "POA in 30 is a specialized legal drafting agency designed to streamline the notarization process in Dubai. We act as your direct operational bridge to the Notary Public, ensuring your legal documents—from Powers of Attorney to legal notices and eviction notices—are processed with speed and precision.",
-          "ar": "تعمل POA in 30 كوكالة متخصصة في الصياغة القانونية وتيسير المعاملات في دبي. نمثل حلقة الوصل المباشرة بينك وبين الكاتب العدل، لضمان إنجاز مستنداتك القانونية—من الوكالات إلى قرارات الشركات—بسرعة ودقة."
+          "en": "POA in 30 is a specialized legal drafting agency designed to streamline the notarization process in Dubai. We act as your direct operational bridge to the Notary Public, ensuring your legal documents—from Powers of Attorney to legal notices and eviction notices—are processed with speed and precision. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.",
+          "ar": "تعمل POA in 30 كوكالة متخصصة في الصياغة القانونية وتيسير المعاملات في دبي. نمثل حلقة الوصل المباشرة بينك وبين الكاتب العدل، بما يتيح إنجاز مستنداتك القانونية—من الوكالات إلى قرارات الشركات—بسرعة ودقة. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو."
         },
         {
           "en": "Our core value is procedural precision. By focusing on corporate and personal legal instruments, we eliminate administrative delays. Every document we draft is structured to meet the compliance standards of UAE authorities, supporting smooth approval on the first submission.",
@@ -12472,7 +12472,7 @@
             "ar": "هل تعملون خارج دبي؟"
           },
           "a": {
-            "en": "Our scope is Dubai. Most of what we draft and notarize is for Dubai-side authorities (DLD, RTA, Dubai Courts, MOHRE, DED). Some of our work has cross-border elements (a POA for a property where one party is abroad), but the receiving authority is in Dubai and the notarization is through Dubai Courts or the UAE Ministry of Justice video call.",
+            "en": "Our scope is Dubai. Most of what we draft and notarize is for Dubai-side authorities (DLD, RTA, Dubai Courts, MOHRE, DED). Some of our work has cross-border elements (a POA for a property where one party is abroad), but the receiving authority is in Dubai and the notarization is through Dubai Courts or the UAE Ministry of Justice via a video call.",
             "ar": "نطاقنا دبي. معظم ما نصوغه ونوثّقه للجهات في دبي (دائرة الأراضي والأملاك، هيئة الطرق، محاكم دبي، وزارة الموارد البشرية، الدائرة الاقتصادية). بعض عملنا له عناصر عبر الحدود (وكالة لعقار حيث يكون أحد الأطراف في الخارج)، لكن الجهة المستلمة في دبي والتوثيق عبر مكالمة فيديو محاكم دبي أو وزارة العدل الإماراتية."
           }
         },
@@ -12676,7 +12676,7 @@
         },
         {
           "en": "To help us expedite your request, please include key details in your initial message: the specific type of document required, the target authority it will be submitted to (e.g., DLD, GDRFA, or a bank), and your timeline. Our team will respond promptly with the next steps to secure your notarization.",
-          "ar": "لضمان سرعة الإنجاز، يُرجى تضمين التفاصيل الرئيسية في رسالتك الأولى: نوع المستند المطلوب، الجهة المستهدفة لتقديمه (كالبنوك أو دائرة الأراضي)، والإطار الزمني المتاح لك. سيرد فريقنا فوراً بالخطوات الدقيقة لتأمين توثيق مستندك بنجاح."
+          "ar": "لسرعة الإنجاز، يُرجى تضمين التفاصيل الرئيسية في رسالتك الأولى: نوع المستند المطلوب، الجهة المستهدفة لتقديمه (كالبنوك أو دائرة الأراضي)، والإطار الزمني المتاح لك. سيرد فريقنا فوراً بالخطوات الدقيقة لتأمين توثيق مستندك بنجاح."
         }
       ],
       "list_items": [
@@ -12759,7 +12759,7 @@
           },
           "a": {
             "en": "Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. Documents notarized this way carry official legal standing within the UAE. For international use, the specific requirements depend on the destination country — let us know where the document will be used and we will advise on next steps.",
-            "ar": "نوثّق عبر محاكم دبي أو وزارة العدل الإماراتية عبر مكالمة فيديو. المستندات الموثقة بهذه الطريقة تحمل صفة قانونية رسمية داخل الإمارات. للاستخدام الدولي، تعتمد المتطلبات على الدولة المستهدفة — أخبرنا أين سيُستخدم المستند وسننصحك بالخطوات التالية."
+            "ar": "يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. المستندات الموثقة بهذه الطريقة تحمل صفة قانونية رسمية داخل الإمارات. للاستخدام الدولي، تعتمد المتطلبات على الدولة المستهدفة — أخبرنا أين سيُستخدم المستند وسننصحك بالخطوات التالية."
           }
         }
       ],
@@ -13024,5 +13024,6 @@
         "href": "/mobile-notary"
       }
     ]
-  }
+  },
+  "blog_content": []
 }

@@ -17,7 +17,7 @@ export default function NotFound() {
       dir={isRTL ? 'rtl' : 'ltr'}
       style={{
         minHeight: '100vh',
-        background: '#FDF8F1',
+        background: 'var(--bg-base)',
         color: '#14293C',
         display: 'flex',
         alignItems: 'center',

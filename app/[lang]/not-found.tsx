@@ -11,14 +11,14 @@ export default function LangNotFound() {
   const tx = T[lang] || T.en
   const homeHref = `/${lang in T ? lang : 'en'}`
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
+  const headingFont = isRTL ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
 
   return (
     <div
       dir={isRTL ? 'rtl' : 'ltr'}
       style={{
         minHeight: '70vh',
-        background: '#FDF8F1',
+        background: 'var(--bg-base)',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
@@ -39,7 +39,7 @@ export default function LangNotFound() {
         </div>
 
         <h1 style={{
-          fontFamily: serif,
+          fontFamily: headingFont,
           fontSize: 'clamp(32px, 5vw, 52px)',
           lineHeight: '1.05',
           color: '#1E3A52',
@@ -54,7 +54,7 @@ export default function LangNotFound() {
         </h1>
 
         <p style={{
-          fontFamily: serif,
+          fontFamily: headingFont,
           fontStyle: 'italic',
           fontSize: '17px',
           lineHeight: '1.65',
@@ -71,7 +71,7 @@ export default function LangNotFound() {
             alignItems: 'center',
             gap: '6px',
             background: '#1E3A52',
-            color: '#FDF8F1',
+            color: 'var(--bg-base)',
             padding: '12px 26px',
             borderRadius: '9999px',
             fontSize: '14px',

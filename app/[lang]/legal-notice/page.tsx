@@ -38,6 +38,12 @@ export default async function Page({ params }: Props) {
         waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
         faqItems={getPageFaq('/legal-notice')}
         richBlocks={getPageBlocks('/legal-notice')}
+        relatedServices={[
+          { href: '/legal-notice/eviction',         label: { en: 'Eviction Notice',          ar: 'إشعار الإخلاء' } },
+          { href: '/legal-notice/poa-cancellation', label: { en: 'POA Cancellation Notice',  ar: 'إنذار إلغاء وكالة' } },
+          { href: '/what-is-tableegh',              label: { en: 'What Is Tableegh?',        ar: 'ما هو التبليغ؟' } },
+          { href: '/rdc-support',                   label: { en: 'RDC Support',              ar: 'دعم مركز فض المنازعات الإيجارية' } },
+        ]}
       />
     </>
   )

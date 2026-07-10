@@ -6,12 +6,12 @@ import { type Lang, t, site, getWaUrl, getPageContent } from '@/lib/i18n'
 import { siblingsOf, pillarFor } from '@/lib/seo/internal-linking'
 
 // ─────────────────────────────────────────────────────────────────────────────
-// ServicePage — Magazine Editorial style (Concept C)
+// ServicePage — Brand Navy/Gold (visual layer rebuilt in Phase B)
 //
 // Visual DNA:
-//   • Cream background (#FDF8F1) — same as homepage, no dark navy hero
-//   • Instrument Serif (LTR) / Amiri (RTL) for headings
-//   • Coral accent (#E85A3C) for italic phrases + kickers
+//   • Light base background — Brand Navy/Gold system (mockup-v2 binding)
+//   • Plus Jakarta Sans (LTR) / IBM Plex Sans Arabic (RTL) for headings
+//   • Gold accent (#C9A84C) for kickers and highlights
 //   • Asymmetric magazine grid: lead column + sidebar pull quote
 //   • No "500+ Documents", no "100% First-Try", no QR-Verified, no "No hidden fees"
 //   • No "Accepted by" logo marquee (deliberate — homepage handles trust)
@@ -28,11 +28,26 @@ export interface ContentSection {
   en: string
   ar: string
 }
+// Canonical notarization statement — compliance rule 0.1-1. Rendered verbatim
+// on every service page. NEVER rephrase, shorten, or substitute.
+const NOTARIZATION_LINE: Record<'standard' | 'mobile', Record<string, string>> = {
+  standard: {
+    en: 'Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.',
+    ar: 'يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو.',
+  },
+  mobile: {
+    en: 'Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call in the standard remote service; the Mobile Notary covers the situations where a video call is not possible.',
+    ar: 'يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو في الخدمة القياسية عن بُعد؛ أما الكاتب العدل المتنقل فيغطي الحالات التي تتعذر فيها مكالمة الفيديو.',
+  },
+}
+
 export interface ServicePageProps {
   lang: Lang
   title: Record<string, string>
   subtitle?: Record<string, string>
   description: Record<string, string>
+  /** Which notarization compliance line to show under the hero (default 'standard'). */
+  notarizationVariant?: 'standard' | 'mobile'
   authority?: string | Record<string,string>
   waMessage: string
   bullets?: Array<Record<string, string>>
@@ -84,12 +99,13 @@ function shouldSkip(section: ContentSection): boolean {
 
 export default function ServicePage({
   lang, title, subtitle, description, authority, waMessage,
+  notarizationVariant = 'standard',
   bullets, sections, subsections, bodyContent, requiredDocs,
   faqItems, extraButtons, isTableegh, breadcrumb, relatedServices, richBlocks, path, children
 }: ServicePageProps) {
   const waUrl = getWaUrl(waMessage)
   const isRTL = lang === 'ar'
-  const serifFont = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
+  const headingFont = isRTL ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
 
   // ───────────────────────────────────────────────────────────────────────
   // Auto-derive sibling links from the path when caller didn't pass any.
@@ -198,13 +214,13 @@ export default function ServicePage({
       {breadcrumb && breadcrumb.length > 0 && (
         <div style={{ backgroundColor: 'var(--bg-base)' }}>
           <nav className="mx-auto max-w-6xl px-4 lg:px-8 py-4 flex flex-wrap items-center gap-1.5 text-xs" style={{ color: 'var(--text-muted)' }}>
-            <Link href={`/${lang}`} className="hover:text-coral-600 transition-colors">{t(L.home, lang)}</Link>
+            <Link href={`/${lang}`} className="hover:text-gold-600 transition-colors">{t(L.home, lang)}</Link>
             {breadcrumb.map((crumb, i) => (
               <span key={i} className="flex items-center gap-1.5">
                 <span className="text-ink-300">/</span>
                 {i === breadcrumb.length - 1
                   ? <span className="text-ink-700 font-medium">{crumb.label}</span>
-                  : <Link href={`/${lang}${crumb.href}`} className="hover:text-coral-600 transition-colors">{crumb.label}</Link>
+                  : <Link href={`/${lang}${crumb.href}`} className="hover:text-gold-600 transition-colors">{crumb.label}</Link>
                 }
               </span>
             ))}
@@ -217,7 +233,7 @@ export default function ServicePage({
         <div className="mx-auto max-w-3xl px-4 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 mb-6">
             <span className="block w-8 h-px" style={{ backgroundColor: 'var(--brand-gold)', opacity: 0.5 }} />
-            <span className="text-[11px] tracking-[0.18em] uppercase font-medium" style={{ color: 'var(--brand-gold)', fontFamily: 'DM Sans, system-ui, sans-serif' }}>
+            <span className="text-[11px] tracking-[0.18em] uppercase font-medium" style={{ color: 'var(--brand-gold)', fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}>
               {subtitle ? t(subtitle, lang) : (lang === 'ar' ? 'خدمة قانونية' : 'Legal service')}
             </span>
             <span className="block w-8 h-px" style={{ backgroundColor: 'var(--brand-gold)', opacity: 0.5 }} />
@@ -226,7 +242,7 @@ export default function ServicePage({
           <h1
             className="text-ink-900 leading-[1.05] tracking-tight font-normal"
             style={{
-              fontFamily: serifFont,
+              fontFamily: headingFont,
               fontSize: 'clamp(32px, 5vw, 52px)',
               letterSpacing: '-0.015em' }}
           >
@@ -244,12 +260,22 @@ export default function ServicePage({
           <p
             className="text-ink-600 mt-6 mx-auto leading-relaxed"
             style={{
-              fontFamily: serifFont,
+              fontFamily: headingFont,
               fontStyle: 'italic',
               fontSize: 'clamp(15px, 1.6vw, 18px)',
               maxWidth: '560px' }}
           >
             {t(description, lang)}
+          </p>
+
+          {/* Notarization path — compliance rule 0.1-1, verbatim */}
+          <p className="mt-4 mx-auto flex items-start justify-center gap-2 text-sm text-ink-600"
+             style={{ maxWidth: '620px' }}>
+            <svg className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="9" stroke="#C9A84C" strokeWidth="1.5" />
+              <path d="M6 10.2l2.6 2.6L14 7.5" stroke="#C9A84C" strokeWidth="1.8" strokeLinecap="round" />
+            </svg>
+            <span>{t(NOTARIZATION_LINE[notarizationVariant], lang)}</span>
           </p>
 
           {/* CTA row */}
@@ -278,10 +304,10 @@ export default function ServicePage({
 
       {/* ═══ Tableegh notice ═══ */}
       {isTableegh && (
-        <div className="bg-coral-50/70 border-y border-coral-200/50 py-3">
+        <div className="bg-gold-50/70 border-y border-gold-200/50 py-3">
           <div className="mx-auto max-w-3xl px-4 lg:px-8">
-            <p className="text-coral-800 text-xs lg:text-sm font-medium text-center"
-               style={{ fontFamily: serifFont, fontStyle: 'italic' }}>
+            <p className="text-gold-800 text-xs lg:text-sm font-medium text-center"
+               style={{ fontFamily: headingFont, fontStyle: 'italic' }}>
               {t(L.tableegh, lang)}
             </p>
           </div>
@@ -301,12 +327,12 @@ export default function ServicePage({
               {paragraphs.length > 0 && !richBlocks?.length && (
                 <p
                   className="text-ink-800 leading-[1.85] text-base lg:text-[17px]"
-                  style={{ fontFamily: serifFont }}
+                  style={{ fontFamily: headingFont }}
                 >
                   <span
-                    className="float-start font-normal text-coral-600 me-2"
+                    className="float-start font-normal text-gold-600 me-2"
                     style={{
-                      fontFamily: serifFont,
+                      fontFamily: headingFont,
                       fontSize: '3.4em',
                       lineHeight: '0.85',
                       paddingTop: '0.1em' }}
@@ -329,7 +355,7 @@ export default function ServicePage({
                         <h2
                           className="text-ink-900 font-normal mb-4"
                           style={{
-                            fontFamily: serifFont,
+                            fontFamily: headingFont,
                             fontSize: 'clamp(22px, 2.6vw, 28px)',
                             letterSpacing: '-0.01em' }}
                         >
@@ -337,7 +363,7 @@ export default function ServicePage({
                         </h2>
                         {para && (
                           <p className="text-ink-700 leading-[1.85] text-base lg:text-[17px]"
-                             style={{ fontFamily: serifFont }}>
+                             style={{ fontFamily: headingFont }}>
                             {para}
                           </p>
                         )}
@@ -355,7 +381,7 @@ export default function ServicePage({
                     if (!txt) return null
                     return (
                       <p key={i} className="text-ink-700 leading-[1.85] text-base lg:text-[17px]"
-                         style={{ fontFamily: serifFont }}>
+                         style={{ fontFamily: headingFont }}>
                         {txt}
                       </p>
                     )
@@ -368,8 +394,8 @@ export default function ServicePage({
                 <ul className="space-y-3">
                   {bullets.map((b, i) => (
                     <li key={i} className="flex items-start gap-3 text-ink-700 leading-relaxed text-base"
-                        style={{ fontFamily: serifFont }}>
-                      <span className="text-coral-500 mt-1.5 shrink-0">·</span>
+                        style={{ fontFamily: headingFont }}>
+                      <span className="text-gold-500 mt-1.5 shrink-0">·</span>
                       <span>{t(b, lang)}</span>
                     </li>
                   ))}
@@ -379,7 +405,7 @@ export default function ServicePage({
               {/* Subsections — categories. Numbered editorial list. */}
               {!richBlocks?.length && visSubs.length > 0 && (
                 <div className="border-t border-ink-200 pt-8">
-                  <p className="text-[11px] tracking-[0.18em] uppercase text-coral-600 font-medium mb-4">
+                  <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-4">
                     {lang === 'ar' ? `الفئات · ${visSubs.length}` : `Categories · ${visSubs.length}`}
                   </p>
                   <ol className="space-y-4">
@@ -388,12 +414,12 @@ export default function ServicePage({
                       if (!subText) return null
                       return (
                         <li key={i} className="grid grid-cols-[auto_1fr] gap-4 items-baseline">
-                          <span className="text-coral-500 font-normal text-2xl"
-                                style={{ fontFamily: serifFont }}>
+                          <span className="text-gold-500 font-normal text-2xl"
+                                style={{ fontFamily: headingFont }}>
                             {String(i + 1).padStart(2, '0')}.
                           </span>
                           <p className="text-ink-800 leading-relaxed text-base lg:text-lg"
-                             style={{ fontFamily: serifFont }}>
+                             style={{ fontFamily: headingFont }}>
                             {subText}
                           </p>
                         </li>
@@ -414,7 +440,7 @@ export default function ServicePage({
                   <h2
                     className="text-ink-900 font-normal mb-5"
                     style={{
-                      fontFamily: serifFont,
+                      fontFamily: headingFont,
                       fontSize: 'clamp(22px, 2.6vw, 28px)',
                       letterSpacing: '-0.01em' }}
                   >
@@ -423,9 +449,9 @@ export default function ServicePage({
                   <ul className="space-y-3">
                     {requiredDocs.map((doc, i) => (
                       <li key={i} className="flex items-start gap-3 text-ink-700 leading-relaxed text-base"
-                          style={{ fontFamily: serifFont }}>
-                        <span className="text-coral-500 font-normal mt-0.5 shrink-0"
-                              style={{ fontFamily: serifFont }}>·</span>
+                          style={{ fontFamily: headingFont }}>
+                        <span className="text-gold-500 font-normal mt-0.5 shrink-0"
+                              style={{ fontFamily: headingFont }}>·</span>
                         <span>{t(doc, lang)}</span>
                       </li>
                     ))}
@@ -438,14 +464,14 @@ export default function ServicePage({
               {/* FAQ */}
               {faqItems && faqItems.length > 0 && (
                 <div className="border-t border-ink-200 pt-8">
-                  <p className="text-[11px] tracking-[0.18em] uppercase text-coral-600 font-medium mb-3">
+                  <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-3">
                     — {t(L.faq_h, lang)}
                   </p>
                   <h2
                     id="faq-heading"
                     className="text-ink-900 font-normal mb-3"
                     style={{
-                      fontFamily: serifFont,
+                      fontFamily: headingFont,
                       fontSize: 'clamp(22px, 2.6vw, 28px)',
                       letterSpacing: '-0.01em' }}
                   >
@@ -466,7 +492,7 @@ export default function ServicePage({
                   <p
                     className="text-ink-700 leading-relaxed mb-3"
                     style={{
-                      fontFamily: serifFont,
+                      fontFamily: headingFont,
                       fontStyle: 'italic',
                       fontSize: '17px' }}
                   >
@@ -480,7 +506,7 @@ export default function ServicePage({
                 {/* Related services — editorial list, no boxy card */}
                 {effectiveRelated && effectiveRelated.length > 0 && (
                   <div className="border-t border-ink-200 pt-6">
-                    <p className="text-[11px] tracking-[0.18em] uppercase text-coral-600 font-medium mb-4">
+                    <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-4">
                       — {t(L.related_h, lang)}
                     </p>
                     <ul className="space-y-3">
@@ -488,10 +514,10 @@ export default function ServicePage({
                         <li key={i}>
                           <Link
                             href={`/${lang}${svc.href}`}
-                            className="group inline-flex items-baseline gap-2 text-ink-700 hover:text-coral-600 transition-colors"
-                            style={{ fontFamily: serifFont, fontSize: '16px' }}
+                            className="group inline-flex items-baseline gap-2 text-ink-700 hover:text-gold-600 transition-colors"
+                            style={{ fontFamily: headingFont, fontSize: '16px' }}
                           >
-                            <span className="text-coral-500 opacity-60 group-hover:opacity-100">→</span>
+                            <span className="text-gold-500 opacity-60 group-hover:opacity-100">→</span>
                             {t(svc.label, lang)}
                           </Link>
                         </li>
@@ -513,7 +539,7 @@ export default function ServicePage({
           <h2
             className="font-light mb-4 leading-tight"
             style={{
-              fontFamily: serifFont,
+              fontFamily: headingFont,
               fontSize: 'clamp(28px, 4vw, 40px)',
               color: 'var(--text-inverse)',
               fontWeight: 300,
@@ -522,7 +548,7 @@ export default function ServicePage({
             {t(L.ready, lang)}
           </h2>
           <p className="leading-relaxed mb-10 mx-auto max-w-md text-base"
-             style={{ fontFamily: serifFont, fontStyle: 'italic', color: '#9CA3AF' }}>
+             style={{ fontFamily: headingFont, fontStyle: 'italic', color: '#9CA3AF' }}>
             {t(L.ready_sub, lang)}
           </p>
           <a

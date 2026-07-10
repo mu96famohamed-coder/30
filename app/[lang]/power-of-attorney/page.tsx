@@ -43,6 +43,19 @@ export default async function Page({ params }: Props) {
         waMessage={(seo?.wa_message?.[lang] ?? seo?.wa_message?.en) as string}
         faqItems={getServiceFaq('poa_general')}
         richBlocks={getPageBlocks('/power-of-attorney')}
+        relatedServices={[
+          { href: '/power-of-attorney/general',           label: { en: 'General POA',            ar: 'الوكالة العامة' } },
+          { href: '/power-of-attorney/special',           label: { en: 'Special POA',            ar: 'الوكالة الخاصة' } },
+          { href: '/power-of-attorney/real-estate',       label: { en: 'Real Estate POA',        ar: 'الوكالة العقارية' } },
+          { href: '/power-of-attorney/vehicle',           label: { en: 'Vehicle POA',            ar: 'وكالة المركبات' } },
+          { href: '/power-of-attorney/bank',              label: { en: 'Bank POA',               ar: 'الوكالة البنكية' } },
+          { href: '/power-of-attorney/court',             label: { en: 'Court POA',              ar: 'الوكالة القضائية' } },
+          { href: '/power-of-attorney/company-formation', label: { en: 'Company Formation POA',  ar: 'وكالة تأسيس شركة' } },
+          { href: '/power-of-attorney/child-travel',      label: { en: 'Child Travel Authorization', ar: 'إذن سفر طفل' } },
+          { href: '/power-of-attorney/inheritance',       label: { en: 'Inheritance POA',        ar: 'وكالة الميراث' } },
+          { href: '/power-of-attorney/mohre',             label: { en: 'MOHRE Labour POA',       ar: 'وكالة وزارة الموارد البشرية' } },
+          { href: '/power-of-attorney/property-gifting',  label: { en: 'Property Gifting POA',   ar: 'وكالة هبة عقار' } },
+        ]}
       />
     </>
   )

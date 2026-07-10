@@ -25,8 +25,8 @@ function strictPick(obj: Record<string, string> | undefined, lang: Lang): string
 export default function FAQSection({ items, lang, variant = 'default' }: Props) {
   const [open, setOpen] = useState<number | null>(null)
   const isDark = variant === 'dark'
-  const serifFont = lang === 'ar' ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
-  const bodyFont = lang === 'ar' ? "'IBM Plex Sans Arabic', sans-serif" : "'DM Sans', system-ui, sans-serif"
+  const headingFont = lang === 'ar' ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
+  const bodyFont = lang === 'ar' ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', system-ui, sans-serif"
 
   // Filter out items missing a question in the current language.
   // This is the fix for AR questions appearing on EN pages.
@@ -49,7 +49,7 @@ export default function FAQSection({ items, lang, variant = 'default' }: Props) 
             className={`border-t last:border-b transition-colors duration-200 ${
               isDark
                 ? 'border-white/10'
-                : 'border-[#E5E0D8]'
+                : 'border-[#E5E3DD]'
             }`}
           >
             <button
@@ -61,7 +61,7 @@ export default function FAQSection({ items, lang, variant = 'default' }: Props) 
                 className="font-semibold text-base leading-snug transition-colors"
                 style={{
                   fontFamily: bodyFont,
-                  color: isOpen ? '#C9A84C' : (isDark ? '#F9F7F4' : '#111827'),
+                  color: isOpen ? '#C9A84C' : (isDark ? 'var(--text-inverse)' : 'var(--text-primary)'),
                 }}
               >
                 {question}
@@ -70,7 +70,7 @@ export default function FAQSection({ items, lang, variant = 'default' }: Props) 
                 className={`flex-shrink-0 text-2xl leading-none transition-transform duration-200 ${
                   isOpen ? 'rotate-45' : ''
                 }`}
-                style={{ fontFamily: bodyFont, color: isOpen ? '#C9A84C' : (isDark ? '#F9F7F4' : '#111827') }}
+                style={{ fontFamily: bodyFont, color: isOpen ? '#C9A84C' : (isDark ? 'var(--text-inverse)' : 'var(--text-primary)') }}
               >
                 +
               </span>

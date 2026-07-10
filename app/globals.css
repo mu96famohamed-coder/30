@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=IBM+Plex+Sans+Arabic:wght@400;500;600&family=Amiri:ital,wght@0,400;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 
 /* ─────────────────────────────────────────────────────────────────────────────
    POA in 30 — Global Stylesheet
-   "Editorial Authority" design system
-   Warm off-white base · deep midnight primary · premium gold accent
-   Cormorant Garamond display · DM Sans body
+   Brand Navy/Gold design system (binding reference: mockup-v2-brand-navy-gold)
+   Near-white base · navy dark sections · restrained gold accent · WA green CTAs
+   Plus Jakarta Sans (EN/numerals/logo) · IBM Plex Sans Arabic (AR)
    ───────────────────────────────────────────────────────────────────────────── */
 
 
@@ -14,28 +14,41 @@
 
 /* ─── CSS Custom Properties ──────────────────────────────────────────────── */
 :root {
-  --bg-base:    #F9F7F4;
-  --bg-subtle:  #F2EFE9;
+  /* ── Mockup tokens (mockup-v2-brand-navy-gold — binding) ── */
+  --navy:       #1E3A52;
+  --navy-deep:  #152A3E;
+  --navy-ink:   #0F2137;
+  --gold:       #C9A84C;
+  --gold-soft:  #E8D5A0;
+  --gold-dim:   rgba(201, 168, 76, 0.14);
+  --wa:         #1FAF64;   /* exclusively WhatsApp buttons */
+  --line-nav:   rgba(255, 255, 255, 0.12);
+
+  --bg-base:    #FAFAF8;
+  --bg-raised:  #FFFFFF;
+  --bg-subtle:  #F3F1EC;
   --bg-ink:     #0F2137;
 
-  --brand-midnight:   #0F2137;
-  --brand-slate:      #1E3A52;
+  /* Legacy aliases kept so existing var() references resolve to new values */
+  --brand-midnight:   #1E3A52;
+  --brand-slate:      #152A3E;
   --brand-gold:       #C9A84C;
   --brand-gold-light: #E8D5A0;
 
-  --text-primary:   #111827;
-  --text-secondary: #374151;
-  --text-muted:     #6B7280;
-  --text-inverse:   #F9F7F4;
+  --text-primary:   #16232F;
+  --text-secondary: #4A5866;
+  --text-muted:     #8B96A0;
+  --text-inverse:   #F4F6F8;
+  --text-inverse-2: #B9C4CE;
 
-  --border-default: #E5E0D8;
-  --border-strong:  #C5BFB5;
+  --border-default: #E5E3DD;
+  --border-strong:  #C9C6BE;
   --success:        #059669;
 
-  --radius-btn:  6px;
-  --radius-card: 12px;
+  --radius-btn:  10px;
+  --radius-card: 16px;
 
-  --transition-base: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: all 0.16s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 [lang="ar"], [dir="rtl"] {
@@ -58,7 +71,8 @@
     @apply overflow-x-hidden;
     background-color: var(--bg-base);
     color: var(--text-primary);
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-size: 17px;
     font-feature-settings: 'kern' 1, 'liga' 1;
   }
 
@@ -66,9 +80,9 @@
     @apply font-arab;
   }
 
-  /* Headings — Cormorant Garamond in LTR, Amiri in RTL */
+  /* Headings — Plus Jakarta Sans in LTR, IBM Plex Sans Arabic in RTL */
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     @apply tracking-tight;
     color: var(--text-primary);
   }
@@ -115,7 +129,7 @@
 
   .btn-primary {
     @apply inline-flex items-center justify-center gap-2 font-medium;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 15px;
     padding: 0.875rem 2rem;
     background: var(--brand-midnight);
@@ -133,7 +147,7 @@
 
   .btn-secondary {
     @apply inline-flex items-center justify-center gap-2 font-medium;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 15px;
     padding: 0.875rem 2rem;
     background: var(--brand-slate);
@@ -149,7 +163,7 @@
 
   .btn-outline {
     @apply inline-flex items-center justify-center gap-2 font-medium;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 15px;
     padding: 0.875rem 2rem;
     background: transparent;
@@ -167,7 +181,7 @@
   /* Gold accent — use max one per page (hero gold variant) */
   .btn-gold {
     @apply inline-flex items-center justify-center gap-2 font-medium;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 15px;
     padding: 0.875rem 2rem;
     background: var(--brand-gold);
@@ -185,7 +199,7 @@
 
   .btn-ghost {
     @apply inline-flex items-center justify-center gap-2 font-medium;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 14px;
     padding: 0.625rem 1rem;
     background: var(--bg-subtle);
@@ -198,7 +212,7 @@
   /* ── Trust pill (hero kicker) ─────────────────────────────────────────── */
   .pill-trust {
     @apply inline-flex items-center gap-2 px-4 py-1.5;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     background: var(--bg-subtle);
@@ -228,14 +242,14 @@
     color: var(--brand-gold);
   }
   .tile-title {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 17px;
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.35;
   }
   .tile-desc {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 14px;
     color: var(--text-muted);
     line-height: 1.6;
@@ -247,28 +261,30 @@
 
   /* ── Section headings ──────────────────────────────────────────────────── */
   .h-display {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 300;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
     color: var(--text-primary);
-    line-height: 1.05;
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.12;
+    font-size: clamp(30px, 4.6vw, 50px);
   }
   .h-section {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
     color: var(--text-primary);
-    line-height: 1.1;
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    line-height: 1.18;
+    font-size: clamp(24px, 3.4vw, 36px);
   }
   .h-card {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 18px;
     font-weight: 600;
     color: var(--text-primary);
     line-height: 1.35;
   }
   .sub-display {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     @apply text-base sm:text-lg leading-relaxed max-w-2xl;
     color: var(--text-muted);
   }
@@ -276,7 +292,7 @@
   /* ── Step indicators (numbered circles) ──────────────────────────────── */
   .step-num {
     @apply w-10 h-10 rounded-full flex items-center justify-center text-sm flex-shrink-0;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-weight: 700;
     background: var(--brand-midnight);
     color: var(--text-inverse);
@@ -317,7 +333,7 @@
     font-size: 0.875rem;
   }
   .box-law-label {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -334,17 +350,17 @@
   /* ── Prose: service page body copy ─────────────────────────────────────── */
   .prose-poa {
     @apply leading-relaxed;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     color: var(--text-secondary);
   }
   .prose-poa h2 {
-    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     @apply text-2xl sm:text-3xl font-normal mt-10 mb-4;
     color: var(--text-primary);
     line-height: 1.2;
   }
   .prose-poa h3 {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     @apply text-lg font-semibold mt-8 mb-3;
     color: var(--text-primary);
   }
@@ -371,7 +387,7 @@
   }
   .faq-question {
     @apply w-full flex items-center justify-between gap-4 py-5 text-start;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 16px;
     font-weight: 500;
     color: var(--text-primary);
@@ -381,7 +397,7 @@
   .faq-question:hover { color: var(--brand-gold); }
   .faq-answer {
     @apply pb-5;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 15px;
     line-height: 1.75;
     color: var(--text-secondary);
@@ -397,7 +413,7 @@
 
   /* ── Navbar ─────────────────────────────────────────────────────────────── */
   .nav-link {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     @apply text-sm font-medium transition-colors;
     color: var(--text-secondary);
   }
@@ -406,12 +422,12 @@
   /* ── Footer ─────────────────────────────────────────────────────────────── */
   .footer-heading {
     @apply text-xs uppercase tracking-wider font-semibold mb-3;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     color: #9CA3AF;
   }
   .footer-link {
     @apply text-sm transition-colors;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     color: #374151;
   }
   .footer-link:hover { color: #C9A84C; }
@@ -419,62 +435,68 @@
   /* ── WhatsApp floating button ──────────────────────────────────────────── */
   .wa-float {
     @apply fixed bottom-5 end-5 z-50
-           w-14 h-14 rounded-full bg-[#25D366] text-white
+           w-14 h-14 rounded-full bg-[#1FAF64] text-white
            flex items-center justify-center hover:scale-105;
     box-shadow: 0 4px 24px rgba(15, 33, 55, 0.08);
     transition: var(--transition-base);
   }
 
   /* ══════════════════════════════════════════════════════════════════════════
-     EDITORIAL SERIF SYSTEM
-     Cormorant Garamond (EN) · Amiri (AR)
+     DISPLAY HEADING SYSTEM (navy/gold)
+     Plus Jakarta Sans (EN) · IBM Plex Sans Arabic (AR)
      ══════════════════════════════════════════════════════════════════════════ */
 
   .h-serif {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
-    line-height: 1.05;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.18;
     color: var(--text-primary);
   }
-  [dir="rtl"] .h-serif { font-family: 'Amiri', serif; line-height: 1.15; }
+  [dir="rtl"] .h-serif { font-family: 'IBM Plex Sans Arabic', sans-serif; line-height: 1.42; letter-spacing: 0; }
 
   .h-serif-hero {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 300;
-    line-height: 1.05;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    line-height: 1.12;
     color: var(--text-primary);
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(30px, 4.6vw, 50px);
   }
   [dir="rtl"] .h-serif-hero {
-    font-family: 'Amiri', serif;
-    line-height: 1.15;
-    font-size: clamp(2rem, 4.5vw, 3.5rem);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.42;
+    font-size: clamp(28px, 4.3vw, 46px);
   }
 
   .h-serif-section {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 400;
-    line-height: 1.1;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+    line-height: 1.18;
     color: var(--text-primary);
-    font-size: clamp(1.5rem, 3vw, 2.25rem);
+    font-size: clamp(24px, 3.4vw, 36px);
   }
   [dir="rtl"] .h-serif-section {
-    font-family: 'Amiri', serif;
-    line-height: 1.2;
-    font-size: clamp(1.25rem, 2.75vw, 2rem);
+    font-family: 'IBM Plex Sans Arabic', sans-serif;
+    line-height: 1.42;
+    letter-spacing: 0;
+    font-size: clamp(22px, 3.2vw, 33px);
   }
 
-  /* Gold italic accent — replaces coral on hero */
+  /* Gold accent on hero headline */
   .h-serif-em {
     color: var(--brand-gold);
-    font-style: italic;
-    font-weight: 600;
+    font-style: normal;
+    font-weight: 700;
   }
 
   /* Pre-title kicker — gold uppercase */
   .kicker {
     display: inline-block;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.1em;
@@ -488,13 +510,13 @@
 
   /* Large serif numerals for step indicators — light gold */
   .step-serif {
-    font-family: 'Cormorant Garamond', Georgia, serif;
-    font-weight: 300;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+    font-weight: 800;
     line-height: 1;
     color: var(--brand-gold-light);
     font-size: clamp(3rem, 5vw, 5rem);
   }
-  [dir="rtl"] .step-serif { font-family: 'Amiri', serif; }
+  [dir="rtl"] .step-serif { font-family: 'Plus Jakarta Sans', system-ui, sans-serif; }
 
   /* Connector between steps */
   .step-divider {
@@ -506,7 +528,7 @@
   .faq-row {
     @apply w-full flex items-center justify-between gap-4 py-5
            border-t last:border-b text-start font-medium text-sm sm:text-base;
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-weight: 500;
     border-color: var(--border-default);
     color: var(--text-primary);
@@ -544,15 +566,15 @@
     transform: translateY(-2px);
   }
   .tile-editorial-title {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 17px;
-    font-weight: 600;
-    color: var(--text-primary);
+    font-weight: 700;
+    color: var(--navy-ink);
     line-height: 1.35;
   }
   [dir="rtl"] .tile-editorial-title { font-family: 'IBM Plex Sans Arabic', sans-serif; }
   .tile-editorial-sub {
-    font-family: 'DM Sans', system-ui, sans-serif;
+    font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.06em;
@@ -689,4 +711,225 @@
   overflow: hidden !important;
   opacity: 0 !important;
   pointer-events: none !important;
+}
+
+/* ═════════════════════════════════════════════════════════════════════════
+   MOCKUP V2 COMPONENTS — brand navy/gold (binding reference)
+   Hero dial · journey chips · minute badges · warning block · navy CTA
+   ═════════════════════════════════════════════════════════════════════════ */
+
+/* ── Navy hero ── */
+.hero-navy {
+  background: linear-gradient(180deg, var(--navy) 0%, var(--navy-deep) 100%);
+  color: var(--text-inverse);
+  position: relative;
+  overflow: hidden;
+}
+.hero-navy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(900px 500px at 78% 30%, rgba(201, 168, 76, 0.10), transparent 60%);
+  pointer-events: none;
+}
+.hero-kick {
+  color: var(--gold);
+  font-size: 12.5px;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+[dir="rtl"] .hero-kick { letter-spacing: 0.06em; }
+.hero-h1 {
+  color: #fff;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  line-height: 1.14;
+  font-size: clamp(30px, 4.6vw, 50px);
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+[dir="rtl"] .hero-h1 {
+  font-family: 'IBM Plex Sans Arabic', sans-serif;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 1.42;
+  font-size: clamp(28px, 4.3vw, 46px);
+}
+.hero-h1 em { font-style: normal; color: var(--gold); }
+.hero-sub { color: var(--text-inverse-2); font-size: 17.5px; }
+.abroad-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--line-nav);
+  border-radius: 99px;
+  padding: 7px 16px;
+  font-size: 13.5px;
+  color: var(--text-inverse-2);
+}
+.abroad-pill svg { width: 15px; height: 15px; stroke: var(--gold); flex: none; }
+.hero-trust { display: flex; flex-wrap: wrap; gap: 20px; }
+.hero-trust span {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13.5px;
+  color: var(--text-inverse-2);
+}
+
+/* ── Buttons (mockup) ── */
+.btn-wa {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: var(--wa);
+  color: #fff;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: var(--radius-btn);
+  transition: filter 0.15s;
+}
+.btn-wa:hover { filter: brightness(1.07); }
+.btn-ghost-inv {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 12px 24px;
+  border-radius: var(--radius-btn);
+  transition: border-color 0.15s, background 0.15s;
+}
+.btn-ghost-inv:hover { border-color: var(--gold); background: rgba(201, 168, 76, 0.08); }
+
+/* ── 30-minute dial ── */
+@property --sweep {
+  syntax: '<angle>';
+  initial-value: 0deg;
+  inherits: false;
+}
+.dial-zone { position: relative; display: grid; place-items: center; min-height: 420px; }
+.dial {
+  width: min(340px, 72vw);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  background: conic-gradient(var(--gold) 0deg, var(--gold) var(--sweep, 180deg), rgba(255, 255, 255, 0.07) var(--sweep, 180deg));
+  animation: dial-sweep 1.6s cubic-bezier(0.3, 0.7, 0.2, 1) both;
+}
+@keyframes dial-sweep { from { --sweep: 0deg; } to { --sweep: 180deg; } }
+.dial::before {
+  content: "";
+  position: absolute;
+  inset: 10px;
+  border-radius: 50%;
+  background: var(--navy-deep);
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.08);
+}
+.dial-core { position: absolute; inset: 0; display: grid; place-items: center; text-align: center; }
+.dial-core .dial-big {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-weight: 800;
+  font-size: clamp(56px, 9vw, 84px);
+  color: var(--gold);
+  line-height: 1;
+}
+.dial-core .dial-lbl { color: var(--text-inverse-2); font-size: 14.5px; margin-top: 6px; max-width: 24ch; }
+
+/* ── Journey chips ── */
+.chip-card {
+  position: absolute;
+  background: #fff;
+  color: var(--text-primary);
+  border-radius: 12px;
+  padding: 12px 14px;
+  box-shadow: 0 12px 34px rgba(6, 16, 26, 0.35);
+  font-size: 13px;
+  line-height: 1.6;
+  max-width: 200px;
+}
+.chip-wa { top: 6%; inset-inline-start: -4%; border-inline-start: 3px solid var(--wa); }
+.chip-wa b { color: var(--wa); font-size: 11.5px; display: block; margin-bottom: 2px; }
+.chip-doc {
+  bottom: 4%;
+  inset-inline-end: -5%;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  border-inline-start: 3px solid var(--gold);
+}
+.chip-doc .chip-qr {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  background:
+    conic-gradient(var(--navy) 25%, transparent 0) 0 0 / 12px 12px,
+    conic-gradient(transparent 75%, var(--navy) 0) 6px 6px / 12px 12px,
+    #fff;
+  border: 1px solid var(--border-default);
+}
+.chip-doc b { display: block; font-size: 12.5px; color: var(--navy); }
+.chip-doc small { color: var(--text-muted); font-size: 11px; }
+@media (max-width: 920px) {
+  .dial-zone { min-height: 0; padding-block: 12px; }
+  .chip-wa { inset-inline-start: 0; }
+  .chip-doc { inset-inline-end: 0; }
+}
+
+/* ── Minute badge (steps) ── */
+.min-badge {
+  display: inline-block;
+  background: var(--gold-dim);
+  color: #8A6D22;
+  font-weight: 700;
+  font-size: 12px;
+  padding: 4px 12px;
+  border-radius: 99px;
+}
+
+/* ── Warning block ── */
+.warn-block {
+  background: var(--navy);
+  color: var(--text-inverse);
+  border-radius: var(--radius-card);
+  padding: 34px;
+  max-width: 920px;
+  position: relative;
+  overflow: hidden;
+}
+.warn-block::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--gold);
+}
+.warn-block h3 { color: #fff; font-size: 19px; font-weight: 700; }
+.warn-block p { color: var(--text-inverse-2); font-size: 15.5px; }
+.warn-block p b { color: var(--gold-soft); font-weight: 600; }
+
+/* ── Final CTA (navy-ink) ── */
+.cta-navy {
+  background: var(--navy-ink);
+  position: relative;
+  overflow: hidden;
+}
+.cta-navy::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px 300px at 50% 120%, rgba(201, 168, 76, 0.14), transparent);
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .dial { animation: none; --sweep: 180deg; }
 }

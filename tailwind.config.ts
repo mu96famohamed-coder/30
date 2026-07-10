@@ -2,18 +2,16 @@ import type { Config } from 'tailwindcss'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // POA in 30 — Tailwind Config
-// "Editorial Authority" design system — premium legal service, Dubai HNW market
+// Brand Navy/Gold design system (binding reference: mockup-v2-brand-navy-gold)
 //
-//   midnight  : #0F2137  — deep navy, primary CTAs & navbar
-//   gold      : #C9A84C  — premium gold accent (replaces coral)
-//   base      : #F9F7F4  — warm off-white page background
-//   subtle    : #F2EFE9  — section alternation, card backgrounds
+//   navy      : #1E3A52  — primary brand, dark sections & navbar
+//   navy-deep : #152A3E  — hero gradient end
+//   navy-ink  : #0F2137  — footer / final CTA
+//   gold      : #C9A84C  — restrained accent (badges, hover borders, icons)
+//   wa        : #1FAF64  — exclusively WhatsApp buttons
+//   base      : #FAFAF8  — near-white page background
 //
-// Typography: Cormorant Garamond (display) + DM Sans (body)
-// Arabic: Amiri (display) + IBM Plex Sans Arabic (body)
-//
-// Coral palette remapped to gold values — all existing coral-* classes
-// automatically render gold without changing component JSX files.
+// Typography: Plus Jakarta Sans (EN / numerals / logo) · IBM Plex Sans Arabic (AR)
 // ─────────────────────────────────────────────────────────────────────────────
 
 const config: Config = {
@@ -24,46 +22,46 @@ const config: Config = {
   theme: {
     extend: {
       fontFamily: {
-        // Display headings — Cormorant Garamond (weight 300–400 for elegance, 600 for impact)
-        display: ['Cormorant Garamond', 'Georgia', 'serif'],
-        serif:   ['Cormorant Garamond', 'Georgia', 'serif'],
-        // Body / UI — DM Sans (weight 400 body, 500 labels, 600 headings)
-        sans:    ['DM Sans', 'system-ui', 'sans-serif'],
-        body:    ['DM Sans', 'system-ui', 'sans-serif'],
-        ui:      ['DM Sans', 'system-ui', 'sans-serif'],
-        // Arabic display — Amiri (formal, elegant at large sizes)
-        'arab-display': ['Amiri', 'Noto Naskh Arabic', 'serif'],
-        'arab-serif':   ['Amiri', 'Noto Naskh Arabic', 'serif'],
-        // Arabic body — IBM Plex Sans Arabic
-        arab: ['IBM Plex Sans Arabic', 'Noto Sans Arabic', 'sans-serif'],
-        mono: ['JetBrains Mono', 'ui-monospace', 'monospace'],
+        display: ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        sans:    ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        body:    ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        ui:      ['Plus Jakarta Sans', 'system-ui', 'sans-serif'],
+        arab:    ['IBM Plex Sans Arabic', 'Noto Sans Arabic', 'sans-serif'],
+        mono:    ['JetBrains Mono', 'ui-monospace', 'monospace'],
       },
       colors: {
-        // ── New premium palette ──────────────────────────────────────────────
-        midnight: '#0F2137',
+        // ── Brand navy scale (mockup) ────────────────────────────────────────
+        navy: {
+          DEFAULT: '#1E3A52',
+          deep:    '#152A3E',
+          ink:     '#0F2137',
+        },
+        midnight: '#1E3A52',
+
+        // ── Gold accent scale ────────────────────────────────────────────────
         gold: {
           DEFAULT: '#C9A84C',
-          light:   '#E8D5A0',
           50:      '#FAF5E4',
-        },
-        base:   '#F9F7F4',
-        subtle: '#F2EFE9',
-
-        // ── Coral remapped to gold — all coral-* classes now render gold ─────
-        coral: {
-          50:  '#FAF5E4',
-          100: '#F5EDCC',
-          200: '#E8D5A0',
-          300: '#DAC07A',
-          400: '#C9A84C',
-          500: '#C9A84C',
-          600: '#A88534',
-          700: '#866A27',
-          800: '#644F1D',
-          900: '#3D2E0E',
+          100:     '#F5EDCC',
+          200:     '#E8D5A0',
+          300:     '#DAC07A',
+          400:     '#C9A84C',
+          500:     '#C9A84C',
+          600:     '#A88534',
+          700:     '#8A6D22',
+          800:     '#644F1D',
+          light:   '#E8D5A0',
         },
 
-        // ── Primary brand: deep midnight-navy ────────────────────────────────
+        // ── WhatsApp green — buttons only ────────────────────────────────────
+        wa: '#1FAF64',
+
+        // ── Backgrounds ──────────────────────────────────────────────────────
+        base:   '#FAFAF8',
+        raised: '#FFFFFF',
+        subtle: '#F3F1EC',
+
+        // ── Navy-tinted neutral scale (pre-existing, widely used) ────────────
         ink: {
           50:  '#F4F7F9',
           100: '#E4EBEF',
@@ -77,32 +75,27 @@ const config: Config = {
           900: '#0C1A27',
         },
 
-        // ── Backgrounds ─────────────────────────────────────────────────────
         cream: {
-          DEFAULT: '#F9F7F4',
-          50:  '#FEFCF9',
-          100: '#F9F7F4',
-          200: '#F2EFE9',
-          300: '#EDE9E2',
-          400: '#E5E0D8',
-          500: '#C5BFB5',
-        },
-        sand: {
-          50:  '#F7F1E4',
-          100: '#F2E9D3',
-          200: '#EADDBA',
+          DEFAULT: '#FAFAF8',
+          50:  '#FEFDFB',
+          100: '#FAFAF8',
+          200: '#F3F1EC',
+          300: '#EDEAE3',
+          400: '#E5E3DD',
+          500: '#C9C6BE',
         },
       },
       borderRadius: {
-        btn:  '6px',    // professional, not pill — CTA buttons
-        card: '12px',   // service cards
-        tile: '12px',   // matches card
-        pill: '999px',  // kept for backward compat (WA button etc.)
+        btn:  '10px',   // buttons (mockup --r)
+        card: '16px',   // cards (mockup --rc)
+        tile: '16px',
+        pill: '999px',
       },
       boxShadow: {
         soft:         '0 2px 8px rgba(15, 33, 55, 0.06)',
         tile:         '0 4px 24px rgba(15, 33, 55, 0.08)',
         'card-hover': '0 8px 32px rgba(15, 33, 55, 0.10)',
+        chip:         '0 12px 34px rgba(6, 16, 26, 0.35)',
       },
       container: {
         center: true,

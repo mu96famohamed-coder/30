@@ -1,7 +1,6 @@
 'use client'
 
 import Link from 'next/link'
-import Image from 'next/image'
 import { useState, useRef, useEffect } from 'react'
 import { usePathname } from 'next/navigation'
 import { type Lang, t, cta, site, languages } from '@/lib/i18n'
@@ -170,7 +169,7 @@ export default function Navbar({ lang }: Props) {
   const waHref = `https://wa.me/${site.phone.replace(/\D/g, '')}`
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur border-b" style={{ backgroundColor: 'rgba(249,247,244,0.97)', borderColor: 'var(--border-default)' }}>
+    <header className="sticky top-0 z-50 backdrop-blur border-b" style={{ backgroundColor: 'rgba(30,58,82,0.97)', borderColor: 'var(--line-nav)' }}>
       <div className="mx-auto max-w-7xl px-4 lg:px-8">
         <div className="flex h-18 py-3 items-center justify-between gap-4">
 
@@ -180,14 +179,19 @@ export default function Navbar({ lang }: Props) {
             className="flex items-center gap-2.5 shrink-0 group"
             aria-label="POA in 30"
           >
-            <Image
-              src={lang === 'ar' ? '/logo-ar.svg' : '/logo.svg'}
-              alt="POA in 30"
-              width={160}
-              height={42}
-              priority
-              className="h-9 w-auto"
-            />
+            <span
+              className="flex items-center gap-2 text-white"
+              style={{ fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}
+            >
+              <span className="font-extrabold text-[21px] tracking-tight">POA</span>
+              <span className="italic font-medium text-[17px] opacity-85">in</span>
+              <span
+                className="grid place-items-center w-[34px] h-[34px] rounded-full text-white font-extrabold text-[15px]"
+                style={{ backgroundColor: 'var(--gold)' }}
+              >
+                30
+              </span>
+            </span>
           </Link>
 
           {/* ── Desktop Nav ── */}
@@ -205,17 +209,18 @@ export default function Navbar({ lang }: Props) {
                   <button
                     className={`flex items-baseline gap-1.5 px-3 py-2 text-sm transition-colors ${
                       isActive
-                        ? 'text-coral-600'
-                        : 'text-ink-700 hover:text-coral-600'
+                        ? 'text-white'
+                        : 'hover:text-white'
                     }`}
                     style={{
-                      fontFamily: lang === 'ar' ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif',
-                      fontStyle: isActive ? 'italic' : 'normal',
+                      color: isActive ? '#fff' : 'var(--text-inverse-2)',
+                      fontFamily: lang === 'ar' ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif",
+                      fontStyle: 'normal',
                       fontSize: '15px',
                       letterSpacing: '0.01em' }}
                   >
                     {label}
-                    <span className={`transition-transform text-[10px] ${isActive ? 'rotate-180 text-coral-600' : 'text-ink-400'}`}>
+                    <span className={`transition-transform text-[10px] ${isActive ? 'rotate-180 text-gold-400' : ''}`} style={!isActive ? { color: 'var(--text-inverse-2)' } : undefined}>
                       {CHEVRON}
                     </span>
                   </button>
@@ -237,7 +242,7 @@ export default function Navbar({ lang }: Props) {
                           left: '50%',
                           transform: 'translateX(-50%)',
                           backgroundColor: '#FFFFFF',
-                          border: '1px solid #E5E0D8',
+                          border: '1px solid var(--border-default)',
                         }}
                         onMouseEnter={() => openDropdown(item.key)}
                         onMouseLeave={scheduleClose}
@@ -248,7 +253,7 @@ export default function Navbar({ lang }: Props) {
                         >
                           {item.cols.map((col, ci) => (
                             <div key={ci}>
-                              <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-coral-600 px-2 mb-3">
+                              <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-gold-600 px-2 mb-3">
                                 — {t(col.heading, lang)}
                               </p>
                               <div className="space-y-0.5">
@@ -256,9 +261,9 @@ export default function Navbar({ lang }: Props) {
                                   <Link
                                     key={sub.href}
                                     href={sub.href}
-                                    className="flex items-baseline gap-2 px-2 py-1.5 text-ink-700 hover:text-coral-600 transition-colors"
+                                    className="flex items-baseline gap-2 px-2 py-1.5 text-ink-700 hover:text-gold-600 transition-colors"
                                     style={{
-                                      fontFamily: lang === 'ar' ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif',
+                                      fontFamily: lang === 'ar' ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif",
                                       fontSize: '15px' }}
                                     onClick={() => setActiveKey(null)}
                                   >
@@ -283,14 +288,15 @@ export default function Navbar({ lang }: Props) {
             <div className="hidden sm:flex items-center gap-0.5">
               {languages.map((l, i) => (
                 <span key={l.code} className="flex items-center">
-                  {i > 0 && <span className="text-ink-300 text-xs mx-1">|</span>}
+                  {i > 0 && <span className="text-xs mx-1" style={{ color: 'var(--line-nav)' }}>|</span>}
                   <Link
                     href={switchLangPath(l.code)}
                     className={`text-xs font-semibold px-1.5 py-1 rounded transition-colors ${
                       lang === l.code
-                        ? 'text-coral-600'
-                        : 'text-ink-500 hover:text-coral-600'
+                        ? 'text-gold-400'
+                        : 'hover:text-white'
                     }`}
+                    style={lang === l.code ? undefined : { color: 'var(--text-inverse-2)' }}
                     title={l.title}
                   >
                     {l.label}
@@ -304,15 +310,15 @@ export default function Navbar({ lang }: Props) {
               href={waHref}
               target="_blank"
               rel="noopener noreferrer"
-              className="btn-primary !py-2 !px-4 !text-sm"
+              className="btn-wa !py-2 !px-4 !text-sm"
             >
-              {lang === 'ar' ? 'ابدأ الآن' : 'Start in 30 min'}
+              {lang === 'ar' ? 'ابدأ عبر واتساب' : 'Start on WhatsApp'}
             </a>
 
             {/* Mobile hamburger */}
             <button
               onClick={() => setMobileOpen(!mobileOpen)}
-              className="lg:hidden p-2 rounded-lg text-ink-700 hover:bg-cream-300 transition-colors"
+              className="lg:hidden p-2 rounded-lg text-white transition-colors" style={{ background: 'transparent' }}
               aria-label="Menu"
               aria-expanded={mobileOpen}
             >
@@ -323,7 +329,7 @@ export default function Navbar({ lang }: Props) {
 
         {/* ── Mobile menu ── */}
         {mobileOpen && (
-          <div className="lg:hidden border-t border-ink-100 py-3 max-h-[75vh] overflow-y-auto" style={{ backgroundColor: '#F9F7F4' }}>
+          <div className="lg:hidden border-t py-3 max-h-[75vh] overflow-y-auto" style={{ backgroundColor: '#FFFFFF', borderColor: 'var(--line-nav)' }}>
             {/* Language row */}
             <div className="flex items-center gap-2 px-3 pb-3 mb-2 border-b border-ink-100">
               {languages.map((l, i) => (
@@ -332,7 +338,7 @@ export default function Navbar({ lang }: Props) {
                   <Link
                     href={switchLangPath(l.code)}
                     className={`text-xs font-semibold px-2 py-1 rounded transition-colors ${
-                      lang === l.code ? 'text-coral-600' : 'text-ink-500'
+                      lang === l.code ? 'text-gold-600' : 'text-ink-500'
                     }`}
                     onClick={() => setMobileOpen(false)}
                   >
@@ -373,7 +379,7 @@ export default function Navbar({ lang }: Props) {
                               key={sub.href}
                               href={sub.href}
                               onClick={() => setMobileOpen(false)}
-                              className="block px-2 py-1.5 text-sm text-ink-700 hover:text-coral-600"
+                              className="block px-2 py-1.5 text-sm text-ink-700 hover:text-gold-600"
                             >
                               {t(sub.label, lang)}
                             </Link>

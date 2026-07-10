@@ -48,7 +48,7 @@ const L = {
 export default async function Page({ params }: Props) {
   const { lang } = await params
   const isRTL = lang === 'ar'
-  const serif = isRTL ? 'Amiri, serif' : 'Cormorant Garamond, Georgia, serif'
+  const headingFont = isRTL ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
   const waUrl = getWaUrl(t({ en: 'Hi POA in 30, I have a question about a Dubai POA / notarization.', ar: 'مرحباً POA in 30، عندي سؤال عن وكالة/توثيق في دبي.' }, lang))
 
   return (
@@ -66,24 +66,37 @@ export default async function Page({ params }: Props) {
       <section className="bg-cream pt-12 pb-10 lg:pt-20 lg:pb-16">
         <div className="mx-auto max-w-3xl px-4 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 mb-6">
-            <span className="block w-8 h-px bg-coral-500/60" />
-            <span className="text-[11px] tracking-[0.2em] uppercase text-coral-600 font-medium">
+            <span className="block w-8 h-px bg-gold-500/60" />
+            <span className="text-[11px] tracking-[0.2em] uppercase text-gold-600 font-medium">
               {isRTL ? 'تواصل معنا' : 'Get in touch'}
             </span>
-            <span className="block w-8 h-px bg-coral-500/60" />
+            <span className="block w-8 h-px bg-gold-500/60" />
           </div>
           <h1 className="text-ink-900 leading-[1.05] tracking-tight font-normal"
-              style={{ fontFamily: serif, fontSize: 'clamp(32px, 5vw, 52px)', letterSpacing: '-0.015em' }}>
+              style={{ fontFamily: headingFont, fontSize: 'clamp(32px, 5vw, 52px)', letterSpacing: '-0.015em' }}>
             {t(L.h1_lead, lang)}
             <br/>
-            <em className="text-coral-600 not-italic" style={{ fontStyle: 'italic' }}>
+            <em className="text-gold-600 not-italic" style={{ fontStyle: 'italic' }}>
               {t(L.h1_em, lang)}
             </em>
           </h1>
           <p className="text-ink-600 mt-6 mx-auto leading-relaxed"
-             style={{ fontFamily: serif, fontStyle: 'italic', fontSize: 'clamp(15px, 1.6vw, 18px)', maxWidth: '560px' }}>
+             style={{ fontFamily: headingFont, fontStyle: 'italic', fontSize: 'clamp(15px, 1.6vw, 18px)', maxWidth: '560px' }}>
             {t(L.sub, lang)}
           </p>
+          {/* Notarization path — compliance rule 0.1-1, verbatim */}
+          <p className="mt-4 mx-auto flex items-start justify-center gap-2 text-sm text-ink-600" style={{ maxWidth: '620px' }}>
+            <svg className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="9" stroke="#C9A84C" strokeWidth="1.5" />
+              <path d="M6 10.2l2.6 2.6L14 7.5" stroke="#C9A84C" strokeWidth="1.8" strokeLinecap="round" />
+            </svg>
+            <span>
+              {lang === 'ar'
+                ? 'يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو.'
+                : 'Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.'}
+            </span>
+          </p>
+
           <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
             <a href={waUrl} target="_blank" rel="noopener noreferrer"
                className="inline-flex items-center gap-2 bg-ink-900 text-cream font-medium text-sm rounded-full px-6 py-3 hover:bg-ink-800 transition-colors">
@@ -104,26 +117,26 @@ export default async function Page({ params }: Props) {
       <section className="bg-cream py-14 lg:py-20 border-t border-ink-100/40">
         <div className="mx-auto max-w-4xl px-4 lg:px-8 grid lg:grid-cols-2 gap-12">
           <div>
-            <p className="text-[11px] tracking-[0.18em] uppercase text-coral-600 font-medium mb-3">{t(L.ways_kicker, lang)}</p>
+            <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-3">{t(L.ways_kicker, lang)}</p>
             <ul className="space-y-3 mt-6">
               <li>
                 <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1">WhatsApp</p>
                 <a href={waUrl} target="_blank" rel="noopener noreferrer"
-                   className="text-ink-800 hover:text-coral-600" style={{ fontFamily: serif, fontSize: '20px' }}>
+                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
                   {site.phone_display}
                 </a>
               </li>
               <li>
                 <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1 mt-4">Phone</p>
                 <a href={`tel:${site.phone}`}
-                   className="text-ink-800 hover:text-coral-600" style={{ fontFamily: serif, fontSize: '20px' }}>
+                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
                   {site.phone_display}
                 </a>
               </li>
               <li>
                 <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1 mt-4">Email</p>
                 <a href={`mailto:${site.email}`}
-                   className="text-ink-800 hover:text-coral-600" style={{ fontFamily: serif, fontSize: '20px' }}>
+                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
                   {site.email}
                 </a>
               </li>
@@ -131,7 +144,7 @@ export default async function Page({ params }: Props) {
 
             <div className="mt-10 pt-8 border-t border-ink-200">
               <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-2">{t(L.hours_h, lang)}</p>
-              <p className="text-ink-700" style={{ fontFamily: serif, fontSize: '15px', lineHeight: '1.85' }}>
+              <p className="text-ink-700" style={{ fontFamily: headingFont, fontSize: '15px', lineHeight: '1.85' }}>
                 {t(L.hours_wd, lang)}<br/>
                 {t(L.hours_sat, lang)}<br/>
                 {t(L.hours_fri, lang)}
@@ -140,20 +153,20 @@ export default async function Page({ params }: Props) {
 
             <div className="mt-8">
               <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-2">{t(L.area_h, lang)}</p>
-              <p className="text-ink-700" style={{ fontFamily: serif, fontSize: '15px', lineHeight: '1.7' }}>
+              <p className="text-ink-700" style={{ fontFamily: headingFont, fontSize: '15px', lineHeight: '1.7' }}>
                 {t(L.area_p, lang)}
               </p>
             </div>
           </div>
 
           {/* Right column — what we need from you */}
-          <div className="border-s-2 border-coral-500 ps-8">
+          <div className="border-s-2 border-gold-500 ps-8">
             <h2 className="text-ink-900 font-normal mb-4"
-                style={{ fontFamily: serif, fontSize: '24px', letterSpacing: '-0.01em' }}>
+                style={{ fontFamily: headingFont, fontSize: '24px', letterSpacing: '-0.01em' }}>
               {t(L.what_we_need, lang)}
             </h2>
             <p className="text-ink-700 leading-[1.85] text-base"
-               style={{ fontFamily: serif }}>
+               style={{ fontFamily: headingFont }}>
               {t(L.hint_p, lang)}
             </p>
           </div>
