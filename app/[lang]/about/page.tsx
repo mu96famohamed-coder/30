@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ar: 'عن POA in 30 دبي | دعم التوثيق الخاص' }
   const descs: Record<string, string> = {
     en: 'POA in 30 is Dubai\'s private notary support service. We prepare and coordinate POAs and legal documents — same day, fully online.',
-    ar: 'POA in 30 خدمة دعم التوثيق الخاصة في دبي. نُعِدّ وننسق الوكالات والمستندات القانونية — في نفس اليوم، أونلاين بالكامل.' }
+    ar: 'POA in 30 خدمة دعم التوثيق الخاصة في دبي. نُعِدّ وننسق الوكالات والمستندات القانونية — في نفس اليوم، عن بُعد بالكامل.' }
   return {
     title: titles[lang] || titles.en,
     description: descs[lang] || descs.en,
@@ -33,7 +33,7 @@ const L = {
   kicker:   { en: 'About POA in 30', ar: 'عن POA in 30' },
   h1_lead:  { en: "Dubai's private notary support service,", ar: 'خدمة دعم التوثيق الخاصة في دبي،' },
   h1_em:    { en: 'in 30 minutes.', ar: 'في 30 دقيقة.' },
-  sub:      { en: 'We prepare and coordinate POAs, attestations, and legal documents — fully online via Dubai Courts video call. Not a law firm. We are document specialists.', ar: 'نُعِدّ وننسق الوكالات والتصديق والمستندات القانونية — أونلاين بالكامل عبر مكالمة فيديو محاكم دبي. لسنا مكتب محاماة. نحن متخصصو إعداد المستندات.' },
+  sub:      { en: 'We prepare and coordinate POAs, attestations, and legal documents — fully remote. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. Not a law firm. We are document specialists.', ar: 'نُعِدّ وننسق الوكالات والتصديق والمستندات القانونية — عن بُعد بالكامل. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. لسنا مكتب محاماة. نحن متخصصو إعداد المستندات.' },
   what_kicker: { en: '— What we do', ar: '— ما نفعله' },
   what_h:   { en: 'Document preparation, drafted right.', ar: 'إعداد مستندات، مصاغة بالشكل الصحيح.' },
   what_p:   { en: 'POA in 30 prepares and coordinates document notarizations across the UAE. The notarization itself is performed by licensed UAE Notary Public authorities — Dubai Courts or the UAE Ministry of Justice — via secure video call. Our value is the precision: correct format, correct authority, accepted on first review.', ar: 'POA in 30 تُعد وتنسق توثيقات المستندات في الإمارات. التوثيق الفعلي يُنفَّذ بواسطة كتّاب العدل المرخصين — محاكم دبي أو وزارة العدل الاتحادية — عبر مكالمة فيديو آمنة. قيمتنا في الدقة: الصيغة الصحيحة، الجهة الصحيحة، تُقبل من أول مرة.' },

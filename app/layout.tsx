@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 
 // ─────────────────────────────────────────────────────────────────────────────
 // Root layout is intentionally minimal.
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: 'POA in 30 — Power of Attorney Drafted & Notarized in 30 Minutes',
     template: '%s' },
   description:
-    'POA in 30 handles your Power of Attorney, attestation, and legal documentation 100% online — drafted and notarized in 30 minutes. UAE-wide delivery.',
+    'POA in 30 handles your Power of Attorney and legal documentation remotely — drafted and delivered in 30 minutes. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.',
   applicationName: 'POA in 30',
   icons: {
     icon: '/favicon.svg',
@@ -23,6 +23,11 @@ export const metadata: Metadata = {
     telephone: false,
     address: false,
     email: false } }
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1E3A52' }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return children

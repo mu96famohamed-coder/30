@@ -17,12 +17,12 @@ import { buildWebsiteSchema } from '@/lib/seo/schema-builder'
 export async function generateMetadata({ params }: { params: Promise<{ lang: Lang }> }): Promise<Metadata> {
   const { lang } = await params
   const titles: Record<string, string> = {
-    en: 'Power of Attorney Dubai | Online in 30 Min | POA in 30',
-    ar: 'وكالة قانونية دبي أونلاين | توثيق في 30 دقيقة | POA in 30',
+    en: 'Power of Attorney Dubai — Remote Notarization in 30 Min | POA in 30',
+    ar: 'وكالة قانونية في دبي — توثيق عن بُعد في 30 دقيقة | POA in 30',
   }
   const descs: Record<string, string> = {
-    en: 'Draft and notarize your Dubai Power of Attorney online in 30 minutes via Dubai Courts video call. No office visit. WhatsApp us to start.',
-    ar: 'صياغة وتوثيق وكالتك القانونية في دبي أونلاين خلال 30 دقيقة عبر مكالمة فيديو مع محاكم دبي. بدون زيارة مكتب.',
+    en: 'Your Dubai Power of Attorney drafted in 30 minutes. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. No office visit.',
+    ar: 'وكالتك القانونية في دبي تُصاغ خلال 30 دقيقة. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. دون زيارة مكتب.',
   }
   return {
     title: titles[lang] || titles.en,
@@ -146,7 +146,7 @@ const S = {
     en: 'Simple case or complex one.',
     ar: 'سواء كانت معاملتك بسيطة أو معقدة.',
   },
-  guided_title: { en: 'Guided online service', ar: 'خدمة موجهة أونلاين' },
+  guided_title: { en: 'Guided remote service', ar: 'خدمة موجهة عن بُعد' },
   guided_sub: {
     en: 'Tell us what you need. We draft it, you review it, we notarize it.',
     ar: 'أخبرنا ما تحتاجه. نقوم بصياغته، تقوم بمراجعته، ونقوم بتصديقه.',
@@ -324,7 +324,7 @@ export default async function HomePage({ params }: Props) {
                   rel="noopener noreferrer"
                   className="btn-wa"
                 >
-                  <svg className="w-4.5 h-4.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <svg className="w-4.5 h-4.5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" width="18" height="18">
                     <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
                   </svg>
                   {t(S.cta_primary, lang)}
@@ -341,7 +341,7 @@ export default async function HomePage({ params }: Props) {
                   t(S.trust_qr, lang),
                 ].map((label) => (
                   <span key={label}>
-                    <svg className="w-4 h-4 shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+                    <svg className="w-4 h-4 shrink-0" viewBox="0 0 20 20" fill="none" aria-hidden="true" width="16" height="16">
                       <circle cx="10" cy="10" r="9" stroke="#C9A84C" strokeWidth="1.5" />
                       <path d="M6 10.2l2.6 2.6L14 7.5" stroke="#C9A84C" strokeWidth="1.8" strokeLinecap="round" />
                     </svg>
@@ -537,7 +537,7 @@ export default async function HomePage({ params }: Props) {
               className="btn-gold"
               aria-label={lang === 'ar' ? 'ابدأ عبر واتساب — ابدأ الآن' : 'Start on WhatsApp — get started now'}
             >
-              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" width="16" height="16">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884" />
               </svg>
               {t(S.cta_primary, lang)}

@@ -22,11 +22,11 @@ export async function generateMetadata({ params }: { params: Promise<{ lang: str
   const { lang } = await params
 
   const titles: Record<string, string> = {
-    en: 'POA in 30 — Power of Attorney Drafted & Notarized in 30 Minutes | UAE',
-    ar: 'POA in 30 — وكالتك جاهزة ومصدّقة في 30 دقيقة | الإمارات' }
+    en: 'POA in 30 — Power of Attorney Drafted & Notarized Remotely in 30 Minutes',
+    ar: 'POA in 30 — إصدار وتوثيق وكالتك عن بُعد في 30 دقيقة' }
   const descs: Record<string, string> = {
-    en: 'Skip the notary office. POA in 30 drafts, reviews and notarizes your Power of Attorney in 30 minutes — 100% online. All POA types, legal notices, and eviction notices across the UAE.',
-    ar: 'لا داعي لزيارة كاتب العدل. POA in 30 تصيغ وتوثق وكالتك في 30 دقيقة — 100% أونلاين. جميع أنواع الوكالات والإنذارات القانونية وإشعارات الإخلاء في الإمارات.' }
+    en: 'Your Power of Attorney drafted and delivered in 30 minutes, with no office visits. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. All POA types, legal notices, and eviction notices.',
+    ar: 'وكالتك تُصاغ وتُسلَّم في 30 دقيقة دون زيارات مكتبية. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. جميع أنواع الوكالات والإنذارات القانونية.' }
 
   return {
     title: titles[lang] || titles.en,
@@ -62,6 +62,10 @@ export default async function LangLayout({ children, params }: Props) {
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap"
+        />
         <meta name="theme-color" content="#0F2137" />
         <meta name="geo.region" content="AE-DU" />
         <meta name="geo.placename" content="Dubai, UAE" />

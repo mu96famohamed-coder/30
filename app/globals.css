@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap');
 
 /* ─────────────────────────────────────────────────────────────────────────────
    POA in 30 — Global Stylesheet
@@ -877,9 +876,27 @@
 .chip-doc b { display: block; font-size: 12.5px; color: var(--navy); }
 .chip-doc small { color: var(--text-muted); font-size: 11px; }
 @media (max-width: 920px) {
-  .dial-zone { min-height: 0; padding-block: 12px; }
-  .chip-wa { inset-inline-start: 0; }
-  .chip-doc { inset-inline-end: 0; }
+  .dial-zone {
+    min-height: 0;
+    padding-block: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+  .dial { width: min(240px, 62vw); }
+  .dial-core .dial-big { font-size: 48px; }
+  .dial-core .dial-lbl { font-size: 12.5px; max-width: 20ch; }
+  /* Chips leave the overlay and flow under the dial — no overlap, sane size */
+  .chip-card {
+    position: static;
+    max-width: 320px;
+    width: 100%;
+    font-size: 12.5px;
+    padding: 10px 12px;
+    box-shadow: 0 6px 18px rgba(6, 16, 26, 0.18);
+  }
+  .chip-doc .chip-qr { width: 36px; height: 36px; }
 }
 
 /* ── Minute badge (steps) ── */
