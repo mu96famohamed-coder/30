@@ -104,23 +104,6 @@ const BLOCKED_UA_PATTERNS = [
   /serpstatbot/i,
   /megaindex/i,
   /dataforseobot/i,
-  // AI training / answer-engine crawlers
-  /gptbot/i,
-  /chatgpt-user/i,
-  /oai-searchbot/i,
-  /claude-web/i,
-  /claudebot/i,
-  /anthropic-ai/i,
-  /perplexitybot/i,
-  /perplexity-user/i,
-  /ccbot/i,
-  /google-extended/i,
-  /bytespider/i,
-  /amazonbot/i,
-  /cohere-ai/i,
-  /diffbot/i,
-  /omgili/i,
-  /img2dataset/i,
 ]
 
 const ALLOWED_UA_PATTERNS = [

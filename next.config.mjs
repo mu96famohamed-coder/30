@@ -68,7 +68,7 @@ const nextConfig = {
       {
         source: '/',
         destination: '/en/',
-        permanent: false,
+        permanent: true,
       },
       // Redirect any leftover non-EN/AR legacy prefixes to English equivalent
       {
@@ -169,6 +169,15 @@ const nextConfig = {
       {
         source: '/eviction-notice/',
         destination: '/en/legal-notice/eviction/',
+        permanent: true,
+      },
+      // Bare paths with no /en/ or /ar/ prefix → default to English equivalent.
+      // Catches stale/external links and Google's memory of pre-restructuring
+      // URLs (e.g. /power-of-attorney/company-formation with no lang prefix).
+      // Must stay LAST — every more-specific rule above matches first.
+      {
+        source: '/:path((?!en|ar|api|_next|favicon\\.ico|favicon\\.svg|robots\\.txt|sitemap\\.xml|site\\.webmanifest|og-default\\.png|apple-icon\\.png|icon-192\\.png|icon-512\\.png|logo\\.png|logo\\.svg|logo-white\\.svg|logo-ar\\.svg).*)',
+        destination: '/en/:path',
         permanent: true,
       },
     ]

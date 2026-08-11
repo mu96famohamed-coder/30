@@ -44,7 +44,10 @@ function canonicalUrl(lang: Lang, path: string): string {
 function nameFor(path: string, lang: Lang): string {
   const pc = getPageContent(path) as Record<string, unknown> | null
   if (!pc) return BRAND
+  const seo = pc.seo as Record<string, any> | undefined
   const h1 =
+    seo?.h1?.[lang] ||
+    seo?.h1?.en ||
     (pc[`h1_${lang}`] as string | undefined) ||
     (pc.h1_en as string | undefined)
   return h1 || BRAND
@@ -53,7 +56,10 @@ function nameFor(path: string, lang: Lang): string {
 function descFor(path: string, lang: Lang): string {
   const pc = getPageContent(path) as Record<string, unknown> | null
   if (!pc) return ''
+  const seo = pc.seo as Record<string, any> | undefined
   const meta =
+    seo?.meta_description?.[lang] ||
+    seo?.meta_description?.en ||
     (pc[`meta_${lang}`] as string | undefined) ||
     (pc.meta_en as string | undefined)
   return meta || ''

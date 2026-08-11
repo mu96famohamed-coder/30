@@ -36,7 +36,7 @@ const L = {
   sub:      { en: 'We prepare and coordinate POAs, attestations, and legal documents — fully remote. Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call. Not a law firm. We are document specialists.', ar: 'نُعِدّ وننسق الوكالات والتصديق والمستندات القانونية — عن بُعد بالكامل. يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو. لسنا مكتب محاماة. نحن متخصصو إعداد المستندات.' },
   what_kicker: { en: '— What we do', ar: '— ما نفعله' },
   what_h:   { en: 'Document preparation, drafted right.', ar: 'إعداد مستندات، مصاغة بالشكل الصحيح.' },
-  what_p:   { en: 'POA in 30 prepares and coordinates document notarizations across the UAE. The notarization itself is performed by licensed UAE Notary Public authorities — Dubai Courts or the UAE Ministry of Justice — via secure video call. Our value is the precision: correct format, correct authority, accepted on first review.', ar: 'POA in 30 تُعد وتنسق توثيقات المستندات في الإمارات. التوثيق الفعلي يُنفَّذ بواسطة كتّاب العدل المرخصين — محاكم دبي أو وزارة العدل الاتحادية — عبر مكالمة فيديو آمنة. قيمتنا في الدقة: الصيغة الصحيحة، الجهة الصحيحة، تُقبل من أول مرة.' },
+  what_p:   { en: 'POA in 30 prepares and coordinates document notarizations across the UAE. The notarization itself is performed by licensed UAE Notary Public authorities — Dubai Courts or the UAE Ministry of Justice — via secure video call. Our value is the precision: correct format, correct authority.', ar: 'POA in 30 تُعد وتنسق توثيقات المستندات في الإمارات. التوثيق الفعلي يُنفَّذ بواسطة كتّاب العدل المرخصين — محاكم دبي أو وزارة العدل الإماراتية — عبر مكالمة فيديو آمنة. قيمتنا في الدقة: الصيغة الصحيحة، الجهة الصحيحة.' },
   why_kicker: { en: '— Why us', ar: '— لماذا نحن' },
   why_h:    { en: 'Built for speed, drafted for acceptance.', ar: 'مبنية على السرعة، مصاغة للقبول.' },
   cta_h:    { en: 'Ready when you are.', ar: 'جاهزون متى أردت.' },
@@ -46,10 +46,10 @@ const L = {
 
 const WHY_POINTS = [
   { en: 'Same-day service — most documents notarized in hours, not days', ar: 'خدمة نفس اليوم — معظم المستندات تُوثَّق في ساعات لا أيام' },
-  { en: 'Drafted to receiving authority specifications — accepted on first review', ar: 'مصاغة وفق متطلبات الجهة المستلمة — تُقبل من أول مراجعة' },
+  { en: 'Drafted to receiving authority specifications', ar: 'مصاغة وفق متطلبات الجهة المستلمة' },
   { en: 'Fully remote — notarization via video call, no office visits required', ar: 'عن بُعد بالكامل — التوثيق بمكالمة فيديو، بدون زيارات مكتبية' },
   { en: 'Bilingual Arabic and English drafting on every document', ar: 'صياغة ثنائية اللغة عربي وإنجليزي على كل وثيقة' },
-  { en: 'Recognized by all UAE authorities — DLD, RTA, MOFA, Dubai Courts, UAE banks', ar: 'معترف بها من جميع الجهات الإماراتية — دائرة الأراضي، RTA، الخارجية، محاكم دبي، البنوك' },
+  { en: 'Used before UAE authorities — DLD, RTA, MOFA, Dubai Courts, UAE banks', ar: 'تُستخدم أمام الجهات الإماراتية — دائرة الأراضي، RTA، الخارجية، محاكم دبي، البنوك' },
   { en: 'WhatsApp first, talk to a person — no forms, no call-back queues', ar: 'واتساب أولاً، تحدث مع شخص — لا نماذج، لا قوائم انتظار' },
 ]
 
