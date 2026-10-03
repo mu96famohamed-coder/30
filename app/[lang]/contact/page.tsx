@@ -108,7 +108,7 @@ export default async function Page({ params }: Props) {
             </a>
             <a href={`tel:${site.phone}`}
                className="inline-flex items-center text-sm font-medium text-ink-700 rounded-full px-6 py-3 border border-ink-200 hover:border-ink-400 hover:text-ink-900 transition-colors">
-              {site.phone_display}
+              <span dir="ltr" className="inline-block">{site.phone_display}</span>
             </a>
           </div>
         </div>
@@ -124,21 +124,14 @@ export default async function Page({ params }: Props) {
                 <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1">WhatsApp</p>
                 <a href={waUrl} target="_blank" rel="noopener noreferrer"
                    className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
-                  {site.phone_display}
+                  <span dir="ltr" className="inline-block">{site.phone_display}</span>
                 </a>
               </li>
               <li>
                 <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1 mt-4">Phone</p>
                 <a href={`tel:${site.phone}`}
                    className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
-                  {site.phone_display}
-                </a>
-              </li>
-              <li>
-                <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1 mt-4">Email</p>
-                <a href={`mailto:${site.email}`}
-                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
-                  {site.email}
+                  <span dir="ltr" className="inline-block">{site.phone_display}</span>
                 </a>
               </li>
             </ul>

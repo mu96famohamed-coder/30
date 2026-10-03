@@ -454,7 +454,7 @@ export default async function HomePage({ params }: Props) {
               >
                 <h3 className="tile-editorial-title">{t(tile.title, lang)}</h3>
                 <div className="tile-editorial-sub">{t(tile.sub, lang)}</div>
-                <span className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: 'var(--brand-gold)' }}>→</span>
+                <span aria-hidden="true" className="text-sm mt-2 opacity-0 group-hover:opacity-100 transition-opacity" style={{ color: 'var(--brand-gold)' }}>→</span>
               </Link>
             ))}
           </div>
@@ -542,8 +542,7 @@ export default async function HomePage({ params }: Props) {
             </Link>
           </div>
           <p className="text-sm" style={{ color: 'var(--text-muted)', fontFamily: "'Plus Jakarta Sans', system-ui, sans-serif" }}>
-            {site.phone_display}
-          </p>
+           <span dir="ltr" className="inline-block">{site.phone_display}</span>          </p>
         </div>
       </section>
     </>

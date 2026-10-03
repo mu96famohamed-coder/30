@@ -34,17 +34,17 @@ const L = {
   kicker:   { en: 'About POA in 30', ar: 'عن POA in 30' },
   h1_lead:  { en: "Dubai's Power of Attorney specialists,", ar: 'متخصصون في الوكالات القانونية في دبي،' },
   h1_em:    { en: 'in 30 minutes.', ar: 'في 30 دقيقة.' },
-  sub:      { en: 'We focus on Power of Attorney: transaction-specific bilingual drafting, remote notarization coordination, and electronic delivery in 30 minutes. Not a law firm. We are POA document specialists.', ar: 'نركز على الوكالات القانونية: صياغة ثنائية اللغة بحسب المعاملة، وتنسيق التوثيق عن بُعد، والتسليم الإلكتروني خلال 30 دقيقة. لسنا مكتب محاماة؛ نحن متخصصون في إعداد الوكالات.' },
-  what_kicker: { en: '— What we do', ar: '— ما نفعله' },
-  what_h:   { en: 'Power of Attorney, drafted for the transaction.', ar: 'وكالة تُصاغ وفق المعاملة المقصودة.' },
-  what_p:   { en: 'POA in 30 prepares transaction-specific Powers of Attorney for use in Dubai and the UAE, then coordinates the applicable official remote notarization route. Our focus is precision: the right powers, the right transaction details, and the right receiving authority.', ar: 'تُعد POA in 30 وكالات مخصصة للمعاملة للاستخدام في دبي والإمارات، ثم تنسق مسار التوثيق الرسمي عن بُعد المطبق. تركيزنا على الدقة: الصلاحيات المناسبة، وبيانات المعاملة الصحيحة، والجهة المستلمة المقصودة.' },
+  sub:      { en: 'We focus on Power of Attorney: transaction-specific bilingual drafting, remote notarization coordination, and electronic delivery in 30 minutes. We are POA document specialists.', ar: 'نركز على الوكالات القانونية: صياغة ثنائية اللغة بحسب المعاملة، وتنسيق التوثيق عن بُعد، والتسليم الإلكتروني خلال 30 دقيقة. نحن متخصصون في إعداد الوكالات.' },
+  what_kicker: { en: '— How We Help', ar: '— كيف نساعدك' },
+  what_h:   { en: 'How We Help', ar: 'كيف نساعدك' },
+  what_p:   { en: 'At POA in 30, we help you prepare the right Power of Attorney for the purpose you actually need, whether it is for a property, banking, business, court, or other transaction in the UAE.\n\nWe carefully review the details of the transaction and the required authorities, then draft the POA clearly and appropriately for the authority or institution where it will be used.\n\nOnce the document is ready, we help coordinate the appropriate notarization process, including electronic or remote procedures where available for the transaction.\n\nOur goal is to provide you with a Power of Attorney that is clear, accurate, and properly prepared from the start.', ar: 'في POA in 30 نساعدك على إعداد الوكالة المناسبة للغرض الذي تحتاجه فعليًا، سواء كانت لمعاملة عقارية، بنكية، تجارية، قضائية أو لأي إجراء آخر داخل الإمارات.\n\nنراجع تفاصيل المعاملة والصلاحيات المطلوبة بعناية، ثم نصيغ الوكالة بصورة واضحة ومناسبة للجهة التي ستُستخدم أمامها.\n\nوبعد تجهيز المستند، نساعدك في ترتيب خطوات التوثيق المناسبة، بما في ذلك الإجراءات الإلكترونية أو عن بُعد عندما تكون متاحة للمعاملة.\n\nهدفنا أن تحصل على وكالة واضحة، دقيقة، ومجهزة بشكل صحيح من البداية.' },
   why_kicker: { en: '— Why us', ar: '— لماذا نحن' },
   why_h:    { en: 'Built for speed, drafted for the receiving authority.', ar: 'مصممة للسرعة، ومصاغة وفق متطلبات الجهة المستلمة.' },
   cta_h:    { en: 'Ready when you are.', ar: 'جاهزون متى أردت.' },
   cta_p:    { en: 'Send a WhatsApp with what you need. We respond in minutes with cost and timeline.', ar: 'أرسل واتساب بما تحتاجه. نرد خلال دقائق بالتكلفة والجدول الزمني.' },
   wa_btn:   { en: 'Start on WhatsApp', ar: 'ابدأ عبر واتساب' },
-  disclaim: { en: 'POA in 30 is a document preparation and coordination service — not a law firm. We do not provide legal advice. All notarization is performed by UAE-licensed Notary Public authorities.', ar: 'POA in 30 خدمة إعداد وتنسيق مستندات — وليست مكتب محاماة. لا نقدم استشارات قانونية. يُنفَّذ التوثيق بواسطة كتّاب العدل المرخصين في الإمارات.' } }
-
+  disclaim: { en: 'POA in 30 provides document preparation and coordination services. All notarization is performed by UAE-licensed Notary Public authorities.', ar: 'POA in 30 تقدم خدمات إعداد وتنسيق المستندات. يُنفَّذ التوثيق بواسطة كتّاب العدل المرخصين في الإمارات.' }
+}
 const WHY_POINTS = [
   { en: '30-minute POA service — from first WhatsApp message to notarized electronic POA', ar: 'خدمة وكالة خلال 30 دقيقة — منذ أول رسالة عبر واتساب حتى استلام الوكالة الإلكترونية الموثقة' },
   { en: 'Drafted to receiving authority specifications', ar: 'مصاغة وفق متطلبات الجهة المستلمة' },
@@ -128,15 +128,13 @@ export default async function Page({ params }: Props) {
       {/* What we do — magazine grid */}
       <section className="bg-cream py-14 lg:py-20 border-t border-ink-100/40">
         <div className="mx-auto max-w-4xl px-4 lg:px-8">
-          <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-3">{t(L.what_kicker, lang)}</p>
-          <h2 className="text-ink-900 font-normal mb-5"
-              style={{ fontFamily: headingFont, fontSize: 'clamp(24px, 3vw, 32px)', letterSpacing: '-0.01em' }}>
-            {t(L.what_h, lang)}
-          </h2>
-          <p className="text-ink-700 leading-[1.85] text-base lg:text-[17px] mb-10"
-             style={{ fontFamily: headingFont }}>
-            {t(L.what_p, lang)}
-          </p>
+          <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-6">{t(L.what_kicker, lang)}</p>
+          <div className="text-ink-700 leading-[1.85] text-base lg:text-[17px] mb-10 space-y-4"
+               style={{ fontFamily: headingFont }}>
+            {t(L.what_p, lang).split('\n\n').map((paragraph, idx) => (
+              <p key={idx}>{paragraph}</p>
+            ))}
+          </div>
 
           {/* Services list — editorial, no boxy cards */}
           <ul className="grid gap-x-8 gap-y-3 sm:grid-cols-2 border-t border-ink-200 pt-8">
@@ -162,11 +160,11 @@ export default async function Page({ params }: Props) {
               style={{ fontFamily: headingFont, fontSize: 'clamp(24px, 3vw, 32px)', letterSpacing: '-0.01em' }}>
             {t(L.why_h, lang)}
           </h2>
-          <ol className="space-y-4">
+          <ol className="space-y-4 list-none">
             {WHY_POINTS.map((p, i) => (
               <li key={i} className="grid grid-cols-[auto_1fr] gap-4 items-baseline">
                 <span className="text-gold-500 font-normal text-2xl" style={{ fontFamily: headingFont }}>
-                  {String(i + 1).padStart(2, '0')}.
+                  {i + 1}.
                 </span>
                 <p className="text-ink-800 leading-relaxed text-base lg:text-lg" style={{ fontFamily: headingFont }}>
                   {t(p, lang)}

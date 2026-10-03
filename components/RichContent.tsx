@@ -78,12 +78,12 @@ function ParaBlock({ block, lang }: { block: Extract<RichBlock, {type:'para'}>, 
 function WarningBlock({ block, lang }: { block: Extract<RichBlock, {type:'warning'}>, lang: Lang }) {
   const isRTL = lang === 'ar'
   return (
-    <div className={`flex gap-0 rounded-xl overflow-hidden my-5 ${isRTL ? 'flex-row-reverse' : ''}`}
+    <div className="flex rounded-xl overflow-hidden my-5" dir={isRTL ? 'rtl' : 'ltr'}
       style={{background:'#FEF2F2', border:'1px solid #FECACA'}}>
       <div style={{width:3, flexShrink:0, background:'#DC2626'}} />
-      <div className={`flex gap-3 px-4 py-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}>
+      <div className="flex gap-3 px-4 py-4 w-full">
         <span className="shrink-0 mt-0.5" style={{color:'#DC2626'}}><AlertIcon /></span>
-        <div className="min-w-0">
+        <div className="min-w-0 flex-1 text-start">
           {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1.5" style={{color:'#991B1B', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>}
           {block.text && <p className="text-sm leading-relaxed" style={{color:'#7F1D1D', fontWeight:400, fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{inlineLinks(t(block.text, lang), lang)}</p>}
           {block.items && block.items.length > 0 && (
@@ -103,7 +103,8 @@ function InfoBlock({ block, lang }: { block: Extract<RichBlock, {type:'info'}>, 
   const isRTL = lang === 'ar'
   return (
     <div
-      className={`flex gap-3 rounded-xl px-4 py-4 my-4 ${isRTL ? 'flex-row-reverse text-right' : ''}`}
+      className="flex gap-3 rounded-xl px-4 py-4 my-4"
+      dir={isRTL ? 'rtl' : 'ltr'}
       style={{
         background: 'var(--bg-base)',
         border: '1px solid var(--border-default)',
@@ -111,7 +112,7 @@ function InfoBlock({ block, lang }: { block: Extract<RichBlock, {type:'info'}>, 
       }}
     >
       <span className="mt-0.5 shrink-0" style={{color:'var(--brand-gold)'}}><InfoIcon /></span>
-      <div className="min-w-0">
+      <div className="min-w-0 flex-1 text-start">
         {block.title && <p className="text-xs font-bold uppercase tracking-wide mb-1" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>}
         <p className="text-sm leading-relaxed" style={{color:'var(--text-secondary)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{inlineLinks(t(block.text, lang), lang)}</p>
       </div>
@@ -122,9 +123,16 @@ function InfoBlock({ block, lang }: { block: Extract<RichBlock, {type:'info'}>, 
 function SuccessBlock({ block, lang }: { block: Extract<RichBlock, {type:'success'}>, lang: Lang }) {
   const isRTL = lang === 'ar'
   return (
-    <div className={`flex gap-3 bg-green-50 border border-green-200 rounded-xl px-4 py-4 my-4 ${isRTL ? 'border-r-4 border-r-green-500 flex-row-reverse text-right' : 'border-l-4 border-l-green-500'}`}>
-      <span className="text-green-500 mt-0.5"><SuccessIcon /></span>
-      <div className="min-w-0">
+    <div className="flex gap-3 bg-green-50 border border-green-200 rounded-xl px-4 py-4 my-4"
+      dir={isRTL ? 'rtl' : 'ltr'}
+      style={{
+        borderLeftWidth: isRTL ? 0 : 4,
+        borderRightWidth: isRTL ? 4 : 0,
+        borderLeftColor: '#22c55e',
+        borderRightColor: '#22c55e',
+      }}>
+      <span className="text-green-500 mt-0.5 shrink-0"><SuccessIcon /></span>
+      <div className="min-w-0 flex-1 text-start">
         {block.title && <p className="text-green-800 text-xs font-bold uppercase tracking-wide mb-1">{t(block.title, lang)}</p>}
         <p className="text-green-700 text-sm leading-relaxed">{inlineLinks(t(block.text, lang), lang)}</p>
       </div>
@@ -168,17 +176,18 @@ function LawBlock({ block, lang }: { block: Extract<RichBlock, {type:'law'}>, la
 function StepsBlock({ block, lang }: { block: Extract<RichBlock, {type:'steps'}>, lang: Lang }) {
   const isRTL = lang === 'ar'
   return (
-    <div className="my-6 space-y-0">
+    <div className="my-6 space-y-0" dir={isRTL ? 'rtl' : 'ltr'}>
       {block.items.map((item, i) => (
-        <div key={i} className={`flex gap-4 relative ${isRTL ? 'flex-row-reverse' : ''}`}>
+        <div key={i} className="flex gap-4 relative">
           {/* connector line */}
           {i < block.items.length - 1 && (
-            <div className={`absolute top-8 ${isRTL ? 'right-[19px]' : 'left-[19px]'} w-px h-[calc(100%-1.5rem)]`} style={{background:'rgba(201,168,76,0.25)'}} />
+            <div className="absolute top-8 w-px h-[calc(100%-1.5rem)]"
+              style={{background:'rgba(201,168,76,0.25)', [isRTL ? 'right' : 'left']: '19px'}} />
           )}
           <div className="shrink-0 w-10 h-10 rounded-full flex items-center justify-center z-10" style={{background:'var(--brand-midnight)', border:'2px solid var(--brand-gold)'}}>
             <span className="font-bold text-sm" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{i + 1}</span>
           </div>
-          <div className={`pb-6 min-w-0 ${isRTL ? 'text-right' : ''}`}>
+          <div className="pb-6 min-w-0 flex-1 text-start">
             <p className="font-semibold text-ink-900 text-sm mb-1">{t(item.title, lang)}</p>
             <p className="text-ink-600 text-sm leading-relaxed">{inlineLinks(t(item.body, lang), lang)}</p>
           </div>
@@ -191,25 +200,25 @@ function StepsBlock({ block, lang }: { block: Extract<RichBlock, {type:'steps'}>
 function ChecklistBlock({ block, lang }: { block: Extract<RichBlock, {type:'checklist'}>, lang: Lang }) {
   const isRTL = lang === 'ar'
   return (
-    <div className="my-5 rounded-xl overflow-hidden" style={{border:'1px solid #e8ecf5'}}>
+    <div className="my-5 rounded-xl overflow-hidden" dir={isRTL ? 'rtl' : 'ltr'} style={{border:'1px solid #e8ecf5'}}>
       {block.title && (
-        <div className={`px-5 py-3 flex items-center gap-2 ${isRTL ? 'flex-row-reverse' : ''}`}
+        <div className="px-5 py-3 flex items-center gap-2"
           style={{background:'var(--brand-midnight)', borderBottom:'1px solid rgba(201,168,76,0.15)'}}>
           <div style={{width:3, height:14, background:'var(--brand-gold)', borderRadius:2, flexShrink:0}} />
-          <p className="text-[10px] font-bold uppercase tracking-[.12em]" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>
+          <p className="text-[10px] font-bold uppercase tracking-[.12em] flex-1 text-start" style={{color:'var(--brand-gold)', fontFamily:"'Plus Jakarta Sans', system-ui, sans-serif"}}>{t(block.title, lang)}</p>
         </div>
       )}
-      <ul dir={isRTL ? 'rtl' : 'ltr'} style={{background:'var(--bg-base)'}}>
+      <ul style={{background:'var(--bg-base)'}}>
         {block.items.map((item, i) => (
-          <li key={i} className={`flex items-start gap-3 px-5 py-3 ${isRTL ? 'flex-row-reverse' : ''}`}
+          <li key={i} className="flex items-start gap-3 px-5 py-3"
             style={{borderBottom: i < block.items.length - 1 ? '1px solid #f0f2f8' : 'none'}}>
             <span className="shrink-0 mt-0.5 w-4 h-4 rounded-full flex items-center justify-center"
-              style={{background:'rgba(29,158,117,.1)',border:'1px solid rgba(29,158,117,.3)',flexShrink:0}}>
+              style={{background:'rgba(29,158,117,.1)',border:'1px solid rgba(29,158,117,.3)'}}>
               <svg className="w-2.5 h-2.5" fill="none" stroke="#1d9e75" strokeWidth={2.5} viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7"/>
               </svg>
             </span>
-            <span className="text-sm leading-relaxed" style={{color:'#2a3a5a',fontWeight:300}}>{inlineLinks(t(item, lang), lang)}</span>
+            <span className="flex-1 text-start text-sm leading-relaxed" style={{color:'#2a3a5a',fontWeight:300}}>{inlineLinks(t(item, lang), lang)}</span>
           </li>
         ))}
       </ul>
@@ -218,8 +227,9 @@ function ChecklistBlock({ block, lang }: { block: Extract<RichBlock, {type:'chec
 }
 
 function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compare'}>, lang: Lang }) {
+  const isRTL = lang === 'ar'
   return (
-    <div className="my-6 grid sm:grid-cols-2 gap-4">
+    <div className="my-6 grid sm:grid-cols-2 gap-4" dir={isRTL ? 'rtl' : 'ltr'}>
       {/* Left column */}
       <div className="rounded-2xl border border-ink-200 overflow-hidden">
         <div className="bg-ink-900 px-5 py-3">
@@ -229,7 +239,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
           {block.left.items.map((item, i) => (
             <li key={i} className="flex items-start gap-3 px-5 py-3">
               <CheckIcon />
-              <span className="text-sm text-ink-700 leading-relaxed">{inlineLinks(t(item, lang), lang)}</span>
+              <span className="flex-1 text-start text-sm text-ink-700 leading-relaxed">{inlineLinks(t(item, lang), lang)}</span>
             </li>
           ))}
         </ul>
@@ -247,7 +257,7 @@ function CompareBlock({ block, lang }: { block: Extract<RichBlock, {type:'compar
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
                 </svg>
               </span>
-              <span className="text-sm leading-relaxed" style={{color:'var(--text-secondary)'}}>{inlineLinks(t(item, lang), lang)}</span>
+              <span className="flex-1 text-start text-sm leading-relaxed" style={{color:'var(--text-secondary)'}}>{inlineLinks(t(item, lang), lang)}</span>
             </li>
           ))}
         </ul>
