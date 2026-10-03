@@ -43,3 +43,5 @@ python3 scripts/validate-seo.py  # all green expected
 - Static generation for all 98 routes (49 paths × 2 langs)
 - Edge middleware for rate-limiting / bot-filter / CSP
 - No client-side JS for SEO-critical content
+
+- 
