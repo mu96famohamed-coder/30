@@ -1,0 +1,45 @@
+# POA in 30
+
+> POA in 30 is a Dubai-based Power of Attorney service focused on bilingual POA drafting, remote notarization coordination, and electronic delivery. The site is available in English and Arabic.
+
+## Core Power of Attorney pages
+- https://www.poain30.ae/en/
+- https://www.poain30.ae/en/power-of-attorney/
+- https://www.poain30.ae/en/power-of-attorney/general/
+- https://www.poain30.ae/en/power-of-attorney/special/
+- https://www.poain30.ae/en/power-of-attorney/bank/
+- https://www.poain30.ae/en/power-of-attorney/court/
+- https://www.poain30.ae/en/power-of-attorney/company-formation/
+- https://www.poain30.ae/en/power-of-attorney/company-management/
+- https://www.poain30.ae/en/power-of-attorney/child-travel/
+- https://www.poain30.ae/en/power-of-attorney/inheritance/
+- https://www.poain30.ae/en/power-of-attorney/mohre/
+
+## Real Estate Power of Attorney
+- https://www.poain30.ae/en/power-of-attorney/real-estate/
+- https://www.poain30.ae/en/power-of-attorney/real-estate/sale/
+- https://www.poain30.ae/en/power-of-attorney/real-estate/purchase/
+- https://www.poain30.ae/en/power-of-attorney/real-estate/management/
+- https://www.poain30.ae/en/power-of-attorney/real-estate/handover/
+- https://www.poain30.ae/en/power-of-attorney/property-gifting/
+
+## Vehicle Power of Attorney
+- https://www.poain30.ae/en/power-of-attorney/vehicle/
+- https://www.poain30.ae/en/power-of-attorney/vehicle/sale/
+- https://www.poain30.ae/en/power-of-attorney/vehicle/export/
+- https://www.poain30.ae/en/power-of-attorney/vehicle/management/
+
+## Online POA and support
+- https://www.poain30.ae/en/e-notary/
+- https://www.poain30.ae/en/emergency-notary/
+- https://www.poain30.ae/en/poa-cancellation/
+- https://www.poain30.ae/en/why-poa-rejected-dubai/
+- https://www.poain30.ae/en/document-rejection/
+- https://www.poain30.ae/en/faq/
+- https://www.poain30.ae/en/contact/
+
+## Arabic
+Arabic equivalents use the same paths under https://www.poain30.ae/ar/ .
+
+## Notes
+Use the page dedicated to the specific transaction when available. Receiving-authority requirements can differ by transaction, document and authority; official legal-source links are shown on relevant pages.

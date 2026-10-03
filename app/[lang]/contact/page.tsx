@@ -1,0 +1,182 @@
+import { withSocial } from '@/lib/seo/metadata'
+import type { Metadata } from 'next'
+import Link from 'next/link'
+import { LANGS, type Lang, t, site, HREFLANG_MAP, getWaUrl } from '@/lib/i18n'
+import { ContentPageSchema } from '@/components/SchemaMarkup'
+
+interface Props { params: Promise<{ lang: Lang }> }
+export async function generateStaticParams() { return LANGS.map((l) => ({ lang: l })) }
+
+async function baseMetadata({ params }: Props): Promise<Metadata> {
+  const { lang } = await params
+  const titles: Record<string, string> = {
+    en: 'Contact POA in 30 | Start Your Dubai Power of Attorney',
+    ar: 'تواصل مع POA in 30 | ابدأ وكالتك في دبي' }
+  const descs: Record<string, string> = {
+    en: 'Contact POA in 30 by WhatsApp, phone, or email to start a Dubai Power of Attorney. Send the POA type, receiving authority, and key transaction details.',
+    ar: 'تواصل مع POA in 30 عبر واتساب أو الهاتف أو البريد الإلكتروني لبدء وكالتك في دبي. أرسل نوع الوكالة والجهة المستلمة وأهم تفاصيل المعاملة.' }
+  return {
+    title: titles[lang] || titles.en,
+    description: descs[lang] || descs.en,
+    alternates: {
+      canonical: `https://www.poain30.ae/${lang}/contact/`,
+      languages: {
+        ...Object.fromEntries(LANGS.map((l) => [HREFLANG_MAP[l], `https://www.poain30.ae/${l}/contact/`])),
+        'x-default': `https://www.poain30.ae/en/contact/`,
+      } },
+    openGraph: {
+      title: titles[lang] || titles.en,
+      description: descs[lang] || descs.en,
+      url: `https://www.poain30.ae/${lang}/contact/` } }
+}
+
+const L = {
+  kicker:    { en: 'Contact', ar: 'التواصل' },
+  h1_lead:   { en: 'Start on WhatsApp,', ar: 'ابدأ بواتساب،' },
+  h1_em:     { en: 'finish in 30 minutes.', ar: 'انتهِ في 30 دقيقة.' },
+  sub:       { en: 'Two or three sentences are enough to scope the work, give a flat-fee quote, and confirm whether your timeline is realistic.', ar: 'جملتان أو ثلاث تكفي لتحديد نطاق العمل، إعطاء عرض سعر مقطوع، وتأكيد إذا كان جدولك الزمني واقعياً.' },
+  ways_kicker: { en: '— Ways to reach us', ar: '— طرق التواصل' },
+  what_we_need: { en: 'What we need from your first message', ar: 'ما نحتاجه من رسالتك الأولى' },
+  hint_p:    { en: 'Send the POA type, the transaction, the principal and agent details, the receiving authority (for example a specific bank, DLD, RTA, or a court), and any deadline. Those details let us confirm the required POA scope and start the 30-minute workflow.', ar: 'أرسل نوع الوكالة والمعاملة وبيانات الموكِّل والوكيل والجهة المستلمة (مثل بنك محدد أو دائرة الأراضي أو هيئة الطرق أو المحكمة) وأي موعد نهائي. تتيح لنا هذه البيانات تحديد نطاق الوكالة المطلوب وبدء مسار الـ30 دقيقة.' },
+  hours_h:   { en: 'Hours', ar: 'ساعات العمل' },
+  hours_wd:  { en: 'Sunday – Thursday: 9:00 – 18:00', ar: 'الأحد – الخميس: 9:00 – 18:00' },
+  hours_sat: { en: 'Saturday: 10:00 – 15:00', ar: 'السبت: 10:00 – 15:00' },
+  hours_fri: { en: 'Friday: WhatsApp only', ar: 'الجمعة: واتساب فقط' },
+  area_h:    { en: 'Service area', ar: 'منطقة الخدمة' },
+  area_p:    { en: 'Dubai-based Power of Attorney service for POAs used with UAE authorities, banks, courts, property and vehicle transactions, and company procedures.', ar: 'خدمة وكالات مقرها دبي للوكالات المستخدمة لدى الجهات الإماراتية والبنوك والمحاكم والمعاملات العقارية ومعاملات المركبات وإجراءات الشركات.' },
+  wa_btn:    { en: 'Start on WhatsApp', ar: 'ابدأ عبر واتساب' } }
+
+export default async function Page({ params }: Props) {
+  const { lang } = await params
+  const isRTL = lang === 'ar'
+  const headingFont = isRTL ? "'IBM Plex Sans Arabic', sans-serif" : "'Plus Jakarta Sans', sans-serif"
+  const waUrl = getWaUrl(t({ en: 'Hi POA in 30, I want to start a Dubai Power of Attorney.', ar: 'مرحباً POA in 30، أريد بدء وكالة في دبي.' }, lang))
+
+  return (
+    <>
+      <ContentPageSchema lang={lang} path="/contact" />
+
+      <div className="bg-cream border-b border-ink-100/60">
+        <div className="mx-auto max-w-6xl px-4 lg:px-8 py-3 flex items-center justify-between">
+          <span className="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium">{t(L.kicker, lang)}</span>
+          <span className="text-[11px] tracking-[0.18em] uppercase text-ink-500 font-medium hidden sm:inline">Dubai · UAE</span>
+        </div>
+      </div>
+
+      {/* Hero */}
+      <section className="bg-cream pt-12 pb-10 lg:pt-20 lg:pb-16">
+        <div className="mx-auto max-w-3xl px-4 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 mb-6">
+            <span className="block w-8 h-px bg-gold-500/60" />
+            <span className="text-[11px] tracking-[0.2em] uppercase text-gold-600 font-medium">
+              {isRTL ? 'تواصل معنا' : 'Get in touch'}
+            </span>
+            <span className="block w-8 h-px bg-gold-500/60" />
+          </div>
+          <h1 className="text-ink-900 leading-[1.05] tracking-tight font-normal"
+              style={{ fontFamily: headingFont, fontSize: 'clamp(32px, 5vw, 52px)', letterSpacing: '-0.015em' }}>
+            {t(L.h1_lead, lang)}
+            <br/>
+            <em className="text-gold-600 not-italic" style={{ fontStyle: 'italic' }}>
+              {t(L.h1_em, lang)}
+            </em>
+          </h1>
+          <p className="text-ink-600 mt-6 mx-auto leading-relaxed"
+             style={{ fontFamily: headingFont, fontStyle: 'italic', fontSize: 'clamp(15px, 1.6vw, 18px)', maxWidth: '560px' }}>
+            {t(L.sub, lang)}
+          </p>
+          {/* Notarization path — compliance rule 0.1-1, verbatim */}
+          <p className="mt-4 mx-auto flex items-start justify-center gap-2 text-sm text-ink-600" style={{ maxWidth: '620px' }}>
+            <svg className="w-4 h-4 shrink-0 mt-0.5" viewBox="0 0 20 20" fill="none" aria-hidden="true">
+              <circle cx="10" cy="10" r="9" stroke="#C9A84C" strokeWidth="1.5" />
+              <path d="M6 10.2l2.6 2.6L14 7.5" stroke="#C9A84C" strokeWidth="1.8" strokeLinecap="round" />
+            </svg>
+            <span>
+              {lang === 'ar'
+                ? 'يتم التوثيق عبر محاكم دبي أو وزارة العدل الإماراتية من خلال مكالمة فيديو.'
+                : 'Notarization happens through Dubai Courts or the UAE Ministry of Justice via a video call.'}
+            </span>
+          </p>
+
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+            <a href={waUrl} target="_blank" rel="noopener noreferrer"
+               className="inline-flex items-center gap-2 bg-ink-900 text-cream font-medium text-sm rounded-full px-6 py-3 hover:bg-ink-800 transition-colors">
+              <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
+              </svg>
+              {t(L.wa_btn, lang)}
+            </a>
+            <a href={`tel:${site.phone}`}
+               className="inline-flex items-center text-sm font-medium text-ink-700 rounded-full px-6 py-3 border border-ink-200 hover:border-ink-400 hover:text-ink-900 transition-colors">
+              {site.phone_display}
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact details + tip */}
+      <section className="bg-cream py-14 lg:py-20 border-t border-ink-100/40">
+        <div className="mx-auto max-w-4xl px-4 lg:px-8 grid lg:grid-cols-2 gap-12">
+          <div>
+            <p className="text-[11px] tracking-[0.18em] uppercase text-gold-600 font-medium mb-3">{t(L.ways_kicker, lang)}</p>
+            <ul className="space-y-3 mt-6">
+              <li>
+                <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1">WhatsApp</p>
+                <a href={waUrl} target="_blank" rel="noopener noreferrer"
+                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
+                  {site.phone_display}
+                </a>
+              </li>
+              <li>
+                <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1 mt-4">Phone</p>
+                <a href={`tel:${site.phone}`}
+                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
+                  {site.phone_display}
+                </a>
+              </li>
+              <li>
+                <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-1 mt-4">Email</p>
+                <a href={`mailto:${site.email}`}
+                   className="text-ink-800 hover:text-gold-600" style={{ fontFamily: headingFont, fontSize: '20px' }}>
+                  {site.email}
+                </a>
+              </li>
+            </ul>
+
+            <div className="mt-10 pt-8 border-t border-ink-200">
+              <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-2">{t(L.hours_h, lang)}</p>
+              <p className="text-ink-700" style={{ fontFamily: headingFont, fontSize: '15px', lineHeight: '1.85' }}>
+                {t(L.hours_wd, lang)}<br/>
+                {t(L.hours_sat, lang)}<br/>
+                {t(L.hours_fri, lang)}
+              </p>
+            </div>
+
+            <div className="mt-8">
+              <p className="text-[10px] tracking-[0.14em] uppercase text-ink-500 mb-2">{t(L.area_h, lang)}</p>
+              <p className="text-ink-700" style={{ fontFamily: headingFont, fontSize: '15px', lineHeight: '1.7' }}>
+                {t(L.area_p, lang)}
+              </p>
+            </div>
+          </div>
+
+          {/* Right column — what we need from you */}
+          <div className="border-s-2 border-gold-500 ps-8">
+            <h2 className="text-ink-900 font-normal mb-4"
+                style={{ fontFamily: headingFont, fontSize: '24px', letterSpacing: '-0.01em' }}>
+              {t(L.what_we_need, lang)}
+            </h2>
+            <p className="text-ink-700 leading-[1.85] text-base"
+               style={{ fontFamily: headingFont }}>
+              {t(L.hint_p, lang)}
+            </p>
+          </div>
+        </div>
+      </section>
+    </>
+  )
+}
+
+export async function generateMetadata(...args: Parameters<typeof baseMetadata>): Promise<Metadata> {
+  return withSocial(await baseMetadata(...args))
+}
